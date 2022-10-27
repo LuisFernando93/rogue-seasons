@@ -11,9 +11,9 @@ public class PlayerController : MonoBehaviour
 
     private bool canDash = true;
     private bool isDashing = false;
-    private float dashPower = 24f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 1f;
+    [SerializeField] private float dashPower = 24f;
+    [SerializeField] private float dashingTime = 0.2f;
+    [SerializeField] private float dashingCooldown = 1f;
 
 
     // Start is called before the first frame update

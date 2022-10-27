@@ -239,6 +239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  dashPower: 24
+  dashingTime: 0.2
+  dashingCooldown: 1
 --- !u!50 &744343650
 Rigidbody2D:
   serializedVersion: 4
@@ -352,7 +355,7 @@ GameObject:
   - component: {fileID: 1097107541}
   - component: {fileID: 1097107540}
   m_Layer: 0
-  m_Name: RoomManager
+  m_Name: RoomController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,6 +373,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec9810b8db106045997eb164b816e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridWidth: 8
+  gridHeight: 8
+  gridCellSize: 0.64
+  floorPrefab: {fileID: 2671520724549898411, guid: 0da9361992244a142bf5498d4fc59def, type: 3}
+  wallPrefab: {fileID: 4291684327793330206, guid: babf5404af54e274f8c8f4543fc79f64, type: 3}
 --- !u!4 &1097107541
 Transform:
   m_ObjectHideFlags: 0
@@ -378,7 +386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097107539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.073, y: -2.59, z: -11.354399}
+  m_LocalPosition: {x: -2, y: -2, z: -11.354399}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
