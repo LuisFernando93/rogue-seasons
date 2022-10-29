@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 movement;
     public float moveSpeed = 5f;
+    private bool faceRight = true;
 
     private bool canDash = true;
     private bool isDashing = false;
@@ -30,6 +31,16 @@ public class PlayerController : MonoBehaviour
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        //flip sprite
+        if (movement.x > 0 && !faceRight)
+        {
+            Flip();
+        }
+        else if (movement.x < 0 && faceRight)
+        {
+            Flip();
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash) {
             StartCoroutine(Dash());
@@ -54,5 +65,13 @@ public class PlayerController : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    private void Flip()
+    {
+        Vector3 currentScale = transform.localScale;
+        currentScale.x *= -1;
+        transform.localScale = currentScale;
+        faceRight = !faceRight;
     }
 }

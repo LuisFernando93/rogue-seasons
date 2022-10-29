@@ -9,6 +9,7 @@ public class EnemyRangedController : MonoBehaviour
     [SerializeField] private int speed = 1;
     [SerializeField] private int power = 1;
     [SerializeField] private float minDistance = 2;
+    private bool faceRight = true;
     private float distance;
 
     private Vector2 direction;
@@ -23,7 +24,7 @@ public class EnemyRangedController : MonoBehaviour
     void Update()
     {
         distance = Vector2.Distance(Player.transform.position, transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
     }
 
     void FixedUpdate()
@@ -35,15 +36,28 @@ public class EnemyRangedController : MonoBehaviour
     {  
         if (Player != null) {
             direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
+
+            //flip sprite
+            if(Player.transform.position.x > transform.position.x && !faceRight){
+                Flip();
+            } else if (Player.transform.position.x < transform.position.x && faceRight) {
+                Flip();
+            }
+
             if (distance > minDistance) {
                 transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
             } else if (distance < minDistance) {
                 transform.position = Vector2.MoveTowards(transform.position, direction, -1 * speed * Time.deltaTime);
-            } if (distance == minDistance)
-            {
-
             }
         }
 
+    }
+
+    private void Flip()
+    {
+        Vector3 currentScale = transform.localScale;
+        currentScale.x *= -1;
+        transform.localScale = currentScale;
+        faceRight = !faceRight;
     }
 }

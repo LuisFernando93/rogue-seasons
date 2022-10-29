@@ -8,6 +8,7 @@ public class EnemyMeleeController : MonoBehaviour
     [SerializeField] private GameObject RoomController;
     [SerializeField] private int speed = 2;
     [SerializeField] private int power = 1;
+    private bool faceRight = true;
 
     private Vector2 direction;
 
@@ -30,11 +31,29 @@ public class EnemyMeleeController : MonoBehaviour
 
     private void moveEnemy()
     {
-        if(Player != null)
+        //flip sprite
+        if (Player.transform.position.x > transform.position.x && !faceRight)
+        {
+            Flip();
+        }
+        else if (Player.transform.position.x < transform.position.x && faceRight)
+        {
+            Flip();
+        }
+
+        if (Player != null)
         {
             direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
         }
         
+    }
+
+    private void Flip()
+    {
+        Vector3 currentScale = transform.localScale;
+        currentScale.x *= -1;
+        transform.localScale = currentScale;
+        faceRight = !faceRight;
     }
 }
