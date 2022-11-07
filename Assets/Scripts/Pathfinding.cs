@@ -112,6 +112,11 @@ public class Pathfinding
         return grid.GetGridObject(x, y);
     }
 
+    public Vector3 GetNodeWorldPositionCenter(int x, int y)
+    {
+        return grid.GetWorldPositionCenter(x, y);
+    }
+
     private List<PathNode> CalculatePath(PathNode endNode)
     {
         List<PathNode> path = new List<PathNode>();

@@ -35,7 +35,7 @@ public class RoomGrid<TGridObject> {
             }
         }
 
-        bool showDebug = true;
+        bool showDebug = false;
 
         if (showDebug)
         {
@@ -65,7 +65,7 @@ public class RoomGrid<TGridObject> {
         return width;
     }
 
-    private Vector3 GetWorldPosition(int x, int y)
+    public Vector3 GetWorldPosition(int x, int y)
     {
         return new Vector3(x, y) * this.cellSize + originPos;
     }

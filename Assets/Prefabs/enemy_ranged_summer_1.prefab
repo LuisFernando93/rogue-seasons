@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3811523910147609324}
   - component: {fileID: 3811523910147609327}
   - component: {fileID: 3811523910147609874}
+  - component: {fileID: 6759267204461211700}
   m_Layer: 0
   m_Name: enemy_ranged_summer_1
   m_TagString: Untagged
@@ -121,3 +122,19 @@ MonoBehaviour:
   speed: 1
   power: 1
   minDistance: 2
+--- !u!70 &6759267204461211700
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811523910147609326}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.009011984, y: 0}
+  m_Size: {x: 0.25635386, y: 0.64}
+  m_Direction: 0
