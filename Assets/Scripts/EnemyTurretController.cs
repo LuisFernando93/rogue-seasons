@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMeleeController : MonoBehaviour
+public class EnemyTurretController : MonoBehaviour
 {
+
     private GameObject Player;
     [SerializeField] private GameObject RoomController;
-    [SerializeField] private int speed = 2;
     [SerializeField] private int power = 1;
     private bool faceRight = true;
 
     private Vector2 direction;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,18 +26,15 @@ public class EnemyMeleeController : MonoBehaviour
         
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         MoveEnemy();
     }
 
     private void MoveEnemy()
     {
-        
-
         if (Player != null)
         {
-            //flip sprite
             if (Player.transform.position.x > transform.position.x && !faceRight)
             {
                 Flip();
@@ -44,11 +43,7 @@ public class EnemyMeleeController : MonoBehaviour
             {
                 Flip();
             }
-
-            direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
-            transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
         }
-        
     }
 
     private void Flip()
@@ -58,4 +53,5 @@ public class EnemyMeleeController : MonoBehaviour
         transform.localScale = currentScale;
         faceRight = !faceRight;
     }
+
 }

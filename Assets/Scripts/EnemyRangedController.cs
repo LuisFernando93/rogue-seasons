@@ -29,10 +29,10 @@ public class EnemyRangedController : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveEnemy();
+        MoveEnemy();
     }
 
-    private void moveEnemy()
+    private void MoveEnemy()
     {  
         if (Player != null) {
             direction = new Vector2(Player.transform.position.x, Player.transform.position.y);

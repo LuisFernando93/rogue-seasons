@@ -60,9 +60,9 @@ GameObject:
   - component: {fileID: 7314481508445748961}
   - component: {fileID: 7314481508445748964}
   - component: {fileID: 2063192239131308573}
-  - component: {fileID: 4823988694496952014}
+  - component: {fileID: 3505668101433711702}
   m_Layer: 0
-  m_Name: enemy_melee_summer_1
+  m_Name: Enemy_melee_summer_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4490774521507706640, guid: 10af32a77ff3f3147a858f984300c1b5, type: 3}
+  m_Sprite: {fileID: 3939582115034611790, guid: eb4076e373effec4d8937c8e69eba201, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,7 +186,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.005149588, y: -0.03733468}
   m_Size: {x: 0.33617285, y: 0.5653306}
   m_Direction: 0
---- !u!95 &4823988694496952014
+--- !u!95 &3505668101433711702
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
