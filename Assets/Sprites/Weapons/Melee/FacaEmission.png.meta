@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: a6bbc4b73fbf84548b5a4d9e0a370461
+guid: 3fa968c9a43c5864ea4b4d9834d2988a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8137208539715977280
-    second: walkprot-Sheet_0
+      213: 9009621686655039563
+    second: FacaEmission_0
   - first:
-      213: 871331227181494990
-    second: walkprot-Sheet_1
+      213: -5489188179887087252
+    second: FacaEmission_1
   - first:
-      213: -7996433311867045365
-    second: walkprot-Sheet_2
+      213: -3037528351751836096
+    second: FacaEmission_2
   - first:
-      213: -6699203686927049267
-    second: walkprot-Sheet_3
+      213: -8183687782550669401
+    second: FacaEmission_3
+  - first:
+      213: -4901349304439022947
+    second: FacaEmission_4
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -116,85 +119,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkprot-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cf34f622f3d21f80800000000000000
-      internalID: -8137208539715977280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkprot-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec2bbd57227971c00800000000000000
-      internalID: 871331227181494990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walkprot-Sheet_2
+      name: FacaEmission_0
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0a70101546f60190800000000000000
-      internalID: -7996433311867045365
+      spriteID: b48bab1603b980d70800000000000000
+      internalID: 9009621686655039563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkprot-Sheet_3
+      name: FacaEmission_1
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcdd9ba9db5a703a0800000000000000
-      internalID: -6699203686927049267
+      spriteID: c61ae80fe6c72d3b0800000000000000
+      internalID: -5489188179887087252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FacaEmission_2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e67aebe0888d5d0800000000000000
+      internalID: -3037528351751836096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FacaEmission_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7fc502253bd6e80800000000000000
+      internalID: -8183687782550669401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FacaEmission_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9addcca6c8eafbb0800000000000000
+      internalID: -4901349304439022947
       vertices: []
       indices: 
       edges: []

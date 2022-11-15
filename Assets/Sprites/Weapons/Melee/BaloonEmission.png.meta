@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: a6bbc4b73fbf84548b5a4d9e0a370461
+guid: 4eeb047b1aebde944b7633026199bdca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8137208539715977280
-    second: walkprot-Sheet_0
+      213: -8548154339097859712
+    second: BaloonEmission_0
   - first:
-      213: 871331227181494990
-    second: walkprot-Sheet_1
+      213: -7834299197835303394
+    second: BaloonEmission_1
   - first:
-      213: -7996433311867045365
-    second: walkprot-Sheet_2
+      213: 2395526694783152522
+    second: BaloonEmission_2
   - first:
-      213: -6699203686927049267
-    second: walkprot-Sheet_3
+      213: -4155039111467786527
+    second: BaloonEmission_3
+  - first:
+      213: 2667010930066068827
+    second: BaloonEmission_4
+  - first:
+      213: -3528497531326615652
+    second: BaloonEmission_5
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -49,7 +55,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -116,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkprot-Sheet_0
+      name: BaloonEmission_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 0
-        width: 64
-        height: 64
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cf34f622f3d21f80800000000000000
-      internalID: -8137208539715977280
+      spriteID: 089abdc2beade5980800000000000000
+      internalID: -8548154339097859712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkprot-Sheet_1
+      name: BaloonEmission_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 384
         y: 0
-        width: 64
-        height: 64
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec2bbd57227971c00800000000000000
-      internalID: 871331227181494990
+      spriteID: e1626e0336af64390800000000000000
+      internalID: -7834299197835303394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkprot-Sheet_2
+      name: BaloonEmission_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 768
         y: 0
-        width: 64
-        height: 64
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0a70101546f60190800000000000000
-      internalID: -7996433311867045365
+      spriteID: a81f38c36de9e3120800000000000000
+      internalID: 2395526694783152522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkprot-Sheet_3
+      name: BaloonEmission_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 896
         y: 0
-        width: 64
-        height: 64
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +199,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcdd9ba9db5a703a0800000000000000
-      internalID: -6699203686927049267
+      spriteID: 1ee9b1541f55656c0800000000000000
+      internalID: -4155039111467786527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaloonEmission_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b551caa7f40230520800000000000000
+      internalID: 2667010930066068827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BaloonEmission_5
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f2f66a032480fc0800000000000000
+      internalID: -3528497531326615652
       vertices: []
       indices: 
       edges: []
@@ -202,7 +250,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 87d01cb976d88b84cad10b46f6be706c
     internalID: 0
     vertices: []
     indices: 

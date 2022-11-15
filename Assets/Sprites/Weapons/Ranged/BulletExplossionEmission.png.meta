@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: a6bbc4b73fbf84548b5a4d9e0a370461
+guid: c142ae33014efda4fbdbcef8363f6a1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8137208539715977280
-    second: walkprot-Sheet_0
+      213: -619583088947031826
+    second: BulletExplossion_0
   - first:
-      213: 871331227181494990
-    second: walkprot-Sheet_1
+      213: 7799804845470148675
+    second: BulletExplossion_1
   - first:
-      213: -7996433311867045365
-    second: walkprot-Sheet_2
+      213: -8807595832963703752
+    second: BulletExplossion_2
   - first:
-      213: -6699203686927049267
-    second: walkprot-Sheet_3
+      213: -5910549660251296156
+    second: BulletExplossion_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walkprot-Sheet_0
+      name: BulletExplossion_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cf34f622f3d21f80800000000000000
-      internalID: -8137208539715977280
+      spriteID: ee0197a967cc667f0800000000000000
+      internalID: -619583088947031826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkprot-Sheet_1
+      name: BulletExplossion_1
       rect:
         serializedVersion: 2
         x: 64
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec2bbd57227971c00800000000000000
-      internalID: 871331227181494990
+      spriteID: 3486e9b8e297e3c60800000000000000
+      internalID: 7799804845470148675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkprot-Sheet_2
+      name: BulletExplossion_2
       rect:
         serializedVersion: 2
         x: 128
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0a70101546f60190800000000000000
-      internalID: -7996433311867045365
+      spriteID: 83cdcfa214225c580800000000000000
+      internalID: -8807595832963703752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walkprot-Sheet_3
+      name: BulletExplossion_3
       rect:
         serializedVersion: 2
         x: 192
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcdd9ba9db5a703a0800000000000000
-      internalID: -6699203686927049267
+      spriteID: 46e6a61466289fda0800000000000000
+      internalID: -5910549660251296156
       vertices: []
       indices: 
       edges: []
@@ -202,7 +202,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 2166632dd51b3124694c4e86392964c0
     internalID: 0
     vertices: []
     indices: 
