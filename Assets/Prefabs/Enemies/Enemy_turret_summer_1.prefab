@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2712349220196889057}
   - component: {fileID: 4929661247688908930}
   - component: {fileID: 4687768742022179353}
+  - component: {fileID: 2490510712208104759}
   m_Layer: 0
   m_Name: Enemy_turret_summer_1
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3567850116860949811, guid: dd92aa60dd328344388cf5d548b54f23, type: 3}
+  m_Sprite: {fileID: 3567850116860949811, guid: 0d8c4365517cc634a82f21d98cb18ba1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,7 +109,7 @@ Animator:
   m_GameObject: {fileID: 870077545943212808}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ea3684729496fdd4190a55aaa7534110, type: 2}
+  m_Controller: {fileID: 9100000, guid: 92dbbfdefceee214f90f31afccb52527, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -117,3 +118,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &2490510712208104759
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870077545943212808}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0040162206, y: -0.06425935}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6385411, y: 0.8714813}
+  m_EdgeRadius: 0

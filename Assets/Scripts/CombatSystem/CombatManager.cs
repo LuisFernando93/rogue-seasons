@@ -6,12 +6,14 @@ public class CombatManager : MonoBehaviour
 {
     //Objetos
     [SerializeField] Player player;
+    [SerializeField] Canvas canvas;
     Transform leftWeaponController;
     Transform rightWeaponController;
     Transform activeWeapon;
     MeleeWeaponController meleeCheck;
     RangedWeaponController rangedCheck;
     SpriteRenderer activeWeaponSR;
+    Sprite leftWeaponIcon, rightWeaponIcon;
 
     //Variaveis
     [HideInInspector] public string[] command = new string[] { "Fire1", "Fire2" };
@@ -20,13 +22,12 @@ public class CombatManager : MonoBehaviour
     [HideInInspector] public bool leftWeaponActive = true;
     [HideInInspector] public bool rightWeaponActive = false;
     [HideInInspector] public bool canSwitchWeapon = true;
+    string RightWeaponType, LeftWeaponType;
     int LeftWeaponDamage = 0, RightWeaponDamage = 0;
-    
+
     private void Start()
     {
-        leftWeaponController = player.gameObject.transform.GetChild(0);
-        rightWeaponController = player.gameObject.transform.GetChild(1);
-        activeWeapon = leftWeaponController;
+        WeaponSelect();
         GetWeaponDamage(); //Detecta o dano da arma ativa no começo do jogo
     }
 
@@ -110,34 +111,31 @@ public class CombatManager : MonoBehaviour
     //Verifica o tipo da arma, assim pegando o dano que foi inserido nela
     void GetWeaponDamage()
     {
-        if(leftWeaponActive == true)
+        if (leftWeaponActive == true)
         {
-            meleeCheck = player.GetComponentInChildren<MeleeWeaponController>();
-            if (meleeCheck == null)
+            if (GetWeaponType(0) == "ranged")
             {
                 rangedCheck = player.GetComponentInChildren<RangedWeaponController>();
                 LeftWeaponDamage = rangedCheck.GetDamage();
             }
-            else
+            else if (GetWeaponType(0) == "melee")
             {
                 LeftWeaponDamage = meleeCheck.GetDamage();
             }
         }
-        if(rightWeaponActive == true)
+        if (rightWeaponActive == true)
         {
-            meleeCheck = player.GetComponentInChildren<MeleeWeaponController>();
-            if (meleeCheck == null)
+            if (GetWeaponType(1) == "ranged")
             {
                 rangedCheck = player.GetComponentInChildren<RangedWeaponController>();
                 RightWeaponDamage = rangedCheck.GetDamage();
             }
-            else
+            else if (GetWeaponType(1) == "melee")
             {
                 RightWeaponDamage = meleeCheck.GetDamage();
             }
         }
     }
-
     //Determina o dano da arma atual, é usado por outra classes
     public int GetActiveWeaponDamage()
     {
@@ -150,5 +148,97 @@ public class CombatManager : MonoBehaviour
             activeWeaponDamage = RightWeaponDamage;
         }
         return activeWeaponDamage;
+    }
+
+    //Define as armas usando a posição dos child dentro do player, é chamado quando uma arma é trocada para atualizar as referencias 
+    public void WeaponSelect()
+    {
+        leftWeaponController = player.gameObject.transform.GetChild(0);
+        rightWeaponController = player.gameObject.transform.GetChild(1);
+        player.transform.GetChild(0).gameObject.SetActive(true);
+        player.transform.GetChild(1).gameObject.SetActive(false);
+        activeWeapon = leftWeaponController;
+        canvas.GetComponent<GetWeaponIcon>().UpdateIcons();
+    }
+    //Diz o tipo da arma
+    public string GetWeaponType(int i)
+    {
+        if (player.transform.GetChild(i).TryGetComponent(out MeleeWeaponController melee) == true)
+        {
+            if(i == 1)
+            {
+                RightWeaponType = "melee";
+            }
+            else if(i == 0)
+            {
+                LeftWeaponType = "melee";
+            }
+            meleeCheck = player.transform.GetChild(i).GetComponent<MeleeWeaponController>();
+        }
+        else if (player.transform.GetChild(i).TryGetComponent(out RangedWeaponController ranged) == true)
+        {
+            if (i == 1)
+            {
+                RightWeaponType = "ranged";
+            }
+            else if (i == 0)
+            {
+                LeftWeaponType = "ranged";
+            }
+            rangedCheck = player.transform.GetChild(i).GetComponent<RangedWeaponController>();
+        }
+        /*else if ((player.transform.GetChild(i).TryGetComponent(out MagicWeaponController magic) == true)
+        {
+            if(i == 1)
+            {
+                RightWeaponType = "magic";
+            }
+            else if(i == 0)
+            {
+                LeftWeaponType = "magic";
+            }
+        }*/
+        if (i == 1)
+        {
+            return RightWeaponType;
+        }
+        else if (i == 0)
+        {
+            return LeftWeaponType;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public Sprite GetWeaponIcon(int i)
+    {
+        if (i == 0)
+        {
+            if (GetWeaponType(0) == "melee")
+            {
+                leftWeaponIcon = meleeCheck.GetIcon();            
+            }
+            else if (GetWeaponType(0) == "ranged")
+            {
+                leftWeaponIcon = rangedCheck.GetIcon();
+            }
+            return leftWeaponIcon;
+        }
+        else if (i == 1)
+        {
+            if (GetWeaponType(1) == "melee")
+            {
+                rightWeaponIcon = meleeCheck.GetIcon();
+            }
+            else if (GetWeaponType(1) == "ranged")
+            {
+                rightWeaponIcon = rangedCheck.GetIcon();
+            }
+            return rightWeaponIcon;
+        }
+        else return null;
+     
     }
 }

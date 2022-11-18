@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1516077037613393405
 Transform:
   m_ObjectHideFlags: 0
@@ -134,8 +134,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e6ddc2289cb4442990d6be26f6c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  icon: {fileID: 3461203509091440268, guid: 3b062ad8716f3e141b495e732d03cc51, type: 3}
   quantCombo: 3
   CDamage: 010000000200000003000000
+  Ataques:
+  - {fileID: 7400000, guid: 693edc55a28dfaa4ba7b873ad94465cb, type: 2}
+  - {fileID: 7400000, guid: bd3c4e2b4929d1646a148b17c4a99d20, type: 2}
+  - {fileID: 7400000, guid: e7e943b6ae71fdf4b84b25c91ffa6c47, type: 2}
+  IDLE_ANIMATION: {fileID: 7400000, guid: 8ebfb94180d803c43981f49b6af8d572, type: 2}
 --- !u!114 &1516077037613393378
 MonoBehaviour:
   m_ObjectHideFlags: 0

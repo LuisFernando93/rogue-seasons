@@ -134,8 +134,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e6ddc2289cb4442990d6be26f6c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  icon: {fileID: -1716277106122937689, guid: d2d6feddbb9b1524595c538ecda8f910, type: 3}
   quantCombo: 2
   CDamage: 0100000002000000
+  Ataques:
+  - {fileID: 7400000, guid: a9bbeac081a497341a5305b99667c7e8, type: 2}
+  - {fileID: 7400000, guid: b077d9bfd11868847b50be211b665990, type: 2}
+  IDLE_ANIMATION: {fileID: 7400000, guid: 183c3e58bfd8f8b4d914733788af1829, type: 2}
 --- !u!114 &1516077037613393378
 MonoBehaviour:
   m_ObjectHideFlags: 0

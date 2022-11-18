@@ -13,6 +13,7 @@ public class RangedWeaponController : MonoBehaviour
     Animator animator;
 
     //Variaveis
+    [SerializeField] Sprite icon;
     [SerializeField] private int maxAmmo = 1;
     [SerializeField] int damage = 1;
     int currentAmmo;
@@ -20,9 +21,9 @@ public class RangedWeaponController : MonoBehaviour
     [SerializeField] float bulletForce = 20f;
 
     //Animações
-    string WEAPON_SHOT;
-    string WEAPON_RECHARGE;
-    string WEAPON_IDLE;
+    [SerializeField] AnimationClip WEAPON_SHOT;
+    [SerializeField] AnimationClip WEAPON_RECHARGE;
+    [SerializeField] AnimationClip WEAPON_IDLE;
 
     private void Start()
     {
@@ -30,10 +31,6 @@ public class RangedWeaponController : MonoBehaviour
         weaponRotationController = GetComponent<WeaponRotationController>();
         combatManager = player.GetComponent<CombatManager>();
         animator = GetComponent<Animator>();
-
-        WEAPON_SHOT = gameObject.name + "Shot";
-        WEAPON_RECHARGE = gameObject.name + "Recharge";
-        WEAPON_IDLE = gameObject.name + "Idle";
         currentAmmo = maxAmmo;
     }
 
@@ -57,7 +54,7 @@ public class RangedWeaponController : MonoBehaviour
         {
             combatManager.NotReadyToSwitchWeapon();
             readyToShot = false;
-            animator.Play(WEAPON_SHOT);
+            animator.Play(WEAPON_SHOT.name);
             currentAmmo--;  
         }
         else if(currentAmmo == 0 && readyToShot)
@@ -72,7 +69,7 @@ public class RangedWeaponController : MonoBehaviour
         readyToShot = false;
         combatManager.NotReadyToSwitchWeapon();
         currentAmmo = maxAmmo;
-        animator.Play(WEAPON_RECHARGE);
+        animator.Play(WEAPON_RECHARGE.name);
     }
 
     //Chamada pela animação
@@ -80,7 +77,7 @@ public class RangedWeaponController : MonoBehaviour
     {
         combatManager.ReadyToSwitchWeapon();
         readyToShot = true;
-        animator.Play(WEAPON_IDLE);
+        animator.Play(WEAPON_IDLE.name);
     }
 
     //Chamada pela animação para criar a instancia do projetil
@@ -95,5 +92,15 @@ public class RangedWeaponController : MonoBehaviour
     public int GetDamage()
     {
         return damage;
+    }
+
+    public Sprite GetIcon()
+    {
+        return icon;
+    }
+
+    public void DestroyThis()
+    {
+        Destroy(this.gameObject);
     }
 }

@@ -12,21 +12,25 @@ public class MeleeWeaponController : MonoBehaviour
     Enemy enemy;
 
     //Variaveis
+    [SerializeField] Sprite icon;
     [SerializeField] int quantCombo = 1;
     [SerializeField] int[] CDamage;
     int currentCombo = 0;
     bool isAttacking = false;
     bool nextAttack = true;
+
+    //Animações
     private string currentAnimation;
-    private string IDLE_ANIMATION;
+    [SerializeField] AnimationClip[] Ataques;
+    [SerializeField] AnimationClip IDLE_ANIMATION;
 
     private void Start()
     {
         player = GetComponentInParent<Player>();
         animator = GetComponent<Animator>();
         combatManager = player.GetComponent<CombatManager>();
-        IDLE_ANIMATION = gameObject.name + "Idle";
         weaponRotation = GetComponent<WeaponRotationController>();
+        gameObject.name.Replace("(Clone)","");
     }
 
     private void Update()
@@ -54,7 +58,7 @@ public class MeleeWeaponController : MonoBehaviour
             {
                 combatManager.NotReadyToSwitchWeapon();
                 isAttacking = true;
-                ChangeAnimation(gameObject.name + "Attack" + currentCombo);
+                ChangeAnimation(Ataques[currentCombo].name);
                 currentCombo++;
                 ComboCheck();
             }
@@ -65,7 +69,7 @@ public class MeleeWeaponController : MonoBehaviour
     //Finaliza o sistema de combo e possibilita a troca de arma
     void ComboFinish()
     {
-        ChangeAnimation(IDLE_ANIMATION);
+        ChangeAnimation(IDLE_ANIMATION.name);
         combatManager.ReadyToSwitchWeapon();
         isAttacking = false;
         nextAttack = true;
@@ -115,6 +119,16 @@ public class MeleeWeaponController : MonoBehaviour
         {
             enemy.EnemyTakeDamage(CDamage[currentCombo - 1]);
         }
+    }
+
+    public Sprite GetIcon()
+    {
+        return icon;
+    }
+
+    public void DestroyThis()
+    {
+        Destroy(this.gameObject);
     }
 
 }

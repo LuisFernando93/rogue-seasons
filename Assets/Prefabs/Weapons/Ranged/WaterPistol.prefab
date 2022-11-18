@@ -149,9 +149,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1962895083103271515}
   bulletPrefab: {fileID: 7124704964449087799, guid: 3f7dd12afb87bd9468b6e657dcc63208, type: 3}
+  icon: {fileID: -2025789997403619860, guid: e7dea98fca6ebfb49b6e38a8ce80cee1, type: 3}
   maxAmmo: 5
   damage: 1
   bulletForce: 7.5
+  WEAPON_SHOT: {fileID: 7400000, guid: 370f3a967f3c1fa448cbdf14b100e4ef, type: 2}
+  WEAPON_RECHARGE: {fileID: 7400000, guid: 415a0ff6e40f74a4da78b77b24aac5f5, type: 2}
+  WEAPON_IDLE: {fileID: 7400000, guid: 50613871fd1af4344bce06e344204a26, type: 2}
 --- !u!114 &1962895084405653993
 MonoBehaviour:
   m_ObjectHideFlags: 0
