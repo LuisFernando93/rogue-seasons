@@ -149,6 +149,8 @@ MonoBehaviour:
   RoomController: {fileID: 0}
   speed: 2
   power: 1
+  attackDistance: 1
+  hitBox: {fileID: 1377565013207370005}
 --- !u!50 &7314481508445748964
 Rigidbody2D:
   serializedVersion: 4

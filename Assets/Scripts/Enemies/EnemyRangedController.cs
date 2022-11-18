@@ -35,7 +35,7 @@ public class EnemyRangedController : MonoBehaviour
     private void MoveEnemy()
     {  
         if (Player != null) {
-            direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
+            
 
             //flip sprite
             if(Player.transform.position.x > transform.position.x && !faceRight){
@@ -44,6 +44,7 @@ public class EnemyRangedController : MonoBehaviour
                 Flip();
             }
 
+            direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
             if (distance > minDistance) {
                 transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
             } else if (distance < minDistance) {

@@ -4,29 +4,78 @@ using UnityEngine;
 
 public class EnemyMeleeController : MonoBehaviour
 {
-    private GameObject Player;
+    
     [SerializeField] private GameObject RoomController;
     [SerializeField] private int speed = 2;
     [SerializeField] private int power = 1;
-    private bool faceRight = true;
+    [SerializeField] private float attackDistance = 1;
+    [SerializeField] private GameObject hitBox;
 
+    private GameObject Player;
+    private Animator animator;
+    private bool faceRight = true;
+    private bool move = false;
+    private bool isAttacking = false;
+    private float distance;
     private Vector2 direction;
 
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateEnemy();
     }
 
     void FixedUpdate()
     {
-        MoveEnemy();
+        if  (move)
+        {
+            MoveEnemy();
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            isAttacking = true;
+        } else
+        {
+            isAttacking = false;
+        }
+    }
+
+    private void UpdateEnemy()
+    {
+        distance = Vector2.Distance(Player.transform.position, transform.position);
+        if (distance > attackDistance)
+        {
+            move = true;
+            animator.SetBool("IsIdle", false);
+        }
+        else
+        {
+            move = false;
+            animator.SetBool("IsIdle", true);
+            if (!isAttacking)
+            {
+                animator.SetTrigger("Attack");
+            }
+        }
+
+        if (isAttacking)
+        {
+            if (hitBox.GetComponent<CircleCollider2D>().IsTouching(Player.GetComponent<Collider2D>()))
+            {
+                Debug.Log("Player atingido");
+            }
+        }
     }
 
     private void MoveEnemy()
