@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyDummy : MonoBehaviour
 {
     [SerializeField] int life = 1;
     Animator animator;
@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
         }
 
     }
-    
+
     void Die()
     {
         animator.Play(DAMAGE.name);
