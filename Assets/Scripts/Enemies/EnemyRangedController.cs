@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class EnemyRangedController : MonoBehaviour
 {
-    private GameObject Player;
+    
     [SerializeField] private GameObject RoomController;
     [SerializeField] private int speed = 1;
     [SerializeField] private int power = 1;
-    [SerializeField] private float minDistance = 2;
+    [SerializeField] private float attackDistanceMin = 1.8f;
+    [SerializeField] private float attackDistanceMax = 2;
+
+    private GameObject Player;
+    private Animator animator;
     private bool faceRight = true;
     private float distance;
+    private bool move = false;
+    private bool moveReverse = false;
+    private bool isAttacking = false;
+    private bool canAttack = true;
+    private float attackCooldown = 1.5f;
+    private float timeStampAtkCooldown;
 
     private Vector2 direction;
 
@@ -18,18 +28,69 @@ public class EnemyRangedController : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        distance = Vector2.Distance(Player.transform.position, transform.position);
-        //Debug.Log(distance);
+        UpdateEnemy();
     }
 
     void FixedUpdate()
     {
         MoveEnemy();
+    }
+
+    private void LateUpdate()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
+        {
+            isAttacking = true;
+        }
+        else
+        {
+            isAttacking = false;
+        }
+    }
+
+    private void UpdateEnemy()
+    {
+        distance = Vector2.Distance(Player.transform.position, transform.position);
+
+        if (distance > attackDistanceMax)
+        {
+            move = true;
+            moveReverse = false;
+        }
+        else if (distance < attackDistanceMin)
+        {
+            move = false; 
+            moveReverse = true;
+            if (!isAttacking && canAttack)
+            {
+                animator.SetTrigger("Attack");
+            }
+        }
+        else if (distance <= attackDistanceMax && distance >= attackDistanceMin)
+        {
+            move = false;
+            moveReverse = false;
+            if (!isAttacking && canAttack)
+            {
+                animator.SetTrigger("Attack");
+                canAttack = false;
+                timeStampAtkCooldown = Time.time + attackCooldown;
+            }
+        }
+
+        if (!canAttack)
+        {
+            if (timeStampAtkCooldown <= Time.time)
+            {
+                canAttack = true;
+            }
+        }
     }
 
     private void MoveEnemy()
@@ -45,9 +106,9 @@ public class EnemyRangedController : MonoBehaviour
             }
 
             direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
-            if (distance > minDistance) {
+            if (move) {
                 transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
-            } else if (distance < minDistance) {
+            } else if (moveReverse) {
                 transform.position = Vector2.MoveTowards(transform.position, direction, -1 * speed * Time.deltaTime);
             }
         }
