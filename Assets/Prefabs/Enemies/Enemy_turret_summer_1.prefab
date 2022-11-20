@@ -98,8 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b7563d8fe967e429845602ae61db53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Watcher: {fileID: 0}
+  Explosion: {fileID: 0}
   RoomController: {fileID: 0}
   power: 1
+  attackDistance: 2
 --- !u!95 &4687768742022179353
 Animator:
   serializedVersion: 3
