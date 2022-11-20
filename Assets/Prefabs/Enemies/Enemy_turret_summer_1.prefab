@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4929661247688908930}
   - component: {fileID: 4687768742022179353}
   - component: {fileID: 2490510712208104759}
+  - component: {fileID: 1649206285694578235}
   m_Layer: 0
   m_Name: Enemy_turret_summer_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6385411, y: 0.8714813}
   m_EdgeRadius: 0
+--- !u!50 &1649206285694578235
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870077545943212808}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
