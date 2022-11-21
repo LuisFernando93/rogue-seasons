@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 2300838651528340773}
   - component: {fileID: 4187824329748023961}
   m_Layer: 0
-  m_Name: Enemy_turret_summer_1_attack1
+  m_Name: Enemy_Turret_Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

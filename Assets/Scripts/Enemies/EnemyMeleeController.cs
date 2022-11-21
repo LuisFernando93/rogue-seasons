@@ -6,6 +6,7 @@ public class EnemyMeleeController : MonoBehaviour
 {
     
     [SerializeField] private GameObject RoomController;
+    [SerializeField] private int life = 5;
     [SerializeField] private int speed = 2;
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 1;
@@ -16,6 +17,7 @@ public class EnemyMeleeController : MonoBehaviour
     private bool faceRight = true;
     private bool move = false;
     private bool isAttacking = false;
+    private bool canTakeDamage = true;
     private float distance;
     private Vector2 direction;
 
@@ -73,7 +75,7 @@ public class EnemyMeleeController : MonoBehaviour
         {
             if (hitBox.GetComponent<CircleCollider2D>().IsTouching(Player.GetComponent<Collider2D>()))
             {
-                Debug.Log("Player atingido");
+                Player.GetComponent<Player>().takeDamage(power);
             }
         }
     }
@@ -106,5 +108,24 @@ public class EnemyMeleeController : MonoBehaviour
         currentScale.x *= -1;
         transform.localScale = currentScale;
         faceRight = !faceRight;
+    }
+
+    public void takeDamage(int power)
+    {
+        if (canTakeDamage)
+        {
+            this.life -= power;
+            this.canTakeDamage = false;
+            animator.SetTrigger("Damaged");
+            Debug.Log(life);
+        }
+    }
+
+    private void checkLife()
+    {
+        if (life <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

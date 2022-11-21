@@ -29,6 +29,7 @@ public class EnemyRangedController : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame

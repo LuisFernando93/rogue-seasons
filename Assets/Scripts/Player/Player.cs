@@ -12,13 +12,14 @@ public class Player : MonoBehaviour
 
     //Variaveis
     public float MoveSpeed = 5f;
+    public int life = 4;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
 
     //Variaveis Dash
     private bool canDash = true;
     private bool isDashing = false;
-    [SerializeField] private float dashPower = 24f;
+    [SerializeField] private float dashPower = 5f;
     [SerializeField] private float dashingCooldown = 1f;
     private float dashingTime = 0.2f;
 
@@ -26,13 +27,14 @@ public class Player : MonoBehaviour
     private float lastImageXpos, lastImageYpos;
     public float distanceBetweenImages = 0.1f;
 
+    private bool canTakeDamage = true;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         combatManager = GetComponent<CombatManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -85,6 +87,18 @@ public class Player : MonoBehaviour
         PlayerMovement();
     }
 
+    private void LateUpdate()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Damage"))
+        {
+            canTakeDamage = false;
+        }
+        else
+        {
+            canTakeDamage = true;
+        }
+    }
+
     //Inverte o sprite do personagem
     void Flip()
     {
@@ -109,6 +123,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        canTakeDamage = false;
         canDash = false;
         isDashing = true;
         rb.velocity = new Vector2(movement.x * dashPower, movement.y * dashPower);
@@ -119,6 +134,7 @@ public class Player : MonoBehaviour
 
         yield return new WaitForSeconds(dashingTime);
         isDashing = false;
+        canTakeDamage = true;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
 
@@ -142,4 +158,22 @@ public class Player : MonoBehaviour
         
     }
 
+    public void takeDamage(int power)
+    {
+        if (canTakeDamage)
+        {
+            this.life -= power;
+            this.canTakeDamage = false;
+            animator.SetTrigger("Damaged");
+            Debug.Log(life);
+        }
+    }
+
+    private void checkLife()
+    {
+        if (life <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
