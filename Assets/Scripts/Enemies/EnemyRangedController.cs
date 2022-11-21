@@ -6,12 +6,15 @@ public class EnemyRangedController : MonoBehaviour
 {
     
     [SerializeField] private GameObject RoomController;
+    [SerializeField] private GameObject enemyBulletPrefab;
+    [SerializeField] private GameObject firePoint;
     [SerializeField] private int speed = 1;
     [SerializeField] private int power = 1;
+    [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private float attackDistanceMin = 1.8f;
     [SerializeField] private float attackDistanceMax = 2;
 
-    private GameObject Player;
+    private GameObject player;
     private Animator animator;
     private bool faceRight = true;
     private float distance;
@@ -22,12 +25,12 @@ public class EnemyRangedController : MonoBehaviour
     private float attackCooldown = 1.5f;
     private float timeStampAtkCooldown;
 
-    private Vector2 direction;
+    private Vector2 directionToPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
         
     }
@@ -57,7 +60,7 @@ public class EnemyRangedController : MonoBehaviour
 
     private void UpdateEnemy()
     {
-        distance = Vector2.Distance(Player.transform.position, transform.position);
+        distance = Vector2.Distance(player.transform.position, transform.position);
 
         if (distance > attackDistanceMax)
         {
@@ -96,21 +99,21 @@ public class EnemyRangedController : MonoBehaviour
 
     private void MoveEnemy()
     {  
-        if (Player != null) {
+        if (player != null) {
             
 
             //flip sprite
-            if(Player.transform.position.x > transform.position.x && !faceRight){
+            if(player.transform.position.x > transform.position.x && !faceRight){
                 Flip();
-            } else if (Player.transform.position.x < transform.position.x && faceRight) {
+            } else if (player.transform.position.x < transform.position.x && faceRight) {
                 Flip();
             }
 
-            direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
+            directionToPlayer = new Vector2(player.transform.position.x, player.transform.position.y);
             if (move) {
-                transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, directionToPlayer, speed * Time.deltaTime);
             } else if (moveReverse) {
-                transform.position = Vector2.MoveTowards(transform.position, direction, -1 * speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, directionToPlayer, -1 * speed * Time.deltaTime);
             }
         }
 
@@ -122,5 +125,19 @@ public class EnemyRangedController : MonoBehaviour
         currentScale.x *= -1;
         transform.localScale = currentScale;
         faceRight = !faceRight;
+    }
+
+    private void Attack()
+    {
+        directionToPlayer = new Vector2(player.transform.position.x, player.transform.position.y);
+        GameObject bullet = Instantiate(enemyBulletPrefab,firePoint.transform.position, Quaternion.Euler(directionToPlayer));
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(directionToPlayer.normalized * bulletSpeed, ForceMode2D.Impulse);
+        bullet.GetComponent<EnemyBullet>().setBulletDamage(power);
+    }
+
+    void DestroyBullet()
+    {
+        Destroy(gameObject);
     }
 }

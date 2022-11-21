@@ -11,7 +11,12 @@ public class EnemyBullet : MonoBehaviour
     [SerializeField] private AnimationClip HitEffect;
     private GameObject player;
 
-    [SerializeField] private int bulletDamage;
+    private int bulletDamage;
+
+    public void setBulletDamage(int power)
+    {
+        bulletDamage = power;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -30,5 +35,12 @@ public class EnemyBullet : MonoBehaviour
             Debug.Log("player atingido");
             //player.GetComponent<Player>().takeDamage(bulletDamage);
         }
+    }
+
+
+
+    void DestroyBullet()
+    {
+        Destroy(gameObject);
     }
 }
