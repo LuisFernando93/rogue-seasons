@@ -5,12 +5,13 @@ using UnityEngine;
 public class EnemyTurretController : MonoBehaviour
 {
 
-    [SerializeField] private GameObject Explosion;
+    [SerializeField] private GameObject attackPrefab;
+    [SerializeField] private GameObject firePoint;
     [SerializeField] private GameObject RoomController;
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 2f;
 
-    private GameObject Player;
+    private GameObject player;
     private Animator animator;
     private bool faceRight = true;
     private float distance;
@@ -23,7 +24,7 @@ public class EnemyTurretController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
     }
 
@@ -35,13 +36,13 @@ public class EnemyTurretController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Player != null)
+        if (player != null)
         {
-            if (Player.transform.position.x > transform.position.x && !faceRight)
+            if (player.transform.position.x > transform.position.x && !faceRight)
             {
                 Flip();
             }
-            else if (Player.transform.position.x < transform.position.x && faceRight)
+            else if (player.transform.position.x < transform.position.x && faceRight)
             {
                 Flip();
             }
@@ -62,7 +63,7 @@ public class EnemyTurretController : MonoBehaviour
 
     private void UpdateEnemy()
     {
-        distance = Vector2.Distance(Player.transform.position, transform.position);
+        distance = Vector2.Distance(player.transform.position, transform.position);
         if (distance < attackDistance && canAttack && !isAttacking)
         {
             animator.SetTrigger("Attack");
@@ -96,6 +97,10 @@ public class EnemyTurretController : MonoBehaviour
         faceRight = !faceRight;
     }
 
-
+    private void Attack()
+    {
+        GameObject explosion = Instantiate(attackPrefab, firePoint.transform.position, Quaternion.identity);
+        explosion.GetComponent<EnemyExplosion>().SetExplosionDamage(power);
+    }
 
 }
