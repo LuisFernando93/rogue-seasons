@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1516077037613393376}
   - component: {fileID: 1516077037613393377}
   m_Layer: 0
-  m_Name: Faca
+  m_Name: Knife
   m_TagString: LeftWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
