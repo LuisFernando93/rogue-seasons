@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4687768742022179353}
   - component: {fileID: 2490510712208104759}
   - component: {fileID: 1649206285694578235}
+  - component: {fileID: 1626814649}
   m_Layer: 0
   m_Name: Enemy_turret_summer_1
   m_TagString: Enemy
@@ -102,6 +103,7 @@ MonoBehaviour:
   attackPrefab: {fileID: 9101408719130935055, guid: 94bb6639a5e1d44429dec200dec51a16, type: 3}
   firePoint: {fileID: 1893045332624356513}
   RoomController: {fileID: 0}
+  life: 5
   power: 1
   attackDistance: 2
 --- !u!95 &4687768742022179353
@@ -136,7 +138,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0040162206, y: -0.06425935}
+  m_Offset: {x: -0.018141866, y: -0.0554308}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +149,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6385411, y: 0.8714813}
+  m_Size: {x: 0.4619701, y: 0.8538242}
   m_EdgeRadius: 0
 --- !u!50 &1649206285694578235
 Rigidbody2D:
@@ -170,6 +172,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1626814649
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870077545943212808}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0088015795, y: -0.048408687}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.559921, y: 0.9031826}
+  m_EdgeRadius: 0
 --- !u!1 &1893045332624356513
 GameObject:
   m_ObjectHideFlags: 0

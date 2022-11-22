@@ -146,6 +146,19 @@ public class EnemyRangedController :  EnemyController
             this.canTakeDamage = false;
             animator.SetTrigger("Damaged");
             Debug.Log(life);
+            if (life <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
+
+    private void EnableDamage()
+    {
+        if (!canTakeDamage)
+        {
+            canTakeDamage = true;
+        }
+    }
+
 }
