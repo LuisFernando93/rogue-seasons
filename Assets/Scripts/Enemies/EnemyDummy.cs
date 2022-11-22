@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDummy : MonoBehaviour
+public class EnemyDummy : EnemyController
 {
     [SerializeField] int life = 1;
     Animator animator;
@@ -14,9 +14,10 @@ public class EnemyDummy : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-    public void EnemyTakeDamage(int damage)
+    public override void TakeDamage(int power)
     {
-        life -= damage;
+        life -= power;
+        Debug.Log(power);
         if (life <= 0)
         {
             Die();

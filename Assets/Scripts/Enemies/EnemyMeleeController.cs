@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMeleeController : MonoBehaviour
+public class EnemyMeleeController : EnemyController
 {
     
     [SerializeField] private GameObject RoomController;
@@ -110,7 +110,7 @@ public class EnemyMeleeController : MonoBehaviour
         faceRight = !faceRight;
     }
 
-    public void takeDamage(int power)
+    public override void TakeDamage(int power)
     {
         if (canTakeDamage)
         {
@@ -121,7 +121,7 @@ public class EnemyMeleeController : MonoBehaviour
         }
     }
 
-    private void checkLife()
+    private void CheckLife()
     {
         if (life <= 0)
         {

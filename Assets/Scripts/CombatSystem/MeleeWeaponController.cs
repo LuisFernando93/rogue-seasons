@@ -9,7 +9,7 @@ public class MeleeWeaponController : MonoBehaviour
     CombatManager combatManager;
     Animator animator;
     WeaponRotationController weaponRotation;
-    EnemyDummy enemy;
+    EnemyController enemy;
 
     //Variaveis
     [SerializeField] Sprite icon;
@@ -114,10 +114,10 @@ public class MeleeWeaponController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        enemy = hitInfo.GetComponent<EnemyDummy>();
+        enemy = hitInfo.GetComponent<EnemyController>();
         if (enemy != null)
         {
-            enemy.EnemyTakeDamage(CDamage[currentCombo - 1]);
+            enemy.TakeDamage(CDamage[currentCombo - 1]);
         }
     }
 

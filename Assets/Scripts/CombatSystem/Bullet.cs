@@ -9,10 +9,10 @@ public class Bullet : MonoBehaviour
     CombatManager combatManager;
     Animator animator;
     [SerializeField]AnimationClip HitEffect;
-    EnemyDummy enemy;
+    EnemyController enemy;
 
     //Variaveis
-    int bulletDamage;
+    private int bulletDamage;
 
     private void Start()
     {
@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
     //Verifica as informações do alvo usando uma collisão de trigger
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        enemy = hitInfo.GetComponent<EnemyDummy>();  
+        enemy = hitInfo.GetComponent<EnemyController>();  
     }
 
     //Executa a animação de contato da bala e faz alguma função dependendo do que foi acertado
@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
         animator.Play(HitEffect.name);
         if (enemy != null)
         {
-            enemy.EnemyTakeDamage(bulletDamage);
+            enemy.TakeDamage(bulletDamage);
         }
     }
 

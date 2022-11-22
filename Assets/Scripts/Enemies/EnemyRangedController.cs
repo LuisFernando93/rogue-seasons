@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyRangedController : MonoBehaviour
+public class EnemyRangedController :  EnemyController
 {
     
     [SerializeField] private GameObject RoomController;
     [SerializeField] private GameObject enemyBulletPrefab;
     [SerializeField] private GameObject firePoint;
+    [SerializeField] private int life = 5;
     [SerializeField] private int speed = 1;
     [SerializeField] private int power = 1;
     [SerializeField] private float bulletSpeed = 10f;
@@ -22,6 +23,7 @@ public class EnemyRangedController : MonoBehaviour
     private bool moveReverse = false;
     private bool isAttacking = false;
     private bool canAttack = true;
+    private bool canTakeDamage = true;
     private float attackCooldown = 1.5f;
     private float timeStampAtkCooldown;
 
@@ -136,8 +138,14 @@ public class EnemyRangedController : MonoBehaviour
         bullet.GetComponent<EnemyBullet>().setBulletDamage(power);
     }
 
-    void DestroyBullet()
+    public override void TakeDamage(int power)
     {
-        Destroy(gameObject);
+        if (canTakeDamage)
+        {
+            this.life -= power;
+            this.canTakeDamage = false;
+            animator.SetTrigger("Damaged");
+            Debug.Log(life);
+        }
     }
 }

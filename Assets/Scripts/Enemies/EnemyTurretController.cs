@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyTurretController : MonoBehaviour
+public class EnemyTurretController : EnemyController
 {
 
     [SerializeField] private GameObject attackPrefab;
     [SerializeField] private GameObject firePoint;
     [SerializeField] private GameObject RoomController;
+    [SerializeField] private int life = 5;
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 2f;
 
@@ -16,6 +17,7 @@ public class EnemyTurretController : MonoBehaviour
     private bool faceRight = true;
     private float distance;
     private bool canAttack = true;
+    private bool canTakeDamage = true;
     private bool isAttacking = false;
     private bool sleep = false;
     private float attackCooldown = 2f;
@@ -83,10 +85,6 @@ public class EnemyTurretController : MonoBehaviour
             sleep = false;
         }
 
-        if (!canAttack && animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"))
-        {
-            canAttack = true;
-        }
     }
 
     private void Flip()
@@ -103,4 +101,22 @@ public class EnemyTurretController : MonoBehaviour
         explosion.GetComponent<EnemyExplosion>().SetExplosionDamage(power);
     }
 
+    private void EnableAttack()
+    {
+        if (!canAttack)
+        {
+            canAttack = true;
+        }
+    }
+
+    public override void TakeDamage(int power)
+    {
+        if (canTakeDamage)
+        {
+            this.life -= power;
+            this.canTakeDamage = false;
+            animator.SetTrigger("Damaged");
+            Debug.Log(life);
+        }
+    }
 }

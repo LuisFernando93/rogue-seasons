@@ -91,6 +91,7 @@ public class RangedWeaponController : MonoBehaviour
     //Acesso ao dano da arma
     public int GetDamage()
     {
+        Debug.Log(damage);
         return damage;
     }
 
