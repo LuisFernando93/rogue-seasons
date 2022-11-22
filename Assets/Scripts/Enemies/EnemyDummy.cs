@@ -17,7 +17,6 @@ public class EnemyDummy : EnemyController
     public override void TakeDamage(int power)
     {
         life -= power;
-        Debug.Log(power);
         if (life <= 0)
         {
             Die();

@@ -23,7 +23,7 @@ public class CombatManager : MonoBehaviour
     [HideInInspector] public bool rightWeaponActive = false;
     [HideInInspector] public bool canSwitchWeapon = true;
     string RightWeaponType, LeftWeaponType;
-    int LeftWeaponDamage = 0, RightWeaponDamage = 0;
+    private int LeftWeaponDamage, RightWeaponDamage;
 
     private void Start()
     {
@@ -158,7 +158,7 @@ public class CombatManager : MonoBehaviour
         player.transform.GetChild(0).gameObject.SetActive(true);
         player.transform.GetChild(1).gameObject.SetActive(false);
         activeWeapon = leftWeaponController;
-        canvas.GetComponent<GetWeaponIcon>().UpdateIcons();
+        //canvas.GetComponent<GetWeaponIcon>().UpdateIcons();
     }
     //Diz o tipo da arma
     public string GetWeaponType(int i)

@@ -15,7 +15,7 @@ public class RangedWeaponController : MonoBehaviour
     //Variaveis
     [SerializeField] Sprite icon;
     [SerializeField] private int maxAmmo = 1;
-    [SerializeField] int damage = 1;
+    [SerializeField] private int damage = 1;
     int currentAmmo;
     bool readyToShot = true;
     [SerializeField] float bulletForce = 20f;
@@ -91,7 +91,6 @@ public class RangedWeaponController : MonoBehaviour
     //Acesso ao dano da arma
     public int GetDamage()
     {
-        Debug.Log(damage);
         return damage;
     }
 
