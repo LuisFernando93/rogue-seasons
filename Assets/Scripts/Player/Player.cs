@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //Objetos
+    [SerializeField] GameObject interactIcon;
     private Rigidbody2D rb;
     private Animator animator;
     CombatManager combatManager;
@@ -15,6 +16,7 @@ public class Player : MonoBehaviour
     public int life = 4;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
+    private Vector2 boxSize = new Vector2(0.1f, 1f);
 
     //Variaveis Dash
     private bool canDash = true;
@@ -175,5 +177,33 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void OpenInteractableIcon()
+    {
+        interactIcon.SetActive(true);
+    }
+
+    public void CloseInteractableIcon()
+    {
+        interactIcon.SetActive(false);
+    }
+
+    private void CheckInteraction()
+    {
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
+
+        if (hits.Length > 0)
+        {
+            foreach (RaycastHit2D rc in hits)
+            {
+                if (rc.transform.GetComponent<Interactable>())
+                {
+                    rc.transform.GetComponent<Interactable>().Interact();
+                    return;
+                }
+            }
+        }
+
     }
 }

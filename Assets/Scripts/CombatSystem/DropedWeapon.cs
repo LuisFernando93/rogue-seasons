@@ -6,7 +6,7 @@ public class DropedWeapon : MonoBehaviour
 {
     [SerializeField] WeightedRandomList<Transform> Weapons;
     Transform prefab;  
-    SpriteRenderer sr;
+    [SerializeField]SpriteRenderer sr;
     MeleeWeaponController meleeWeapon;
     RangedWeaponController rangedWeapon;
     public Sprite icon;
@@ -14,12 +14,10 @@ public class DropedWeapon : MonoBehaviour
 
     bool isRanged = false, isMelee = false, isMagic = false;
 
-    private void Start()
+    /*private void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        SpawnLoot();
-        
-    }
+        sr = GetComponent<SpriteRenderer>();     
+    }*/
 
     //Usado por outros scripts para spawnar a arma
     public void SpawnLoot()
@@ -80,5 +78,57 @@ public class DropedWeapon : MonoBehaviour
     public Sprite GetSprite()
     {
         return icon;
+    }
+
+    public string GetDropName()
+    {
+        return prefab.name;
+    }
+
+    public int GetDropDamage()
+    {
+        if(isRanged == true)
+        {
+            return rangedWeapon.GetDamage();
+        }
+        else if(isMagic == true)
+        {
+            return 0;
+        }
+        else
+        {
+            return 0;
+        }
+        
+    }
+    public string GetMeleeDropDamage()
+    {
+        return meleeWeapon.GetDamageinText();
+    }
+
+    //Retorna o tipo da arma
+    public string GetDropWeaponType()
+    {
+        if (isMelee == true)
+        {
+            return "Melee";
+        }
+        else if (isRanged == true)
+        {
+            return "Ranged";
+        }
+        else if (isMagic == true)
+        {
+            return "Magic";
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public void DestroyDrop()
+    {
+        Destroy(this.gameObject);
     }
 }

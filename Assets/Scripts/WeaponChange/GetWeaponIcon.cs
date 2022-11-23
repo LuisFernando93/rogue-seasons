@@ -9,14 +9,13 @@ public class GetWeaponIcon : MonoBehaviour
     [SerializeField] Transform leftWeaponBox, rightWeaponBox;
     Sprite left, right;
 
-    private void Start()
+    private void Awake()
     {
         combatManager = GameObject.FindGameObjectWithTag("Player").GetComponent<CombatManager>();
     }
 
     public void UpdateIcons()
     {
-        
         left = combatManager.GetWeaponIcon(0);
         right = combatManager.GetWeaponIcon(1);
         SetIcons();

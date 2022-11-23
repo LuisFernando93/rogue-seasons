@@ -111,6 +111,15 @@ public class MeleeWeaponController : MonoBehaviour
         return CDamage[currentCombo];
     }
 
+    public string GetDamageinText()
+    {
+        string allDamage = "" + CDamage[0].ToString();
+        for (int i = 1; i < CDamage.Length; i++)
+        {
+            allDamage += " + " + CDamage[i].ToString();
+        }
+        return allDamage;
+    }
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
