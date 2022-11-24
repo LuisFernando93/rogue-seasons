@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb9d1bc0e1b68cd4ab128d77c6269c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
   life: 5
   IDLE: {fileID: 7400000, guid: 0b35fb1b6dc91754094fca5feb91002e, type: 2}
   DAMAGE: {fileID: 7400000, guid: 7cb4dd19c4ba39b4099250fb4eb2b36a, type: 2}

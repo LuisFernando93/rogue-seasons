@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b7563d8fe967e429845602ae61db53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
   attackPrefab: {fileID: 9101408719130935055, guid: 94bb6639a5e1d44429dec200dec51a16, type: 3}
   firePoint: {fileID: 1893045332624356513}
   RoomController: {fileID: 0}

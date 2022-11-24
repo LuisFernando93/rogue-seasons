@@ -6,14 +6,15 @@ public class Player : MonoBehaviour
 {
     //Objetos
     [SerializeField] GameObject interactIcon;
+    [SerializeField] private GameObject healthManager;
     private Rigidbody2D rb;
     private Animator animator;
     CombatManager combatManager;
     SpriteRenderer spriteRenderer;
 
     //Variaveis
-    public float MoveSpeed = 5f;
-    public int life = 4;
+    [SerializeField] private float MoveSpeed = 5f;
+    [SerializeField] private int life = 4;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
@@ -30,6 +31,11 @@ public class Player : MonoBehaviour
     public float distanceBetweenImages = 0.1f;
 
     private bool canTakeDamage = true;
+
+    public int GetLife()
+    {
+        return life;
+    }
 
     private void Start()
     {
@@ -160,7 +166,7 @@ public class Player : MonoBehaviour
         
     }
 
-    public void takeDamage(int power)
+    public void TakeDamage(int power)
     {
         if (canTakeDamage)
         {
@@ -168,10 +174,11 @@ public class Player : MonoBehaviour
             this.canTakeDamage = false;
             animator.SetTrigger("Damaged");
             Debug.Log(life);
+            healthManager.GetComponent<HealthManager>().UpdateHealth();
         }
     }
 
-    private void checkLife()
+    private void CheckLife()
     {
         if (life <= 0)
         {

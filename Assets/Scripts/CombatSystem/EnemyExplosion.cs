@@ -24,7 +24,7 @@ public class EnemyExplosion : MonoBehaviour
     {
         if(collider.IsTouching(player.GetComponent<Collider2D>()))
         {
-            player.GetComponent<Player>().takeDamage(explosionDamage);
+            player.GetComponent<Player>().TakeDamage(explosionDamage);
         }
     }
 

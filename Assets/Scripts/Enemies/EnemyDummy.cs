@@ -17,6 +17,7 @@ public class EnemyDummy : EnemyController
     public override void TakeDamage(int power)
     {
         life -= power;
+        FloatingDamage(power);
         if (life <= 0)
         {
             Die();

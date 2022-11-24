@@ -75,7 +75,7 @@ public class EnemyMeleeController : EnemyController
         {
             if (hitBox.GetComponent<CircleCollider2D>().IsTouching(Player.GetComponent<Collider2D>()))
             {
-                Player.GetComponent<Player>().takeDamage(power);
+                Player.GetComponent<Player>().TakeDamage(power);
             }
         }
     }
@@ -117,6 +117,7 @@ public class EnemyMeleeController : EnemyController
             this.life -= power;
             this.canTakeDamage = false;
             animator.SetTrigger("Damaged");
+            FloatingDamage(power);
             if (life <= 0)
             {
                 Destroy(gameObject);
