@@ -86,6 +86,11 @@ public class Player : MonoBehaviour
             StartCoroutine(Dash());
             
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            CheckInteraction();
+        }
         CheckDash();
     }
 
