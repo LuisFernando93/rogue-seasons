@@ -11,7 +11,7 @@ public class EnemyRangedController :  EnemyController
     [SerializeField] private int life = 5;
     [SerializeField] private int speed = 1;
     [SerializeField] private int power = 1;
-    [SerializeField] private float bulletSpeed = 10f;
+    [SerializeField] private float bulletForce = 10f;
     [SerializeField] private float attackDistanceMin = 1.8f;
     [SerializeField] private float attackDistanceMax = 2;
 
@@ -131,11 +131,11 @@ public class EnemyRangedController :  EnemyController
 
     private void Attack()
     {
-        directionToPlayer = new Vector2(player.transform.position.x, player.transform.position.y);
-        GameObject bullet = Instantiate(enemyBulletPrefab,firePoint.transform.position, Quaternion.Euler(directionToPlayer));
+        firePoint.transform.rotation = Quaternion.LookRotation(Vector3.forward, player.transform.position - firePoint.transform.position) * Quaternion.Euler(0, 0, 90);
+        GameObject bullet = Instantiate(enemyBulletPrefab,firePoint.transform.position, firePoint.transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(directionToPlayer.normalized * bulletSpeed, ForceMode2D.Impulse);
-        bullet.GetComponent<EnemyBullet>().setBulletDamage(power);
+        rb.AddForce(firePoint.transform.right * bulletForce, ForceMode2D.Impulse);
+        bullet.GetComponent<EnemyBullet>().SetBulletDamage(power);
     }
 
     public override void TakeDamage(int power)

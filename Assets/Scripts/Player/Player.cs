@@ -178,7 +178,6 @@ public class Player : MonoBehaviour
             this.life -= power;
             this.canTakeDamage = false;
             animator.SetTrigger("Damaged");
-            Debug.Log(life);
             healthManager.GetComponent<HealthManager>().UpdateHealth();
         }
     }

@@ -10,10 +10,11 @@ public class EnemyBullet : MonoBehaviour
     private Animator animator;
     [SerializeField] private AnimationClip HitEffect;
     private GameObject player;
+    private GameObject[] enemies;
 
     private int bulletDamage;
 
-    public void setBulletDamage(int power)
+    public void SetBulletDamage(int power)
     {
         bulletDamage = power;
     }
@@ -25,21 +26,27 @@ public class EnemyBullet : MonoBehaviour
         Destroy(gameObject, destroyAfter);
         combatManager = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<CombatManager>();
         player = GameObject.FindGameObjectWithTag("Player");
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (var enemy in enemies)
+        {
+            Physics2D.IgnoreCollision(enemy.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         animator.Play(HitEffect.name);
         if (collision.collider == player.GetComponent<Collider2D>())
         {
-            Debug.Log("player atingido");
-            //player.GetComponent<Player>().takeDamage(bulletDamage);
+            player.GetComponent<Player>().TakeDamage(bulletDamage);
         }
     }
 
 
 
-    void DestroyBullet()
+    private void DestroyBullet()
     {
         Destroy(gameObject);
     }
