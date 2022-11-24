@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -164320361
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 3461203509091440268, guid: 3b062ad8716f3e141b495e732d03cc51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1516077037613393401}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f5e2797fdcc01a5438eecb1c68457dbf, type: 2}
+  m_Controller: {fileID: 9100000, guid: 546f00ab30b7c0547a38078f48b37795, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -138,10 +138,10 @@ MonoBehaviour:
   quantCombo: 3
   CDamage: 010000000200000003000000
   Ataques:
-  - {fileID: 7400000, guid: 693edc55a28dfaa4ba7b873ad94465cb, type: 2}
-  - {fileID: 7400000, guid: bd3c4e2b4929d1646a148b17c4a99d20, type: 2}
-  - {fileID: 7400000, guid: e7e943b6ae71fdf4b84b25c91ffa6c47, type: 2}
-  IDLE_ANIMATION: {fileID: 7400000, guid: 8ebfb94180d803c43981f49b6af8d572, type: 2}
+  - {fileID: 7400000, guid: 7700f292c1f35d941a08e192d1e1c591, type: 2}
+  - {fileID: 7400000, guid: a9c5628cb78fa9c48828c3535a6566d1, type: 2}
+  - {fileID: 7400000, guid: 13aeb6091c33dca43986564f953918f5, type: 2}
+  IDLE_ANIMATION: {fileID: 7400000, guid: 7be09d20d65f67d48a28ee7956e3181c, type: 2}
 --- !u!114 &1516077037613393378
 MonoBehaviour:
   m_ObjectHideFlags: 0
