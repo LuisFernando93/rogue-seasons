@@ -75,7 +75,7 @@ public class RoomGrid<TGridObject> {
         return new Vector3(x, y) * this.cellSize + originPos + new Vector3(this.cellSize/2,this.cellSize/2);
     }
 
-    private void GetXY(Vector3 worldPos, out int x, out int y)
+    public void GetXY(Vector3 worldPos, out int x, out int y)
     {
         x = Mathf.FloorToInt((worldPos-originPos).x / this.cellSize);
         y = Mathf.FloorToInt((worldPos-originPos).y / this.cellSize);

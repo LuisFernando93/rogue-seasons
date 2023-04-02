@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pathfinding
 {
+
     private const int MOVE_STRAIGHT_COST = 10;
     private const int MOVE_DIAGONAL_COST = 14;
 
@@ -15,7 +16,7 @@ public class Pathfinding
         grid = new RoomGrid<PathNode>(width, height, cellSize, originPos, (RoomGrid<PathNode> g, int x, int y) => new PathNode(g, x, y));
     }
 
-    private List<PathNode> FindPath(int xStart, int yStart, int xFinal, int yFinal)
+    public List<PathNode> FindPath(int xStart, int yStart, int xFinal, int yFinal)
     {
         PathNode startNode = grid.GetGridObject(xStart, yStart);
         PathNode endNode = grid.GetGridObject(xFinal, yFinal);
@@ -115,6 +116,11 @@ public class Pathfinding
     public Vector3 GetNodeWorldPositionCenter(int x, int y)
     {
         return grid.GetWorldPositionCenter(x, y);
+    }
+
+    public RoomGrid<PathNode> GetGrid()
+    {
+        return grid;
     }
 
     private List<PathNode> CalculatePath(PathNode endNode)

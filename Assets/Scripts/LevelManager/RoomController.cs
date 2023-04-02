@@ -9,6 +9,7 @@ public class RoomController: MonoBehaviour
     [SerializeField] private float gridCellSize = 0.64f;
 
     [SerializeField] private GameObject Wall;
+    [SerializeField] private GameObject Player;
 
     private Pathfinding pathfinding;
     private Vector2 nodePos;
@@ -18,12 +19,15 @@ public class RoomController: MonoBehaviour
     {
         pathfinding = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
-        for (int i = 0; i < gridWidth; i++) {
-            for (int j = 0; j < gridHeight; j++) {
 
+        for (int i = 0; i < gridWidth; i++)
+        {
+            for (int j = 0; j < gridHeight; j++)
+            {
                 nodePos = pathfinding.GetNodeWorldPositionCenter(i, j);
-                
-                if (Wall.GetComponent<Collider2D>().OverlapPoint(nodePos)) {
+
+                if (Wall.GetComponent<Rigidbody2D>().OverlapPoint(nodePos))
+                {
                     PathNode node = pathfinding.GetNode(i, j);
                     node.SetIsWalkable(false);
                 }
@@ -34,6 +38,18 @@ public class RoomController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0))
+        {
+            pathfinding.GetGrid().GetXY(Player.transform.position, out int x, out int y);
+            Debug.Log("X: " + x + " Y: " + y);
+            List<PathNode> path = pathfinding.FindPath(1,1,x,y);
+            if(path != null)
+            {
+                for (int i = 0; i < path.Count - 1; i++)
+                {
+                    Debug.DrawLine(new Vector3(path[i].x, path[i].y) * 0.64f + Vector3.one * 0.32f, new Vector3(path[i+1].x, path[i+1].y) * 0.64f + Vector3.one * 0.32f, Color.green, 100f);
+                }
+            }
+        }
     }
 }
