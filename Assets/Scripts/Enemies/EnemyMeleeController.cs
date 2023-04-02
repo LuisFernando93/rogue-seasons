@@ -12,7 +12,6 @@ public class EnemyMeleeController : EnemyController
     [SerializeField] private float attackDistance = 1;
     [SerializeField] private GameObject hitBox;
 
-    private GameObject Player;
     private Animator animator;
     private bool faceRight = true;
     private bool move = false;
@@ -24,7 +23,7 @@ public class EnemyMeleeController : EnemyController
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        base.Start();
         animator = GetComponent<Animator>();
     }
 
@@ -55,7 +54,7 @@ public class EnemyMeleeController : EnemyController
 
     private void UpdateEnemy()
     {
-        distance = Vector2.Distance(Player.transform.position, transform.position);
+        distance = Vector2.Distance(player.transform.position, transform.position);
         if (distance > attackDistance)
         {
             move = true;
@@ -73,9 +72,9 @@ public class EnemyMeleeController : EnemyController
 
         if (isAttacking)
         {
-            if (hitBox.GetComponent<CircleCollider2D>().IsTouching(Player.GetComponent<Collider2D>()))
+            if (hitBox.GetComponent<CircleCollider2D>().IsTouching(player.GetComponent<Collider2D>()))
             {
-                Player.GetComponent<Player>().TakeDamage(power);
+                player.GetComponent<Player>().TakeDamage(power);
             }
         }
     }
@@ -84,19 +83,19 @@ public class EnemyMeleeController : EnemyController
     {
         
 
-        if (Player != null)
+        if (player != null)
         {
             //flip sprite
-            if (Player.transform.position.x > transform.position.x && !faceRight)
+            if (player.transform.position.x > transform.position.x && !faceRight)
             {
                 Flip();
             }
-            else if (Player.transform.position.x < transform.position.x && faceRight)
+            else if (player.transform.position.x < transform.position.x && faceRight)
             {
                 Flip();
             }
 
-            direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
+            direction = new Vector2(player.transform.position.x, player.transform.position.y);
             transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
         }
         

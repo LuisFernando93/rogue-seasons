@@ -15,7 +15,6 @@ public class EnemyRangedController :  EnemyController
     [SerializeField] private float attackDistanceMin = 1.8f;
     [SerializeField] private float attackDistanceMax = 2;
 
-    private GameObject player;
     private Animator animator;
     private bool faceRight = true;
     private float distance;
@@ -32,7 +31,7 @@ public class EnemyRangedController :  EnemyController
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        base.Start();
         animator = GetComponent<Animator>();
         
     }

@@ -6,6 +6,15 @@ using UnityEngine;
 public abstract class EnemyController: MonoBehaviour
 {
     [SerializeField] protected GameObject floatingPoints;
+    private int pathIndex;
+    protected GameObject player;
+    private List<Vector3> pathVectorList;
+
+    protected void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     public abstract void TakeDamage(int power);
 
     protected void FloatingDamage(int damage)
@@ -29,5 +38,10 @@ public abstract class EnemyController: MonoBehaviour
         {
             point.GetComponent<TextMeshPro>().color = new Color(255, 255, 255, 255);
         }
+    }
+
+    protected void GetPlayerPosition()
+    {
+
     }
 }
