@@ -8,11 +8,14 @@ public class Pathfinding
     private const int MOVE_STRAIGHT_COST = 10;
     private const int MOVE_DIAGONAL_COST = 14;
 
+    public static Pathfinding Instance { get; private set; }
+
     private RoomGrid<PathNode> grid;
     private List<PathNode> openList, closedList;
 
     public Pathfinding(int width, int height, float cellSize, Vector3 originPos)
     {
+        Instance = this;
         grid = new RoomGrid<PathNode>(width, height, cellSize, originPos, (RoomGrid<PathNode> g, int x, int y) => new PathNode(g, x, y));
     }
 
