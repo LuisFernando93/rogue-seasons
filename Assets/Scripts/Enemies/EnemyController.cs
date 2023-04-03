@@ -6,9 +6,9 @@ using UnityEngine;
 public abstract class EnemyController: MonoBehaviour
 {
     [SerializeField] protected GameObject floatingPoints;
-    private int pathIndex;
+    protected int pathIndex;
     protected GameObject player;
-    private List<Vector3> pathVectorList;
+    protected List<Vector3> pathVectorList;
 
     protected void Start()
     {
@@ -40,8 +40,14 @@ public abstract class EnemyController: MonoBehaviour
         }
     }
 
-    protected void GetPlayerPosition()
+    protected void FindPlayerPosition()
     {
+        pathIndex = 0;
+        pathVectorList = Pathfinding.Instance.FindPathWorld(transform.position, player.transform.position);
 
+        if(pathVectorList != null && pathVectorList.Count > 1)
+        {
+            pathVectorList.RemoveAt(0);
+        }
     }
 }

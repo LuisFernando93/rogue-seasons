@@ -19,6 +19,36 @@ public class Pathfinding
         grid = new RoomGrid<PathNode>(width, height, cellSize, originPos, (RoomGrid<PathNode> g, int x, int y) => new PathNode(g, x, y));
     }
 
+    public List<Vector3> FindPathWorld(Vector3 startWorldPos, Vector3 endWorldPos)
+    {
+        grid.GetXY(startWorldPos, out int startX, out int startY);
+        grid.GetXY(endWorldPos, out int endX, out int endY);
+
+        List<PathNode> path = FindPath(startX, startY, endX, endY);
+        if (path == null)
+        {
+            return null;
+        } else
+        {
+            bool showDebug = true;
+            if (showDebug)
+            {
+                for (int i = 0; i < path.Count - 1; i++)
+                {
+                    Debug.DrawLine(new Vector3(path[i].x, path[i].y) * 0.64f + Vector3.one * 0.32f, new Vector3(path[i+1].x, path[i+1].y) * 0.64f + Vector3.one * 0.32f, Color.green, 100f);
+                }
+            }
+
+
+            List<Vector3> vectorPath = new List<Vector3>();
+            foreach(PathNode node in path)
+            {
+                vectorPath.Add(new Vector3(node.x, node.y) * grid.GetCellSize() + Vector3.one * grid.GetCellSize() * 0.5f);
+            }
+            return vectorPath;
+        }
+    }
+    
     public List<PathNode> FindPath(int xStart, int yStart, int xFinal, int yFinal)
     {
         PathNode startNode = grid.GetGridObject(xStart, yStart);

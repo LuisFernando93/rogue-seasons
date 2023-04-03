@@ -18,10 +18,10 @@ public class EnemyMeleeController : EnemyController
     private bool isAttacking = false;
     private bool canTakeDamage = true;
     private float distance;
-    private Vector2 direction;
+    private Vector3 direction;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         base.Start();
         animator = GetComponent<Animator>();
@@ -95,8 +95,26 @@ public class EnemyMeleeController : EnemyController
                 Flip();
             }
 
-            direction = new Vector2(player.transform.position.x, player.transform.position.y);
-            transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
+            base.FindPlayerPosition();
+            if (pathVectorList != null)
+            {
+                //Debug.Log("Player encontrado. PathIndex: " + pathIndex);
+                Vector3 targetPosition = pathVectorList[pathIndex];
+                Debug.Log("Distance: " + Vector3.Distance(transform.position, targetPosition));
+                if (Vector3.Distance(transform.position, targetPosition) > 0.32f)
+                {
+                    Debug.Log("Andando. PathIndex: " + pathIndex);
+                    direction = (targetPosition - transform.position).normalized;
+                    transform.position += speed * Time.deltaTime * direction;
+                } else
+                {
+                    pathIndex++;
+                    if (pathIndex >= pathVectorList.Count)
+                    {
+                        pathVectorList = null;
+                    }
+                }
+            } 
         }
         
     }

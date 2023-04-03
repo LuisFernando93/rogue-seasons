@@ -29,7 +29,7 @@ public class EnemyRangedController :  EnemyController
     private Vector2 directionToPlayer;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         base.Start();
         animator = GetComponent<Animator>();

@@ -23,7 +23,7 @@ public class EnemyTurretController : EnemyController
     private float timeStampAtkCooldown;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         base.Start();
         animator = GetComponent<Animator>();
