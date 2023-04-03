@@ -6,6 +6,15 @@ using UnityEngine;
 public abstract class EnemyController: MonoBehaviour
 {
     [SerializeField] protected GameObject floatingPoints;
+    protected int pathIndex;
+    protected GameObject player;
+    protected List<Vector3> pathVectorList;
+
+    protected void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     public abstract void TakeDamage(int power);
 
     protected void FloatingDamage(int damage)
@@ -28,6 +37,17 @@ public abstract class EnemyController: MonoBehaviour
         else
         {
             point.GetComponent<TextMeshPro>().color = new Color(255, 255, 255, 255);
+        }
+    }
+
+    protected void FindPlayerPosition()
+    {
+        pathIndex = 0;
+        pathVectorList = Pathfinding.Instance.FindPathWorld(transform.position, player.transform.position);
+
+        if(pathVectorList != null && pathVectorList.Count > 1)
+        {
+            pathVectorList.RemoveAt(0);
         }
     }
 }

@@ -12,7 +12,6 @@ public class EnemyTurretController : EnemyController
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 2f;
 
-    private GameObject player;
     private Animator animator;
     private bool faceRight = true;
     private float distance;
@@ -24,9 +23,9 @@ public class EnemyTurretController : EnemyController
     private float timeStampAtkCooldown;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        base.Start();
         animator = GetComponent<Animator>();
     }
 

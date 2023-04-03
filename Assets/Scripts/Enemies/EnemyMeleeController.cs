@@ -12,19 +12,18 @@ public class EnemyMeleeController : EnemyController
     [SerializeField] private float attackDistance = 1;
     [SerializeField] private GameObject hitBox;
 
-    private GameObject Player;
     private Animator animator;
     private bool faceRight = true;
     private bool move = false;
     private bool isAttacking = false;
     private bool canTakeDamage = true;
     private float distance;
-    private Vector2 direction;
+    private Vector3 direction;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        base.Start();
         animator = GetComponent<Animator>();
     }
 
@@ -55,7 +54,7 @@ public class EnemyMeleeController : EnemyController
 
     private void UpdateEnemy()
     {
-        distance = Vector2.Distance(Player.transform.position, transform.position);
+        distance = Vector2.Distance(player.transform.position, transform.position);
         if (distance > attackDistance)
         {
             move = true;
@@ -73,9 +72,9 @@ public class EnemyMeleeController : EnemyController
 
         if (isAttacking)
         {
-            if (hitBox.GetComponent<CircleCollider2D>().IsTouching(Player.GetComponent<Collider2D>()))
+            if (hitBox.GetComponent<CircleCollider2D>().IsTouching(player.GetComponent<Collider2D>()))
             {
-                Player.GetComponent<Player>().TakeDamage(power);
+                player.GetComponent<Player>().TakeDamage(power);
             }
         }
     }
@@ -84,20 +83,38 @@ public class EnemyMeleeController : EnemyController
     {
         
 
-        if (Player != null)
+        if (player != null)
         {
             //flip sprite
-            if (Player.transform.position.x > transform.position.x && !faceRight)
+            if (player.transform.position.x > transform.position.x && !faceRight)
             {
                 Flip();
             }
-            else if (Player.transform.position.x < transform.position.x && faceRight)
+            else if (player.transform.position.x < transform.position.x && faceRight)
             {
                 Flip();
             }
 
-            direction = new Vector2(Player.transform.position.x, Player.transform.position.y);
-            transform.position = Vector2.MoveTowards(transform.position, direction, speed * Time.deltaTime);
+            base.FindPlayerPosition();
+            if (pathVectorList != null)
+            {
+                //Debug.Log("Player encontrado. PathIndex: " + pathIndex);
+                Vector3 targetPosition = pathVectorList[pathIndex];
+                Debug.Log("Distance: " + Vector3.Distance(transform.position, targetPosition));
+                if (Vector3.Distance(transform.position, targetPosition) > 0.32f)
+                {
+                    Debug.Log("Andando. PathIndex: " + pathIndex);
+                    direction = (targetPosition - transform.position).normalized;
+                    transform.position += speed * Time.deltaTime * direction;
+                } else
+                {
+                    pathIndex++;
+                    if (pathIndex >= pathVectorList.Count)
+                    {
+                        pathVectorList = null;
+                    }
+                }
+            } 
         }
         
     }

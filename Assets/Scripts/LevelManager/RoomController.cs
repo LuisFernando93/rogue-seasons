@@ -24,11 +24,11 @@ public class RoomController: MonoBehaviour
         {
             for (int j = 0; j < gridHeight; j++)
             {
-                nodePos = pathfinding.GetNodeWorldPositionCenter(i, j);
+                nodePos = Pathfinding.Instance.GetNodeWorldPositionCenter(i, j);
 
                 if (Wall.GetComponent<Rigidbody2D>().OverlapPoint(nodePos))
                 {
-                    PathNode node = pathfinding.GetNode(i, j);
+                    PathNode node = Pathfinding.Instance.GetNode(i, j);
                     node.SetIsWalkable(false);
                 }
             }
@@ -40,7 +40,7 @@ public class RoomController: MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            pathfinding.GetGrid().GetXY(Player.transform.position, out int x, out int y);
+            Pathfinding.Instance.GetGrid().GetXY(Player.transform.position, out int x, out int y);
             Debug.Log("X: " + x + " Y: " + y);
             List<PathNode> path = pathfinding.FindPath(1,1,x,y);
             if(path != null)

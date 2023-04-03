@@ -81,6 +81,11 @@ public class RoomGrid<TGridObject> {
         y = Mathf.FloorToInt((worldPos-originPos).y / this.cellSize);
     }
 
+    public float GetCellSize()
+    {
+        return this.cellSize;
+    }
+
     public void SetGridObject(int x, int y, TGridObject value)
     {
         if (x >= 0 && y >= 0 && x < width && y < height)
