@@ -112,8 +112,37 @@ public class EnemyRangedController :  EnemyController
 
             directionToPlayer = new Vector2(player.transform.position.x, player.transform.position.y);
             if (move) {
-                transform.position = Vector2.MoveTowards(transform.position, directionToPlayer, speed * Time.deltaTime);
+                pathfindTimer -= Time.deltaTime;
+
+                if (base.pathfindTimer <= 0)
+                {
+                    base.FindPlayerPosition();
+                    base.pathfindTimer = base.pathUpdateTime;
+                }
+
+
+                if (pathVectorList != null)
+                {
+                    //Debug.Log("Player encontrado. PathIndex: " + pathIndex);
+                    Vector3 targetPosition = pathVectorList[pathIndex];
+                    Debug.Log("Distance: " + Vector3.Distance(transform.position, targetPosition));
+                    if (Vector3.Distance(transform.position, targetPosition) > 0.128f)
+                    {
+                        Debug.Log("Andando. PathIndex: " + pathIndex);
+                        Vector3 direction = (targetPosition - transform.position).normalized;
+                        transform.position += speed * Time.deltaTime * direction;
+                    }
+                    else
+                    {
+                        pathIndex++;
+                        if (pathIndex >= pathVectorList.Count)
+                        {
+                            pathVectorList = null;
+                        }
+                    }
+                }
             } else if (moveReverse) {
+                pathfindTimer = 0;
                 transform.position = Vector2.MoveTowards(transform.position, directionToPlayer, -1 * speed * Time.deltaTime);
             }
         }
