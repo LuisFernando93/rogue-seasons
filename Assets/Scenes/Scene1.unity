@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 937987083656425412, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 937987083656425412, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 937987083656425412, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 937987083656425412, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Name
       value: Enemy_melee_summer_1
@@ -1054,9 +1070,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -386520171
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
