@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8489556898066583746}
   - component: {fileID: 3996079623340020487}
   - component: {fileID: 4846605187200346359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_ranged_summer_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -131,6 +131,9 @@ MonoBehaviour:
   bulletForce: 10
   attackDistanceMin: 1.8
   attackDistanceMax: 2
+  obstacles:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &8489556898066583746
 Animator:
   serializedVersion: 3
@@ -211,7 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3339787932983949503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: firePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

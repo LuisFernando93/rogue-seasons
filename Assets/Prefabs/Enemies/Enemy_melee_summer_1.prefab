@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4209607220923600842}
   - component: {fileID: 280425433796629893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 3505668101433711702}
   - component: {fileID: 937987083656425412}
   - component: {fileID: 863883529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_melee_summer_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
