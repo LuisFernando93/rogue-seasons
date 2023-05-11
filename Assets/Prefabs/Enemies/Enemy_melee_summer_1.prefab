@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4209607220923600842}
   - component: {fileID: 280425433796629893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 3505668101433711702}
   - component: {fileID: 937987083656425412}
   - component: {fileID: 863883529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_melee_summer_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011146426, y: -0.16}
+  m_Offset: {x: 0.04, y: -0.12}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -218,7 +218,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2916057, y: 0.3183744}
+  m_Size: {x: 0.47, y: 0.76}
   m_EdgeRadius: 0
 --- !u!61 &863883529
 BoxCollider2D:

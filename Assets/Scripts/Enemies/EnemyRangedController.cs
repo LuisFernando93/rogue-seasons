@@ -14,6 +14,7 @@ public class EnemyRangedController :  EnemyController
     [SerializeField] private float bulletForce = 10f;
     [SerializeField] private float attackDistanceMin = 1.8f;
     [SerializeField] private float attackDistanceMax = 2;
+    [SerializeField] private LayerMask obstacles;
 
     private Animator animator;
     private bool faceRight = true;
@@ -61,23 +62,24 @@ public class EnemyRangedController :  EnemyController
 
     private void UpdateEnemy()
     {
-        distance = Vector2.Distance(player.transform.position, transform.position);
+        distance = Vector2.Distance(player.transform.position, firePoint.transform.position);
+        RaycastHit2D hit = Physics2D.Raycast(firePoint.transform.position, (player.transform.position - firePoint.transform.position).normalized, distance, obstacles);
 
         if (distance > attackDistanceMax)
         {
             move = true;
             moveReverse = false;
         }
-        else if (distance < attackDistanceMin)
+        else if (distance < attackDistanceMin && hit.collider == null)
         {
-            move = false; 
+            move = false;
             moveReverse = true;
             if (!isAttacking && canAttack)
             {
                 animator.SetTrigger("Attack");
             }
         }
-        else if (distance <= attackDistanceMax && distance >= attackDistanceMin)
+        else if (distance <= attackDistanceMax && distance >= attackDistanceMin && hit.collider == null)
         {
             move = false;
             moveReverse = false;
@@ -112,8 +114,34 @@ public class EnemyRangedController :  EnemyController
 
             directionToPlayer = new Vector2(player.transform.position.x, player.transform.position.y);
             if (move) {
-                transform.position = Vector2.MoveTowards(transform.position, directionToPlayer, speed * Time.deltaTime);
+                pathfindTimer -= Time.deltaTime;
+
+                if (base.pathfindTimer <= 0)
+                {
+                    base.FindPlayerPosition();
+                    base.pathfindTimer = base.pathUpdateTime;
+                }
+
+
+                if (pathVectorList != null)
+                {
+                    Vector3 targetPosition = pathVectorList[pathIndex];
+                    if (Vector3.Distance(transform.position, targetPosition) > 0.128f)
+                    {
+                        Vector3 direction = (targetPosition - transform.position).normalized;
+                        transform.position += speed * Time.deltaTime * direction;
+                    }
+                    else
+                    {
+                        pathIndex++;
+                        if (pathIndex >= pathVectorList.Count)
+                        {
+                            pathVectorList = null;
+                        }
+                    }
+                }
             } else if (moveReverse) {
+                pathfindTimer = 0;
                 transform.position = Vector2.MoveTowards(transform.position, directionToPlayer, -1 * speed * Time.deltaTime);
             }
         }
