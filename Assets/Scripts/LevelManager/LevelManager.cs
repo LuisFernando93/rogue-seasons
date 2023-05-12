@@ -16,7 +16,7 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private GameObject Player;
 
     private int level;
-    private bool showDebugPathfinder = true;
+    private bool showDebugPathfinder = false;
 
     public static LevelManager Instance;
 
