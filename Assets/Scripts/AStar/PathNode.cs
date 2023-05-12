@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PathNode
 {
-    private RoomGrid<PathNode> grid;
+    private LevelGrid<PathNode> grid;
     public int x, y;
     public int gCost, hCost, fCost;
 
     public PathNode prevNode;
     public bool isWalkable;
 
-    public PathNode(RoomGrid<PathNode> grid, int x, int y)
+    public PathNode(LevelGrid<PathNode> grid, int x, int y)
     {
         this.grid = grid;
         this.x = x;

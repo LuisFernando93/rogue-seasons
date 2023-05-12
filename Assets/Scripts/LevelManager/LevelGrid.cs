@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomGrid<TGridObject> {
+public class LevelGrid<TGridObject> {
 
     public event EventHandler<OnGridObjectChangedEventArgs> OnGridObjectChanged;
     public class OnGridObjectChangedEventArgs : EventArgs
@@ -18,7 +18,7 @@ public class RoomGrid<TGridObject> {
     private Vector3 originPos;
     private TGridObject[,] gridArray;
 
-    public RoomGrid(int width, int height, float cellSize, Vector3 originPos, Func<RoomGrid<TGridObject>, int, int, TGridObject> createGridObject)
+    public LevelGrid(int width, int height, float cellSize, Vector3 originPos, Func<LevelGrid<TGridObject>, int, int, TGridObject> createGridObject)
     {
         this.width = width;
         this.height = height;
