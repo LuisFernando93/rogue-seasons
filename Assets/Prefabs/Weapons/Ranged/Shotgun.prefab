@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1962895084405653995}
   - component: {fileID: 1962895084405654006}
   - component: {fileID: 1962895084405653993}
+  - component: {fileID: 5501713004936592036}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Untagged
@@ -103,7 +104,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -164320361
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2408530018317867212, guid: df5d62092dd79844cbe312f3c8865924, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -126,7 +127,7 @@ Animator:
   m_GameObject: {fileID: 1962895084405653997}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c54ab6e8932cf3349b7892461bee9ad4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 60ade284fc2b93742a6d6934ddd26966, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -151,11 +152,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7124704964449087799, guid: ad236753c4a86004f9c2ef243bb0f787, type: 3}
   icon: {fileID: -2408530018317867212, guid: df5d62092dd79844cbe312f3c8865924, type: 3}
   maxAmmo: 2
-  damage: 1
+  damage: 2
   bulletForce: 20
-  WEAPON_SHOT: {fileID: 7400000, guid: 237a522aa68c70b45b1a4fb58ec8523f, type: 2}
-  WEAPON_RECHARGE: {fileID: 7400000, guid: 9fcedadab0640c24d8d7361fd9e7ef36, type: 2}
-  WEAPON_IDLE: {fileID: 7400000, guid: 95d4ec7265a081b468164f701526fd05, type: 2}
+  WEAPON_SHOT: {fileID: 7400000, guid: f500cdee870a331408cf5ae6e7d34200, type: 2}
+  WEAPON_RECHARGE: {fileID: 7400000, guid: 1694bebf56212cb4b91a1fc9486e8b30, type: 2}
+  WEAPON_IDLE: {fileID: 7400000, guid: b6fd75ef52ab4b64a9ba10ac716e849f, type: 2}
 --- !u!114 &1962895084405653993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +169,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e8d0bddc7e9244fbcaa79faecac972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5501713004936592036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962895084405653997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994fc65c9a040034399af81d38c8edd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeIntensityType: 0
+  perpetualStrength: 0
+  perpetualTime: 0

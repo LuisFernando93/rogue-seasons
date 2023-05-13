@@ -15,7 +15,7 @@ public class RangedWeaponController : MonoBehaviour
     //Variaveis
     [SerializeField] Sprite icon;
     [SerializeField] private int maxAmmo = 1;
-    [SerializeField] private int damage = 1;
+    [SerializeField] int damage = 1;
     int currentAmmo;
     bool readyToShot = true;
     [SerializeField] float bulletForce = 20f;
@@ -24,6 +24,8 @@ public class RangedWeaponController : MonoBehaviour
     [SerializeField] AnimationClip WEAPON_SHOT;
     [SerializeField] AnimationClip WEAPON_RECHARGE;
     [SerializeField] AnimationClip WEAPON_IDLE;
+
+   
 
     private void Start()
     {
@@ -41,6 +43,7 @@ public class RangedWeaponController : MonoBehaviour
         {
             Shot();
         }
+
     }
     private void FixedUpdate()
     {
@@ -48,16 +51,16 @@ public class RangedWeaponController : MonoBehaviour
     }
 
     //Realiza a animação de tiro e verifica a relação entre a munição
-    void Shot()
+    private void Shot()
     {
         if (currentAmmo > 0 && readyToShot)
         {
             combatManager.NotReadyToSwitchWeapon();
             readyToShot = false;
             animator.Play(WEAPON_SHOT.name);
-            currentAmmo--;  
+            currentAmmo--;
         }
-        else if(currentAmmo == 0 && readyToShot)
+        else if(currentAmmo <= 0 && readyToShot)
         {
             Recharge();
         }
@@ -75,9 +78,16 @@ public class RangedWeaponController : MonoBehaviour
     //Chamada pela animação
     void ReturnToIdle()
     {
-        combatManager.ReadyToSwitchWeapon();
         readyToShot = true;
+        combatManager.ReadyToSwitchWeapon();
         animator.Play(WEAPON_IDLE.name);
+    }
+    void ReadyToShot()
+    {
+        if (readyToShot == false)
+        {
+            readyToShot = true;
+        }
     }
 
     //Chamada pela animação para criar a instancia do projetil
@@ -85,22 +95,36 @@ public class RangedWeaponController : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb =  bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);
+        rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);           
     }
 
-    //Acesso ao dano da arma
+    //Acesso a informações da arma
     public int GetDamage()
     {
         return damage;
     }
 
+    public int GetMaxAmmo()
+    {
+        return maxAmmo;
+    }
     public Sprite GetIcon()
     {
         return icon;
     }
 
+    public string GetRechargeTime()
+    {
+        return WEAPON_RECHARGE.length.ToString("F2")+"s";
+    }
+
+    public string GetFireFreq()
+    {
+        return WEAPON_SHOT.length.ToString("F2")+"s";
+    }
     public void DestroyThis()
     {
         Destroy(this.gameObject);
     }
+
 }

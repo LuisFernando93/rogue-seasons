@@ -100,10 +100,10 @@ public class EnemyMeleeController : EnemyController
             {
                 //Debug.Log("Player encontrado. PathIndex: " + pathIndex);
                 Vector3 targetPosition = pathVectorList[pathIndex];
-                Debug.Log("Distance: " + Vector3.Distance(transform.position, targetPosition));
+                //Debug.Log("Distance: " + Vector3.Distance(transform.position, targetPosition));
                 if (Vector3.Distance(transform.position, targetPosition) > 0.32f)
                 {
-                    Debug.Log("Andando. PathIndex: " + pathIndex);
+                    //Debug.Log("Andando. PathIndex: " + pathIndex);
                     direction = (targetPosition - transform.position).normalized;
                     transform.position += speed * Time.deltaTime * direction;
                 } else

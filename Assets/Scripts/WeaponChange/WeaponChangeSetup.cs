@@ -15,12 +15,12 @@ public class WeaponChangeSetup : MonoBehaviour
     {
         combatManager = GameObject.FindGameObjectWithTag("Player").GetComponent<CombatManager>();
     }
-    //Recebe as informações do prefab 
+    //Recebe as informaï¿½ï¿½es do prefab 
     public void SetDropItem(GameObject dropSystem)
     {
         drop = dropSystem.GetComponent<DropedWeapon>();
     }
-    //Preenche todas as informações na UI
+    //Preenche todas as informaï¿½ï¿½es na UI
     public void FillUI()
     {
         UpdateIcons();
@@ -49,15 +49,26 @@ public class WeaponChangeSetup : MonoBehaviour
         Transform WeaponName = newWeaponInfoBox.transform.GetChild(0);
         Transform WeaponDamage = newWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
 
+        //fecha as abas de armas especificas 
+        newWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(false);
+        newWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(false);
+
 
         WeaponName.GetComponent<TextMeshProUGUI>().text = drop.GetDropName();
         if(drop.GetDropWeaponType() == "Melee")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = drop.GetMeleeDropDamage();
+            WeaponDamage.GetComponent<TextMeshProUGUI>().text = drop.GetMeleeInfos(0);
+
+            newWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+            newWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = drop.GetMeleeInfos(1);
         }
-        else
+        else if (drop.GetDropWeaponType() == "Ranged")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = drop.GetDropDamage().ToString();
+            WeaponDamage.GetComponent<TextMeshProUGUI>().text = drop.GetRangedInfos(0);
+
+            newWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+            newWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = drop.GetRangedInfos(1);
+            newWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = drop.GetRangedInfos(2);
         }
         
     }
@@ -67,14 +78,25 @@ public class WeaponChangeSetup : MonoBehaviour
         Transform WeaponName = leftWeaponInfoBox.transform.GetChild(0);
         Transform WeaponDamage = leftWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
 
+        //fecha as abas de armas especificas 
+        leftWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(false);
+        leftWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(false);
+
         WeaponName.GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponName();
         if (combatManager.GetWeaponType(0) == "melee")
         {
             WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetMeleeWeaponDamage(0);
+
+            leftWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+            leftWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfos(0);
         }
-        else
+        else if (combatManager.GetWeaponType(0) == "ranged")
         {
             WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponDamage().ToString();
+
+            leftWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+            leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfos(1);
+            leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfos(2);
         }
         
 
@@ -84,16 +106,28 @@ public class WeaponChangeSetup : MonoBehaviour
         Transform WeaponName = rightWeaponInfoBox.transform.GetChild(0);
         Transform WeaponDamage = rightWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
 
+        //fecha as abas de armas especificas 
+        rightWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(false);
+        rightWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(false);
+
         WeaponName.GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponName();
         if (combatManager.GetWeaponType(1) == "melee")
         {
             WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetMeleeWeaponDamage(1);
+
+            rightWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+            rightWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfos(0);
         }
-        else
+        else if(combatManager.GetWeaponType(1) == "ranged")
         {
             WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponDamage().ToString();
+
+            rightWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+            rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfos(1);
+            rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfos(2);
         }
         
 
     }
+
 }

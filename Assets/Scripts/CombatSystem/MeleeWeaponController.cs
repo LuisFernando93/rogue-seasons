@@ -9,7 +9,7 @@ public class MeleeWeaponController : MonoBehaviour
     CombatManager combatManager;
     Animator animator;
     WeaponRotationController weaponRotation;
-    EnemyController enemy;
+    EnemyController  enemy;
 
     //Variaveis
     [SerializeField] Sprite icon;
@@ -19,7 +19,7 @@ public class MeleeWeaponController : MonoBehaviour
     bool isAttacking = false;
     bool nextAttack = true;
 
-    //Animações
+    //Animaï¿½ï¿½es
     private string currentAnimation;
     [SerializeField] AnimationClip[] Ataques;
     [SerializeField] AnimationClip IDLE_ANIMATION;
@@ -105,12 +105,10 @@ public class MeleeWeaponController : MonoBehaviour
     {
         isAttacking = false;
     }
-
     public int GetDamage()
     {
         return CDamage[currentCombo];
     }
-
     public string GetDamageinText()
     {
         string allDamage = "" + CDamage[0].ToString();
@@ -120,6 +118,19 @@ public class MeleeWeaponController : MonoBehaviour
         }
         return allDamage;
     }
+
+    public string GetAttackSpeed()
+    {
+        float veloMedia = 0;
+        for (int i = 0; i < Ataques.Length; i++)
+        {
+            veloMedia += Ataques[i].length;
+        }
+        veloMedia = veloMedia / Ataques.Length;
+
+        return veloMedia.ToString("F2");
+    }
+
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
