@@ -7,8 +7,11 @@ public abstract class EnemyController: MonoBehaviour
 {
     [SerializeField] protected GameObject floatingPoints;
     protected int pathIndex;
+    protected float pathfindTimer = 0;
+    protected float pathUpdateTime = 0.1f;
     protected GameObject player;
     protected List<Vector3> pathVectorList;
+    
 
     protected void Start()
     {

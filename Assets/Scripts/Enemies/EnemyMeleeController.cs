@@ -81,7 +81,6 @@ public class EnemyMeleeController : EnemyController
 
     private void MoveEnemy()
     {
-        
 
         if (player != null)
         {
@@ -95,10 +94,17 @@ public class EnemyMeleeController : EnemyController
                 Flip();
             }
 
-            base.FindPlayerPosition();
+            pathfindTimer -= Time.deltaTime;
+
+            if (base.pathfindTimer <= 0)
+            {
+                base.FindPlayerPosition();
+                base.pathfindTimer = base.pathUpdateTime;
+            }
+
+            
             if (pathVectorList != null)
             {
-                //Debug.Log("Player encontrado. PathIndex: " + pathIndex);
                 Vector3 targetPosition = pathVectorList[pathIndex];
                 //Debug.Log("Distance: " + Vector3.Distance(transform.position, targetPosition));
                 if (Vector3.Distance(transform.position, targetPosition) > 0.32f)
@@ -114,7 +120,7 @@ public class EnemyMeleeController : EnemyController
                         pathVectorList = null;
                     }
                 }
-            } 
+            }
         }
         
     }

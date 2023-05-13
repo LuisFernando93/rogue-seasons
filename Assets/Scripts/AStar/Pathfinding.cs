@@ -8,7 +8,7 @@ public class Pathfinding
     private const int MOVE_STRAIGHT_COST = 10;
     private const int MOVE_DIAGONAL_COST = 14;
 
-    public static Pathfinding Instance { get; private set; }
+    public static Pathfinding Instance { get; set; }
 
     private RoomGrid<PathNode> grid;
     private List<PathNode> openList, closedList;
@@ -30,7 +30,7 @@ public class Pathfinding
             return null;
         } else
         {
-            bool showDebug = true;
+            bool showDebug = false;
             if (showDebug)
             {
                 for (int i = 0; i < path.Count - 1; i++)
@@ -43,7 +43,7 @@ public class Pathfinding
             List<Vector3> vectorPath = new List<Vector3>();
             foreach(PathNode node in path)
             {
-                vectorPath.Add(new Vector3(node.x, node.y) * grid.GetCellSize() + Vector3.one * grid.GetCellSize() * 0.5f);
+                vectorPath.Add(new Vector3(node.x, node.y) * grid.GetCellSize() + new Vector3(grid.GetCellSize() * 0.5f, grid.GetCellSize() * 0.8f));
             }
             return vectorPath;
         }
