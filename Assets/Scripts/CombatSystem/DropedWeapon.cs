@@ -101,9 +101,37 @@ public class DropedWeapon : MonoBehaviour
         }
         
     }
-    public string GetMeleeDropDamage()
+
+    public string GetMeleeInfos(int i)
     {
-        return meleeWeapon.GetDamageinText();
+        switch (i)
+        {
+            case 0:
+                return meleeWeapon.GetDamageinText();
+            case 1:
+                return meleeWeapon.GetAttackSpeed();
+            default:
+                Debug.Log("Não foi possivel retornar as informações da arma dropada do tipo Melee");
+                return null;
+        }
+    }
+
+    public string GetRangedInfos(int i)
+    {
+        switch (i)
+        {
+            case 0:
+                return rangedWeapon.GetDamage().ToString();
+            case 1:
+                return rangedWeapon.GetMaxAmmo().ToString();
+            case 2:
+                return rangedWeapon.GetFireFreq();
+            case 3:
+                return rangedWeapon.GetRechargeTime();
+            default:
+                Debug.Log("Não foi possivel retornar as informações da arma dropada do tipo Ranged");
+                return null;
+        }
     }
 
     //Retorna o tipo da arma

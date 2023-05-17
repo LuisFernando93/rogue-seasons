@@ -22,13 +22,13 @@ public class Bullet : MonoBehaviour
         bulletDamage = combatManager.GetActiveWeaponDamage();
     }
 
-    //Verifica as informações do alvo usando uma collisão de trigger
+    //Verifica as informaÃ§Ãµes do alvo usando uma collisÃ£o de trigger
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
         enemy = hitInfo.GetComponent<EnemyController>();  
     }
 
-    //Executa a animação de contato da bala e faz alguma função dependendo do que foi acertado
+    //Executa a animaÃ§Ã£o de contato da bala e faz alguma funÃ§Ã£o dependendo do que foi acertado
     private void OnCollisionEnter2D(Collision2D collision)
     {
         animator.Play(HitEffect.name);

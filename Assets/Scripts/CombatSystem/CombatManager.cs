@@ -290,7 +290,72 @@ public class CombatManager : MonoBehaviour
         meleeCheck = player.transform.GetChild(i).GetComponent<MeleeWeaponController>();
         return meleeCheck.GetDamageinText();
     }
-
+    public string GetLeftWeaponInfos(int i)
+    {
+        if (GetWeaponType(0) == "melee")
+        {
+            switch (i)
+            {
+                case 0:
+                    return meleeCheck.GetAttackSpeed();
+                default:
+                    Debug.Log("Não foi possivel retornar as informações da arma Esquerda do tipo Melee");
+                    return null;
+            }
+        }
+        else if (GetWeaponType(1) == "ranged")
+        {
+            switch (i)
+            {
+                case 0:
+                    return rangedCheck.GetDamage().ToString();
+                case 1:
+                    return rangedCheck.GetMaxAmmo().ToString();
+                case 2:
+                    return rangedCheck.GetFireFreq();
+                case 3:
+                    return rangedCheck.GetRechargeTime();
+                default:
+                    Debug.Log("Não foi possivel retornar as informações da arma Esquerda do tipo Ranged");
+                    return null;
+            }
+        }
+        Debug.Log("Não foi possivel obter nenhuma informação da arma direita");
+        return null;
+    }
+    public string GetRightWeaponInfos(int i)
+    {
+        if(GetWeaponType(1) == "melee")
+        {
+            switch (i)
+            {
+                case 0:
+                    return meleeCheck.GetAttackSpeed();
+                default:
+                    Debug.Log("Não foi possivel retornar as informações da arma Direita do tipo Melee");
+                    return null;
+            }
+        }
+        else if(GetWeaponType(1) == "ranged")
+        {
+            switch (i)
+            {
+                case 0:
+                    return rangedCheck.GetDamage().ToString();
+                case 1:
+                    return rangedCheck.GetMaxAmmo().ToString();
+                case 2:
+                    return rangedCheck.GetFireFreq();
+                case 3:
+                    return rangedCheck.GetRechargeTime();
+                default:
+                    Debug.Log("Não foi possivel retornar as informações da arma Direita do tipo Ranged");
+                    return null;
+            }
+        }
+        Debug.Log("Não foi possivel obter nenhuma informação da arma direita");
+        return null;
+    }
     public string GetLeftWeaponName()
     {
         return leftWeaponController.name.Replace("(Clone)", "");
