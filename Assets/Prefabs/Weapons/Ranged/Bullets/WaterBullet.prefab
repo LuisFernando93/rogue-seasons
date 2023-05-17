@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7124704964449087794}
   - component: {fileID: 7651786518662125629}
   - component: {fileID: 6153035504565303320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: WaterBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

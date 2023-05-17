@@ -10,13 +10,13 @@ public class Pathfinding
 
     public static Pathfinding Instance { get; set; }
 
-    private RoomGrid<PathNode> grid;
+    private LevelGrid<PathNode> grid;
     private List<PathNode> openList, closedList;
 
     public Pathfinding(int width, int height, float cellSize, Vector3 originPos)
     {
         Instance = this;
-        grid = new RoomGrid<PathNode>(width, height, cellSize, originPos, (RoomGrid<PathNode> g, int x, int y) => new PathNode(g, x, y));
+        grid = new LevelGrid<PathNode>(width, height, cellSize, originPos, (LevelGrid<PathNode> g, int x, int y) => new PathNode(g, x, y));
     }
 
     public List<Vector3> FindPathWorld(Vector3 startWorldPos, Vector3 endWorldPos)
@@ -151,7 +151,7 @@ public class Pathfinding
         return grid.GetWorldPositionCenter(x, y);
     }
 
-    public RoomGrid<PathNode> GetGrid()
+    public LevelGrid<PathNode> GetGrid()
     {
         return grid;
     }

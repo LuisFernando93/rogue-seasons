@@ -34,7 +34,6 @@ public class Bullet : MonoBehaviour
         animator.Play(HitEffect.name);
         if (enemy != null)
         {
-            Debug.Log("aqui");
             enemy.TakeDamage(bulletDamage);
         }
     }
