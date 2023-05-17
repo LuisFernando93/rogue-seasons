@@ -33,7 +33,7 @@ public class LevelManager: MonoBehaviour
             {
                 Vector2 nodePos = Pathfinding.Instance.GetNodeWorldPositionCenter(i, j);
 
-                if (Wall.GetComponent<Rigidbody2D>().OverlapPoint(nodePos))
+                if (Wall.GetComponent<Rigidbody2D>().OverlapPoint(nodePos)) //verifica se existe parede na grid aqui
                 {
                     PathNode node = Pathfinding.Instance.GetNode(i, j);
                     node.SetIsWalkable(false);
