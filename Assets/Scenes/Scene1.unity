@@ -851,7 +851,9 @@ MonoBehaviour:
   gridCellSize: 0.64
   defaultSummerOST: {fileID: 8300000, guid: 22c2927454fbf144f9443c2c9c601f1f, type: 3}
   battleSummerOST: {fileID: 8300000, guid: dd77a99bdb9549740a274295fbaddcbf, type: 3}
-  Wall: {fileID: 1987611378}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
   Player: {fileID: 1582212835}
 --- !u!1001 &1154830332
 PrefabInstance:
@@ -924,7 +926,7 @@ GameObject:
   - component: {fileID: 1212413888}
   - component: {fileID: 1212413887}
   - component: {fileID: 1212413886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1448,11 +1450,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3668197477448664470, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
   m_PrefabInstance: {fileID: 3668197477275347190}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1987611378 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9012062159313846042, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
-  m_PrefabInstance: {fileID: 9012062159619536360}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2014499214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1089662523907818542, guid: 1edafe8061205e44f94bde84e47beb4a, type: 3}
@@ -1682,18 +1679,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2139735396552769777, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5640883369114443429, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8962026858253604520, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 9012062159228428040, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1742,17 +1727,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room1
       objectReference: {fileID: 0}
-    - target: {fileID: 9012062159313846042, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 9012062159313846044, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
+      propertyPath: m_MaskInteraction
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9012062160088918778, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9012062160335965814, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7a28ea8e919b4a4ead85a181249eedf, type: 3}
