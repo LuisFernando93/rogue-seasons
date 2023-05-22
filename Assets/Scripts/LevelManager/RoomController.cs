@@ -17,7 +17,7 @@ public class RoomController: MonoBehaviour
 
     private bool roomSleep = true;
     private bool roomCleared = false;
-    [SerializeField] private List<GameObject> enemies = new List<GameObject>();
+    private List<GameObject> enemies = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
