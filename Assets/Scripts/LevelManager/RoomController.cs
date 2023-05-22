@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -34,12 +35,20 @@ public class RoomController: MonoBehaviour
             {
                 if (roomActivator.IsTouching(player.GetComponent<Collider2D>()))
                 {
-                    roomSleep = false;
-                    ActivateDoors(true);
-                    spawnEnemies();
+                    AwakeRoom();
                 }
+            } else
+            {
+                RoomControl();
             }
         }
+    }
+
+    private void AwakeRoom()
+    {
+        roomSleep = false;
+        ActivateDoors(true);
+        spawnEnemies();
     }
 
     private void ActivateDoors(bool active)
@@ -76,6 +85,18 @@ public class RoomController: MonoBehaviour
                         break;
                 }
             }
+        }
+    }
+
+    private void RoomControl()
+    {
+        if (enemies.Count == 0)
+        {
+            ActivateDoors(false);
+            roomCleared = true;
+        } else
+        {
+            enemies.RemoveAll(GameObject => GameObject == null);
         }
     }
 }
