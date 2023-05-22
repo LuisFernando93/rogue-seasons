@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -11,9 +12,11 @@ public class RoomController: MonoBehaviour
     [SerializeField] private List<GameObject> doors = new List<GameObject>();
     [SerializeField] private List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] private Collider2D roomActivator;
+    [SerializeField] private GameObject meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
 
     private bool roomSleep = true;
     private bool roomCleared = false;
+    [SerializeField] private List<GameObject> enemies = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,7 @@ public class RoomController: MonoBehaviour
                 {
                     roomSleep = false;
                     ActivateDoors(true);
+                    spawnEnemies();
                 }
             }
         }
@@ -51,6 +55,27 @@ public class RoomController: MonoBehaviour
 
     private void spawnEnemies()
     {
-
-    } 
+        if (spawnPoints != null)
+        {
+            foreach (GameObject spawnPoint in spawnPoints)
+            {
+                EnemyType enemyType = spawnPoint.GetComponent<SpawnPoint>().enemySpawned();
+                Vector3 spawnPos = spawnPoint.transform.position;
+                switch (enemyType)
+                {
+                    case EnemyType.Melee:
+                        enemies.Add(Instantiate(meleeEnemyPrefab, spawnPos, Quaternion.identity));
+                        break;
+                    case EnemyType.Ranged:
+                        enemies.Add(Instantiate(rangedEnemyPrefab, spawnPos, Quaternion.identity));
+                        break;
+                    case EnemyType.Turret:
+                        enemies.Add(Instantiate(turretEnemyPrefab, spawnPos, Quaternion.identity));
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+    }
 }

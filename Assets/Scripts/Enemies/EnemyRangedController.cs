@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class EnemyRangedController :  EnemyController
 {
-    
-    [SerializeField] private GameObject RoomController;
+
     [SerializeField] private GameObject enemyBulletPrefab;
     [SerializeField] private GameObject firePoint;
     [SerializeField] private int life = 5;

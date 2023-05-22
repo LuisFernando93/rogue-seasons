@@ -9,13 +9,18 @@ public class SpawnPoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (meleeChance < 0)
+        {
+            meleeChance = 0;
+        }
+        if (rangedChance < 0)
+        {
+            rangedChance = 0;
+        }
+        if (turretChance < 0)
+        {
+            turretChance = 0;
+        }
     }
 
     public EnemyType enemySpawned()
