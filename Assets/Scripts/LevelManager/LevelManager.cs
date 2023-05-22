@@ -12,7 +12,7 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private AudioClip defaultSummerOST;
     [SerializeField] private AudioClip battleSummerOST;
 
-    [SerializeField] private GameObject Wall;
+    [SerializeField] private LayerMask layerMask;
     [SerializeField] private GameObject Player;
 
     private int level;
@@ -32,16 +32,14 @@ public class LevelManager: MonoBehaviour
             for (int j = 0; j < gridHeight; j++)
             {
                 Vector2 nodePos = Pathfinding.Instance.GetNodeWorldPositionCenter(i, j);
-
-                if (Wall.GetComponent<Rigidbody2D>().OverlapPoint(nodePos)) //verifica se existe parede na grid aqui
+                Collider2D[] colliders = Physics2D.OverlapCircleAll(nodePos, (gridCellSize * 0.95f) / 2, layerMask);
+                if (colliders.Length > 0) //verifica se existe parede na grid aqui
                 {
                     PathNode node = Pathfinding.Instance.GetNode(i, j);
                     node.SetIsWalkable(false);
                 }
             }
         }
-
-        Wall.GetComponent<TilemapCollider2D>().usedByComposite = true;
     }
 
     private void Awake()
@@ -63,6 +61,7 @@ public class LevelManager: MonoBehaviour
         if (showDebugPathfinder)
         {
             debugPathfinderInitToPlayer();
+
         }
     }
 

@@ -10,7 +10,8 @@ public class CameraShake : MonoBehaviour
     private CinemachineVirtualCamera cinemachineVirtual;
 
     private float shakeTimer;
-    private void Awake()
+
+    private void Start()
     {
         Instance = this;
         cinemachineVirtual = GetComponent<CinemachineVirtualCamera>();

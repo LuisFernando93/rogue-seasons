@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyMeleeController : EnemyController
 {
     
-    [SerializeField] private GameObject RoomController;
     [SerializeField] private int life = 5;
     [SerializeField] private int speed = 2;
     [SerializeField] private int power = 1;

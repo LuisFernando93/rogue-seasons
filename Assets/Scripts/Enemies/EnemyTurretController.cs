@@ -7,7 +7,6 @@ public class EnemyTurretController : EnemyController
 
     [SerializeField] private GameObject attackPrefab;
     [SerializeField] private GameObject firePoint;
-    [SerializeField] private GameObject RoomController;
     [SerializeField] private int life = 5;
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 2f;
