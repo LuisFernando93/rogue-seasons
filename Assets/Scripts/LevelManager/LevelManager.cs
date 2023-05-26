@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class LevelManager: MonoBehaviour
@@ -13,7 +14,7 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private AudioClip battleSummerOST;
 
     [SerializeField] private LayerMask layerMask;
-    [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject player;
 
     private int level;
     private bool showDebugPathfinder = false;
@@ -60,16 +61,21 @@ public class LevelManager: MonoBehaviour
     {
         if (showDebugPathfinder)
         {
-            debugPathfinderInitToPlayer();
+            DebugPathfinderInitToPlayer();
 
+        }
+
+        if(player.GetComponent<Player>().IsDead())
+        {
+            NewGame();
         }
     }
 
-    private void debugPathfinderInitToPlayer()
+    private void DebugPathfinderInitToPlayer()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Pathfinding.Instance.GetGrid().GetXY(Player.transform.position, out int x, out int y);
+            Pathfinding.Instance.GetGrid().GetXY(player.transform.position, out int x, out int y);
             Debug.Log("X: " + x + " Y: " + y);
             List<PathNode> path = Pathfinding.Instance.FindPath(1, 1, x, y);
             if (path != null)
@@ -80,5 +86,11 @@ public class LevelManager: MonoBehaviour
                 }
             }
         }
+    }
+
+    private void NewGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Destroy(this);
     }
 }

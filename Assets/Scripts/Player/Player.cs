@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
+    private bool dead = false;
 
     //Variaveis Dash
     private bool canDash = true;
@@ -92,6 +93,7 @@ public class Player : MonoBehaviour
             CheckInteraction();
         }
         CheckDash();
+        CheckLife();
     }
 
     private void FixedUpdate()
@@ -186,7 +188,7 @@ public class Player : MonoBehaviour
     {
         if (life <= 0)
         {
-            Destroy(gameObject);
+            this.dead = true;
         }
     }
 
@@ -216,5 +218,10 @@ public class Player : MonoBehaviour
             }
         }
 
+    }
+
+    public bool IsDead()
+    {
+        return this.dead;
     }
 }
