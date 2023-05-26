@@ -48,7 +48,7 @@ public class RoomController: MonoBehaviour
     {
         roomSleep = false;
         ActivateDoors(true);
-        spawnEnemies();
+        SpawnEnemies();
     }
 
     private void ActivateDoors(bool active)
@@ -62,7 +62,7 @@ public class RoomController: MonoBehaviour
         }
     }
 
-    private void spawnEnemies()
+    private void SpawnEnemies()
     {
         if (spawnPoints != null)
         {

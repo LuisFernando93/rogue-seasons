@@ -801,7 +801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808082177429508687, guid: 485fbaf767dfd3545942ffa74d197d69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2999997
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 808082177429508687, guid: 485fbaf767dfd3545942ffa74d197d69, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  Player: {fileID: 1582212835}
+  player: {fileID: 1582212835}
 --- !u!1001 &1154830332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2056,7 +2056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 353351746884376123, guid: bff7f186ff5f39a4f86dfec540985368, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2999997
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 353351746884376123, guid: bff7f186ff5f39a4f86dfec540985368, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2345,7 +2345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3668197477918715095, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2999997
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 3668197477918715095, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
       propertyPath: m_LocalPosition.z
