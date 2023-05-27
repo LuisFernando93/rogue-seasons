@@ -9,6 +9,7 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private int gridWidth;
     [SerializeField] private int gridHeight;
     [SerializeField] private float gridCellSize = 0.64f;
+    private int totalRooms;
 
     [SerializeField] private AudioClip defaultSummerOST;
     [SerializeField] private AudioClip battleSummerOST;
@@ -17,6 +18,7 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private GameObject player;
 
     private int level;
+    private int roomsCleared;
     private bool showDebugPathfinder = false;
 
     public static LevelManager Instance;
@@ -25,6 +27,8 @@ public class LevelManager: MonoBehaviour
     void Start()
     {
         level = 1;
+        roomsCleared = 0;
+        totalRooms = GameObject.FindGameObjectsWithTag("Room").Length;
         SoundManager.Instance.PlayMusic(defaultSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
@@ -85,6 +89,15 @@ public class LevelManager: MonoBehaviour
                     Debug.DrawLine(new Vector3(path[i].x, path[i].y) * gridCellSize + Vector3.one * gridCellSize / 2, new Vector3(path[i + 1].x, path[i + 1].y) * gridCellSize + Vector3.one * gridCellSize / 2, Color.green, 100f);
                 }
             }
+        }
+    }
+
+    public void RoomCleared()
+    {
+        roomsCleared++;
+        if (roomsCleared >= totalRooms)
+        {
+            NewGame();
         }
     }
 

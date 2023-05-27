@@ -94,6 +94,7 @@ public class RoomController: MonoBehaviour
         {
             ActivateDoors(false);
             roomCleared = true;
+            LevelManager.Instance.RoomCleared();
         } else
         {
             enemies.RemoveAll(GameObject => GameObject == null);
