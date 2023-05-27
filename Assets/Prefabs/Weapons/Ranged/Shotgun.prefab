@@ -154,6 +154,7 @@ MonoBehaviour:
   maxAmmo: 2
   damage: 2
   bulletForce: 20
+  attackSFX: {fileID: 8300000, guid: b9a26f65f8293894a8c4a1e3cdd2207d, type: 3}
   WEAPON_SHOT: {fileID: 7400000, guid: f500cdee870a331408cf5ae6e7d34200, type: 2}
   WEAPON_RECHARGE: {fileID: 7400000, guid: 1694bebf56212cb4b91a1fc9486e8b30, type: 2}
   WEAPON_IDLE: {fileID: 7400000, guid: b6fd75ef52ab4b64a9ba10ac716e849f, type: 2}

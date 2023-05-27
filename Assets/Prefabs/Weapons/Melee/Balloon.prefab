@@ -142,6 +142,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: bd3c4e2b4929d1646a148b17c4a99d20, type: 2}
   - {fileID: 7400000, guid: e7e943b6ae71fdf4b84b25c91ffa6c47, type: 2}
   IDLE_ANIMATION: {fileID: 7400000, guid: 8ebfb94180d803c43981f49b6af8d572, type: 2}
+  attackSFX: {fileID: 8300000, guid: 0c0bfe95ba9cdc44da65c3d2020334da, type: 3}
 --- !u!114 &1516077037613393378
 MonoBehaviour:
   m_ObjectHideFlags: 0

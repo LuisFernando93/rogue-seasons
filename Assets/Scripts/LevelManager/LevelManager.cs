@@ -9,8 +9,7 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private int gridWidth;
     [SerializeField] private int gridHeight;
     [SerializeField] private float gridCellSize = 0.64f;
-    private int totalRooms;
-
+    
     [SerializeField] private AudioClip defaultSummerOST;
     [SerializeField] private AudioClip battleSummerOST;
 
@@ -19,6 +18,7 @@ public class LevelManager: MonoBehaviour
 
     private int level;
     private int roomsCleared;
+    private int totalRooms;
     private bool showDebugPathfinder = false;
 
     public static LevelManager Instance;

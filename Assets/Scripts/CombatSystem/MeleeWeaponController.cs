@@ -23,6 +23,7 @@ public class MeleeWeaponController : MonoBehaviour
     private string currentAnimation;
     [SerializeField] AnimationClip[] Ataques;
     [SerializeField] AnimationClip IDLE_ANIMATION;
+    [SerializeField] AudioClip attackSFX;
 
     private void Start()
     {
@@ -38,6 +39,10 @@ public class MeleeWeaponController : MonoBehaviour
         //Verifica se o player Apertou o bot?o Esq ou Dir do mouse
         if (Input.GetButtonDown(combatManager.command[combatManager.commandIndex]))
         {
+            if (attackSFX != null)
+            {
+                SoundManager.Instance.PlaySFX(attackSFX);
+            }
             ComboStart();
         }
 
