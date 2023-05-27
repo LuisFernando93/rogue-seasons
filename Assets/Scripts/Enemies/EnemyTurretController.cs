@@ -10,6 +10,7 @@ public class EnemyTurretController : EnemyController
     [SerializeField] private int life = 5;
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 2f;
+    [SerializeField] private AudioClip damagedSound;
 
     private Animator animator;
     private bool faceRight = true;
@@ -111,6 +112,10 @@ public class EnemyTurretController : EnemyController
     {
         if (canTakeDamage)
         {
+            if (damagedSound != null)
+            {
+                SoundManager.Instance.PlaySFX(damagedSound);
+            }
             this.life -= power;
             this.canTakeDamage = false;
             animator.SetTrigger("Damaged");

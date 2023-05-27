@@ -85,7 +85,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
-            
         }
 
         if (Input.GetKeyDown(KeyCode.E))

@@ -169,6 +169,10 @@ public class EnemyRangedController :  EnemyController
     {
         if (canTakeDamage)
         {
+            if(damagedSound != null)
+            {
+                SoundManager.Instance.PlaySFX(damagedSound);
+            }
             this.life -= power;
             this.canTakeDamage = false;
             animator.SetTrigger("Damaged");

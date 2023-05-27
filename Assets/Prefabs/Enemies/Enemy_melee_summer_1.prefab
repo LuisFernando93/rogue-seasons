@@ -148,12 +148,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
-  RoomController: {fileID: 0}
   life: 5
   speed: 2
   power: 1
   attackDistance: 1
   hitBox: {fileID: 1377565013207370005}
+  damagedSound: {fileID: 0}
 --- !u!50 &7314481508445748964
 Rigidbody2D:
   serializedVersion: 4

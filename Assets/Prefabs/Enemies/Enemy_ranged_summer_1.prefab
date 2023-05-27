@@ -122,7 +122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
-  RoomController: {fileID: 0}
   enemyBulletPrefab: {fileID: 1114531371808637995, guid: 597c43e2fb870f74c9ec6167329d5377, type: 3}
   firePoint: {fileID: 4346350534072625092}
   life: 5
@@ -134,6 +133,7 @@ MonoBehaviour:
   obstacles:
     serializedVersion: 2
     m_Bits: 64
+  damagedSound: {fileID: 0}
 --- !u!95 &8489556898066583746
 Animator:
   serializedVersion: 3
