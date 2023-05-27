@@ -18,7 +18,7 @@ public class ShakeEffect : MonoBehaviour
     }
     private void ShakeTypeSelect(ShakeIntensityType intensityType)
     {
-        Debug.Log("Entrou tipo shake");
+        //Debug.Log("Entrou tipo shake");
         switch (intensityType)
         {
             case ShakeIntensityType.SuperWeak:
