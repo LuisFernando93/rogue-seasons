@@ -14,6 +14,7 @@ public class EnemyRangedController :  EnemyController
     [SerializeField] private float attackDistanceMin = 1.8f;
     [SerializeField] private float attackDistanceMax = 2;
     [SerializeField] private LayerMask obstacles;
+    [SerializeField] private AudioClip damagedSound;
 
     private Animator animator;
     private bool faceRight = true;

@@ -19,7 +19,7 @@ public class RangedWeaponController : MonoBehaviour
     int currentAmmo;
     bool readyToShot = true;
     [SerializeField] float bulletForce = 20f;
-    [SerializeField] private AudioClip attackSFX;
+    [SerializeField] private AudioClip attackSound;
 
     //Animações
     [SerializeField] AnimationClip WEAPON_SHOT;
@@ -94,9 +94,9 @@ public class RangedWeaponController : MonoBehaviour
     //Chamada pela animação para criar a instancia do projetil
     public void BulletShot()
     {
-        if (attackSFX != null)
+        if (attackSound != null)
         {
-            SoundManager.Instance.PlaySFX(attackSFX);
+            SoundManager.Instance.PlaySFX(attackSound);
         }
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb =  bullet.GetComponent<Rigidbody2D>();

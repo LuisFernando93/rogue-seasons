@@ -10,6 +10,7 @@ public class EnemyMeleeController : EnemyController
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 1;
     [SerializeField] private GameObject hitBox;
+    [SerializeField] private AudioClip damagedSound;
 
     private Animator animator;
     private bool faceRight = true;
@@ -153,7 +154,6 @@ public class EnemyMeleeController : EnemyController
         {
             canTakeDamage = true;
         }
-        
     }
 
 }
