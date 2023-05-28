@@ -1159,7 +1159,7 @@ MonoBehaviour:
   gridCellSize: 0.64
   defaultSummerOST: {fileID: 8300000, guid: 22c2927454fbf144f9443c2c9c601f1f, type: 3}
   battleSummerOST: {fileID: 8300000, guid: dd77a99bdb9549740a274295fbaddcbf, type: 3}
-  layerMask:
+  solidLayer:
     serializedVersion: 2
     m_Bits: 64
   player: {fileID: 1582212835}
@@ -1382,16 +1382,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 24, y: 7, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 17, y: 9, z: 0}
     second:
       serializedVersion: 2
@@ -1453,16 +1443,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 23, y: 9, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 24, y: 9, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -1914,13 +1894,13 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 60
+  - m_RefCount: 58
     m_Data: {fileID: 11400000, guid: bd4550d21f7c06c428595d46381dc82a, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 60
+  - m_RefCount: 58
     m_Data: {fileID: -2813054640942301971, guid: 291c95c6e4545bf449b90c38df2a1686, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 60
+  - m_RefCount: 58
     m_Data:
       e00: 1
       e01: 0
@@ -1939,7 +1919,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 60
+  - m_RefCount: 58
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2311,22 +2291,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3668197477448664465, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3668197477448664465, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3668197477448664466, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 2014499214}
-    - target: {fileID: 3668197477448664467, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3668197477448664469, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
       propertyPath: canvas
       value: 
@@ -2379,22 +2347,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3850040592972388347, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5689746160945006641, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7037709603782705422, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e511690811e394f41ae3c79a715f1949, type: 2}
-    - target: {fileID: 9219126663558852075, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
 --- !u!1001 &6129103854530098981

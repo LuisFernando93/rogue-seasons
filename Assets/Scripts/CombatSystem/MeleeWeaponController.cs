@@ -23,6 +23,7 @@ public class MeleeWeaponController : MonoBehaviour
     private string currentAnimation;
     [SerializeField] AnimationClip[] Ataques;
     [SerializeField] AnimationClip IDLE_ANIMATION;
+    [SerializeField] AudioClip attackSound;
 
     private void Start()
     {
@@ -54,6 +55,12 @@ public class MeleeWeaponController : MonoBehaviour
 
         if (isAttacking == false)
         {
+
+            if (attackSound != null)
+            {
+                SoundManager.Instance.PlaySFX(attackSound);
+            }
+
             if (nextAttack)
             {
                 combatManager.NotReadyToSwitchWeapon();

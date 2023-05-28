@@ -19,13 +19,15 @@ public class Player : MonoBehaviour
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
     private bool dead = false;
+    [SerializeField] private LayerMask solidLayer;
 
     //Variaveis Dash
     private bool canDash = true;
     private bool isDashing = false;
     [SerializeField] private float dashPower = 5f;
     [SerializeField] private float dashingCooldown = 1f;
-    private float dashingTime = 0.2f;
+    private float fullDashingTime = .2f;
+    private float dashingTime;
 
     //Variaveis after image
     private float lastImageXpos, lastImageYpos;
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
         combatManager = GetComponent<CombatManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        dashingTime = fullDashingTime;
     }
 
     private void Update()
@@ -85,7 +88,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
-            
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -141,13 +143,30 @@ public class Player : MonoBehaviour
         canTakeDamage = false;
         canDash = false;
         isDashing = true;
-        rb.velocity = new Vector2(movement.x * dashPower, movement.y * dashPower);
+        rb.velocity = movement.normalized * dashPower;
 
+        // Lança um raio para detectar colisões em direção ao movimento
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, movement, dashPower * fullDashingTime, solidLayer);
+        //Debug.DrawLine(transform.position, hit.point, Color.green, 500f);
+
+        if (hit.collider != null)
+        {
+            // Detectou um obstáculo, interrompe o dash próximo ao obstáculo
+            
+            float distanceToObstacle = hit.distance;
+            dashingTime = distanceToObstacle/dashPower;
+
+        } else
+        {
+            dashingTime = fullDashingTime;
+        }
+        //Debug.Log(dashingTime);
         PlayerAfterImagePool.Instance.GetFromPool();
         lastImageXpos = transform.position.x;
         lastImageYpos = transform.position.y;
 
         yield return new WaitForSeconds(dashingTime);
+        rb.velocity = Vector2.zero;
         isDashing = false;
         canTakeDamage = true;
         yield return new WaitForSeconds(dashingCooldown);

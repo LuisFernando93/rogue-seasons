@@ -50,7 +50,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1962895084405653994
 Transform:
   m_ObjectHideFlags: 0
@@ -154,6 +154,7 @@ MonoBehaviour:
   maxAmmo: 5
   damage: 1
   bulletForce: 7.5
+  attackSound: {fileID: 8300000, guid: 34993aa4c249f6d40bb3c2b8c2491f5f, type: 3}
   WEAPON_SHOT: {fileID: 7400000, guid: 7173a45833a540b4fb09210bfb73067f, type: 2}
   WEAPON_RECHARGE: {fileID: 7400000, guid: 7b239380aac47f24f8c9193e92ece503, type: 2}
   WEAPON_IDLE: {fileID: 7400000, guid: 99754d3c4f8ef3642b2599af64849bbd, type: 2}

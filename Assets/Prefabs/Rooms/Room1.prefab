@@ -1099,7 +1099,7 @@ GameObject:
   - component: {fileID: 9012062159228428041}
   m_Layer: 0
   m_Name: Room1
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1145,6 +1145,7 @@ MonoBehaviour:
   meleeEnemyPrefab: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
   rangedEnemyPrefab: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
   turretEnemyPrefab: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+  wall: {fileID: 9012062159313846042}
 --- !u!61 &9012062159228428041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1158,7 +1159,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5.44, y: 5.43}
+  m_Offset: {x: 5.421532, y: 6.0763316}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1169,7 +1170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.643367, y: 5.643367}
+  m_Size: {x: 9.521358, y: 6.9360304}
   m_EdgeRadius: 0
 --- !u!1 &9012062159313846042
 GameObject:

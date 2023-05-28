@@ -38,6 +38,7 @@ Transform:
   - {fileID: 2210777654475030762}
   - {fileID: 3850040592972388348}
   - {fileID: 9219126663558852074}
+  - {fileID: 7692463079149431571}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -91,7 +92,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!50 &3668197477448664464
 Rigidbody2D:
   serializedVersion: 4
@@ -157,6 +158,9 @@ MonoBehaviour:
   life: 6
   facingRight: 1
   movement: {x: 0, y: 0}
+  solidLayer:
+    serializedVersion: 2
+    m_Bits: 64
   dashPower: 24
   dashingCooldown: 1
   distanceBetweenImages: 0.1
@@ -376,6 +380,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1962895084405653994, guid: 69a9cda685e03e843a1261c74e0272fa, type: 3}
   m_PrefabInstance: {fileID: 3338166954831123990}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3668197477466249448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3668197477918715095}
+    m_Modifications:
+    - target: {fileID: 6352626623876854725, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_Name
+      value: PlayerAfterImagePool
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.6849995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+--- !u!4 &7692463079149431571 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6352626623876854779, guid: f61f3451d0897ba4eb1eaf750fbe8172, type: 3}
+  m_PrefabInstance: {fileID: 3668197477466249448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4927389181530235682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,6 +493,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4292335622099013321, guid: 77a9d6a4877a0744795191c388e617da, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 4292335622099013327, guid: 77a9d6a4877a0744795191c388e617da, type: 3}
       propertyPath: m_Name
       value: InteractIcon

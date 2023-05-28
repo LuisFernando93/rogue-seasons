@@ -103,10 +103,10 @@ MonoBehaviour:
   floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
   attackPrefab: {fileID: 9101408719130935055, guid: 94bb6639a5e1d44429dec200dec51a16, type: 3}
   firePoint: {fileID: 1893045332624356513}
-  RoomController: {fileID: 0}
   life: 5
   power: 1
   attackDistance: 2
+  damagedSound: {fileID: 0}
 --- !u!95 &4687768742022179353
 Animator:
   serializedVersion: 3

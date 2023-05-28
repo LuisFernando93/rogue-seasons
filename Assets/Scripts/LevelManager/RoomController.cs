@@ -14,16 +14,22 @@ public class RoomController: MonoBehaviour
     [SerializeField] private List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] private Collider2D roomActivator;
     [SerializeField] private GameObject meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
+    [SerializeField] private GameObject wall;
 
     private bool roomSleep = true;
     private bool roomCleared = false;
     private List<GameObject> enemies = new List<GameObject>();
 
+    public void setWallCompositeCollision(bool useComposite)
+    {
+        wall.GetComponent<TilemapCollider2D>().usedByComposite = useComposite;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        ActivateDoors(false);
+        activateDoors(false);
     }
 
     // Update is called once per frame
@@ -35,23 +41,25 @@ public class RoomController: MonoBehaviour
             {
                 if (roomActivator.IsTouching(player.GetComponent<Collider2D>()))
                 {
-                    AwakeRoom();
+                    awakeRoom();
                 }
             } else
             {
-                RoomControl();
+                roomControl();
             }
         }
     }
 
-    private void AwakeRoom()
+
+
+    private void awakeRoom()
     {
         roomSleep = false;
-        ActivateDoors(true);
-        SpawnEnemies();
+        activateDoors(true);
+        spawnEnemies();
     }
 
-    private void ActivateDoors(bool active)
+    private void activateDoors(bool active)
     {
         if (doors != null)
         {
@@ -62,7 +70,7 @@ public class RoomController: MonoBehaviour
         }
     }
 
-    private void SpawnEnemies()
+    private void spawnEnemies()
     {
         if (spawnPoints != null)
         {
@@ -88,12 +96,13 @@ public class RoomController: MonoBehaviour
         }
     }
 
-    private void RoomControl()
+    private void roomControl()
     {
         if (enemies.Count == 0)
         {
-            ActivateDoors(false);
+            activateDoors(false);
             roomCleared = true;
+            LevelManager.Instance.RoomCleared();
         } else
         {
             enemies.RemoveAll(GameObject => GameObject == null);

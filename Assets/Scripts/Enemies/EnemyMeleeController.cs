@@ -10,6 +10,7 @@ public class EnemyMeleeController : EnemyController
     [SerializeField] private int power = 1;
     [SerializeField] private float attackDistance = 1;
     [SerializeField] private GameObject hitBox;
+    [SerializeField] private AudioClip damagedSound;
 
     private Animator animator;
     private bool faceRight = true;
@@ -136,6 +137,10 @@ public class EnemyMeleeController : EnemyController
     {
         if (canTakeDamage)
         {
+            if (damagedSound != null)
+            {
+                SoundManager.Instance.PlaySFX(damagedSound);
+            }
             this.life -= power;
             this.canTakeDamage = false;
             animator.SetTrigger("Damaged");
@@ -153,7 +158,6 @@ public class EnemyMeleeController : EnemyController
         {
             canTakeDamage = true;
         }
-        
     }
 
 }
