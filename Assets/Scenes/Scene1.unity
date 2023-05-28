@@ -1159,7 +1159,7 @@ MonoBehaviour:
   gridCellSize: 0.64
   defaultSummerOST: {fileID: 8300000, guid: 22c2927454fbf144f9443c2c9c601f1f, type: 3}
   battleSummerOST: {fileID: 8300000, guid: dd77a99bdb9549740a274295fbaddcbf, type: 3}
-  layerMask:
+  solidLayer:
     serializedVersion: 2
     m_Bits: 64
   player: {fileID: 1582212835}

@@ -4556,6 +4556,7 @@ MonoBehaviour:
   meleeEnemyPrefab: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
   rangedEnemyPrefab: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
   turretEnemyPrefab: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+  wall: {fileID: 8581456275431903170}
 --- !u!61 &3728369308771948188
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4958,7 +4959,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4968,7 +4969,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -5183,12 +5184,12 @@ Tilemap:
     m_Data: {fileID: -8054313659932548579, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 1246622312968936034, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 7984534325297602453, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 6074267950822362949, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
+    m_Data: {fileID: 1246622312968936034, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -8011663191398118410, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
   - m_RefCount: 1
@@ -5201,8 +5202,8 @@ Tilemap:
     m_Data: {fileID: -7422108946627675848, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 840319244867144553, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 6074267950822362949, guid: 9ea2587b8d1767a4381659ca260142d5, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 30
     m_Data:

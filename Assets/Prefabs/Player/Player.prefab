@@ -158,6 +158,9 @@ MonoBehaviour:
   life: 6
   facingRight: 1
   movement: {x: 0, y: 0}
+  solidLayer:
+    serializedVersion: 2
+    m_Bits: 64
   dashPower: 24
   dashingCooldown: 1
   distanceBetweenImages: 0.1

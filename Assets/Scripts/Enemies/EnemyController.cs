@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -46,7 +47,9 @@ public abstract class EnemyController: MonoBehaviour
     protected void FindPlayerPosition()
     {
         pathIndex = 0;
-        pathVectorList = Pathfinding.Instance.FindPathWorld(transform.position, player.transform.position);
+        try { pathVectorList = Pathfinding.Instance.FindPathWorld(transform.position, player.transform.position); }
+        catch (NullReferenceException e)
+        { pathVectorList = null; }
 
         if(pathVectorList != null && pathVectorList.Count > 1)
         {
