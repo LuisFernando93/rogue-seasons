@@ -39,10 +39,6 @@ public class MeleeWeaponController : MonoBehaviour
         //Verifica se o player Apertou o bot?o Esq ou Dir do mouse
         if (Input.GetButtonDown(combatManager.command[combatManager.commandIndex]))
         {
-            if (attackSound != null)
-            {
-                SoundManager.Instance.PlaySFX(attackSound);
-            }
             ComboStart();
         }
 
@@ -59,6 +55,12 @@ public class MeleeWeaponController : MonoBehaviour
 
         if (isAttacking == false)
         {
+
+            if (attackSound != null)
+            {
+                SoundManager.Instance.PlaySFX(attackSound);
+            }
+
             if (nextAttack)
             {
                 combatManager.NotReadyToSwitchWeapon();
