@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962895084405653997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.111, y: -0.063, z: -1.438784}
+  m_LocalPosition: {x: -0.32, y: 0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1962895083103271515}
@@ -154,6 +154,7 @@ MonoBehaviour:
   maxAmmo: 10
   damage: 1
   bulletForce: 30
+  attackSound: {fileID: 0}
   WEAPON_SHOT: {fileID: 7400000, guid: 22872fa600a5f3d4bb2a11fd431edf2c, type: 2}
   WEAPON_RECHARGE: {fileID: 7400000, guid: 38165605679084d4ea0a0249ea63acab, type: 2}
   WEAPON_IDLE: {fileID: 7400000, guid: bda4d28627b323b46820eba6c37e273e, type: 2}
