@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -4012007930682919486
     second: barralife-Sheet_1
+  - first:
+      213: 8780306918086227411
+    second: barralife-Sheet_2
+  - first:
+      213: 5045419374009107719
+    second: barralife-Sheet_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -122,8 +128,8 @@ TextureImporter:
       name: barralife-Sheet_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 64
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -135,6 +141,48 @@ TextureImporter:
       bones: []
       spriteID: 2c538972b0c7258c0800000000000000
       internalID: -4012007930682919486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barralife-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d53f673f9ae9d970800000000000000
+      internalID: 8780306918086227411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barralife-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705cfaa503ee40640800000000000000
+      internalID: 5045419374009107719
       vertices: []
       indices: 
       edges: []

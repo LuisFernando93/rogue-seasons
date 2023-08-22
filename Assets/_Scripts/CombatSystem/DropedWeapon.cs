@@ -24,7 +24,7 @@ public class DropedWeapon : MonoBehaviour
     {
         ChooseWeaponLoot();
     }
-    //Escolhe aleatoriamente a arma que irá spawnar de acordo com a lista de armas,
+    //Escolhe aleatoriamente a arma que irï¿½ spawnar de acordo com a lista de armas,
     void ChooseWeaponLoot()
     {
         prefab = Weapons.GetRandom();
@@ -51,7 +51,7 @@ public class DropedWeapon : MonoBehaviour
             isMagic = true;
         }*/
     }
-    //Define o sprite que será mostrado de acordo com o objeto selecionado 
+    //Define o sprite que serï¿½ mostrado de acordo com o objeto selecionado 
     void SetSprite()
     { 
         if (isMelee)
@@ -111,7 +111,7 @@ public class DropedWeapon : MonoBehaviour
             case 1:
                 return meleeWeapon.GetAttackSpeed();
             default:
-                Debug.Log("Não foi possivel retornar as informações da arma dropada do tipo Melee");
+                Debug.Log("Nï¿½o foi possivel retornar as informaï¿½ï¿½es da arma dropada do tipo Melee");
                 return null;
         }
     }
@@ -129,7 +129,7 @@ public class DropedWeapon : MonoBehaviour
             case 3:
                 return rangedWeapon.GetRechargeTime();
             default:
-                Debug.Log("Não foi possivel retornar as informações da arma dropada do tipo Ranged");
+                Debug.Log("Nï¿½o foi possivel retornar as informaï¿½ï¿½es da arma dropada do tipo Ranged");
                 return null;
         }
     }

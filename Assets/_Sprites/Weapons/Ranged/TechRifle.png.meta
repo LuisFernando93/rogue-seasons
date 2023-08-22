@@ -62,6 +62,24 @@ TextureImporter:
   - first:
       213: 1871091795604062571
     second: TechRifle_19
+  - first:
+      213: 1303629034831364995
+    second: TechRifle_20
+  - first:
+      213: 4438432201260527863
+    second: TechRifle_21
+  - first:
+      213: 696904116185253238
+    second: TechRifle_22
+  - first:
+      213: -7512926731465039216
+    second: TechRifle_23
+  - first:
+      213: 3437987053717123459
+    second: TechRifle_24
+  - first:
+      213: -4699771359664835605
+    second: TechRifle_25
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
