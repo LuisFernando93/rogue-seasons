@@ -5,8 +5,8 @@ using UnityEngine;
 public class DropedWeapon : MonoBehaviour
 {
     [SerializeField] WeightedRandomList<Transform> Weapons;
-    Transform prefab;  
-    [SerializeField]SpriteRenderer sr;
+    Transform prefab;
+    [SerializeField] SpriteRenderer sr;
     MeleeWeaponController meleeWeapon;
     RangedWeaponController rangedWeapon;
     public Sprite icon;
@@ -14,10 +14,6 @@ public class DropedWeapon : MonoBehaviour
 
     bool isRanged = false, isMelee = false, isMagic = false;
 
-    /*private void Start()
-    {
-        sr = GetComponent<SpriteRenderer>();     
-    }*/
 
     //Usado por outros scripts para spawnar a arma
     public void SpawnLoot()
@@ -53,7 +49,7 @@ public class DropedWeapon : MonoBehaviour
     }
     //Define o sprite que ser� mostrado de acordo com o objeto selecionado 
     void SetSprite()
-    { 
+    {
         if (isMelee)
         {
             sr.sprite = meleeWeapon.GetIcon();
@@ -67,7 +63,7 @@ public class DropedWeapon : MonoBehaviour
             sr.sprite = magicWeapon.GetIcon();
         }*/
         icon = sr.sprite;
-          
+
     }
     //Manda o prefab para outros scripts
     public Transform GetPrefab()
@@ -87,11 +83,11 @@ public class DropedWeapon : MonoBehaviour
 
     public int GetDropDamage()
     {
-        if(isRanged == true)
+        if (isRanged == true)
         {
             return rangedWeapon.GetDamage();
         }
-        else if(isMagic == true)
+        else if (isMagic == true)
         {
             return 0;
         }
@@ -99,7 +95,7 @@ public class DropedWeapon : MonoBehaviour
         {
             return 0;
         }
-        
+
     }
 
     public string GetMeleeInfos(int i)
@@ -159,4 +155,5 @@ public class DropedWeapon : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
 }
