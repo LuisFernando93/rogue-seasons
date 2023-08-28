@@ -6,12 +6,13 @@ public class GenerateDrop : MonoBehaviour
 {
     [SerializeField] GameObject drop;
     DropedWeapon dropScript;
-    WeaponChangeSetup weaponChange;
+    DropManager dropManager;
 
     private void Start()
     {
-        weaponChange = GameObject.Find("Canvas").GetComponent<WeaponChangeSetup>();
+        dropManager = GameObject.Find("Managers").GetComponent<DropManager>();
     }
+    //modificar para chamar o drop dps
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.L))
@@ -20,11 +21,13 @@ public class GenerateDrop : MonoBehaviour
         }
     }
 
-    void InstantiateDrop()
+    public void InstantiateDrop()
     {
         GameObject tempDrop = Instantiate(drop, transform.position, transform.rotation);
         dropScript = tempDrop.GetComponent<DropedWeapon>();
         dropScript.SpawnLoot();
-        weaponChange.SetDropItem(tempDrop);
+        dropManager.SetNewDrop(tempDrop);
+        
     }
+
 }

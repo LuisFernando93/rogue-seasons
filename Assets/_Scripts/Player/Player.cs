@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     //Variaveis
     [SerializeField] private float MoveSpeed = 5f;
     [SerializeField] private int life = 30;
+    [SerializeField] private Sprite dashSprite;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
@@ -149,6 +150,9 @@ public class Player : MonoBehaviour
         canTakeDamage = false;
         canDash = false;
         isDashing = true;
+
+        GetComponent<SpriteRenderer>().sprite = dashSprite;
+
 
         Vector2 dashDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 

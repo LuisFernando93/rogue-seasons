@@ -5,8 +5,8 @@ using UnityEngine;
 public class DropedWeapon : MonoBehaviour
 {
     [SerializeField] WeightedRandomList<Transform> Weapons;
-    Transform prefab;  
-    [SerializeField]SpriteRenderer sr;
+    Transform prefab;
+    [SerializeField] SpriteRenderer sr;
     MeleeWeaponController meleeWeapon;
     RangedWeaponController rangedWeapon;
     public Sprite icon;
@@ -14,17 +14,13 @@ public class DropedWeapon : MonoBehaviour
 
     bool isRanged = false, isMelee = false, isMagic = false;
 
-    /*private void Start()
-    {
-        sr = GetComponent<SpriteRenderer>();     
-    }*/
 
     //Usado por outros scripts para spawnar a arma
     public void SpawnLoot()
     {
         ChooseWeaponLoot();
     }
-    //Escolhe aleatoriamente a arma que irá spawnar de acordo com a lista de armas,
+    //Escolhe aleatoriamente a arma que irï¿½ spawnar de acordo com a lista de armas,
     void ChooseWeaponLoot()
     {
         prefab = Weapons.GetRandom();
@@ -51,9 +47,9 @@ public class DropedWeapon : MonoBehaviour
             isMagic = true;
         }*/
     }
-    //Define o sprite que será mostrado de acordo com o objeto selecionado 
+    //Define o sprite que serï¿½ mostrado de acordo com o objeto selecionado 
     void SetSprite()
-    { 
+    {
         if (isMelee)
         {
             sr.sprite = meleeWeapon.GetIcon();
@@ -67,7 +63,7 @@ public class DropedWeapon : MonoBehaviour
             sr.sprite = magicWeapon.GetIcon();
         }*/
         icon = sr.sprite;
-          
+
     }
     //Manda o prefab para outros scripts
     public Transform GetPrefab()
@@ -87,11 +83,11 @@ public class DropedWeapon : MonoBehaviour
 
     public int GetDropDamage()
     {
-        if(isRanged == true)
+        if (isRanged == true)
         {
             return rangedWeapon.GetDamage();
         }
-        else if(isMagic == true)
+        else if (isMagic == true)
         {
             return 0;
         }
@@ -99,7 +95,7 @@ public class DropedWeapon : MonoBehaviour
         {
             return 0;
         }
-        
+
     }
 
     public string GetMeleeInfos(int i)
@@ -111,7 +107,7 @@ public class DropedWeapon : MonoBehaviour
             case 1:
                 return meleeWeapon.GetAttackSpeed();
             default:
-                Debug.Log("Não foi possivel retornar as informações da arma dropada do tipo Melee");
+                Debug.Log("Nï¿½o foi possivel retornar as informaï¿½ï¿½es da arma dropada do tipo Melee");
                 return null;
         }
     }
@@ -129,7 +125,7 @@ public class DropedWeapon : MonoBehaviour
             case 3:
                 return rangedWeapon.GetRechargeTime();
             default:
-                Debug.Log("Não foi possivel retornar as informações da arma dropada do tipo Ranged");
+                Debug.Log("Nï¿½o foi possivel retornar as informaï¿½ï¿½es da arma dropada do tipo Ranged");
                 return null;
         }
     }
@@ -159,4 +155,5 @@ public class DropedWeapon : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
 }

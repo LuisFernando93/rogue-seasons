@@ -7,6 +7,8 @@ public class WeaponChoice : MonoBehaviour
     [SerializeField] Player player;
     CombatManager combatManager;
     Transform NewWeapon;
+    GameObject tempNewGameObject;
+
 
     private void Start()
     {
@@ -14,9 +16,12 @@ public class WeaponChoice : MonoBehaviour
     }
 
     //Pega o prefab do spawn
+    public void SetNewWeapon(GameObject drop)
+    {
+        tempNewGameObject = drop;
+    }
     void GetNewWeapon()
     {
-        GameObject tempNewGameObject = GameObject.FindGameObjectWithTag("Drop");
         DropedWeapon tempNewWeapon = tempNewGameObject.GetComponent<DropedWeapon>();
         NewWeapon = tempNewWeapon.GetPrefab();
         tempNewWeapon.DestroyDrop();
