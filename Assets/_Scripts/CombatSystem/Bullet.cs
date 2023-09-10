@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     //Objetos
     [SerializeField] float destroyAfter = 5f;
-    CombatManager combatManager;
+    NewCombatManager combatManager;
     Animator animator;
     [SerializeField]AnimationClip HitEffect;
     EnemyController enemy;
@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         Destroy(gameObject, destroyAfter);
-        combatManager = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<CombatManager>();
+        combatManager = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<NewCombatManager>();
         bulletDamage = combatManager.GetActiveWeaponDamage();
     }
 

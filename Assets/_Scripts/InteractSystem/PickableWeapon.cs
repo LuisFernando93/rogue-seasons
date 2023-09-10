@@ -5,14 +5,14 @@ using UnityEngine;
 public class PickableWeapon : Interactable
 {
     CanvasAnimationAccess canvas;
-    WeaponChangeSetup weaponChange;
+    NewWeaponChangeSetup weaponChange;
     GameObject tempPlayer;
     private float repulsionForce = 5f;
+    public string meucu;
 
-    private void Start()
+    private void Awake()
     {
-        weaponChange = GameObject.Find("Canvas").GetComponent<WeaponChangeSetup>();
-        tempPlayer = GameObject.FindGameObjectWithTag("Player");
+        weaponChange = GameObject.Find("Canvas").GetComponent<NewWeaponChangeSetup>();
         GameObject tempGO = GameObject.FindGameObjectWithTag("Canvas");
         canvas = tempGO.GetComponent<CanvasAnimationAccess>();
     }
@@ -20,7 +20,9 @@ public class PickableWeapon : Interactable
     public override void Interact()
     {
         canvas.PlayOpenWeaponChange();
-        weaponChange.SetDropItem(this.gameObject);
+        //meucu = this.gameObject.GetComponent<Drop>().GetWeapon().name;
+        weaponChange.SetNewWeapon(this.gameObject);
+        tempPlayer = GameObject.FindGameObjectWithTag("Player");
         tempPlayer.GetComponent<WeaponChoice>().SetNewWeapon(this.gameObject);
     }
 

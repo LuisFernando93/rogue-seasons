@@ -285,7 +285,7 @@ public class CombatManager : MonoBehaviour
 
     }
 
-    public string GetMeleeWeaponDamage(int i)
+    /*public string GetMeleeWeaponDamage(int i)
     {
         meleeCheck = player.transform.GetChild(i).GetComponent<MeleeWeaponController>();
         return meleeCheck.GetDamageinText();
@@ -320,7 +320,7 @@ public class CombatManager : MonoBehaviour
                     return null;
             }
         }
-        Debug.Log("Não foi possivel obter nenhuma informação da arma direita");
+        Debug.Log("Não foi possivel obter nenhuma informação da arma Esquerda");
         return null;
     }
     public string GetRightWeaponInfos(int i)
@@ -363,5 +363,5 @@ public class CombatManager : MonoBehaviour
     public string GetRightWeaponName()
     {
         return rightWeaponController.name.Replace("(Clone)", "");
-    }
+    }*/
 }

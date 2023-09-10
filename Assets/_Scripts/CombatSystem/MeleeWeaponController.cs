@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeWeaponController : MonoBehaviour
+public class MeleeWeaponController : Weapon
 {
     //Objetos
     Player player;
-    CombatManager combatManager;
+    NewCombatManager combatManager;
     Animator animator;
     WeaponRotationController weaponRotation;
     EnemyController  enemy;
@@ -18,6 +18,7 @@ public class MeleeWeaponController : MonoBehaviour
     int currentCombo = 0;
     bool isAttacking = false;
     bool nextAttack = true;
+    string weaponDamage, weaponAtkSpeed;
 
     //Anima��es
     private string currentAnimation;
@@ -29,9 +30,10 @@ public class MeleeWeaponController : MonoBehaviour
     {
         player = GetComponentInParent<Player>();
         animator = GetComponent<Animator>();
-        combatManager = player.GetComponent<CombatManager>();
+        combatManager = player.GetComponent<NewCombatManager>();
         weaponRotation = GetComponent<WeaponRotationController>();
         gameObject.name.Replace("(Clone)","");
+        this.gameObject.tag = "meleeWeapon";
     }
 
     private void Update()
@@ -112,11 +114,31 @@ public class MeleeWeaponController : MonoBehaviour
     {
         isAttacking = false;
     }
+
+    
     public int GetDamage()
     {
         return CDamage[currentCombo];
     }
-    public string GetDamageinText()
+    private void SetWeaponInfos()
+        {
+        //dano do combo
+        string allDamage = "" + CDamage[0].ToString();
+            for (int i = 1; i < CDamage.Length; i++)
+            {
+                allDamage += " + " + CDamage[i].ToString();
+            }    
+        weaponDamage = allDamage;
+        //atk speed
+        float veloMedia = 0;
+        for (int i = 0; i < Ataques.Length; i++)
+        {
+            veloMedia += Ataques[i].length;
+        }
+        veloMedia = veloMedia / Ataques.Length;
+        weaponAtkSpeed = veloMedia.ToString("F2");
+    }
+    /*public string GetDamageinText()
     {
         string allDamage = "" + CDamage[0].ToString();
         for (int i = 1; i < CDamage.Length; i++)
@@ -124,9 +146,9 @@ public class MeleeWeaponController : MonoBehaviour
             allDamage += " + " + CDamage[i].ToString();
         }
         return allDamage;
-    }
+    }*/
 
-    public string GetAttackSpeed()
+    /*public string GetAttackSpeed()
     {
         float veloMedia = 0;
         for (int i = 0; i < Ataques.Length; i++)
@@ -136,7 +158,7 @@ public class MeleeWeaponController : MonoBehaviour
         veloMedia = veloMedia / Ataques.Length;
 
         return veloMedia.ToString("F2");
-    }
+    }*/
 
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
@@ -158,4 +180,39 @@ public class MeleeWeaponController : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    public override void GetWeaponHistory()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override string GetWeaponInfos(string infoNeeded)
+    {
+        /*
+        Damage, AtkSpeed
+        */
+        SetWeaponInfos();
+        if (infoNeeded == "Name")
+        {
+            return this.name;
+        }
+        else if (infoNeeded == "Type")
+        {
+            return "melee"; 
+        }
+        else if (infoNeeded == "Damage")
+        {
+            return weaponDamage; 
+        }
+        else if (infoNeeded == "AtkSpeed")
+        {
+            return weaponAtkSpeed;
+        }
+        else
+        {
+            Debug.Log("Informação de arma Melee não encontrada. Possivel erro de solicitacao.");
+            return null;
+        }
+    }
+
+   
 }

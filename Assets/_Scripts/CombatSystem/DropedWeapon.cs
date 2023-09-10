@@ -14,6 +14,12 @@ public class DropedWeapon : MonoBehaviour
 
     bool isRanged = false, isMelee = false, isMagic = false;
 
+    public void DropPlayerWeapon(Transform weaponToDrop)
+    {
+        prefab = weaponToDrop;
+        GetWeaponType();
+        SetSprite();
+    }
 
     //Usado por outros scripts para spawnar a arma
     public void SpawnLoot()
@@ -23,6 +29,9 @@ public class DropedWeapon : MonoBehaviour
     //Escolhe aleatoriamente a arma que ir� spawnar de acordo com a lista de armas,
     void ChooseWeaponLoot()
     {
+        int i = 1;
+        Debug.Log("passou por ChooseWeaponLoot: " + i);
+        i++;
         prefab = Weapons.GetRandom();
         GetWeaponType();
         SetSprite();
@@ -78,6 +87,7 @@ public class DropedWeapon : MonoBehaviour
 
     public string GetDropName()
     {
+        Debug.Log("Nome prefab"+prefab.name);
         return prefab.name;
     }
 
@@ -98,7 +108,7 @@ public class DropedWeapon : MonoBehaviour
 
     }
 
-    public string GetMeleeInfos(int i)
+    /*public string GetMeleeInfos(int i)
     {
         switch (i)
         {
@@ -110,9 +120,9 @@ public class DropedWeapon : MonoBehaviour
                 Debug.Log("N�o foi possivel retornar as informa��es da arma dropada do tipo Melee");
                 return null;
         }
-    }
+    }*/
 
-    public string GetRangedInfos(int i)
+    /*public string GetRangedInfos(int i)
     {
         switch (i)
         {
@@ -128,7 +138,7 @@ public class DropedWeapon : MonoBehaviour
                 Debug.Log("N�o foi possivel retornar as informa��es da arma dropada do tipo Ranged");
                 return null;
         }
-    }
+    }*/
 
     //Retorna o tipo da arma
     public string GetDropWeaponType()

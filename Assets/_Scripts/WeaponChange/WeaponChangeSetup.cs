@@ -21,13 +21,14 @@ public class WeaponChangeSetup : MonoBehaviour
         drop = dropSystem.GetComponent<DropedWeapon>();
     }
     //Preenche todas as informa��es na UI
-    public void FillUI()
+    /*public void FillUI()
     {
+        Debug.Log("tentando encher UI");
         UpdateIcons();
         FillNewWeaponInfo();
         FillLeftWeaponInfo();
         FillRightWeaponInfo();
-    }
+    }*/
 
     void UpdateIcons()
     {
@@ -44,7 +45,7 @@ public class WeaponChangeSetup : MonoBehaviour
         newWeaponBox.GetComponent<Image>().sprite = newWeapon;
     }
 
-    void FillNewWeaponInfo()
+    /*void FillNewWeaponInfo()
     {
         Transform WeaponName = newWeaponInfoBox.transform.GetChild(0);
         Transform WeaponDamage = newWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
@@ -53,7 +54,7 @@ public class WeaponChangeSetup : MonoBehaviour
         newWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(false);
         newWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(false);
 
-
+        Debug.Log("Tentou pegar o nome do drop "+drop.name);
         WeaponName.GetComponent<TextMeshProUGUI>().text = drop.GetDropName();
         if(drop.GetDropWeaponType() == "Melee")
         {
@@ -71,9 +72,9 @@ public class WeaponChangeSetup : MonoBehaviour
             newWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = drop.GetRangedInfos(2);
         }
         
-    }
+    }*/
 
-    void FillLeftWeaponInfo()
+    /*void FillLeftWeaponInfo()
     {
         Transform WeaponName = leftWeaponInfoBox.transform.GetChild(0);
         Transform WeaponDamage = leftWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
@@ -128,6 +129,6 @@ public class WeaponChangeSetup : MonoBehaviour
         }
         
 
-    }
+    }*/
 
 }

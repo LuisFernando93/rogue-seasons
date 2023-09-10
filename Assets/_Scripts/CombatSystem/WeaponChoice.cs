@@ -5,33 +5,42 @@ using UnityEngine;
 public class WeaponChoice : MonoBehaviour
 {
     [SerializeField] Player player;
-    CombatManager combatManager;
+    [SerializeField] GameObject drop;
+    NewCombatManager combatManager;
     Transform NewWeapon;
     GameObject tempNewGameObject;
+    //GenerateDrop playerDrop;
 
+    int i = 1;
 
     private void Start()
     {
-        combatManager = player.GetComponent<CombatManager>();
+        combatManager = player.GetComponent<NewCombatManager>();
+        //playerDrop = GetComponent<GenerateDrop>();
     }
 
     //Pega o prefab do spawn
     public void SetNewWeapon(GameObject drop)
     {
+        Debug.Log("Chamado " + i + "x");
+        i++;
+        //Debug.Log("aosdkasd: "+drop.GetComponent<saveTempo>().GetTempo().name);
         tempNewGameObject = drop;
     }
     void GetNewWeapon()
     {
-        DropedWeapon tempNewWeapon = tempNewGameObject.GetComponent<DropedWeapon>();
-        NewWeapon = tempNewWeapon.GetPrefab();
+        Drop tempNewWeapon = tempNewGameObject.GetComponent<Drop>();
+        NewWeapon = tempNewWeapon.GetWeapon();
+        Debug.Log("Arma a ser adquirida: " + NewWeapon.name);
         tempNewWeapon.DestroyDrop();
     }
 
     //Muda a arma direita
     public void ChangeRightWeapon()
-    {
+    {    
         GetNewWeapon();
         Instantiate(NewWeapon, player.transform);
+        InstantiateNewDrop(1);
         player.transform.GetChild(3).SetSiblingIndex(1);
         player.transform.GetChild(2).SetSiblingIndex(3);
         combatManager.WeaponSelect();
@@ -42,11 +51,11 @@ public class WeaponChoice : MonoBehaviour
     {
         GetNewWeapon();
         Instantiate(NewWeapon, player.transform);
+        InstantiateNewDrop(0);
         player.transform.GetChild(3).SetSiblingIndex(0);
         player.transform.GetChild(1).SetSiblingIndex(3);
         combatManager.WeaponSelect();
-        DetectWeaponTypeAndDestroy(3);  
-        
+        DetectWeaponTypeAndDestroy(3);         
     }
 
     //Destroi a arma anterior de uma maneira segura
@@ -68,5 +77,10 @@ public class WeaponChoice : MonoBehaviour
             MagicWeaponController magicWeapon = prefab.GetComponent<MagicWeaponController>();
             magicWeapon.DestroyThis();
         }*/
+    }
+    public void InstantiateNewDrop(int weaponToDrop)
+    {
+        GameObject tempDrop = Instantiate(drop, player.transform.position, player.transform.rotation);
+        tempDrop.GetComponent<Drop>().DropPlayerWeapon(weaponToDrop);
     }
 }

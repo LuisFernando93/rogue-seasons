@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private HealthManager healthManager;
     private Rigidbody2D rb;
     private Animator animator;
-    CombatManager combatManager;
+    NewCombatManager combatManager;
     SpriteRenderer spriteRenderer;
 
     //Variaveis
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        combatManager = GetComponent<CombatManager>();
+        combatManager = GetComponent<NewCombatManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         dashingTime = fullDashingTime;
