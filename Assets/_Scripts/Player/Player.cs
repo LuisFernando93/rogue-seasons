@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D coll;
     private Animator animator;
-    CombatManager combatManager;
+    NewCombatManager combatManager;
     SpriteRenderer spriteRenderer;
 
     //Variaveis
@@ -45,7 +45,9 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
-        combatManager = GetComponent<CombatManager>();
+        combatManager = GetComponent<NewCombatManager>();
+
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         healthManager = GetComponent<HealthManager>();

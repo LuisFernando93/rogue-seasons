@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class GetWeaponIcon : MonoBehaviour
 {
-    CombatManager combatManager;
+    NewCombatManager combatManager;
     [SerializeField] Transform leftWeaponBox, rightWeaponBox;
     Sprite left, right;
 
     private void Start()
     {
-        combatManager = GameObject.FindGameObjectWithTag("Player").GetComponent<CombatManager>();
+        combatManager = GameObject.FindGameObjectWithTag("Player").GetComponent<NewCombatManager>();
     }
 
     public void UpdateIcons()

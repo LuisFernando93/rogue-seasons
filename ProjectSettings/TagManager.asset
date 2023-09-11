@@ -9,6 +9,9 @@ TagManager:
   - LeftWeapon
   - Canvas
   - Room
+  - Drop
+  - meleeWeapon
+  - rangedWeapon
   - Path
   layers:
   - Default

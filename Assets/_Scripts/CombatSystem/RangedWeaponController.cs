@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangedWeaponController : MonoBehaviour
+public class RangedWeaponController : Weapon
 {
     //Objetos
     Player player;
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject bulletPrefab;
     WeaponRotationController weaponRotationController;
-    CombatManager combatManager;
+    NewCombatManager combatManager;
     Animator animator;
 
     //Variaveis
@@ -20,6 +20,7 @@ public class RangedWeaponController : MonoBehaviour
     bool readyToShot = true;
     [SerializeField] float bulletForce = 20f;
     [SerializeField] private AudioClip attackSound;
+    string weaponDamage, weaponMaxAmmo, weaponFireFreq, weaponRecharge;
 
     //Animações
     [SerializeField] AnimationClip WEAPON_SHOT;
@@ -32,9 +33,11 @@ public class RangedWeaponController : MonoBehaviour
     {
         player = GetComponentInParent<Player>();
         weaponRotationController = GetComponent<WeaponRotationController>();
-        combatManager = player.GetComponent<CombatManager>();
+        combatManager = player.GetComponent<NewCombatManager>();
         animator = GetComponent<Animator>();
         currentAmmo = maxAmmo;
+        this.gameObject.tag = "rangedWeapon";
+
     }
 
     private void Update()
@@ -109,16 +112,16 @@ public class RangedWeaponController : MonoBehaviour
         return damage;
     }
 
-    public int GetMaxAmmo()
+    /*public int GetMaxAmmo()
     {
         return maxAmmo;
-    }
+    }*/
     public Sprite GetIcon()
     {
         return icon;
     }
 
-    public string GetRechargeTime()
+    /*public string GetRechargeTime()
     {
         return WEAPON_RECHARGE.length.ToString("F2")+"s";
     }
@@ -126,10 +129,55 @@ public class RangedWeaponController : MonoBehaviour
     public string GetFireFreq()
     {
         return WEAPON_SHOT.length.ToString("F2")+"s";
-    }
+    }*/
     public void DestroyThis()
     {
         Destroy(this.gameObject);
     }
 
+    private void SetWeaponInfos()
+    {
+        weaponDamage = GetDamage().ToString();
+        weaponMaxAmmo = maxAmmo.ToString();
+        weaponFireFreq = WEAPON_SHOT.length.ToString("F2") + "s";
+        weaponRecharge = WEAPON_RECHARGE.length.ToString("F2") + "s";
+    }
+    public override void GetWeaponHistory()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override string GetWeaponInfos(string infoNeeded)
+    {
+        SetWeaponInfos();
+        if(infoNeeded == "Damage")
+        {
+            return weaponDamage;
+        }
+        if (infoNeeded == "Name")
+        {
+            return this.name;
+        }
+        else if (infoNeeded == "Type")
+        {
+            return "ranged";
+        }
+        else if (infoNeeded == "MaxAmmo")
+        {
+            return weaponMaxAmmo;
+        }
+        else if (infoNeeded == "FireFreq")
+        {
+            return weaponFireFreq;
+        }
+        else if (infoNeeded == "Recharge")
+        {
+            return weaponRecharge;
+        }
+        else
+        {
+            Debug.Log("Informação de arma Ranged não encontrada. Possivel erro de solicitacao.");
+            return null;
+        }
+    }
 }

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6526714071369338645}
   m_Layer: 0
   m_Name: WindSpear
-  m_TagString: LeftWeapon
+  m_TagString: meleeWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e6ddc2289cb4442990d6be26f6c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponInfo: []
+  history: 
   icon: {fileID: -491557427105623715, guid: d6f320dfbc82bae4abe8c72bc768ebe9, type: 3}
   quantCombo: 3
   CDamage: 010000000200000003000000
