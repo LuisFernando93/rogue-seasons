@@ -171,6 +171,7 @@ MonoBehaviour:
   meleeEnemyPrefab: {fileID: 0}
   rangedEnemyPrefab: {fileID: 0}
   turretEnemyPrefab: {fileID: 0}
+  wall: {fileID: 0}
 --- !u!61 &4762833629133067264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -660,7 +661,7 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
 --- !u!19719996 &2455316038608626408
 TilemapCollider2D:
   m_ObjectHideFlags: 0
