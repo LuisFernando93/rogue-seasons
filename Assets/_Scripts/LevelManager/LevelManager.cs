@@ -35,7 +35,7 @@ public class LevelManager: MonoBehaviour
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
         foreach(GameObject room in rooms){ //ativa a colisao composta das salas apos instanciar o pathfinding
-            room.GetComponent<RoomController>().setWallCompositeCollision(false);
+            room.GetComponent<RoomController>().setWallCompositeCollision(true);
         }
 
         for (int i = 0; i < gridWidth; i++)

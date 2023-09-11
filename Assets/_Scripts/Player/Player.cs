@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject interactIcon;
     private HealthManager healthManager;
     private Rigidbody2D rb;
+    private Collider2D coll;
     private Animator animator;
     NewCombatManager combatManager;
     SpriteRenderer spriteRenderer;
@@ -27,8 +28,7 @@ public class Player : MonoBehaviour
     private bool isDashing = false;
     [SerializeField] private float dashPower = 5f;
     [SerializeField] private float dashingCooldown = 1f;
-    private float fullDashingTime = .2f;
-    private float dashingTime;
+    private float dashingTime = .2f;
 
     //Variaveis after image
     private float lastImageXpos, lastImageYpos;
@@ -44,10 +44,12 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<Collider2D>();
         combatManager = GetComponent<NewCombatManager>();
+
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        dashingTime = fullDashingTime;
         healthManager = GetComponent<HealthManager>();
     }
 
@@ -150,37 +152,48 @@ public class Player : MonoBehaviour
         canTakeDamage = false;
         canDash = false;
         isDashing = true;
+
         GetComponent<SpriteRenderer>().sprite = dashSprite;
-        rb.velocity = movement.normalized * dashPower;
 
-        // Lan�a um raio para detectar colis�es em dire��o ao movimento
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, movement, dashPower * fullDashingTime, solidLayer);
-        //Debug.DrawLine(transform.position, hit.point, Color.green, 500f);
 
-        if (hit.collider != null)
+        Vector2 dashDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+
+        float distanceToMove = dashPower * dashingTime;
+        float distanceMoved = 0f;
+
+        while (distanceMoved < distanceToMove)
         {
-            // Detectou um obst�culo, interrompe o dash pr�ximo ao obst�culo
-            
-            float distanceToObstacle = hit.distance;
-            dashingTime = distanceToObstacle/dashPower;
+            float distanceThisFrame = Mathf.Min(dashPower * Time.fixedDeltaTime, distanceToMove - distanceMoved);
 
-        } else
-        {
-            dashingTime = fullDashingTime;
+            // Lan�a um raio para detectar colis�es em dire��o ao movimento
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, dashDirection, distanceThisFrame, solidLayer);
+            //Debug.DrawLine(transform.position, hit.point, Color.green, 500f);
+
+            if (hit.collider != null)
+            {
+                // Detectou um obst�culo, interrompe o dash pr�ximo ao obst�culo
+
+                rb.position = hit.point - dashDirection * coll.bounds.size.magnitude;
+                break;
+            }
+
+            rb.position += dashDirection * distanceThisFrame;
+            distanceMoved += distanceThisFrame;
+            PlayerAfterImagePool.Instance.GetFromPool();
+            lastImageXpos = rb.position.x;
+            lastImageYpos = rb.position.y;
+
+            yield return new WaitForFixedUpdate();
+
         }
-        //Debug.Log(dashingTime);
-        PlayerAfterImagePool.Instance.GetFromPool();
-        lastImageXpos = transform.position.x;
-        lastImageYpos = transform.position.y;
 
-        yield return new WaitForSeconds(dashingTime);
         rb.velocity = Vector2.zero;
         isDashing = false;
         canTakeDamage = true;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
 
-        
+
     }
 
     private void CheckDash()
@@ -188,11 +201,11 @@ public class Player : MonoBehaviour
         if(isDashing){
             if (dashingTime > 0)
             {         
-                if (Mathf.Abs(transform.position.x - lastImageXpos) > distanceBetweenImages || Mathf.Abs(transform.position.y - lastImageYpos) > distanceBetweenImages)
+                if (Mathf.Abs(rb.position.x - lastImageXpos) > distanceBetweenImages || Mathf.Abs(rb.position.y - lastImageYpos) > distanceBetweenImages)
                 {
                     PlayerAfterImagePool.Instance.GetFromPool();
-                    lastImageXpos = transform.position.x;
-                    lastImageYpos = transform.position.y;
+                    lastImageXpos = rb.position.x;
+                    lastImageYpos = rb.position.y;
                 }
             }
 
