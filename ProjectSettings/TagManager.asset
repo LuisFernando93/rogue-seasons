@@ -9,6 +9,7 @@ TagManager:
   - LeftWeapon
   - Canvas
   - Room
+  - Path
   layers:
   - Default
   - TransparentFX
