@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeaponList : MonoBehaviour
 {
     [SerializeField] GameObject[] weaponsPrefab;
-    public string[] weaponsID;
+    string[] weaponsID;
 
     private void Start()
     {
