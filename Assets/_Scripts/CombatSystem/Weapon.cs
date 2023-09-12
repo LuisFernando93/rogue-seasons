@@ -4,8 +4,6 @@ using UnityEngine;
 
 public abstract class Weapon : MonoBehaviour
 {
-    public string[] weaponInfo = new string[5];
-
     [SerializeField] public string history;
 
     public abstract void GetWeaponHistory();

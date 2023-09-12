@@ -24,12 +24,6 @@ public class GenerateDrop : Interactable
         dropScript.GenerateRandomWeapon();
     }
 
-    /*public void InstantiateNewDrop(int weaponToDrop)
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-        GameObject tempDrop = Instantiate(drop, player.transform.position, player.transform.rotation);
-        tempDrop.GetComponent<Drop>().DropPlayerWeapon(weaponToDrop);
-    }*/
 
     public void SetDrop(GameObject dropToSet)
     {

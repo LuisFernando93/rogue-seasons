@@ -16,19 +16,16 @@ public class Drop : MonoBehaviour
 
     [SerializeField] WeightedRandomList<Transform> Weapons;
     GameObject player;
-    Transform weapon, b;
-    saveTempo vault;
-    public List<string> weaponInfos = new List<string>();
-    string weaponName, weaponDamage, weaponType, meleeWeaponAtkSpeed, rangedWeaponAmmo, rangedWeaponFireFreq, rangedWeaponRecharge;
-    public string weaponNameToView;
+    Transform weapon;
+    WeaponList weaponList;
+
+    string weaponName, weaponDamage, weaponType, meleeWeaponAtkSpeed, rangedWeaponAmmo, rangedWeaponFireFreq, rangedWeaponRecharge, weaponID;
 
     public void GenerateRandomWeapon()
     {
         weapon = Weapons.GetRandom();
-        Debug.Log("Arma random: " + weapon);
         SetWeaponInformations();
-        Debug.Log("---Arma gerada aleatoriamente---\nArma: " + weapon.name + "\nDano: " + weaponDamage);
-        weaponNameToView = weapon.name;
+        weaponID = weapon.name;
     }
 
     public void DropPlayerWeapon(int playerWeaponToDrop)
@@ -36,22 +33,18 @@ public class Drop : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         if (playerWeaponToDrop == 0)
         {
-            weapon = player.transform.GetChild(0).transform;
+            weapon = player.transform.GetChild(0);
         }
         else if (playerWeaponToDrop == 1)
         {
-            weapon = player.transform.GetChild(1).transform;
+            weapon = player.transform.GetChild(1);
         }
         else
         {
             Debug.Log("Valor inserido incorreto (apenas 0/1)");
         }
-        Debug.Log("Arma esp: " + weapon);
         SetWeaponInformations();
-        Debug.Log("---Arma gerada pelo Player---\nArma: " + weapon.name + "\nDano: " + weaponDamage);
-        vault = gameObject.AddComponent<saveTempo>();
-        vault.SetTempo(weapon.transform);
-        weaponNameToView = weapon.name;
+        weaponID = weapon.name;
 
     }
 
@@ -120,26 +113,14 @@ public class Drop : MonoBehaviour
 
     public Transform GetWeapon()
     {
-        if (weapon == null)
-        {
-            Debug.Log("Não há weapon");
-            Debug.Log("Item salvo: " + vault.safe.name);
-            return vault.safe;
-        }
-        else
-        {
-            return weapon.transform;
-        }
+        weaponID = weaponID.Replace("(Clone)", "");
+        weaponList = GameObject.FindGameObjectWithTag("playerDrop").GetComponent<WeaponList>();
+        return weaponList.GetWeaponByID(weaponID).transform;
     }
 
     public void DestroyDrop()
     {
         Destroy(this.gameObject);
-    }
-
-    private void saveB()
-    {
-        b = weapon;
     }
 
 }

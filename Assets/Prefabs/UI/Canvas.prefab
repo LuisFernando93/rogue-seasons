@@ -5060,9 +5060,9 @@ GameObject:
   - component: {fileID: 9114647591154612695}
   - component: {fileID: 9114647591154612694}
   - component: {fileID: 9114647591154612714}
-  - component: {fileID: 9114647591154612715}
   - component: {fileID: 9114647591154612716}
   - component: {fileID: 9114647591154612717}
+  - component: {fileID: 8983685299994792551}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Canvas
@@ -5167,24 +5167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftWeaponBox: {fileID: 9114647590495066965}
   rightWeaponBox: {fileID: 9114647591705729681}
---- !u!114 &9114647591154612715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9114647591154612693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7fc1a1b713d5284db7291be4b2542b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftWeaponBox: {fileID: 9114647590585810999}
-  leftWeaponInfoBox: {fileID: 9114647591382785502}
-  rightWeaponBox: {fileID: 9114647590883513517}
-  rightWeaponInfoBox: {fileID: 9114647591863979934}
-  newWeaponBox: {fileID: 9114647589850125256}
-  newWeaponInfoBox: {fileID: 9114647590767932490}
 --- !u!114 &9114647591154612716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5218,6 +5200,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8983685299994792551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114647591154612693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab0f7551ab6d2346aa23cd74eff9588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftWeaponBox: {fileID: 9114647590585810999}
+  leftWeaponInfoBox: {fileID: 9114647591382785502}
+  rightWeaponBox: {fileID: 9114647590883513517}
+  rightWeaponInfoBox: {fileID: 9114647591863979934}
+  newWeaponBox: {fileID: 9114647589850125256}
+  newWeaponInfoBox: {fileID: 9114647590767932490}
 --- !u!1 &9114647591176497987
 GameObject:
   m_ObjectHideFlags: 0

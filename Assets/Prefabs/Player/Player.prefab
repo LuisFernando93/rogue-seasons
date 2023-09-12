@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3668197477448664465}
   - component: {fileID: 3668197477448664464}
   - component: {fileID: 3668197477448664467}
-  - component: {fileID: 3668197477448664466}
-  - component: {fileID: 3668197477448664469}
-  - component: {fileID: 3668197477448664468}
-  - component: {fileID: 3668197477448664471}
   - component: {fileID: 416422512403889089}
+  - component: {fileID: 3668197477448664471}
+  - component: {fileID: 3668197477448664466}
+  - component: {fileID: 3668197477448664468}
   - component: {fileID: 1938889922088702324}
   - component: {fileID: 1582212845}
+  - component: {fileID: 4481993025911792464}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -141,84 +141,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3725962, y: 0.36658734}
   m_EdgeRadius: 0
---- !u!114 &3668197477448664466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3668197477448664470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1b66db99e8d0948897a28749302c44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactIcon: {fileID: 9219126663558852077}
-  MoveSpeed: 5
-  life: 30
-  dashSprite: {fileID: 0}
-  facingRight: 1
-  movement: {x: 0, y: 0}
-  solidLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  dashPower: 24
-  dashingCooldown: 1
-  distanceBetweenImages: 0.1
---- !u!114 &3668197477448664469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3668197477448664470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96513ba7fad792d4a9de0e628a271060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 3668197477448664466}
-  canvas: {fileID: 0}
-  command:
-  - Fire1
-  - Fire2
-  commandIndex: 0
-  activeWeaponDamage: 0
-  leftWeaponActive: 1
-  rightWeaponActive: 0
-  canSwitchWeapon: 1
---- !u!114 &3668197477448664468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3668197477448664470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8901b65bb4ee84d4b9bc49e56d6c87b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 3668197477448664466}
---- !u!95 &3668197477448664471
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3668197477448664470}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 383d8d7ffa40e4e499d13cc840bc2c5f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &416422512403889089
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -245,6 +167,62 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55073667, y: 0.8663214}
   m_EdgeRadius: 0
+--- !u!95 &3668197477448664471
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668197477448664470}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 383d8d7ffa40e4e499d13cc840bc2c5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3668197477448664466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668197477448664470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1b66db99e8d0948897a28749302c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactIcon: {fileID: 9219126663558852077}
+  MoveSpeed: 5
+  life: 30
+  dashSprite: {fileID: 0}
+  facingRight: 1
+  movement: {x: 0, y: 0}
+  solidLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  dashPower: 24
+  dashingCooldown: 1
+  distanceBetweenImages: 0.1
+--- !u!114 &3668197477448664468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668197477448664470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8901b65bb4ee84d4b9bc49e56d6c87b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 3668197477448664466}
 --- !u!114 &1938889922088702324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +250,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 0}
+--- !u!114 &4481993025911792464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668197477448664470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725ea668f9b2fe246ac3af71cf048100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  command:
+  - Fire1
+  - Fire2
+  commandIndex: 0
+  activeWeaponDamage: 0
+  leftWeaponActive: 1
+  rightWeaponActive: 0
+  canSwitchWeapon: 1
+  RightWeaponInfo: []
+  LeftWeaponInfo: []
+  RightWeaponType: 
+  LeftWeaponType: 
 --- !u!1001 &1064945590025574048
 PrefabInstance:
   m_ObjectHideFlags: 0

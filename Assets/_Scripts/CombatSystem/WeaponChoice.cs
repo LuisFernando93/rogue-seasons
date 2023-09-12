@@ -9,29 +9,24 @@ public class WeaponChoice : MonoBehaviour
     NewCombatManager combatManager;
     Transform NewWeapon;
     GameObject tempNewGameObject;
-    //GenerateDrop playerDrop;
 
     int i = 1;
 
     private void Start()
     {
         combatManager = player.GetComponent<NewCombatManager>();
-        //playerDrop = GetComponent<GenerateDrop>();
     }
 
     //Pega o prefab do spawn
     public void SetNewWeapon(GameObject drop)
     {
-        Debug.Log("Chamado " + i + "x");
         i++;
-        //Debug.Log("aosdkasd: "+drop.GetComponent<saveTempo>().GetTempo().name);
         tempNewGameObject = drop;
     }
     void GetNewWeapon()
     {
         Drop tempNewWeapon = tempNewGameObject.GetComponent<Drop>();
         NewWeapon = tempNewWeapon.GetWeapon();
-        Debug.Log("Arma a ser adquirida: " + NewWeapon.name);
         tempNewWeapon.DestroyDrop();
     }
 

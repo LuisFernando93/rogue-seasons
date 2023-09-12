@@ -8,7 +8,6 @@ public class PickableWeapon : Interactable
     NewWeaponChangeSetup weaponChange;
     GameObject tempPlayer;
     private float repulsionForce = 5f;
-    public string meucu;
 
     private void Awake()
     {
@@ -20,7 +19,6 @@ public class PickableWeapon : Interactable
     public override void Interact()
     {
         canvas.PlayOpenWeaponChange();
-        //meucu = this.gameObject.GetComponent<Drop>().GetWeapon().name;
         weaponChange.SetNewWeapon(this.gameObject);
         tempPlayer = GameObject.FindGameObjectWithTag("Player");
         tempPlayer.GetComponent<WeaponChoice>().SetNewWeapon(this.gameObject);
