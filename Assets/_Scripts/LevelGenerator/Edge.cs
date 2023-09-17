@@ -2,10 +2,10 @@ public class Edge
 {
     private int From;
     private int To;
-    private int Weight;
+    private float Weight;
     private int Id;
 
-    public Edge(int from, int to, int weight, int id)
+    public Edge(int from, int to, float weight, int id)
     {
         this.From = from;
         this.To = to;
@@ -23,7 +23,7 @@ public class Edge
         return this.To;
     }
 
-    public int getWeight()
+    public float getWeight()
     {
         return this.Weight;
     }

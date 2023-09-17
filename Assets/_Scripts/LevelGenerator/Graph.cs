@@ -27,7 +27,7 @@ public class Graph
         return AdjacencyList;
     }
 
-    public void AddEdge(int from, int to, int weight, int id)
+    public void AddEdge(int from, int to, float weight, int id)
     {
         AdjacencyList[from].Add(new Edge(from, to, weight, id));
         AdjacencyList[to].Add(new Edge(from, to, weight, id));
