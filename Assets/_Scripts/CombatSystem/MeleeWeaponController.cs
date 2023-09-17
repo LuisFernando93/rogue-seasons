@@ -138,28 +138,6 @@ public class MeleeWeaponController : Weapon
         veloMedia = veloMedia / Ataques.Length;
         weaponAtkSpeed = veloMedia.ToString("F2");
     }
-    /*public string GetDamageinText()
-    {
-        string allDamage = "" + CDamage[0].ToString();
-        for (int i = 1; i < CDamage.Length; i++)
-        {
-            allDamage += " + " + CDamage[i].ToString();
-        }
-        return allDamage;
-    }*/
-
-    /*public string GetAttackSpeed()
-    {
-        float veloMedia = 0;
-        for (int i = 0; i < Ataques.Length; i++)
-        {
-            veloMedia += Ataques[i].length;
-        }
-        veloMedia = veloMedia / Ataques.Length;
-
-        return veloMedia.ToString("F2");
-    }*/
-
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
