@@ -49,8 +49,8 @@ public abstract class EnemyController: MonoBehaviour
         pathIndex = 0;
         try { pathVectorList = Pathfinding.Instance.FindPathWorld(transform.position, player.transform.position); }
         catch (NullReferenceException e)
-        { pathVectorList = null; }
-
+        { pathVectorList = null; Debug.Log("NullReferenceException"); }
+        Debug.Log(pathVectorList);
         if(pathVectorList != null && pathVectorList.Count > 1)
         {
             pathVectorList.RemoveAt(0);

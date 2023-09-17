@@ -34,10 +34,6 @@ public class LevelManager: MonoBehaviour
         SoundManager.Instance.PlayMusic(defaultSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
-        foreach(GameObject room in rooms){ //ativa a colisao composta das salas apos instanciar o pathfinding
-            room.GetComponent<RoomController>().setWallCompositeCollision(true);
-        }
-
         for (int i = 0; i < gridWidth; i++)
         {
             for (int j = 0; j < gridHeight; j++)
@@ -50,6 +46,11 @@ public class LevelManager: MonoBehaviour
                     node.SetIsWalkable(false);
                 }
             }
+        }
+
+        foreach (GameObject room in rooms)
+        { //ativa a colisao composta das salas apos instanciar o pathfinding
+            room.GetComponent<RoomController>().setWallCompositeCollision(true);
         }
     }
 
