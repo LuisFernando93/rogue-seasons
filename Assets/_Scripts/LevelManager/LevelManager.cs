@@ -6,6 +6,9 @@ using UnityEngine.Tilemaps;
 
 public class LevelManager: MonoBehaviour
 {
+
+    //LevelManager object must be placed at 0,0, to avoid problems with A*
+
     [SerializeField] private int gridWidth;
     [SerializeField] private int gridHeight;
     [SerializeField] private float gridCellSize = 0.64f;

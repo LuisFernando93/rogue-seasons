@@ -30,7 +30,7 @@ public class Pathfinding
             return null;
         } else
         {
-            bool showDebug = true;
+            bool showDebug = false;
             if (showDebug)
             {
                 for (int i = 0; i < path.Count - 1; i++)
