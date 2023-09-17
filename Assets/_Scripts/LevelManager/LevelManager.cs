@@ -6,6 +6,9 @@ using UnityEngine.Tilemaps;
 
 public class LevelManager: MonoBehaviour
 {
+
+    //LevelManager object must be placed at 0,0, to avoid problems with A*
+
     [SerializeField] private int gridWidth;
     [SerializeField] private int gridHeight;
     [SerializeField] private float gridCellSize = 0.64f;
@@ -34,10 +37,6 @@ public class LevelManager: MonoBehaviour
         SoundManager.Instance.PlayMusic(defaultSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
-        foreach(GameObject room in rooms){ //ativa a colisao composta das salas apos instanciar o pathfinding
-            room.GetComponent<RoomController>().setWallCompositeCollision(true);
-        }
-
         for (int i = 0; i < gridWidth; i++)
         {
             for (int j = 0; j < gridHeight; j++)
@@ -50,6 +49,11 @@ public class LevelManager: MonoBehaviour
                     node.SetIsWalkable(false);
                 }
             }
+        }
+
+        foreach (GameObject room in rooms)
+        { //ativa a colisao composta das salas apos instanciar o pathfinding
+            room.GetComponent<RoomController>().setWallCompositeCollision(true);
         }
     }
 
