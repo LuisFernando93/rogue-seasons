@@ -1,12 +1,15 @@
 using System;
 using UnityEngine;
 
-public class Path : MonoBehaviour
+public class Connector : MonoBehaviour
 {
+
+    //Always set the from and to correctly, otherwise the Prim Algorithm will malfunction. The direction does not matter, as long as it connects the respective two rooms
+
     private float Weight;
-    [SerializeField] private int From;
-    [SerializeField] private int To;
-    [SerializeField] private int Id;
+    [SerializeField] private int From; //from which room
+    [SerializeField] private int To; //to which room
+    [SerializeField] private int Id; //unique identifiers
 
     // Start is called before the first frame update
     void Awake()
