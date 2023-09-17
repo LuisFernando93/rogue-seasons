@@ -12,7 +12,7 @@ TagManager:
   - Drop
   - meleeWeapon
   - rangedWeapon
-  - Path
+  - Connector
   layers:
   - Default
   - TransparentFX

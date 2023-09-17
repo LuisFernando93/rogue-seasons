@@ -434,10 +434,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3343477705785068093}
-  - component: {fileID: 6779154098642095968}
+  - component: {fileID: 8218805136680770921}
   m_Layer: 0
-  m_Name: PathTemplate
-  m_TagString: Path
+  m_Name: ConnectorTemplate
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -457,7 +457,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6779154098642095968
+--- !u!114 &8218805136680770921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,6 +469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba6f35a7cdb7ba4b9a2bb6315d67755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  From: 0
-  To: 0
-  Id: 0
+  From: -1
+  To: -1
+  Id: -1
