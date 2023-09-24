@@ -17493,21 +17493,17 @@ PrefabInstance:
       propertyPath: LevelManager
       value: 
       objectReference: {fileID: 138352923}
-    - target: {fileID: 2213846098620629900, guid: 187c14ce028d6bf4eb73f1885766a97b, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7257861963241832738, guid: 187c14ce028d6bf4eb73f1885766a97b, type: 3}
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7257861963241832738, guid: 187c14ce028d6bf4eb73f1885766a97b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.28
+      value: 29.439999
       objectReference: {fileID: 0}
     - target: {fileID: 7257861963241832738, guid: 187c14ce028d6bf4eb73f1885766a97b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.48
+      value: 52.48
       objectReference: {fileID: 0}
     - target: {fileID: 7257861963241832738, guid: 187c14ce028d6bf4eb73f1885766a97b, type: 3}
       propertyPath: m_LocalPosition.z
