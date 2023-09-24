@@ -21,7 +21,7 @@ public class LevelManager: MonoBehaviour
 
     private int level;
     private GameObject[] rooms;
-    private GameObject[] connectors;
+    private GameObject[] walls;
     private GameObject entrance;
     private int roomsCleared;
     private int totalRooms;
@@ -35,8 +35,8 @@ public class LevelManager: MonoBehaviour
         level = 1;
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
-        connectors = GameObject.FindGameObjectsWithTag("Connector");
         entrance = GameObject.FindGameObjectWithTag("Entrance");
+        walls = GameObject.FindGameObjectsWithTag("Wall");
         totalRooms = rooms.Length;
         SoundManager.Instance.PlayMusic(defaultSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
@@ -55,13 +55,9 @@ public class LevelManager: MonoBehaviour
             }
         }
 
-        foreach (GameObject room in rooms)
+        foreach (GameObject wall in walls)
         { //ativa a colisao composta das salas apos instanciar o pathfinding
-            room.GetComponent<RoomController>().setWallCompositeCollision(true);
-        }
-        foreach (GameObject connector in connectors)
-        {
-            //connector.GetComponent<Grid>().GetComponent<Wall>().setWallCompositeCollision(true);
+            wall.GetComponent<TilemapCollider2D>().usedByComposite = true;
         }
 
         SetPlayerPositionToEntrance();
