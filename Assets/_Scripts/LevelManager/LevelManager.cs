@@ -113,8 +113,14 @@ public class LevelManager: MonoBehaviour
         roomsCleared++;
         if (roomsCleared >= totalRooms)
         {
-            NewGame();
+            
         }
+    }
+
+    public void nextLevel()
+    {
+        level++;
+        NewGame();
     }
 
     private void NewGame()
