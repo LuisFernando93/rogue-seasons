@@ -167,11 +167,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doors: []
   spawnPoints: []
-  roomActivator: {fileID: 0}
+  roomActivator: {fileID: 4762833629133067264}
   meleeEnemyPrefab: {fileID: 0}
   rangedEnemyPrefab: {fileID: 0}
   turretEnemyPrefab: {fileID: 0}
-  wall: {fileID: 0}
+  wall: {fileID: 8222080129303394125}
 --- !u!61 &4762833629133067264
 BoxCollider2D:
   m_ObjectHideFlags: 0

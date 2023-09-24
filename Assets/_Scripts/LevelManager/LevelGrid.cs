@@ -35,7 +35,7 @@ public class LevelGrid<TGridObject> {
             }
         }
 
-        bool showDebug = false;
+        bool showDebug = true;
 
         if (showDebug)
         {
