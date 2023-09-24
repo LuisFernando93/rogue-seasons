@@ -18,10 +18,11 @@ public class LevelManager: MonoBehaviour
 
     [SerializeField] private LayerMask solidLayer;
     [SerializeField] private GameObject player;
-    [SerializeField] private GameObject entrance;
 
     private int level;
     private GameObject[] rooms;
+    private GameObject[] connectors;
+    private GameObject entrance;
     private int roomsCleared;
     private int totalRooms;
     private bool showDebugPathfinder = false;
@@ -34,6 +35,8 @@ public class LevelManager: MonoBehaviour
         level = 1;
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
+        connectors = GameObject.FindGameObjectsWithTag("Connector");
+        entrance = GameObject.FindGameObjectWithTag("Entrance");
         totalRooms = rooms.Length;
         SoundManager.Instance.PlayMusic(defaultSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
@@ -56,6 +59,12 @@ public class LevelManager: MonoBehaviour
         { //ativa a colisao composta das salas apos instanciar o pathfinding
             room.GetComponent<RoomController>().setWallCompositeCollision(true);
         }
+        foreach (GameObject connector in connectors)
+        {
+            //connector.GetComponent<Grid>().GetComponent<Wall>().setWallCompositeCollision(true);
+        }
+
+        SetPlayerPositionToEntrance();
     }
 
     private void Awake()
@@ -116,5 +125,10 @@ public class LevelManager: MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Destroy(this);
+    }
+
+    private void SetPlayerPositionToEntrance()
+    {
+        player.transform.position = entrance.transform.position;
     }
 }
