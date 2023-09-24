@@ -18,6 +18,7 @@ public class LevelManager: MonoBehaviour
 
     [SerializeField] private LayerMask solidLayer;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject entrance;
 
     private int level;
     private GameObject[] rooms;

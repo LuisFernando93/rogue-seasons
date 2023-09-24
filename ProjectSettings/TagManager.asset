@@ -14,6 +14,7 @@ TagManager:
   - rangedWeapon
   - Connector
   - playerDrop
+  - Entrance
   layers:
   - Default
   - TransparentFX
