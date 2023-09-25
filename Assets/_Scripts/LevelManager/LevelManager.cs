@@ -21,6 +21,8 @@ public class LevelManager: MonoBehaviour
 
     private int level;
     private GameObject[] rooms;
+    private GameObject[] walls;
+    private GameObject entrance;
     private int roomsCleared;
     private int totalRooms;
     private bool showDebugPathfinder = false;
@@ -33,6 +35,8 @@ public class LevelManager: MonoBehaviour
         level = 1;
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
+        entrance = GameObject.FindGameObjectWithTag("Entrance");
+        walls = GameObject.FindGameObjectsWithTag("Wall");
         totalRooms = rooms.Length;
         SoundManager.Instance.PlayMusic(defaultSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
@@ -51,10 +55,12 @@ public class LevelManager: MonoBehaviour
             }
         }
 
-        foreach (GameObject room in rooms)
+        foreach (GameObject wall in walls)
         { //ativa a colisao composta das salas apos instanciar o pathfinding
-            room.GetComponent<RoomController>().setWallCompositeCollision(true);
+            wall.GetComponent<TilemapCollider2D>().usedByComposite = true;
         }
+
+        SetPlayerPositionToEntrance();
     }
 
     private void Awake()
@@ -107,13 +113,24 @@ public class LevelManager: MonoBehaviour
         roomsCleared++;
         if (roomsCleared >= totalRooms)
         {
-            NewGame();
+            
         }
+    }
+
+    public void nextLevel()
+    {
+        level++;
+        NewGame();
     }
 
     private void NewGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Destroy(this);
+    }
+
+    private void SetPlayerPositionToEntrance()
+    {
+        player.transform.position = entrance.transform.position;
     }
 }

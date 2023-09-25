@@ -53,6 +53,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   player: {fileID: 0}
+  entrance: {fileID: 0}
 --- !u!114 &896836979
 MonoBehaviour:
   m_ObjectHideFlags: 0

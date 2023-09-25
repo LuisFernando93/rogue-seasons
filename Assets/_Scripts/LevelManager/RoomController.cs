@@ -14,16 +14,10 @@ public class RoomController: MonoBehaviour
     [SerializeField] private List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] private Collider2D roomActivator;
     [SerializeField] private GameObject meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
-    [SerializeField] private GameObject wall;
 
     private bool roomSleep = true;
     private bool roomCleared = false;
     private List<GameObject> enemies = new List<GameObject>();
-
-    public void setWallCompositeCollision(bool useComposite)
-    {
-        wall.GetComponent<TilemapCollider2D>().usedByComposite = useComposite;
-    }
 
     // Start is called before the first frame update
     void Start()
