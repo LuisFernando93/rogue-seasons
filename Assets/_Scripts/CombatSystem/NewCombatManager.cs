@@ -15,6 +15,9 @@ public class NewCombatManager : MonoBehaviour
     SpriteRenderer activeWeaponSR;
     Sprite leftWeaponIcon, rightWeaponIcon;
 
+    DialogueUI dialogueUI;
+    NewWeaponChangeSetup weaponChangeSetup;
+
     //Variaveis
     [HideInInspector] public string[] command = new string[] { "Fire1", "Fire2" };
     [HideInInspector] public int commandIndex = 0;
@@ -36,6 +39,10 @@ public class NewCombatManager : MonoBehaviour
         GetWeaponDamage();
         WeaponSelect();
         //Detecta o dano da arma ativa no começo do jogo   
+
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
+        weaponChangeSetup = GameObject.FindGameObjectWithTag("Canvas").GetComponent<NewWeaponChangeSetup>();
+
     }
 
     private void Update()
@@ -99,6 +106,9 @@ public class NewCombatManager : MonoBehaviour
     // Ativa e desetiva as armas de acordo com o comando pressionado (chamada pela classe Player)
     void RightWeaponActivate()
     {
+        if (dialogueUI.IsOpen) return;
+        if (weaponChangeSetup.IsOpen) return;
+
         leftWeaponController.gameObject.SetActive(false);
         leftWeaponActive = false;
         rightWeaponController.gameObject.SetActive(true);
@@ -108,6 +118,9 @@ public class NewCombatManager : MonoBehaviour
     }
     void LeftWeaponActivate()
     {
+        if (dialogueUI.IsOpen) return;
+        if (weaponChangeSetup.IsOpen) return;
+
         rightWeaponController.gameObject.SetActive(false);
         rightWeaponActive = false;
         leftWeaponController.gameObject.SetActive(true);

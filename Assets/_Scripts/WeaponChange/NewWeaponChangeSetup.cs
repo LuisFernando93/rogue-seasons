@@ -10,6 +10,7 @@ public class NewWeaponChangeSetup : MonoBehaviour
     Drop drop;
     NewCombatManager combatManager;
     Sprite left, right, newWeapon;
+    public bool IsOpen { get; private set; }
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class NewWeaponChangeSetup : MonoBehaviour
     //Preenche todas as informa��es na UI
     public void FillUI()
     {
+        IsOpen = true;
         UpdateIcons();
         FillNewWeaponInfo();
         FillLeftWeaponInfo();
@@ -127,6 +129,11 @@ public class NewWeaponChangeSetup : MonoBehaviour
         }
 
 
+    }
+
+    public void IsNotOpen()
+    {
+        IsOpen = false;
     }
 
 }

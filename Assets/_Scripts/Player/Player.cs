@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     //Objetos
     [SerializeField] GameObject interactIcon;
+    DialogueUI dialogueUI;
+    NewWeaponChangeSetup weaponChangeSetup;
     private HealthManager healthManager;
     private Rigidbody2D rb;
     private Collider2D coll;
@@ -46,7 +48,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         combatManager = GetComponent<NewCombatManager>();
-
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
+        weaponChangeSetup = GameObject.FindGameObjectWithTag("Canvas").GetComponent<NewWeaponChangeSetup>();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -55,6 +58,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (dialogueUI.IsOpen) return;
+        if (weaponChangeSetup.IsOpen) return;
+
         //Atualiza o a posi��o do personagem
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -109,6 +115,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (dialogueUI.IsOpen) return;
+        if (weaponChangeSetup.IsOpen) return;
         if (isDashing) return;
         PlayerMovement();
     }

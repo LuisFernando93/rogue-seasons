@@ -12,6 +12,10 @@ public class RangedWeaponController : Weapon
     NewCombatManager combatManager;
     Animator animator;
 
+    DialogueUI dialogueUI;
+    NewWeaponChangeSetup weaponChangeSetup;
+
+
     //Variaveis
     [SerializeField] Sprite icon;
     [SerializeField] private int maxAmmo = 1;
@@ -38,10 +42,16 @@ public class RangedWeaponController : Weapon
         currentAmmo = maxAmmo;
         this.gameObject.tag = "rangedWeapon";
 
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
+        weaponChangeSetup = GameObject.FindGameObjectWithTag("Canvas").GetComponent<NewWeaponChangeSetup>();
+
+
     }
 
     private void Update()
     {
+        if (dialogueUI.IsOpen) return;
+        if (weaponChangeSetup.IsOpen) return;
         //Verifica se o player Apertou o botão Esq ou Dir do mouse
         if (Input.GetButtonDown(combatManager.command[combatManager.commandIndex]))
         {

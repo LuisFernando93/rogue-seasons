@@ -5,9 +5,19 @@ using UnityEngine;
 public class WeaponRotationController : MonoBehaviour
 {
     Vector3 mousePos;
+    DialogueUI dialogueUI;
+    NewWeaponChangeSetup weaponChangeSetup;
 
+    private void Start()
+    {
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
+        weaponChangeSetup = GameObject.FindGameObjectWithTag("Canvas").GetComponent<NewWeaponChangeSetup>();
+    }
     public void WeaponRotation()
     {
+
+        if (dialogueUI.IsOpen) return;
+        if (weaponChangeSetup.IsOpen) return;
         //calcula a posição do mouse de acordo com a camera 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 

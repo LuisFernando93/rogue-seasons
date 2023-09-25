@@ -11,6 +11,9 @@ public class MeleeWeaponController : Weapon
     WeaponRotationController weaponRotation;
     EnemyController  enemy;
 
+    DialogueUI dialogueUI;
+    NewWeaponChangeSetup weaponChangeSetup;
+
     //Variaveis
     [SerializeField] Sprite icon;
     [SerializeField] int quantCombo = 1;
@@ -34,10 +37,15 @@ public class MeleeWeaponController : Weapon
         weaponRotation = GetComponent<WeaponRotationController>();
         gameObject.name.Replace("(Clone)","");
         this.gameObject.tag = "meleeWeapon";
+
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
+        weaponChangeSetup = GameObject.FindGameObjectWithTag("Canvas").GetComponent<NewWeaponChangeSetup>();
     }
 
     private void Update()
     {
+        if (dialogueUI.IsOpen) return;
+        if (weaponChangeSetup.IsOpen) return;
         //Verifica se o player Apertou o bot?o Esq ou Dir do mouse
         if (Input.GetButtonDown(combatManager.command[combatManager.commandIndex]))
         {
