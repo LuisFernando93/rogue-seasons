@@ -47,6 +47,9 @@ TextureImporter:
   - first:
       213: 4550800001723277669
     second: TechPistol_14
+  - first:
+      213: -2001957451595111940
+    second: TechPistol_15
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -459,6 +462,27 @@ TextureImporter:
       bones: []
       spriteID: 561209a8d70b72f30800000000000000
       internalID: 4550800001723277669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TechPistol_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf12a3afd4e9734e0800000000000000
+      internalID: -2001957451595111940
       vertices: []
       indices: 
       edges: []

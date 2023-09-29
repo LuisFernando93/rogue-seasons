@@ -13360,6 +13360,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4008077808613892403}
     m_Modifications:
+    - target: {fileID: 888086815751244165, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 888086815751244166, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2015157570329381229, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: textLabel
       value: 
@@ -13379,6 +13387,26 @@ PrefabInstance:
     - target: {fileID: 3476960014047214733, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: speakerNameBox
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877912374537260394, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877912374537260394, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877912374537260394, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 217.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877912374537260394, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 118.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877912374537260394, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.97
       objectReference: {fileID: 0}
     - target: {fileID: 8568421299755568049, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: responseBox

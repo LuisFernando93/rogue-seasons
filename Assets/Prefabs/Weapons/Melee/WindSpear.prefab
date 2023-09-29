@@ -134,9 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e6ddc2289cb4442990d6be26f6c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponInfo: []
   history: 
-  icon: {fileID: -491557427105623715, guid: d6f320dfbc82bae4abe8c72bc768ebe9, type: 3}
+  icon: {fileID: -3161286987542076170, guid: d6f320dfbc82bae4abe8c72bc768ebe9, type: 3}
   quantCombo: 3
   CDamage: 010000000200000003000000
   Ataques:

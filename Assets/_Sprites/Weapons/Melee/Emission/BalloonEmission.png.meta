@@ -23,6 +23,27 @@ TextureImporter:
   - first:
       213: -1579146063559288469
     second: BaloonEmission 1_6
+  - first:
+      213: 2382117713997097109
+    second: BalloonEmission_0
+  - first:
+      213: -8891135953851692782
+    second: BalloonEmission_1
+  - first:
+      213: 1538772562199580004
+    second: BalloonEmission_2
+  - first:
+      213: 7173632217598047864
+    second: BalloonEmission_3
+  - first:
+      213: 1411508873032063420
+    second: BalloonEmission_4
+  - first:
+      213: -3525156987268536902
+    second: BalloonEmission_5
+  - first:
+      213: -7315694883499220050
+    second: BalloonEmission_6
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -125,7 +146,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BaloonEmission 1_0
+      name: BalloonEmission_0
       rect:
         serializedVersion: 2
         x: 256
@@ -139,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b6f196c142e33ad0800000000000000
-      internalID: -2723584577496811855
+      spriteID: 59866fb907bfe0120800000000000000
+      internalID: 2382117713997097109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaloonEmission 1_1
+      name: BalloonEmission_1
       rect:
         serializedVersion: 2
         x: 384
@@ -160,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43165c5a30e7141e0800000000000000
-      internalID: -2215350987558395596
+      spriteID: 21947fc05f65c9480800000000000000
+      internalID: -8891135953851692782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaloonEmission 1_2
+      name: BalloonEmission_2
       rect:
         serializedVersion: 2
         x: 768
@@ -181,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1734f601fa967350800000000000000
-      internalID: 6014164712394340125
+      spriteID: 46d06081e71da5510800000000000000
+      internalID: 1538772562199580004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaloonEmission 1_3
+      name: BalloonEmission_3
       rect:
         serializedVersion: 2
         x: 896
@@ -202,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62798f1469ae2fe10800000000000000
-      internalID: 2230102696574621478
+      spriteID: 876ba3f8e7cdd8360800000000000000
+      internalID: 7173632217598047864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaloonEmission 1_4
+      name: BalloonEmission_4
       rect:
         serializedVersion: 2
         x: 1280
@@ -223,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 198d633be51337f60800000000000000
-      internalID: 8030816843335129233
+      spriteID: cb9536e67dfa69310800000000000000
+      internalID: 1411508873032063420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaloonEmission 1_5
+      name: BalloonEmission_5
       rect:
         serializedVersion: 2
         x: 1408
@@ -244,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 811ba154e030b5990800000000000000
-      internalID: -7396314603202105064
+      spriteID: ab56f5ca560241fc0800000000000000
+      internalID: -3525156987268536902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BaloonEmission 1_6
+      name: BalloonEmission_6
       rect:
         serializedVersion: 2
         x: 1536
@@ -265,8 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b699719950fb51ae0800000000000000
-      internalID: -1579146063559288469
+      spriteID: ea3e2ef734e697a90800000000000000
+      internalID: -7315694883499220050
       vertices: []
       indices: 
       edges: []

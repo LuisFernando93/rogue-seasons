@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: test01
   m_EditorClassIdentifier: 
   dialogue:
-  - "narrator:#Voc\xEA v\xEA um circulo magico. Claramente um placeholder."
-  - speaker:Rouge#"A wild circle appears."
-  - "speaker:Circulo#Salve salve par\xE7a."
-  - speaker:Rouge#Saaarve.
+  - "narrator:#Voc\xEA v\xEA um circulo. (fala sem personagens)"
+  - speaker:Rouge#Olha, um circulo, (fala com Rouge)
+  - speaker:Circulo#Circulo. (2 personagens)
+  - speaker:Rouge#Definitivamente um circulo.
   responses:
-  - responseText: Ta fazendo oq ai?
-    dialogueObject: {fileID: 11400000, guid: 668325b3d2d521f46a9c36d22d1049cf, type: 2}
+  - responseText: Resetar Dialogo
+    dialogueObject: {fileID: 11400000, guid: a0f65e38e04bd934d82edea32810b579, type: 2}
+  - responseText: Terminar Dialogo
+    dialogueObject: {fileID: 11400000, guid: 4444791ede9a78d4c953a5185e241536, type: 2}

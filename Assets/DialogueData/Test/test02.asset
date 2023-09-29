@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
   m_Name: test02
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - narrator:#Novo dialogo.
   responses: []
