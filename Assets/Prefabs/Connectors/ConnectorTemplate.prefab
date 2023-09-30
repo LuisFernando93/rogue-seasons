@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &445420298337340767
 Transform:
   m_ObjectHideFlags: 0
@@ -840,6 +840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3343477705785068093}
   - component: {fileID: 8218805136680770921}
+  - component: {fileID: 6470373351726928827}
   m_Layer: 0
   m_Name: ConnectorTemplate
   m_TagString: Connector
@@ -878,3 +879,17 @@ MonoBehaviour:
   From: -1
   To: -1
   Id: -1
+--- !u!114 &6470373351726928827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6546108036156667809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe61fa773c50ff840a1e87e46def2af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridActive: {fileID: 5696511180515004102}
+  gridDeactive: {fileID: 3578573413499164597}
