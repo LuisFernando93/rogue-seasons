@@ -52,9 +52,12 @@ public class LevelGenerator : MonoBehaviour
                     existsInMST = true;
                 }
             }
-            if (!existsInMST)
+            if (existsInMST)
             {
-                connector.SetActive(false);
+                connector.GetComponent<ConnectorActuator>().SetActive();
+            } else
+            {
+                connector.GetComponent<ConnectorActuator>().SetDeactive();
             }
         }
     }
