@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
   m_Name: resp02
   m_EditorClassIdentifier: 
-  dialogue:
-  - "narrator:#O dialogo do circulo ir\xE1 mudar ao interagir com ele novamente."
+  dialogueBR:
+  - "narrator:#O Dialogo ir\xE1 mudar na proxima intera\xE7\xE3o."
+  dialogueING:
+  - narrator:#The Dialogue will change in the next interaction.
   responses: []

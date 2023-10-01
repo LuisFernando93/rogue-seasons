@@ -15,6 +15,7 @@ TagManager:
   - Connector
   - playerDrop
   - Entrance
+  - Manager
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
   m_Name: resp01
   m_EditorClassIdentifier: 
-  dialogue:
-  - narrator:#Ok, quando interagir novamente com o circulo, o dialogo sera o mesmo.
+  dialogueBR:
+  - "narrator:#O dialogo ir\xE1 resetar."
+  dialogueING:
+  - narrator:#The dialogue will reset.
   responses: []

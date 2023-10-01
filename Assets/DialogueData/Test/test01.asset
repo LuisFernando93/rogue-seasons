@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
   m_Name: test01
   m_EditorClassIdentifier: 
-  dialogue:
-  - "narrator:#Voc\xEA v\xEA um circulo. (fala sem personagens)"
-  - speaker:Rouge#Olha, um circulo, (fala com Rouge)
-  - speaker:Circulo#Circulo. (2 personagens)
-  - speaker:Rouge#Definitivamente um circulo.
+  dialogueBR:
+  - narrator:#Dialogo vazio.
+  - speaker:Rouge#Apenas 1 sprite.
+  - speaker:Circulo#2 sprites.
+  dialogueING:
+  - narrator:#Empty dialogue.
+  - speaker:Rouge#Only 1 sprite.
+  - speaker:Circulo#2 sprites.
   responses:
   - responseText: Resetar Dialogo
     dialogueObject: {fileID: 11400000, guid: a0f65e38e04bd934d82edea32810b579, type: 2}
