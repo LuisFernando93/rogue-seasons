@@ -150,6 +150,7 @@ Transform:
   - {fileID: 4538788935802140022}
   - {fileID: 7789073915268027839}
   - {fileID: 5393623366775978281}
+  - {fileID: 4469083683612422021}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -171,7 +172,6 @@ MonoBehaviour:
   meleeEnemyPrefab: {fileID: 0}
   rangedEnemyPrefab: {fileID: 0}
   turretEnemyPrefab: {fileID: 0}
-  wall: {fileID: 8222080129303394125}
 --- !u!61 &4762833629133067264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -463,6 +463,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1963949414971821027}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5035203006540462032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4469083683612422021}
+  m_Layer: 0
+  m_Name: Props
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4469083683612422021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5035203006540462032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1963949414971821027}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5504366998773016458
 GameObject:
