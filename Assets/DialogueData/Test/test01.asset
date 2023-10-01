@@ -21,7 +21,9 @@ MonoBehaviour:
   - speaker:Rouge#Only 1 sprite.
   - speaker:Circulo#2 sprites.
   responses:
-  - responseText: Resetar Dialogo
+  - responseTextBR: Reiniciar Dialogo
+    responseTextING: Reset Dialogue
     dialogueObject: {fileID: 11400000, guid: a0f65e38e04bd934d82edea32810b579, type: 2}
-  - responseText: Terminar Dialogo
+  - responseTextBR: Terminar Dialogo
+    responseTextING: Finish Dialogue
     dialogueObject: {fileID: 11400000, guid: 4444791ede9a78d4c953a5185e241536, type: 2}

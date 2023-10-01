@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: resp01
   m_EditorClassIdentifier: 
   dialogueBR:
-  - "narrator:#O dialogo ir\xE1 resetar."
+  - "narrator:#O dialogo ir\xE1 reiniciar."
   dialogueING:
   - narrator:#The dialogue will reset.
   responses: []

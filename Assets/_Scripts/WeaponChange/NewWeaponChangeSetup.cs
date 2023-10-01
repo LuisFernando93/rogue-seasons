@@ -10,11 +10,13 @@ public class NewWeaponChangeSetup : MonoBehaviour
     Drop drop;
     NewCombatManager combatManager;
     Sprite left, right, newWeapon;
+    Configuration.LanguageOption language;
     public bool IsOpen { get; private set; }
 
     private void Start()
     {
         combatManager = GameObject.FindGameObjectWithTag("Player").GetComponent<NewCombatManager>();
+        language = GameObject.FindGameObjectWithTag("Manager").GetComponent<Configuration>().GetLanguage();
     }
     //Recebe as informa��es do prefab 
     public void SetNewWeapon(GameObject dropSystem)
@@ -49,7 +51,7 @@ public class NewWeaponChangeSetup : MonoBehaviour
     void FillNewWeaponInfo()
     {
         Transform WeaponName = newWeaponInfoBox.transform.GetChild(0);
-        Transform WeaponDamage = newWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
+        Transform WeaponDamage = newWeaponInfoBox.transform.GetChild(1);
 
         //fecha as abas de armas especificas 
         newWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(false);
@@ -58,18 +60,37 @@ public class NewWeaponChangeSetup : MonoBehaviour
         WeaponName.GetComponent<TextMeshProUGUI>().text = drop.GetWeaponInformations("Name");
         if (drop.GetWeaponInformations("Type") == "Melee")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = drop.GetWeaponInformations("Damage");
-
-            newWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
-            newWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = drop.GetWeaponInformations("AtkSpeed");
+            switch (language)
+            {
+                case Configuration.LanguageOption.PTBR:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Dano: "+drop.GetWeaponInformations("Damage");
+                    newWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+                    newWeaponInfoBox.transform.GetChild(2).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Vel. Atq: "+drop.GetWeaponInformations("AtkSpeed");
+                    break;
+                case Configuration.LanguageOption.ING:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Damage: " + drop.GetWeaponInformations("Damage");
+                    newWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+                    newWeaponInfoBox.transform.GetChild(2).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Atk Speed: " + drop.GetWeaponInformations("AtkSpeed");
+                    break;
+            }
         }
         else if (drop.GetWeaponInformations("Type") == "Ranged")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = drop.GetWeaponInformations("Damage");
-
-            newWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
-            newWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = drop.GetWeaponInformations("MaxAmmo");
-            newWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = drop.GetWeaponInformations("FireFreq");
+            switch (language)
+            {
+                case Configuration.LanguageOption.PTBR:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Dano: "+drop.GetWeaponInformations("Damage");
+                    newWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+                    newWeaponInfoBox.transform.GetChild(3).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Munição: "+drop.GetWeaponInformations("MaxAmmo");
+                    newWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = " Freq. Tiros: "+drop.GetWeaponInformations("FireFreq");
+                    break;
+                case Configuration.LanguageOption.ING:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Damage: " + drop.GetWeaponInformations("Damage");
+                    newWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+                    newWeaponInfoBox.transform.GetChild(3).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Ammo: " + drop.GetWeaponInformations("MaxAmmo");
+                    newWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = " Fire Freq: " + drop.GetWeaponInformations("FireFreq");
+                    break;
+            }
         }
 
     }
@@ -77,7 +98,7 @@ public class NewWeaponChangeSetup : MonoBehaviour
     void FillLeftWeaponInfo()
     {
         Transform WeaponName = leftWeaponInfoBox.transform.GetChild(0);
-        Transform WeaponDamage = leftWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
+        Transform WeaponDamage = leftWeaponInfoBox.transform.GetChild(1);
 
         //fecha as abas de armas especificas 
         leftWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(false);
@@ -86,18 +107,44 @@ public class NewWeaponChangeSetup : MonoBehaviour
         WeaponName.GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("Name");
         if (combatManager.LeftWeaponType == "melee")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("Damage");
-
+            switch (language)
+            {
+                case Configuration.LanguageOption.PTBR:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Dano: " + combatManager.GetLeftWeaponInfo("Damage");
+                    leftWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+                    leftWeaponInfoBox.transform.GetChild(2).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Vel. Atq: " + combatManager.GetLeftWeaponInfo("AtkSpeed");
+                    break;
+                case Configuration.LanguageOption.ING:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Damage: " + combatManager.GetLeftWeaponInfo("Damage");
+                    leftWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+                    leftWeaponInfoBox.transform.GetChild(2).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Atk Speed: " + combatManager.GetLeftWeaponInfo("AtkSpeed");
+                    break;
+            }
+            /*WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("Damage");
             leftWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
-            leftWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("AtkSpeed");
+            leftWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("AtkSpeed");*/
         }
         else if (combatManager.LeftWeaponType == "ranged")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("Damage");
-
+            switch (language)
+            {
+                case Configuration.LanguageOption.PTBR:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Dano: "+ combatManager.GetLeftWeaponInfo("Damage");
+                    leftWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+                    leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Munição: "+ combatManager.GetLeftWeaponInfo("MaxAmmo");
+                    leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = " Freq. Tiros: "+ combatManager.GetLeftWeaponInfo("FireFreq");
+                    break;
+                case Configuration.LanguageOption.ING:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Damage: " + combatManager.GetLeftWeaponInfo("Damage");
+                    leftWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+                    leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Ammo: " + combatManager.GetLeftWeaponInfo("MaxAmmo");
+                    leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = " Fire Freq: " + combatManager.GetLeftWeaponInfo("FireFreq");
+                    break;
+            }
+            /*WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("Damage");
             leftWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
             leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("FireFreq");
-            leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("MaxAmmo");
+            leftWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = combatManager.GetLeftWeaponInfo("MaxAmmo");*/
         }
 
 
@@ -105,7 +152,7 @@ public class NewWeaponChangeSetup : MonoBehaviour
     void FillRightWeaponInfo()
     {
         Transform WeaponName = rightWeaponInfoBox.transform.GetChild(0);
-        Transform WeaponDamage = rightWeaponInfoBox.transform.GetChild(1).transform.GetChild(0);
+        Transform WeaponDamage = rightWeaponInfoBox.transform.GetChild(1);
 
         //fecha as abas de armas especificas 
         rightWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(false);
@@ -114,18 +161,44 @@ public class NewWeaponChangeSetup : MonoBehaviour
         WeaponName.GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("Name");
         if (combatManager.RightWeaponType == "melee")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("Damage");
-
+            switch (language)
+            {
+                case Configuration.LanguageOption.PTBR:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Dano: " + combatManager.GetRightWeaponInfo("Damage");
+                    rightWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+                    rightWeaponInfoBox.transform.GetChild(2).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Vel. Atq: " + combatManager.GetRightWeaponInfo("AtkSpeed");
+                    break;
+                case Configuration.LanguageOption.ING:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Damage: " + combatManager.GetRightWeaponInfo("Damage");
+                    rightWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
+                    rightWeaponInfoBox.transform.GetChild(2).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Atk Speed: " + combatManager.GetRightWeaponInfo("AtkSpeed");
+                    break;
+            }
+            /*WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("Damage");
             rightWeaponInfoBox.transform.GetChild(2).gameObject.SetActive(true);
-            rightWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("AtkSpeed");
+            rightWeaponInfoBox.transform.GetChild(2).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("AtkSpeed");*/
         }
         else if (combatManager.RightWeaponType == "ranged")
         {
-            WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("Damage");
-
+            switch (language)
+            {
+                case Configuration.LanguageOption.PTBR:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Dano: " + combatManager.GetRightWeaponInfo("Damage");
+                    rightWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+                    rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Munição: " + combatManager.GetRightWeaponInfo("MaxAmmo");
+                    rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = " Freq. Tiros: " + combatManager.GetRightWeaponInfo("FireFreq");
+                    break;
+                case Configuration.LanguageOption.ING:
+                    WeaponDamage.GetComponent<TextMeshProUGUI>().text = " Damage: " + combatManager.GetRightWeaponInfo("Damage");
+                    rightWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
+                    rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = " Ammo: " + combatManager.GetRightWeaponInfo("MaxAmmo");
+                    rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = " Fire Freq: " + combatManager.GetRightWeaponInfo("FireFreq");
+                    break;
+            }
+            /*WeaponDamage.GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("Damage");
             rightWeaponInfoBox.transform.GetChild(3).gameObject.SetActive(true);
             rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("FireFreq");
-            rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("MaxAmmo");
+            rightWeaponInfoBox.transform.GetChild(3).transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = combatManager.GetRightWeaponInfo("MaxAmmo");*/
         }
 
 
