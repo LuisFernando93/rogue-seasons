@@ -15951,7 +15951,7 @@ PrefabInstance:
       objectReference: {fileID: 5045419374009107719, guid: 7efa4f54e9e10ef40bd1aee1f8a28208, type: 3}
     - target: {fileID: 1733643666, guid: 1edafe8061205e44f94bde84e47beb4a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 17
+      value: 17.000015
       objectReference: {fileID: 0}
     - target: {fileID: 4008077808613892403, guid: 1edafe8061205e44f94bde84e47beb4a, type: 3}
       propertyPath: m_RootOrder
@@ -24895,6 +24895,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7232635707865283607, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -8422781226154199913, guid: 3faba79927ddb0947b6f8050de01b0cd, type: 2}
     - target: {fileID: 7232635708172712724, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -24942,6 +24946,10 @@ PrefabInstance:
     - target: {fileID: 7232635708172712725, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
       propertyPath: m_Name
       value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232635708172712731, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
+      propertyPath: _transitionRate
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7232635708859999865, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
       propertyPath: OutputAudioMixerGroup
