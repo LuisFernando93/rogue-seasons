@@ -51,6 +51,7 @@ public class RoomController: MonoBehaviour
         roomSleep = false;
         activateDoors(true);
         spawnEnemies();
+        SoundManager.Instance.ChangeToBattleMusic();
     }
 
     private void activateDoors(bool active)
@@ -97,6 +98,7 @@ public class RoomController: MonoBehaviour
             activateDoors(false);
             roomCleared = true;
             LevelManager.Instance.RoomCleared();
+            SoundManager.Instance.ChangeToDefaultMusic();
         } else
         {
             enemies.RemoveAll(GameObject => GameObject == null);
