@@ -18,12 +18,14 @@ public class RoomController: MonoBehaviour
     private bool roomSleep = true;
     private bool roomCleared = false;
     private List<GameObject> enemies = new List<GameObject>();
+    private ChangeParticleColor changeParticleColor;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         activateDoors(false);
+        changeParticleColor = GameObject.FindGameObjectWithTag("MainCamera").GetComponentInChildren<ChangeParticleColor>();
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class RoomController: MonoBehaviour
         activateDoors(true);
         spawnEnemies();
         SoundManager.Instance.ChangeToBattleMusic();
+        changeParticleColor.SetBattleParticles();
     }
 
     private void activateDoors(bool active)
@@ -99,6 +102,7 @@ public class RoomController: MonoBehaviour
             roomCleared = true;
             LevelManager.Instance.RoomCleared();
             SoundManager.Instance.ChangeToDefaultMusic();
+            changeParticleColor.SetExplorationParticles();
         } else
         {
             enemies.RemoveAll(GameObject => GameObject == null);
