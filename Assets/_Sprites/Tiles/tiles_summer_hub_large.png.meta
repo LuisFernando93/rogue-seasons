@@ -1,0 +1,5815 @@
+fileFormatVersion: 2
+guid: 67ea21b2c4d4f44429a59f0cb116c29c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3698962483850413708
+    second: "tiles ch\xE3o_0"
+  - first:
+      213: 5904785921945952642
+    second: "tiles ch\xE3o_1"
+  - first:
+      213: 7600705166253138710
+    second: "tiles ch\xE3o_2"
+  - first:
+      213: 5078713775415229424
+    second: "tiles ch\xE3o_3"
+  - first:
+      213: 6803941900456555925
+    second: "tiles ch\xE3o_4"
+  - first:
+      213: -5999578483114198033
+    second: "tiles ch\xE3o_5"
+  - first:
+      213: -2115250092732501761
+    second: "tiles ch\xE3o_6"
+  - first:
+      213: -1662651632995899110
+    second: "tiles ch\xE3o_7"
+  - first:
+      213: 6309795103829067326
+    second: "tiles ch\xE3o_8"
+  - first:
+      213: -7853116327861580294
+    second: "tiles ch\xE3o_9"
+  - first:
+      213: 7253150435010610253
+    second: "tiles ch\xE3o_10"
+  - first:
+      213: -3316631326302020683
+    second: "tiles ch\xE3o_11"
+  - first:
+      213: 85524113614541743
+    second: "tiles ch\xE3o_12"
+  - first:
+      213: -1782668940352967486
+    second: "tiles ch\xE3o_13"
+  - first:
+      213: 9156603124572988728
+    second: "tiles ch\xE3o_14"
+  - first:
+      213: -3042757841879129537
+    second: "tiles ch\xE3o_15"
+  - first:
+      213: -7400384958083260195
+    second: "tiles ch\xE3o_16"
+  - first:
+      213: 7410938341362130551
+    second: "tiles ch\xE3o_17"
+  - first:
+      213: 5838180153079520451
+    second: "tiles ch\xE3o_18"
+  - first:
+      213: -7761174413399222172
+    second: "tiles ch\xE3o_19"
+  - first:
+      213: -1726965850545383488
+    second: "tiles ch\xE3o_20"
+  - first:
+      213: -3312044368250080921
+    second: "tiles ch\xE3o_21"
+  - first:
+      213: 5025062648590183208
+    second: "tiles ch\xE3o_22"
+  - first:
+      213: -6673970165891023341
+    second: "tiles ch\xE3o_23"
+  - first:
+      213: 8053965019219996990
+    second: "tiles ch\xE3o_24"
+  - first:
+      213: -1644426542789775928
+    second: "tiles ch\xE3o_25"
+  - first:
+      213: 2064514049506468158
+    second: "tiles ch\xE3o_26"
+  - first:
+      213: 4221816623311697260
+    second: "tiles ch\xE3o_27"
+  - first:
+      213: -7019679293010091157
+    second: "tiles ch\xE3o_28"
+  - first:
+      213: -8887413552534289261
+    second: "tiles ch\xE3o_29"
+  - first:
+      213: 4149560050054575636
+    second: "tiles ch\xE3o_30"
+  - first:
+      213: 7154065296640426754
+    second: "tiles ch\xE3o_31"
+  - first:
+      213: 3802444790273499767
+    second: "tiles ch\xE3o_32"
+  - first:
+      213: 7049857696129391135
+    second: "tiles ch\xE3o_33"
+  - first:
+      213: -533775989305988146
+    second: "tiles ch\xE3o_34"
+  - first:
+      213: 1795576465234831588
+    second: "tiles ch\xE3o_35"
+  - first:
+      213: 1172181188400540123
+    second: "tiles ch\xE3o_36"
+  - first:
+      213: 4024490633516738333
+    second: "tiles ch\xE3o_37"
+  - first:
+      213: 5581015075353307951
+    second: "tiles ch\xE3o_38"
+  - first:
+      213: 7772164568705908727
+    second: "tiles ch\xE3o_39"
+  - first:
+      213: 961296577055103896
+    second: "tiles ch\xE3o_40"
+  - first:
+      213: 1171521983232944433
+    second: "tiles ch\xE3o_41"
+  - first:
+      213: -5965666374677857976
+    second: "tiles ch\xE3o_42"
+  - first:
+      213: -1479125538632013278
+    second: "tiles ch\xE3o_43"
+  - first:
+      213: -2949672930430683100
+    second: "tiles ch\xE3o_44"
+  - first:
+      213: 8832321730936610256
+    second: "tiles ch\xE3o_45"
+  - first:
+      213: -1289156886249625156
+    second: "tiles ch\xE3o_46"
+  - first:
+      213: -1090322081335472742
+    second: "tiles ch\xE3o_47"
+  - first:
+      213: 1977434235809718865
+    second: "tiles ch\xE3o_48"
+  - first:
+      213: 4237664928643276523
+    second: "tiles ch\xE3o_49"
+  - first:
+      213: -7755734625141888016
+    second: "tiles ch\xE3o_50"
+  - first:
+      213: -8197188852604760291
+    second: "tiles ch\xE3o_51"
+  - first:
+      213: -5948314746053427834
+    second: "tiles ch\xE3o_52"
+  - first:
+      213: 1954021734762635736
+    second: "tiles ch\xE3o_53"
+  - first:
+      213: -7620286907365762865
+    second: "tiles ch\xE3o_54"
+  - first:
+      213: -6654939902972853477
+    second: "tiles ch\xE3o_55"
+  - first:
+      213: 1472987238054355383
+    second: "tiles ch\xE3o_56"
+  - first:
+      213: -5528414948984484993
+    second: "tiles ch\xE3o_57"
+  - first:
+      213: -16889158944162729
+    second: "tiles ch\xE3o_58"
+  - first:
+      213: 4412938889897831149
+    second: "tiles ch\xE3o_59"
+  - first:
+      213: -3467649516624130142
+    second: "tiles ch\xE3o_60"
+  - first:
+      213: -5659542737571236289
+    second: "tiles ch\xE3o_61"
+  - first:
+      213: -9127917878877956365
+    second: "tiles ch\xE3o_63"
+  - first:
+      213: 496423108264661751
+    second: "tiles ch\xE3o_64"
+  - first:
+      213: -1198456163927242883
+    second: "tiles ch\xE3o_65"
+  - first:
+      213: 1341953466367261473
+    second: "tiles ch\xE3o_66"
+  - first:
+      213: -4971933745313851387
+    second: "tiles ch\xE3o_67"
+  - first:
+      213: 6763234320987189215
+    second: "tiles ch\xE3o_68"
+  - first:
+      213: -9179665816026735730
+    second: "tiles ch\xE3o_69"
+  - first:
+      213: -5769272538179023467
+    second: "tiles ch\xE3o_70"
+  - first:
+      213: -7845944947034442302
+    second: "tiles ch\xE3o_71"
+  - first:
+      213: 8446943672644090458
+    second: "tiles ch\xE3o_72"
+  - first:
+      213: -3064377187836326730
+    second: "tiles ch\xE3o_73"
+  - first:
+      213: 4440339317139245163
+    second: "tiles ch\xE3o_74"
+  - first:
+      213: -1115970208423719463
+    second: "tiles ch\xE3o_75"
+  - first:
+      213: 4281307652718420982
+    second: "tiles ch\xE3o_76"
+  - first:
+      213: 5080478582747161374
+    second: "tiles ch\xE3o_77"
+  - first:
+      213: -1631155345796915796
+    second: "tiles ch\xE3o_78"
+  - first:
+      213: 4629626975996719882
+    second: "tiles ch\xE3o_79"
+  - first:
+      213: -6883508662315506576
+    second: "tiles ch\xE3o_80"
+  - first:
+      213: -1318503951491188142
+    second: "tiles ch\xE3o_81"
+  - first:
+      213: 2928467779532500633
+    second: "tiles ch\xE3o_82"
+  - first:
+      213: 8536721717436963162
+    second: "tiles ch\xE3o_83"
+  - first:
+      213: -6753877954031443421
+    second: "tiles ch\xE3o_84"
+  - first:
+      213: -6545009982790656470
+    second: "tiles ch\xE3o_85"
+  - first:
+      213: 5373342373008268471
+    second: "tiles ch\xE3o_86"
+  - first:
+      213: 1985006415748074964
+    second: "tiles ch\xE3o_87"
+  - first:
+      213: -26368959419787518
+    second: "tiles ch\xE3o_88"
+  - first:
+      213: 247372274510534269
+    second: "tiles ch\xE3o_89"
+  - first:
+      213: -1541389608812202032
+    second: "tiles ch\xE3o_90"
+  - first:
+      213: 197113049142382964
+    second: "tiles ch\xE3o_91"
+  - first:
+      213: 5828832153026783283
+    second: "tiles ch\xE3o_92"
+  - first:
+      213: -3544480591799275660
+    second: "tiles ch\xE3o_93"
+  - first:
+      213: -1556555108513630169
+    second: "tiles ch\xE3o_94"
+  - first:
+      213: 574408637285186765
+    second: "tiles ch\xE3o_95"
+  - first:
+      213: -1179268633645248169
+    second: "tiles ch\xE3o_96"
+  - first:
+      213: 6679813269281624961
+    second: "tiles ch\xE3o_97"
+  - first:
+      213: 989822238930242217
+    second: "tiles ch\xE3o_98"
+  - first:
+      213: 4718606130232439788
+    second: "tiles ch\xE3o_99"
+  - first:
+      213: 902984033984523891
+    second: "tiles ch\xE3o_100"
+  - first:
+      213: 7313761108969708351
+    second: "tiles ch\xE3o_101"
+  - first:
+      213: -6598760201393135125
+    second: "tiles ch\xE3o_102"
+  - first:
+      213: 5829596252323461713
+    second: "tiles ch\xE3o_103"
+  - first:
+      213: 1061361098131421150
+    second: "tiles ch\xE3o_104"
+  - first:
+      213: 1145397914666991486
+    second: "tiles ch\xE3o_105"
+  - first:
+      213: -2757385574213930096
+    second: "tiles ch\xE3o_106"
+  - first:
+      213: 4531048141331411168
+    second: "tiles ch\xE3o_107"
+  - first:
+      213: 6027908657961432782
+    second: "tiles ch\xE3o_108"
+  - first:
+      213: -322342815601585510
+    second: "tiles ch\xE3o_109"
+  - first:
+      213: -5309966488794026834
+    second: "tiles ch\xE3o_110"
+  - first:
+      213: 5130616200748686839
+    second: "tiles ch\xE3o_111"
+  - first:
+      213: -2691302938261829152
+    second: "tiles ch\xE3o_112"
+  - first:
+      213: 4520977682607612776
+    second: "tiles ch\xE3o_113"
+  - first:
+      213: 3538708082828010931
+    second: "tiles ch\xE3o_114"
+  - first:
+      213: -1449387775175325360
+    second: "tiles ch\xE3o_115"
+  - first:
+      213: 1785146312758676929
+    second: "tiles ch\xE3o_116"
+  - first:
+      213: 578650638042972071
+    second: "tiles ch\xE3o_117"
+  - first:
+      213: 4570203344598701294
+    second: "tiles ch\xE3o_118"
+  - first:
+      213: 3149498457842458344
+    second: "tiles ch\xE3o_119"
+  - first:
+      213: -1166806943099040316
+    second: "tiles ch\xE3o_120"
+  - first:
+      213: -2831443342025378511
+    second: "tiles ch\xE3o_121"
+  - first:
+      213: -1279904623697615349
+    second: "tiles ch\xE3o_122"
+  - first:
+      213: 2626737767504118150
+    second: "tiles ch\xE3o_123"
+  - first:
+      213: -2280715232540961681
+    second: "tiles ch\xE3o_124"
+  - first:
+      213: -1389108292878907947
+    second: "tiles ch\xE3o_125"
+  - first:
+      213: -1873418072996376498
+    second: "tiles ch\xE3o_126"
+  - first:
+      213: 2992292663369258004
+    second: "tiles ch\xE3o_127"
+  - first:
+      213: 6722934070622388551
+    second: "tiles ch\xE3o_128"
+  - first:
+      213: -7612429023236130367
+    second: "tiles ch\xE3o_129"
+  - first:
+      213: 7969670464039715973
+    second: "tiles ch\xE3o_130"
+  - first:
+      213: -4735319106509378366
+    second: "tiles ch\xE3o_131"
+  - first:
+      213: -2942840418498274783
+    second: "tiles ch\xE3o_132"
+  - first:
+      213: -7059143042885287303
+    second: "tiles ch\xE3o_133"
+  - first:
+      213: -1949667043294671026
+    second: "tiles ch\xE3o_134"
+  - first:
+      213: -477265497946118055
+    second: "tiles ch\xE3o_135"
+  - first:
+      213: 8327342079157282235
+    second: "tiles ch\xE3o_136"
+  - first:
+      213: -7236957353927882683
+    second: "tiles ch\xE3o_137"
+  - first:
+      213: -1280884004478820062
+    second: "tiles ch\xE3o_138"
+  - first:
+      213: 7378498032691157547
+    second: "tiles ch\xE3o_139"
+  - first:
+      213: -1400575836870873085
+    second: "tiles ch\xE3o_140"
+  - first:
+      213: 9152029446197223440
+    second: "tiles ch\xE3o_141"
+  - first:
+      213: 1381444129632420622
+    second: "tiles ch\xE3o_142"
+  - first:
+      213: -2161635317802778907
+    second: "tiles ch\xE3o_143"
+  - first:
+      213: -4575647267009022324
+    second: "tiles ch\xE3o_144"
+  - first:
+      213: -5816004123448421291
+    second: "tiles ch\xE3o_145"
+  - first:
+      213: -8740975483977343407
+    second: "tiles ch\xE3o_146"
+  - first:
+      213: 2060353945625342579
+    second: "tiles ch\xE3o_147"
+  - first:
+      213: 6566220540793785968
+    second: "tiles ch\xE3o_148"
+  - first:
+      213: 4705746945889730773
+    second: "tiles ch\xE3o_149"
+  - first:
+      213: 6907974377698293418
+    second: "tiles ch\xE3o_150"
+  - first:
+      213: -5840580005032097691
+    second: "tiles ch\xE3o_151"
+  - first:
+      213: -4599285239826404297
+    second: "tiles ch\xE3o_152"
+  - first:
+      213: -555270765608329359
+    second: "tiles ch\xE3o_153"
+  - first:
+      213: -4949539853063157473
+    second: "tiles ch\xE3o_154"
+  - first:
+      213: 6899753817393315700
+    second: "tiles ch\xE3o_155"
+  - first:
+      213: -9147804992090864438
+    second: "tiles ch\xE3o_156"
+  - first:
+      213: 4823178994888133513
+    second: "tiles ch\xE3o_157"
+  - first:
+      213: -2696404211134557558
+    second: "tiles ch\xE3o_158"
+  - first:
+      213: -296178274778491139
+    second: "tiles ch\xE3o_159"
+  - first:
+      213: -4146325027406550163
+    second: "tiles ch\xE3o_160"
+  - first:
+      213: 1275750376564091032
+    second: "tiles ch\xE3o_161"
+  - first:
+      213: 1163670218921429815
+    second: "tiles ch\xE3o_162"
+  - first:
+      213: -8028317004133367888
+    second: "tiles ch\xE3o_163"
+  - first:
+      213: -3724709934861665734
+    second: "tiles ch\xE3o_164"
+  - first:
+      213: -4275101235646643335
+    second: "tiles ch\xE3o_165"
+  - first:
+      213: -814236169073371749
+    second: "tiles ch\xE3o_166"
+  - first:
+      213: 8944703105831956986
+    second: "tiles ch\xE3o_167"
+  - first:
+      213: 326895822023462031
+    second: "tiles ch\xE3o_168"
+  - first:
+      213: -6348440796540767072
+    second: "tiles ch\xE3o_169"
+  - first:
+      213: 7050954986608494332
+    second: "tiles ch\xE3o_170"
+  - first:
+      213: -2933436208273420167
+    second: "tiles ch\xE3o_171"
+  - first:
+      213: -8821627393606548829
+    second: "tiles ch\xE3o_172"
+  - first:
+      213: -8127961016394140869
+    second: "tiles ch\xE3o_173"
+  - first:
+      213: 6641373800566063012
+    second: "tiles ch\xE3o_174"
+  - first:
+      213: 6289948820523911059
+    second: "tiles ch\xE3o_175"
+  - first:
+      213: -1754801398944376649
+    second: "tiles ch\xE3o_176"
+  - first:
+      213: 3972435538862381213
+    second: "tiles ch\xE3o_177"
+  - first:
+      213: 1787158560884188133
+    second: "tiles ch\xE3o_178"
+  - first:
+      213: 5736726514204191501
+    second: "tiles ch\xE3o_179"
+  - first:
+      213: -2880201612496491035
+    second: "tiles ch\xE3o_180"
+  - first:
+      213: 3674513605276385114
+    second: "tiles ch\xE3o_181"
+  - first:
+      213: -1935463305415044618
+    second: "tiles ch\xE3o_182"
+  - first:
+      213: 3128101755635666623
+    second: "tiles ch\xE3o_183"
+  - first:
+      213: -4253772027052097638
+    second: "tiles ch\xE3o_184"
+  - first:
+      213: -5694021312171897257
+    second: "tiles ch\xE3o_185"
+  - first:
+      213: 7173821164687038953
+    second: "tiles ch\xE3o_186"
+  - first:
+      213: -1760902053989143950
+    second: "tiles ch\xE3o_187"
+  - first:
+      213: 6560901643163594416
+    second: "tiles ch\xE3o_188"
+  - first:
+      213: 8728232993701280524
+    second: "tiles ch\xE3o_189"
+  - first:
+      213: -1367469583602440737
+    second: "tiles ch\xE3o_190"
+  - first:
+      213: -7940290971279726957
+    second: "tiles ch\xE3o_191"
+  - first:
+      213: -184274890646835175
+    second: "tiles ch\xE3o_192"
+  - first:
+      213: 7725070379672633940
+    second: "tiles ch\xE3o_193"
+  - first:
+      213: -5126671422406333371
+    second: "tiles ch\xE3o_194"
+  - first:
+      213: 7490976842617576642
+    second: "tiles ch\xE3o_195"
+  - first:
+      213: 8510671694769727348
+    second: "tiles ch\xE3o_196"
+  - first:
+      213: 3922003629712500422
+    second: "tiles ch\xE3o_197"
+  - first:
+      213: -5925957866039400554
+    second: "tiles ch\xE3o_198"
+  - first:
+      213: -6058780923831093031
+    second: "tiles ch\xE3o_199"
+  - first:
+      213: -1949689645112809046
+    second: "tiles ch\xE3o_200"
+  - first:
+      213: 586085993978919128
+    second: "tiles ch\xE3o_201"
+  - first:
+      213: -5460008486427400356
+    second: "tiles ch\xE3o_202"
+  - first:
+      213: 8833893720367800904
+    second: "tiles ch\xE3o_203"
+  - first:
+      213: 831685097514207225
+    second: "tiles ch\xE3o_204"
+  - first:
+      213: 3949918395904839053
+    second: "tiles ch\xE3o_205"
+  - first:
+      213: 449287236538169142
+    second: "tiles ch\xE3o_206"
+  - first:
+      213: 8345996198150699433
+    second: "tiles ch\xE3o_207"
+  - first:
+      213: -6988698026578289198
+    second: "tiles ch\xE3o_208"
+  - first:
+      213: 5836982055629784718
+    second: "tiles ch\xE3o_209"
+  - first:
+      213: -4183806946825711712
+    second: "tiles ch\xE3o_210"
+  - first:
+      213: -4610506581050869424
+    second: "tiles ch\xE3o_211"
+  - first:
+      213: 412130256594502663
+    second: "tiles ch\xE3o_212"
+  - first:
+      213: 7667799210199075669
+    second: tiles_summer_hub_large_0
+  - first:
+      213: 935306413464646946
+    second: tiles_summer_hub_large_1
+  - first:
+      213: -3661891430172683541
+    second: tiles_summer_hub_large_2
+  - first:
+      213: -300767161263315502
+    second: tiles_summer_hub_large_3
+  - first:
+      213: -1724445586782009562
+    second: tiles_summer_hub_large_4
+  - first:
+      213: 7365091923776673490
+    second: tiles_summer_hub_large_5
+  - first:
+      213: 1873699280542776577
+    second: tiles_summer_hub_large_6
+  - first:
+      213: -4632916169331919465
+    second: tiles_summer_hub_large_7
+  - first:
+      213: 3485801403665845267
+    second: tiles_summer_hub_large_8
+  - first:
+      213: -3621607671267669066
+    second: tiles_summer_hub_large_9
+  - first:
+      213: 8616677094930054672
+    second: tiles_summer_hub_large_10
+  - first:
+      213: -5271035867898482147
+    second: tiles_summer_hub_large_11
+  - first:
+      213: -3847783933376124021
+    second: tiles_summer_hub_large_12
+  - first:
+      213: -7391753320751693066
+    second: tiles_summer_hub_large_13
+  - first:
+      213: 6531161179874941225
+    second: tiles_summer_hub_large_14
+  - first:
+      213: -6917939136874763798
+    second: tiles_summer_hub_large_15
+  - first:
+      213: 2516389976437613672
+    second: tiles_summer_hub_large_16
+  - first:
+      213: 1235673258285209401
+    second: tiles_summer_hub_large_17
+  - first:
+      213: -4011318257601700239
+    second: tiles_summer_hub_large_18
+  - first:
+      213: 7139271036017980743
+    second: tiles_summer_hub_large_19
+  - first:
+      213: -8840801149673064791
+    second: tiles_summer_hub_large_20
+  - first:
+      213: -1479054173470118938
+    second: tiles_summer_hub_large_21
+  - first:
+      213: -8255880685063075842
+    second: tiles_summer_hub_large_22
+  - first:
+      213: -6530965295687517307
+    second: tiles_summer_hub_large_23
+  - first:
+      213: -8730643463452294481
+    second: tiles_summer_hub_large_24
+  - first:
+      213: -5994989730209099151
+    second: tiles_summer_hub_large_25
+  - first:
+      213: -7016771039317554336
+    second: tiles_summer_hub_large_26
+  - first:
+      213: 6293646833217189778
+    second: tiles_summer_hub_large_27
+  - first:
+      213: 2846935417869938273
+    second: tiles_summer_hub_large_28
+  - first:
+      213: -7815987144853728267
+    second: tiles_summer_hub_large_29
+  - first:
+      213: -2716808132383477634
+    second: tiles_summer_hub_large_30
+  - first:
+      213: 1635685608971354452
+    second: tiles_summer_hub_large_31
+  - first:
+      213: 4412540878659453504
+    second: tiles_summer_hub_large_32
+  - first:
+      213: 442774391894264778
+    second: tiles_summer_hub_large_33
+  - first:
+      213: -6651279146272391318
+    second: tiles_summer_hub_large_34
+  - first:
+      213: 6399154885453486950
+    second: tiles_summer_hub_large_35
+  - first:
+      213: -3754485950581530744
+    second: tiles_summer_hub_large_36
+  - first:
+      213: -7365736570060487683
+    second: tiles_summer_hub_large_37
+  - first:
+      213: -4452399825437741992
+    second: tiles_summer_hub_large_38
+  - first:
+      213: -8981002139735225814
+    second: tiles_summer_hub_large_39
+  - first:
+      213: 162493429108773539
+    second: tiles_summer_hub_large_40
+  - first:
+      213: 458747906296730530
+    second: tiles_summer_hub_large_41
+  - first:
+      213: 3809317027597666711
+    second: tiles_summer_hub_large_42
+  - first:
+      213: 1208110713232519378
+    second: tiles_summer_hub_large_43
+  - first:
+      213: -7276603673481594698
+    second: tiles_summer_hub_large_44
+  - first:
+      213: -4590944038085038784
+    second: tiles_summer_hub_large_45
+  - first:
+      213: -1943051522256767067
+    second: tiles_summer_hub_large_46
+  - first:
+      213: -2614779614953428329
+    second: tiles_summer_hub_large_47
+  - first:
+      213: 8057668704257962404
+    second: tiles_summer_hub_large_48
+  - first:
+      213: -7936645043533470937
+    second: tiles_summer_hub_large_49
+  - first:
+      213: -7400412075389557981
+    second: tiles_summer_hub_large_50
+  - first:
+      213: 3640365300740458118
+    second: tiles_summer_hub_large_51
+  - first:
+      213: 4861112625741249085
+    second: tiles_summer_hub_large_52
+  - first:
+      213: -3427155838364381250
+    second: tiles_summer_hub_large_53
+  - first:
+      213: 59266745224233182
+    second: tiles_summer_hub_large_54
+  - first:
+      213: -1783605543034498864
+    second: tiles_summer_hub_large_55
+  - first:
+      213: -5853831791797390079
+    second: tiles_summer_hub_large_56
+  - first:
+      213: 8900865898365792704
+    second: tiles_summer_hub_large_57
+  - first:
+      213: 3713500997493966621
+    second: tiles_summer_hub_large_58
+  - first:
+      213: 5064251194633105226
+    second: tiles_summer_hub_large_59
+  - first:
+      213: -2945938686661115537
+    second: tiles_summer_hub_large_60
+  - first:
+      213: 4491063265685920848
+    second: tiles_summer_hub_large_61
+  - first:
+      213: -4407921265420538386
+    second: tiles_summer_hub_large_62
+  - first:
+      213: 527155047174703073
+    second: tiles_summer_hub_large_63
+  - first:
+      213: -5672348454235641693
+    second: tiles_summer_hub_large_64
+  - first:
+      213: 8762405984389795413
+    second: tiles_summer_hub_large_65
+  - first:
+      213: 5715714948266044652
+    second: tiles_summer_hub_large_66
+  - first:
+      213: -2108897303981980905
+    second: tiles_summer_hub_large_67
+  - first:
+      213: 1767402127836880837
+    second: tiles_summer_hub_large_68
+  - first:
+      213: -1287133533773644565
+    second: tiles_summer_hub_large_69
+  - first:
+      213: 4394661872743169742
+    second: tiles_summer_hub_large_70
+  - first:
+      213: -7972166474635720347
+    second: tiles_summer_hub_large_71
+  - first:
+      213: -1505389253387939317
+    second: tiles_summer_hub_large_72
+  - first:
+      213: 7628175519565218441
+    second: tiles_summer_hub_large_73
+  - first:
+      213: 7554070641354250906
+    second: tiles_summer_hub_large_74
+  - first:
+      213: -4647878995691901962
+    second: tiles_summer_hub_large_75
+  - first:
+      213: 8388339865350325520
+    second: tiles_summer_hub_large_76
+  - first:
+      213: -5190550178431427653
+    second: tiles_summer_hub_large_77
+  - first:
+      213: 8112598683617921472
+    second: tiles_summer_hub_large_78
+  - first:
+      213: 2053969488064029431
+    second: tiles_summer_hub_large_79
+  - first:
+      213: 5655230633420398387
+    second: tiles_summer_hub_large_80
+  - first:
+      213: -3090656632116077916
+    second: tiles_summer_hub_large_81
+  - first:
+      213: -5419559463955000472
+    second: tiles_summer_hub_large_82
+  - first:
+      213: 4862030375558317799
+    second: tiles_summer_hub_large_83
+  - first:
+      213: -7469960869742480084
+    second: tiles_summer_hub_large_84
+  - first:
+      213: -7638101489338666497
+    second: tiles_summer_hub_large_85
+  - first:
+      213: 1606767981094132442
+    second: tiles_summer_hub_large_86
+  - first:
+      213: -3763486753712629486
+    second: tiles_summer_hub_large_87
+  - first:
+      213: -2214078958676774211
+    second: tiles_summer_hub_large_88
+  - first:
+      213: 2820534620435715592
+    second: tiles_summer_hub_large_89
+  - first:
+      213: -4080771107226167300
+    second: tiles_summer_hub_large_90
+  - first:
+      213: -5439862758061908355
+    second: tiles_summer_hub_large_91
+  - first:
+      213: 3675743358766859956
+    second: tiles_summer_hub_large_92
+  - first:
+      213: -6370482568663157263
+    second: tiles_summer_hub_large_93
+  - first:
+      213: -308102677300434602
+    second: tiles_summer_hub_large_94
+  - first:
+      213: 2709679395776167092
+    second: tiles_summer_hub_large_95
+  - first:
+      213: -1379868187171037836
+    second: tiles_summer_hub_large_96
+  - first:
+      213: 3763809269666193179
+    second: tiles_summer_hub_large_97
+  - first:
+      213: -4044546207733181522
+    second: tiles_summer_hub_large_98
+  - first:
+      213: -1704048176319787683
+    second: tiles_summer_hub_large_99
+  - first:
+      213: -4128313748193309612
+    second: tiles_summer_hub_large_100
+  - first:
+      213: 6280471729417309510
+    second: tiles_summer_hub_large_101
+  - first:
+      213: -9115569776302500788
+    second: tiles_summer_hub_large_102
+  - first:
+      213: -3869816004227231599
+    second: tiles_summer_hub_large_103
+  - first:
+      213: -8833918898845800379
+    second: tiles_summer_hub_large_104
+  - first:
+      213: 2587571846064011345
+    second: tiles_summer_hub_large_105
+  - first:
+      213: -7829097464253228340
+    second: tiles_summer_hub_large_106
+  - first:
+      213: -3566528264512416634
+    second: tiles_summer_hub_large_107
+  - first:
+      213: 6431118841358763969
+    second: tiles_summer_hub_large_108
+  - first:
+      213: 245345326162522141
+    second: tiles_summer_hub_large_109
+  - first:
+      213: 6603399762535247737
+    second: tiles_summer_hub_large_110
+  - first:
+      213: -502020009104719133
+    second: tiles_summer_hub_large_111
+  - first:
+      213: 107152276758229155
+    second: tiles_summer_hub_large_112
+  - first:
+      213: -2244473849103844913
+    second: tiles_summer_hub_large_113
+  - first:
+      213: -3102705623672766332
+    second: tiles_summer_hub_large_114
+  - first:
+      213: -1735749957774276262
+    second: tiles_summer_hub_large_115
+  - first:
+      213: 1596209567652209352
+    second: tiles_summer_hub_large_116
+  - first:
+      213: -5959725194497810957
+    second: tiles_summer_hub_large_117
+  - first:
+      213: -1390560687498180945
+    second: tiles_summer_hub_large_118
+  - first:
+      213: 3162767069450625965
+    second: tiles_summer_hub_large_119
+  - first:
+      213: 1733449946096143776
+    second: tiles_summer_hub_large_120
+  - first:
+      213: -3908226283659986352
+    second: tiles_summer_hub_large_121
+  - first:
+      213: 1722604880450380162
+    second: tiles_summer_hub_large_122
+  - first:
+      213: 1481398137030063057
+    second: tiles_summer_hub_large_123
+  - first:
+      213: 9022568027221873615
+    second: tiles_summer_hub_large_124
+  - first:
+      213: 3477145266758161019
+    second: tiles_summer_hub_large_125
+  - first:
+      213: 5522234152957924054
+    second: tiles_summer_hub_large_126
+  - first:
+      213: 5082870541277402952
+    second: tiles_summer_hub_large_127
+  - first:
+      213: 881752841193729453
+    second: tiles_summer_hub_large_128
+  - first:
+      213: 1317617194390696974
+    second: tiles_summer_hub_large_129
+  - first:
+      213: -2453703354381846013
+    second: tiles_summer_hub_large_130
+  - first:
+      213: -5958156848398730414
+    second: tiles_summer_hub_large_131
+  - first:
+      213: 5074282412200261414
+    second: tiles_summer_hub_large_132
+  - first:
+      213: 6105613173230498153
+    second: tiles_summer_hub_large_133
+  - first:
+      213: -2361472420216834079
+    second: tiles_summer_hub_large_134
+  - first:
+      213: -8591343499077870905
+    second: tiles_summer_hub_large_135
+  - first:
+      213: 2273880597916438989
+    second: tiles_summer_hub_large_136
+  - first:
+      213: 9076468123927596010
+    second: tiles_summer_hub_large_137
+  - first:
+      213: -7730221116124067349
+    second: tiles_summer_hub_large_138
+  - first:
+      213: 4097308955196340872
+    second: tiles_summer_hub_large_139
+  - first:
+      213: 5036281908147142993
+    second: tiles_summer_hub_large_140
+  - first:
+      213: 5342797195806289276
+    second: tiles_summer_hub_large_141
+  - first:
+      213: 7271222917242445434
+    second: tiles_summer_hub_large_142
+  - first:
+      213: 559234722600097808
+    second: tiles_summer_hub_large_143
+  - first:
+      213: -1980956182277101593
+    second: tiles_summer_hub_large_144
+  - first:
+      213: 5499868224896813311
+    second: tiles_summer_hub_large_145
+  - first:
+      213: -6641131346754472545
+    second: tiles_summer_hub_large_146
+  - first:
+      213: 5682179679206773732
+    second: tiles_summer_hub_large_147
+  - first:
+      213: 5849656209469227516
+    second: tiles_summer_hub_large_148
+  - first:
+      213: -4959025808222810086
+    second: tiles_summer_hub_large_149
+  - first:
+      213: 7840174125313471533
+    second: tiles_summer_hub_large_150
+  - first:
+      213: 7612533274120796588
+    second: tiles_summer_hub_large_151
+  - first:
+      213: 7337724309444355527
+    second: tiles_summer_hub_large_152
+  - first:
+      213: 1328296971439644194
+    second: tiles_summer_hub_large_153
+  - first:
+      213: 1137239968822020609
+    second: tiles_summer_hub_large_154
+  - first:
+      213: -7552763052258736576
+    second: tiles_summer_hub_large_155
+  - first:
+      213: 1986797957759312299
+    second: tiles_summer_hub_large_156
+  - first:
+      213: 8284693031371186961
+    second: tiles_summer_hub_large_157
+  - first:
+      213: -2453292471689956714
+    second: tiles_summer_hub_large_158
+  - first:
+      213: -2452585983580045722
+    second: tiles_summer_hub_large_159
+  - first:
+      213: -3809904200908649309
+    second: tiles_summer_hub_large_160
+  - first:
+      213: -3474299005657653289
+    second: tiles_summer_hub_large_161
+  - first:
+      213: -1025182749227825180
+    second: tiles_summer_hub_large_162
+  - first:
+      213: -5892222186902250009
+    second: tiles_summer_hub_large_163
+  - first:
+      213: -3516894252875568069
+    second: tiles_summer_hub_large_164
+  - first:
+      213: -3161126140104397774
+    second: tiles_summer_hub_large_165
+  - first:
+      213: 6609097815690963377
+    second: tiles_summer_hub_large_166
+  - first:
+      213: 4207949923879315004
+    second: tiles_summer_hub_large_167
+  - first:
+      213: 8475910009289565057
+    second: tiles_summer_hub_large_168
+  - first:
+      213: -6871883132133981003
+    second: tiles_summer_hub_large_169
+  - first:
+      213: -6371737060810605113
+    second: tiles_summer_hub_large_170
+  - first:
+      213: -5838016474158309803
+    second: tiles_summer_hub_large_171
+  - first:
+      213: 7825940842454126787
+    second: tiles_summer_hub_large_172
+  - first:
+      213: -6936074237190781245
+    second: tiles_summer_hub_large_173
+  - first:
+      213: -6388672026833529835
+    second: tiles_summer_hub_large_174
+  - first:
+      213: 3479150868879600609
+    second: tiles_summer_hub_large_175
+  - first:
+      213: 3098403982985395684
+    second: tiles_summer_hub_large_176
+  - first:
+      213: -6397182987744488352
+    second: tiles_summer_hub_large_177
+  - first:
+      213: -8173332198420028086
+    second: tiles_summer_hub_large_178
+  - first:
+      213: -119451841824696410
+    second: tiles_summer_hub_large_179
+  - first:
+      213: -9093782314258484760
+    second: tiles_summer_hub_large_180
+  - first:
+      213: 8535009222555988697
+    second: tiles_summer_hub_large_181
+  - first:
+      213: -4101251169414090861
+    second: tiles_summer_hub_large_182
+  - first:
+      213: -3493470437639522899
+    second: tiles_summer_hub_large_183
+  - first:
+      213: -2380890765243085749
+    second: tiles_summer_hub_large_184
+  - first:
+      213: -7323969675879161678
+    second: tiles_summer_hub_large_185
+  - first:
+      213: 3197581828029270459
+    second: tiles_summer_hub_large_186
+  - first:
+      213: -7631765671047493027
+    second: tiles_summer_hub_large_187
+  - first:
+      213: 4592776395143480948
+    second: tiles_summer_hub_large_188
+  - first:
+      213: -2460356364859919583
+    second: tiles_summer_hub_large_189
+  - first:
+      213: 25213196771261831
+    second: tiles_summer_hub_large_190
+  - first:
+      213: -7707180194591242880
+    second: tiles_summer_hub_large_191
+  - first:
+      213: 417781052643972017
+    second: tiles_summer_hub_large_192
+  - first:
+      213: 6995044800248722950
+    second: tiles_summer_hub_large_193
+  - first:
+      213: -2983500613039042734
+    second: tiles_summer_hub_large_194
+  - first:
+      213: 5420419788704626659
+    second: tiles_summer_hub_large_195
+  - first:
+      213: 6987487543918637293
+    second: tiles_summer_hub_large_196
+  - first:
+      213: 1493372233925098920
+    second: tiles_summer_hub_large_197
+  - first:
+      213: -3365473698477244432
+    second: tiles_summer_hub_large_198
+  - first:
+      213: -1832052807929767592
+    second: tiles_summer_hub_large_199
+  - first:
+      213: -3166679671505300005
+    second: tiles_summer_hub_large_200
+  - first:
+      213: 2636087182999251758
+    second: tiles_summer_hub_large_201
+  - first:
+      213: -1282646998044640072
+    second: tiles_summer_hub_large_202
+  - first:
+      213: -5831680409246958345
+    second: tiles_summer_hub_large_203
+  - first:
+      213: 2470434918073518248
+    second: tiles_summer_hub_large_204
+  - first:
+      213: 346304679688491684
+    second: tiles_summer_hub_large_205
+  - first:
+      213: 4875699056495876781
+    second: tiles_summer_hub_large_206
+  - first:
+      213: -2994500673834397426
+    second: tiles_summer_hub_large_207
+  - first:
+      213: 473416454961495534
+    second: tiles_summer_hub_large_208
+  - first:
+      213: 8241503032100824412
+    second: tiles_summer_hub_large_209
+  - first:
+      213: -8087479995125649827
+    second: tiles_summer_hub_large_210
+  - first:
+      213: -5746776665875239942
+    second: tiles_summer_hub_large_211
+  - first:
+      213: 1889427400018070690
+    second: tiles_summer_hub_large_212
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bcfe481ce796a60800000000000000
+      internalID: 7667799210199075669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22574b24a30eafc00800000000000000
+      internalID: 935306413464646946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2928255295e2dc0800000000000000
+      internalID: -3661891430172683541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d52cc04cd573dbf0800000000000000
+      internalID: -300767161263315502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6274e5510e98118e0800000000000000
+      internalID: -1724445586782009562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d69ece2510163660800000000000000
+      internalID: 7365091923776673490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d38a08197b00a10800000000000000
+      internalID: 1873699280542776577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795becc4a4394bfb0800000000000000
+      internalID: -4632916169331919465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c8f0778ed006030800000000000000
+      internalID: 3485801403665845267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbc246d2077dbdc0800000000000000
+      internalID: -3621607671267669066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_10
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1872
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01efc8b2a26949770800000000000000
+      internalID: 8616677094930054672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1271972ec489d6b0800000000000000
+      internalID: -5271035867898482147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b29a626ece99ac0800000000000000
+      internalID: -3847783933376124021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2084994873b6990800000000000000
+      internalID: -7391753320751693066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92954415d7853aa50800000000000000
+      internalID: 6531161179874941225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9aec0020b8eff90800000000000000
+      internalID: -6917939136874763798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864eae5e9530ce220800000000000000
+      internalID: 2516389976437613672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9371a82184ef52110800000000000000
+      internalID: 1235673258285209401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e9c9e2c4fe458c0800000000000000
+      internalID: -4011318257601700239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74536198e29c31360800000000000000
+      internalID: 7139271036017980743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a63fd7e13a2f4580800000000000000
+      internalID: -8840801149673064791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb21cac018597be0800000000000000
+      internalID: -1479054173470118938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_22
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef78eca22483d6d80800000000000000
+      internalID: -8255880685063075842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_23
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b34268aa95d55a0800000000000000
+      internalID: -6530965295687517307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_24
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa20754e60686d680800000000000000
+      internalID: -8730643463452294481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_25
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17295ca6a948dcca0800000000000000
+      internalID: -5994989730209099151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b8a3b8aeb6f9e90800000000000000
+      internalID: -7016771039317554336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_27
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2973cab1376875750800000000000000
+      internalID: 6293646833217189778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ead98cda8528720800000000000000
+      internalID: 2846935417869938273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f359f54a19088390800000000000000
+      internalID: -7815987144853728267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_30
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70f36ad565fb4ad0800000000000000
+      internalID: -2716808132383477634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_31
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451c4f6256f13b610800000000000000
+      internalID: 1635685608971354452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042036dec8e7c3d30800000000000000
+      internalID: 4412540878659453504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_33
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb4f78a6fc052600800000000000000
+      internalID: 442774391894264778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f78704bd8e1b3a0800000000000000
+      internalID: -6651279146272391318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_35
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b1922d67d5ec850800000000000000
+      internalID: 6399154885453486950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f94698be265ebc0800000000000000
+      internalID: -3754485950581530744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_37
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3c0786d95a7c990800000000000000
+      internalID: -7365736570060487683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ca5c6d2f5e532c0800000000000000
+      internalID: -4452399825437741992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_39
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a0f0623221d5380800000000000000
+      internalID: -8981002139735225814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_40
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a21d50b9ea414200800000000000000
+      internalID: 162493429108773539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_41
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3554c4acccd5600800000000000000
+      internalID: 458747906296730530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_42
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7994eca67a96dd430800000000000000
+      internalID: 3809317027597666711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_43
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d07197fa4214c010800000000000000
+      internalID: 1208110713232519378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8b3d6138f440b90800000000000000
+      internalID: -7276603673481594698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d6e32a8b0b940c0800000000000000
+      internalID: -4590944038085038784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a77a9b6fe4e805e0800000000000000
+      internalID: -1943051522256767067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_47
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79aa4cc3bcf66bbd0800000000000000
+      internalID: -2614779614953428329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1f313cef692df60800000000000000
+      internalID: 8057668704257962404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723a2df026f5bd190800000000000000
+      internalID: -7936645043533470937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_50
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323e4ee2d647c4990800000000000000
+      internalID: -7400412075389557981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_51
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6860b4b14fc258230800000000000000
+      internalID: 3640365300740458118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_52
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a39768d24267340800000000000000
+      internalID: 4861112625741249085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_53
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf82604ceb4070d0800000000000000
+      internalID: -3427155838364381250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_54
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed085107ace82d000800000000000000
+      internalID: 59266745224233182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0d204653c5f37e0800000000000000
+      internalID: -1783605543034498864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1053703100303cea0800000000000000
+      internalID: -5853831791797390079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c13b71306a368b70800000000000000
+      internalID: 8900865898365792704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17cfa47b71098330800000000000000
+      internalID: 3713500997493966621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_59
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f247541a5d74640800000000000000
+      internalID: 5064251194633105226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_60
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61cb7b6f5ced17d0800000000000000
+      internalID: -2945938686661115537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_61
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cd307de36735e30800000000000000
+      internalID: 4491063265685920848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_63
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e70760f8b4d05700800000000000000
+      internalID: 527155047174703073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a86c0f5225c741b0800000000000000
+      internalID: -5672348454235641693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e8f4d41d15a9970800000000000000
+      internalID: 8762405984389795413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_66
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceca9c8567c425f40800000000000000
+      internalID: 5715714948266044652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_67
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71300605311bbb2e0800000000000000
+      internalID: -2108897303981980905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf9cf40fd2178810800000000000000
+      internalID: 1767402127836880837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_69
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becbdecdede232ee0800000000000000
+      internalID: -1287133533773644565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_70
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece3fc870b9fcfc30800000000000000
+      internalID: 4394661872743169742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_71
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5694f0564dc2d5190800000000000000
+      internalID: -7972166474635720347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_72
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b021f1f2378cb1be0800000000000000
+      internalID: -1505389253387939317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_73
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98204002839bcd960800000000000000
+      internalID: 7628175519565218441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_74
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a9022a93375d860800000000000000
+      internalID: 7554070641354250906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1488
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbe8cecdaa6f7fb0800000000000000
+      internalID: -4647878995691901962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1488
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01544790aae596470800000000000000
+      internalID: 8388339865350325520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_77
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1488
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb11c90d1677f7b0800000000000000
+      internalID: -5190550178431427653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1488
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c90956358db59070800000000000000
+      internalID: 8112598683617921472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f22c83fd5a218c10800000000000000
+      internalID: 2053969488064029431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f1ee36c4a6b7e40800000000000000
+      internalID: 5655230633420398387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_81
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa14080b28cb15d0800000000000000
+      internalID: -3090656632116077916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8631bdfa16bd9c4b0800000000000000
+      internalID: -5419559463955000472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6005ecdd6697340800000000000000
+      internalID: 4862030375558317799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c257ee0aa2e555890800000000000000
+      internalID: -7469960869742480084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_85
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff13691f923000690800000000000000
+      internalID: -7638101489338666497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada569d37f26c4610800000000000000
+      internalID: 1606767981094132442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_87
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2191210ccb865cbc0800000000000000
+      internalID: -3763486753712629486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db27763fae20641e0800000000000000
+      internalID: -2214078958676774211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_89
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80613cf1b4d842720800000000000000
+      internalID: 2820534620435715592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_90
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf75b108c403e57c0800000000000000
+      internalID: -4080771107226167300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_91
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ed7d6a4a9b184b0800000000000000
+      internalID: -5439862758061908355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6ccc02c1dd20330800000000000000
+      internalID: 3675743358766859956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5b3072bdf7797a0800000000000000
+      internalID: -6370482568663157263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65929255f3669bbf0800000000000000
+      internalID: -308102677300434602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_95
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcfe60dd07ba9520800000000000000
+      internalID: 2709679395776167092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_96
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ddec2d139b9dce0800000000000000
+      internalID: -1379868187171037836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_97
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f96c8d69cbb3430800000000000000
+      internalID: 3763809269666193179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3196a27a2eed7c0800000000000000
+      internalID: -4044546207733181522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_99
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d8e4a46310a58e0800000000000000
+      internalID: -1704048176319787683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_100
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c839dc48845b6c0800000000000000
+      internalID: -4128313748193309612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_101
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d4dc533c7b82750800000000000000
+      internalID: 6280471729417309510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_102
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44d336b59dfe7180800000000000000
+      internalID: -9115569776302500788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_103
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1901ae9e8d6ab4ac0800000000000000
+      internalID: -3869816004227231599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_104
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548afabc09d976580800000000000000
+      internalID: -8833918898845800379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_105
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158727b62e6e8e320800000000000000
+      internalID: 2587571846064011345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca564b2655795390800000000000000
+      internalID: -7829097464253228340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_107
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684d8509075218ec0800000000000000
+      internalID: -3566528264512416634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_108
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7c28f338cef3950800000000000000
+      internalID: 6431118841358763969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_109
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1038353644a76300800000000000000
+      internalID: 245345326162522141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_110
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fefc3091df3ab50800000000000000
+      internalID: 6603399762535247737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_111
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2cc2726777809f0800000000000000
+      internalID: -502020009104719133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a07c019d6eac7100800000000000000
+      internalID: 107152276758229155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_113
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9f28c0de60ad0e0800000000000000
+      internalID: -2244473849103844913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_114
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480c0629ca9f0f4d0800000000000000
+      internalID: -3102705623672766332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_115
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5907fb1c9069e7e0800000000000000
+      internalID: -1735749957774276262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_116
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c26dfa0520e62610800000000000000
+      internalID: 1596209567652209352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_117
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd1307f28dca4da0800000000000000
+      internalID: -5959725194497810957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_118
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa64c071c6cb3bce0800000000000000
+      internalID: -1390560687498180945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_119
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da368e184e764eb20800000000000000
+      internalID: 3162767069450625965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_120
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad0bf0ba837e0810800000000000000
+      internalID: 1733449946096143776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_121
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05af994d6e033c9c0800000000000000
+      internalID: -3908226283659986352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_122
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2816993130ce7e710800000000000000
+      internalID: 1722604880450380162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_123
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d33a90c1cbfe8410800000000000000
+      internalID: 1481398137030063057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_124
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc35b5031d9963d70800000000000000
+      internalID: 9022568027221873615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_125
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b721d89823d414030800000000000000
+      internalID: 3477145266758161019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_126
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2569d34bae2ac40800000000000000
+      internalID: 5522234152957924054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_127
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847132cb3dbf98640800000000000000
+      internalID: 5082870541277402952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_128
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad2b0f898d9c3c00800000000000000
+      internalID: 881752841193729453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_129
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04ba957bdd194210800000000000000
+      internalID: 1317617194390696974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_130
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ab2e9acc1b2fdd0800000000000000
+      internalID: -2453703354381846013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_131
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bf12ff9ef505da0800000000000000
+      internalID: -5958156848398730414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_132
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627753d18f87b6640800000000000000
+      internalID: 5074282412200261414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_133
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961795605de7bb450800000000000000
+      internalID: 6105613173230498153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_134
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7f71e685d5a3fd0800000000000000
+      internalID: -2361472420216834079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_135
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca1a124b9a65c880800000000000000
+      internalID: -8591343499077870905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_136
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc156743b527e8f10800000000000000
+      internalID: 2273880597916438989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_137
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb4cd56ba716fd70800000000000000
+      internalID: 9076468123927596010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be98332f9dcb8b490800000000000000
+      internalID: -7730221116124067349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_139
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a318949c09cd830800000000000000
+      internalID: 4097308955196340872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_140
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15146db46b774e540800000000000000
+      internalID: 5036281908147142993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_141
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dacf20ebd652a40800000000000000
+      internalID: 5342797195806289276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_142
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e5ae8f7b298e460800000000000000
+      internalID: 7271222917242445434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_143
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01894aa640dc2c700800000000000000
+      internalID: 559234722600097808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_144
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e762c709da3284e0800000000000000
+      internalID: -1980956182277101593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_145
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8ce60d205735c40800000000000000
+      internalID: 5499868224896813311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_146
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95fcf1f936f5d3a0800000000000000
+      internalID: -6641131346754472545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_147
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3101110582bde40800000000000000
+      internalID: 5682179679206773732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_148
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1429764572e2150800000000000000
+      internalID: 5849656209469227516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_149
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1092ec2d400e2bb0800000000000000
+      internalID: -4959025808222810086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_150
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24b484f3d4edcc60800000000000000
+      internalID: 7840174125313471533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_151
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9bfcc0ea625a960800000000000000
+      internalID: 7612533274120796588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_152
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5ed2ce165d4d560800000000000000
+      internalID: 7337724309444355527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_153
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e13e2de0f0f6210800000000000000
+      internalID: 1328296971439644194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_154
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a430ee9b948cf00800000000000000
+      internalID: 1137239968822020609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_155
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0464c6d25023f2790800000000000000
+      internalID: -7552763052258736576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_156
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba127b05736829b10800000000000000
+      internalID: 1986797957759312299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_157
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113a808fa6429f270800000000000000
+      internalID: 8284693031371186961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_158
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692b7cebe7724fdd0800000000000000
+      internalID: -2453292471689956714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_159
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66efb93da0aa6fdd0800000000000000
+      internalID: -2452585983580045722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_160
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac4294a050802bc0800000000000000
+      internalID: -3809904200908649309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_161
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 656
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df5844467fc8cfc0800000000000000
+      internalID: -3474299005657653289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_162
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 656
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7ca62a8b1d5c1f0800000000000000
+      internalID: -1025182749227825180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_163
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 656
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed140ca32f9a3ea0800000000000000
+      internalID: -5892222186902250009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_164
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 656
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c2db07f4b713fc0800000000000000
+      internalID: -3516894252875568069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_165
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 656
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c20e0268c6124d0800000000000000
+      internalID: -3161126140104397774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_166
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 656
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9e116627b38bb50800000000000000
+      internalID: 6609097815690963377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_167
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36657d3924a56a30800000000000000
+      internalID: 4207949923879315004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_168
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183e1e30f3b70a570800000000000000
+      internalID: 8475910009289565057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_169
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4c72b33ba22a0a0800000000000000
+      internalID: -6871883132133981003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_170
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd3130f6ea0397a0800000000000000
+      internalID: -6371737060810605113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_171
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e5ae8a2f23bfea0800000000000000
+      internalID: -5838016474158309803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_172
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c013bb8bb35b9c60800000000000000
+      internalID: 7825940842454126787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_173
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6418cea3d1ebf90800000000000000
+      internalID: -6936074237190781245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_174
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514dc16e3a0e657a0800000000000000
+      internalID: -6388672026833529835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_175
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb6f8b284d684030800000000000000
+      internalID: 3479150868879600609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_176
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edff78a10ebffa20800000000000000
+      internalID: 3098403982985395684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_177
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064515467f3a837a0800000000000000
+      internalID: -6397182987744488352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_178
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4569e17bad729e80800000000000000
+      internalID: -8173332198420028086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_179
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7d548ce2f975ef0800000000000000
+      internalID: -119451841824696410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_180
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1b4e58a256cc180800000000000000
+      internalID: -9093782314258484760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_182
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fea607acd6517c0800000000000000
+      internalID: -4101251169414090861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_183
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5fa2b6523b48fc0800000000000000
+      internalID: -3493470437639522899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_184
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c8da8a67065fed0800000000000000
+      internalID: -2380890765243085749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_185
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b06d7342680c5a90800000000000000
+      internalID: -7323969675879161678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_186
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9cde72bb7106c20800000000000000
+      internalID: 3197581828029270459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_187
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a81389e85861690800000000000000
+      internalID: -7631765671047493027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_188
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476835d3cc1dcbf30800000000000000
+      internalID: 4592776395143480948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_189
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12337a3fbee0bddd0800000000000000
+      internalID: -2460356364859919583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_190
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78df335d443995000800000000000000
+      internalID: 25213196771261831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_191
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085867982789a0590800000000000000
+      internalID: -7707180194591242880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_192
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b39bb467a14cc500800000000000000
+      internalID: 417781052643972017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_193
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606b4ca3f24631160800000000000000
+      internalID: 6995044800248722950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_194
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fc5aceff97896d0800000000000000
+      internalID: -2983500613039042734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_195
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7bc374413393b40800000000000000
+      internalID: 5420419788704626659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_196
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0bcbf56ea88f060800000000000000
+      internalID: 6987487543918637293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_197
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad7980722689b410800000000000000
+      internalID: 1493372233925098920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_198
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fff755908f6b41d0800000000000000
+      internalID: -3365473698477244432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_199
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859d6958dad3396e0800000000000000
+      internalID: -1832052807929767592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_200
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5d976dd91bd04d0800000000000000
+      internalID: -3166679671505300005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_201
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b61ab8353459420800000000000000
+      internalID: 2636087182999251758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_202
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcf35dd95f133ee0800000000000000
+      internalID: -1282646998044640072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_203
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcfa3bb095b11fa0800000000000000
+      internalID: -5831680409246958345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_204
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a84e74187fb84220800000000000000
+      internalID: 2470434918073518248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_205
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a253e875425ec400800000000000000
+      internalID: 346304679688491684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_206
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daad4269576f9a340800000000000000
+      internalID: 4875699056495876781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_207
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01de60b0856176d0800000000000000
+      internalID: -2994500673834397426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_208
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedfdcce1c9e19600800000000000000
+      internalID: 473416454961495534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_209
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55aca3a753bf5270800000000000000
+      internalID: 8241503032100824412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_210
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e25723bcf73cf80800000000000000
+      internalID: -8087479995125649827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_211
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afba003f1195f30b0800000000000000
+      internalID: -5746776665875239942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles_summer_hub_large_212
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac87fea538983a10800000000000000
+      internalID: 1889427400018070690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
