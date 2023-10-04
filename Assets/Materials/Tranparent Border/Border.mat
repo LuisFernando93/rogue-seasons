@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hologram
-  m_Shader: {fileID: -6465566751694194690, guid: 9b1ea24929329bf43bd6cadfc9e6ec4c, type: 3}
+  m_Name: Border
+  m_Shader: {fileID: -6465566751694194690, guid: a1bab2eef0501f7439f3309956bcc887, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,8 +19,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_4df0ca0fb85746f599f50617b9dc6cc8:
-        m_Texture: {fileID: 2800000, guid: 90a3d16926700074d9bdca818e42e354, type: 3}
+    - _Border:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -40,8 +40,5 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
-    m_Colors:
-    - Color_b202a57cab7a42fdbf966714bf016871: {r: 0, g: 8, b: 7.937255, a: 0.4392157}
-    - Color_eeb89ae272924f95aebb3f57977a8caf: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_a53c981f16e14c0bb1af13ae8bab1f27: {r: 0.1, g: 0, b: 0, a: 0}
+    m_Colors: []
   m_BuildTextureStacks: []

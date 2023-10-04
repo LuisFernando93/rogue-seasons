@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     private Player player;
-    private int playerLife;
+    private float playerLife;
     public Slider slider;
 
     // Start is called before the first frame update
