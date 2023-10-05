@@ -7,12 +7,12 @@ public class CanvasAnimationAccess : MonoBehaviour
     Animator animator;
     [SerializeField] AnimationClip openWeaponChange;
     [SerializeField] AnimationClip closeWeaponChange;
-    WeaponChangeSetup weaponChangeSetup;
+    NewWeaponChangeSetup weaponChangeSetup;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        weaponChangeSetup = GetComponent<WeaponChangeSetup>();
+        weaponChangeSetup = GetComponent<NewWeaponChangeSetup>();
     }
 
     public void PlayOpenWeaponChange()

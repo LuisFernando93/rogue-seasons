@@ -4,37 +4,52 @@ using UnityEngine;
 
 public class Gadget : Interactable
 {
-    [TextArea] string gadgetName, history, description;
-    [SerializeField] float lifeModifier, meleeModifier, rangedModifier, speedModifier;
-    [SerializeField] bool lifeModified, meleeModified, rangedModified, speedModified;
-    Player player;
+    [TextArea] public string gadgetName, history, description;
+
+
+    [SerializeField] float lifeModifier, meleeModifier, rangedModifier, speedModifier, atkSpeedModifier, rechargeModifier, bulletSizeModifier;
+    [SerializeField] bool lifeModified, meleeModified, rangedModified, speedModified, atkSpeedModified, rechargeModified, bulletSizeModified;
+
+    GadgetsManager gadget;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        gadget = GameObject.FindGameObjectWithTag("Player").GetComponent<GadgetsManager>();
         if (lifeModifier > 1 || meleeModifier > 1 || rangedModifier > 1 || speedModifier > 1) Debug.Log("Modificador do gadget " + gadgetName + " maior que 100%");
     }
     public override void Interact()
     {
         if (lifeModified)
         {
-            player.IncreaseLifeModifier(lifeModifier);
+            gadget.IncreaseLifeModifier(lifeModifier);
             //Debug.Log("Vida aumentada em: " + lifeModifier * 100 + "%");
         }
         if (speedModified)
         {
-            player.IncreaseSpeedModifier(speedModifier);
+            gadget.IncreaseSpeedModifier(speedModifier);
             //Debug.Log("Velocidade aumentada em: " + speedModifier * 100 + "%");
         }
         if (meleeModified)
         {
-            player.IncreaseMeleeModifier(meleeModifier);
+            gadget.IncreaseMeleeModifier(meleeModifier);
             //Debug.Log("Dano Melee aumentado em: " + meleeModifier * 100 + "%");
         }
         if (rangedModified)
         {
-            player.IncreaseRangedModifier(rangedModifier);
+            gadget.IncreaseRangedModifier(rangedModifier);
             //Debug.Log("Dano Ranged aumentado em: " + rangedModifier * 100 + "%");
+        }
+        if (atkSpeedModified)
+        {
+            gadget.IncreaseAtkSpeedModifier(atkSpeedModifier);
+        }
+        if (rechargeModified)
+        {
+            gadget.IncreaseRechargeModifier(rechargeModifier);
+        }
+        if (bulletSizeModified)
+        {
+            gadget.IncreaseBulletSizeModifier(bulletSizeModifier);
         }
     }
 
