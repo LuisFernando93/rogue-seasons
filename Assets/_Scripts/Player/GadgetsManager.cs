@@ -16,6 +16,9 @@ public class GadgetsManager : MonoBehaviour
 
         UpdateStatus();
     }
+
+    //Recebe o modificador adicionando-o na lista
+
     public void IncreaseLifeModifier(float modifier)
     {
         lifeModifier.Add(modifier);
@@ -36,7 +39,6 @@ public class GadgetsManager : MonoBehaviour
         rangedModifier.Add(modifier);
         UpdateStatus();
     }
-
     public void IncreaseAtkSpeedModifier(float modifier)
     {
         atkSpeedModifier.Add(modifier);
@@ -53,6 +55,7 @@ public class GadgetsManager : MonoBehaviour
         UpdateStatus();
     }
 
+    //Implementa o modificador
 
     public void UpdateStatus()
     {
