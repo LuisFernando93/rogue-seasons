@@ -38,7 +38,7 @@ public class LevelManager: MonoBehaviour
         entrance = GameObject.FindGameObjectWithTag("Entrance");
         walls = GameObject.FindGameObjectsWithTag("Wall");
         totalRooms = rooms.Length;
-        SoundManager.Instance.PlayMusic(defaultSummerOST, battleSummerOST);
+        SoundManager.Instance.PlayDualMusic(defaultSummerOST, battleSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
         for (int i = 0; i < gridWidth; i++)
