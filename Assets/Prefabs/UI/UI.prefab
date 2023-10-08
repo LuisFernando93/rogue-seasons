@@ -13368,26 +13368,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2015157570329381229, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: textLabel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2015157570329381229, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: dialogueBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3476960014047214733, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: _otherImage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3476960014047214733, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: _playerImage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3476960014047214733, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: speakerNameBox
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3877912374537260394, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -13407,18 +13387,6 @@ PrefabInstance:
     - target: {fileID: 3877912374537260394, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -17.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568421299755568049, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: responseBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568421299755568049, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: responseContainer
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568421299755568049, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
-      propertyPath: responseButtonTemplate
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9114647590003671109, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_Sprite

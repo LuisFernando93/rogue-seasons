@@ -6,7 +6,7 @@ public class EnemyBullet : MonoBehaviour
 {
     //Objetos
     [SerializeField] private float destroyAfter = 5f;
-    private CombatManager combatManager;
+    private NewCombatManager combatManager;
     private Animator animator;
     [SerializeField] private AnimationClip HitEffect;
     private GameObject player;
@@ -24,7 +24,7 @@ public class EnemyBullet : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         Destroy(gameObject, destroyAfter);
-        combatManager = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<CombatManager>();
+        combatManager = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<NewCombatManager>();
         player = GameObject.FindGameObjectWithTag("Player");
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var enemy in enemies)

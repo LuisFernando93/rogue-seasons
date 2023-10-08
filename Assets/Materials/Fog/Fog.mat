@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hologram
-  m_Shader: {fileID: -6465566751694194690, guid: 9b1ea24929329bf43bd6cadfc9e6ec4c, type: 3}
+  m_Name: Fog
+  m_Shader: {fileID: -6465566751694194690, guid: 9a4bfbd5b9b45ea41833decbd209dfbb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,10 +19,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_4df0ca0fb85746f599f50617b9dc6cc8:
-        m_Texture: {fileID: 2800000, guid: 90a3d16926700074d9bdca818e42e354, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -39,9 +35,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - Vector1_33a1a2da32904f89b8f7bba1a20c0ec1: 3
+    - Vector1_a9e2a1ce7139493e9b339d222007e0b0: 5
     m_Colors:
-    - Color_b202a57cab7a42fdbf966714bf016871: {r: 0, g: 8, b: 7.937255, a: 0.4392157}
-    - Color_eeb89ae272924f95aebb3f57977a8caf: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_a53c981f16e14c0bb1af13ae8bab1f27: {r: 0.1, g: 0, b: 0, a: 0}
+    - Color_5d3c481cf4b042ab9b2a6067785f6276: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 0}
+    - Color_edf7427a20c24acfa5db014bd4ab0455: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+    - Vector2_5c1829109fdf4f2fae5a597d343d288d: {r: 0.5, g: 0, b: 0, a: 0}
+    - Vector2_860079082bb14d929dcb35a123b3d546: {r: 0.8, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

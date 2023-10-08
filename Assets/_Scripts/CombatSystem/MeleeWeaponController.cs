@@ -23,9 +23,11 @@ public class MeleeWeaponController : Weapon
     bool nextAttack = true;
     string weaponDamage, weaponAtkSpeed;
 
+    float modifier, speedModifier;
+
     //Anima��es
     private string currentAnimation;
-    [SerializeField] AnimationClip[] Ataques;
+    [SerializeField] public AnimationClip[] Ataques;
     [SerializeField] AnimationClip IDLE_ANIMATION;
     [SerializeField] AudioClip attackSound;
 
@@ -152,7 +154,7 @@ public class MeleeWeaponController : Weapon
         enemy = hitInfo.GetComponent<EnemyController>();
         if (enemy != null)
         {
-            enemy.TakeDamage(CDamage[currentCombo - 1]);
+            enemy.TakeDamage(DealDamage());
         }
     }
 
@@ -200,5 +202,31 @@ public class MeleeWeaponController : Weapon
         }
     }
 
-   
+    public void ModifyMeleeDamage(float newDamage)
+    {
+        modifier = newDamage;
+    }
+
+    public void ModifyAtkSpeed(float speedIncrease)
+    {
+        if (speedIncrease <= 1)
+        {
+            speedModifier = speedIncrease;
+        }
+        else
+        {
+            speedModifier = 1;
+        }
+        ChangeAtkSpeed();
+    }
+
+    private void ChangeAtkSpeed()
+    {
+        animator.speed += speedModifier;
+    }
+    private int DealDamage()
+    {
+        return CDamage[currentCombo - 1] + Mathf.RoundToInt(CDamage[currentCombo - 1] * modifier);
+    }
+    
 }

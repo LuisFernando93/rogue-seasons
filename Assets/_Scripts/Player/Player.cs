@@ -16,14 +16,19 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     //Variaveis
-    [SerializeField] private float MoveSpeed = 5f;
-    [SerializeField] private int life = 30;
+    [SerializeField] private float baseMoveSpeed = 5f;
+    public float MoveSpeed = 0f;
+    [SerializeField] private float baseLife = 30f;
+    private float life = 1f;
     [SerializeField] private Sprite dashSprite;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
     private bool dead = false;
     [SerializeField] private LayerMask solidLayer;
+
+    List<float> lifeModifier = new List<float>(), speedModifier = new List<float>(), meleeModifier = new List<float>(), rangedModifier = new List<float>();
+    List<float> atkSpeedModifier = new List<float>(), rechargeModifier = new List<float>(), bulletSizeModifier = new List<float>();
 
     //Variaveis Dash
     private bool canDash = true;
@@ -38,7 +43,7 @@ public class Player : MonoBehaviour
 
     private bool canTakeDamage = true;
 
-    public int GetLife()
+    public float GetLife()
     {
         return life;
     }
@@ -54,6 +59,8 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         healthManager = GetComponent<HealthManager>();
+
+        //UpdateStatus();
     }
 
     private void Update()
@@ -80,6 +87,7 @@ public class Player : MonoBehaviour
         {
             if (combatManager.leftWeaponActive != true && combatManager.canSwitchWeapon)
             {
+                //UpdateStatus();
                 combatManager.WeaponConfiguration();
             }
 
@@ -90,6 +98,7 @@ public class Player : MonoBehaviour
         {
             if (combatManager.rightWeaponActive != true && combatManager.canSwitchWeapon)
             {
+                //UpdateStatus();
                 combatManager.WeaponConfiguration();
             }
         }
@@ -272,4 +281,124 @@ public class Player : MonoBehaviour
     {
         return this.dead;
     }
+
+    /*public void IncreaseLifeModifier(float modifier)
+    {
+        lifeModifier.Add(modifier);
+        UpdateStatus();
+    }
+    public void IncreaseSpeedModifier(float modifier)
+    {
+        speedModifier.Add(modifier);
+        UpdateStatus();
+    }
+    public void IncreaseMeleeModifier(float modifier)
+    {
+        meleeModifier.Add(modifier);
+        UpdateStatus();
+    }
+    public void IncreaseRangedModifier(float modifier)
+    {
+        rangedModifier.Add(modifier);
+        UpdateStatus();
+    }
+
+    public void IncreaseAtkSpeedModifier(float modifier)
+    {
+        atkSpeedModifier.Add(modifier);
+        UpdateStatus();
+    }
+    public void IncreaseRechargeModifier(float modifier)
+    {
+        rechargeModifier.Add(modifier);
+        UpdateStatus();
+    }
+    public void IncreaseBulletSizeModifier(float modifier)
+    {
+        bulletSizeModifier.Add(modifier);
+        UpdateStatus();
+    }
+
+
+    public void UpdateStatus()
+    {
+        float tempLife = 0, tempSpeed = 0, tempMeleeDamage = 0, tempRangedDamage = 0, tempAtkSpeed = 0, tempRechargeSpeed = 0;
+
+        if(lifeModifier != null)
+        {
+            foreach (float modifier in lifeModifier) tempLife += modifier;
+            //Debug.Log("Aumento da vida: " + tempLife * 100 + "%");
+        }
+        if (speedModifier != null)
+        {
+            foreach (float modifier in speedModifier) tempSpeed += modifier;
+            //Debug.Log("Aumento da velocidade: " + tempSpeed * 100 + "%");
+        }
+        if (meleeModifier != null)
+        {
+            foreach (float modifier in meleeModifier) tempMeleeDamage += modifier;
+            //Debug.Log("Aumento do dano Melee: " + tempMeleeDamage * 100 + "%");
+
+            if (combatManager.RightWeaponType == "melee")
+            {          
+                transform.GetChild(1).GetComponent<MeleeWeaponController>().ModifyMeleeDamage(tempMeleeDamage);
+            }
+            if (combatManager.LeftWeaponType == "melee")
+            {
+                transform.GetChild(0).GetComponent<MeleeWeaponController>().ModifyMeleeDamage(tempMeleeDamage);
+            }
+        }
+        if (rangedModifier != null)
+        {
+            foreach (float modifier in rangedModifier) tempRangedDamage += modifier;
+            //Debug.Log("Aumento do dano Ranged: " + tempRangedDamage * 100 + "%");
+            if (combatManager.RightWeaponType == "ranged")
+            {
+                combatManager.ModifyRangedDamage(tempRangedDamage);
+            }
+            if (combatManager.LeftWeaponType == "ranged")
+            {
+                combatManager.ModifyRangedDamage(tempRangedDamage);
+            }
+        }
+        if (atkSpeedModifier != null)
+        {
+            foreach (float modifier in atkSpeedModifier) tempAtkSpeed += modifier;
+            //Debug.Log("Aumento de Atk Speed: " + tempAtkSpeed * 100 + "%");
+
+            if (combatManager.RightWeaponType == "melee")
+            {
+                transform.GetChild(1).GetComponent<MeleeWeaponController>().ModifyAtkSpeed(tempAtkSpeed);
+            }
+            if (combatManager.LeftWeaponType == "melee")
+            {
+                transform.GetChild(0).GetComponent<MeleeWeaponController>().ModifyAtkSpeed(tempAtkSpeed);
+            }
+        }
+        if (rechargeModifier != null)
+        {
+            foreach (float modifier in rechargeModifier) tempRechargeSpeed += modifier;
+            //Debug.Log("Diminuição do tempo de recarga: " + tempRechargeSpeed * 100 + "%");
+            if (combatManager.RightWeaponType == "ranged")
+            {
+                transform.GetChild(1).GetComponent<RangedWeaponController>().ModifyRechargeTime(tempRechargeSpeed);
+            }
+            if (combatManager.LeftWeaponType == "ranged")
+            {
+                transform.GetChild(0).GetComponent<RangedWeaponController>().ModifyRechargeTime(tempRechargeSpeed);
+            }
+        }
+        life = baseLife + (life * tempLife);
+        MoveSpeed = baseMoveSpeed + (MoveSpeed * tempSpeed);
+    }*/
+
+    public void SetLifeValue(float tempLife)
+    {
+        life = baseLife + (life * tempLife);
+    }
+    public void SetMoveSpeedValue(float tempSpeed)
+    {
+        MoveSpeed = baseMoveSpeed + (MoveSpeed * tempSpeed);
+    }
+
 }

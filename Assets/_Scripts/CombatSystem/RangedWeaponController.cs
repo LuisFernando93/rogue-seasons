@@ -25,13 +25,13 @@ public class RangedWeaponController : Weapon
     [SerializeField] float bulletForce = 20f;
     [SerializeField] private AudioClip attackSound;
     string weaponDamage, weaponMaxAmmo, weaponFireFreq, weaponRecharge;
+    float rechargeSpeed, bulletSizeIncrease;
+    Vector3 bulletBaseScale;
 
     //Animações
     [SerializeField] AnimationClip WEAPON_SHOT;
     [SerializeField] AnimationClip WEAPON_RECHARGE;
     [SerializeField] AnimationClip WEAPON_IDLE;
-
-   
 
     private void Start()
     {
@@ -44,8 +44,13 @@ public class RangedWeaponController : Weapon
 
         dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
         weaponChangeSetup = GameObject.FindGameObjectWithTag("Canvas").GetComponent<NewWeaponChangeSetup>();
+        bulletBaseScale = bulletPrefab.transform.localScale;
 
+    }
 
+    private void OnEnable()
+    {
+        ChangeRechargeTime();
     }
 
     private void Update()
@@ -112,6 +117,7 @@ public class RangedWeaponController : Weapon
             SoundManager.Instance.PlaySFX(attackSound);
         }
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        ChangeBulletSize(bullet.transform);
         Rigidbody2D rb =  bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.right * bulletForce, ForceMode2D.Impulse);           
     }
@@ -142,6 +148,37 @@ public class RangedWeaponController : Weapon
     public override void GetWeaponHistory()
     {
         throw new System.NotImplementedException();
+    }
+
+    public void ModifyRechargeTime(float speedIncrease)
+    {
+        if(speedIncrease <= 1.5f)
+        {
+            rechargeSpeed = speedIncrease;
+        }
+        else
+        {
+            rechargeSpeed = 1.5f;
+        }
+        ChangeRechargeTime();
+    }
+
+    private void ChangeRechargeTime()
+    {
+        animator = GetComponent<Animator>();
+        animator.SetFloat("RechargeSpeed", (1+rechargeSpeed));
+    }
+
+   public void ModifyBulletSize(float sizeIncrease)
+    {
+        bulletSizeIncrease = sizeIncrease;
+    }
+
+    private void ChangeBulletSize(Transform bullet)
+    {
+        //Debug.Log(bulletPrefab.transform.localScale.x + " * " + (1.0f + bulletSizeIncrease));
+        Vector3 newScale = new Vector3(bulletBaseScale.x * (1.0f + bulletSizeIncrease), bulletBaseScale.y * (1.0f + bulletSizeIncrease), bulletBaseScale.z * (1.0f + bulletSizeIncrease));
+        bullet.localScale = newScale;
     }
 
     public override string GetWeaponInfos(string infoNeeded)

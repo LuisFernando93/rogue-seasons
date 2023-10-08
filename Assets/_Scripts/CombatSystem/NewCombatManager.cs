@@ -27,6 +27,7 @@ public class NewCombatManager : MonoBehaviour
     [HideInInspector] public bool canSwitchWeapon = true;
     [HideInInspector] public string[] RightWeaponInfo, LeftWeaponInfo;
     [HideInInspector] public string RightWeaponType, LeftWeaponType;
+    float rangedModifier;
     int LeftWeaponDamage = 0, RightWeaponDamage = 0;
     string LweaponName, LweaponDamage, LmeleeWeaponAtkSpeed, LrangedWeaponAmmo, LrangedWeaponFireFreq, LrangedWeaponRecharge;
     string RweaponName, RweaponDamage, RmeleeWeaponAtkSpeed, RrangedWeaponAmmo, RrangedWeaponFireFreq, RrangedWeaponRecharge;
@@ -359,12 +360,19 @@ public class NewCombatManager : MonoBehaviour
     {
         if (leftWeaponActive == true)
         {
-            activeWeaponDamage = LeftWeaponDamage;
+            Debug.Log("Modificador a ser somado: " + Mathf.RoundToInt(LeftWeaponDamage * rangedModifier) + " dano da arma: " + LeftWeaponDamage + " modificador: " + rangedModifier);
+
+            activeWeaponDamage = LeftWeaponDamage + Mathf.RoundToInt(LeftWeaponDamage * rangedModifier);
         }
         if (rightWeaponActive == true)
         {
-            activeWeaponDamage = RightWeaponDamage;
+            activeWeaponDamage = RightWeaponDamage + Mathf.RoundToInt(RightWeaponDamage * rangedModifier);
         }
         return activeWeaponDamage;
+    }
+
+    public void ModifyRangedDamage(float modifier)
+    {
+        rangedModifier = modifier;
     }
 }
