@@ -708,6 +708,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1826305324}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: MenuClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &317234730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2012,6 +2024,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1826305324}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: MenuClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1236381760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2440,6 +2464,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1826305324}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: MenuClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1530189941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2564,6 +2600,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1826305324}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1826305324}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: MenuClickSFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2796,6 +2844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainMenuOST: {fileID: 8300000, guid: febdab6610238f743819342404c44f1c, type: 3}
+  _ButtonClick: {fileID: 8300000, guid: 30e9e046d48719e459c966b1f7b81d4e, type: 3}
   _masterVolumeSlider: {fileID: 810612285}
   _musicVolumeSlider: {fileID: 117840840}
   _SFXVolumeSlider: {fileID: 298825098}
