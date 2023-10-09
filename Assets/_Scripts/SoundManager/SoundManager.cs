@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -50,7 +51,17 @@ public class SoundManager : MonoBehaviour
         _effectsSource.PlayOneShot(clip);
     }
 
-    public void PlayMusic(AudioClip defaultClip, AudioClip battleClip)
+    public void PlaySingleMusic(AudioClip clip)
+    {
+        _musicSourceDefault.clip = clip;
+        _volumeA = 0f;
+        _volumeB = -80f;
+        _mixer.SetFloat("VolumeA", _volumeA);
+        _mixer.SetFloat("VolumeB", _volumeB);
+        _musicSourceDefault.Play();
+    }
+
+    public void PlayDualMusic(AudioClip defaultClip, AudioClip battleClip)
     {
         _musicSourceDefault.clip = defaultClip;
         _musicSourceBattle.clip = battleClip;
@@ -75,6 +86,16 @@ public class SoundManager : MonoBehaviour
 
     public void ChangeMasterVolume(float value)
     {
-        AudioListener.volume = value;
+        _mixer.SetFloat("MasterVolume", Mathf.Log10(value) * 20);
+    }
+
+    public void ChangeMusicVolume(float value)
+    {
+        _mixer.SetFloat("VolumeMusic", Mathf.Log10(value) * 20);
+    }
+
+    public void ChangeSFXVolume(float value)
+    {
+        _mixer.SetFloat("VolumeSFX", Mathf.Log10(value) * 20);
     }
 }

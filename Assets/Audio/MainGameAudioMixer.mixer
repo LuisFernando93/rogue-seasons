@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-9065061420969909080
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: f7c5c422bc3e2ab428c1df137ae501b4
+  m_EffectName: Attenuation
+  m_MixLevel: 7c20160497b13b5458eba4e05033fdca
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-8422781226154199913
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -94,6 +108,7 @@ AudioMixerController:
     - 64ba0687e16db01468c5e03127306395
     - dae7f234cb92e284c84d12bc639d2d75
     - 90818c49d94019a4a9bd47f161ce5340
+    - 657164c3901a4394982125ab5cfedfba
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -108,7 +123,7 @@ AudioMixerGroupController:
   m_GroupID: 8f323b40ee59ab842bf68f929dfca80c
   m_Children:
   - {fileID: 4318559909197258582}
-  - {fileID: -8422781226154199913}
+  - {fileID: 6553041050968447787}
   m_Volume: a1005bb35e9e3064dbc9d2b3ef574759
   m_Pitch: 836cd45563b910747aff0c10e7a616ba
   m_Send: 00000000000000000000000000000000
@@ -143,7 +158,8 @@ AudioMixerSnapshotController:
   m_SnapshotID: 599169de03d1c2145be272dc73176363
   m_FloatValues:
     a1005bb35e9e3064dbc9d2b3ef574759: 0
-    138b10f686dfff94db219afbe7106422: -20
+    138b10f686dfff94db219afbe7106422: 0
+    21d7f6c738e260a4aaf28aecff75d979: -20
     3dab4f5b78e0e4045bb6e840a1cebb58: -0.002441872
     3ce58f0c8c145c34d9c84ca82aae0f9b: 0
     1480394da2dc77246b5988ed7614a566: 0
@@ -203,6 +219,26 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -2084208733948049573}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &6553041050968447787
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SFX Filter
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 657164c3901a4394982125ab5cfedfba
+  m_Children:
+  - {fileID: -8422781226154199913}
+  m_Volume: 21d7f6c738e260a4aaf28aecff75d979
+  m_Pitch: fb5153114a977b9449715aec21579f9d
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -9065061420969909080}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
