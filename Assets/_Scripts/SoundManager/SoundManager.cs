@@ -31,7 +31,7 @@ public class SoundManager : MonoBehaviour
             _volumeB += _transitionRate;
             if (_volumeA < -80f) _volumeA = -80f;
             if (_volumeB > 0f) _volumeB = 0f;
-            Debug.Log(_volumeA);
+            //Debug.Log(_volumeA);
             _mixer.SetFloat("VolumeA", _volumeA);
             _mixer.SetFloat("VolumeB", _volumeB);
         } else if (!_battleMusicOn && (_volumeA < 0))

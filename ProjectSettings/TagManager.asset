@@ -16,6 +16,7 @@ TagManager:
   - playerDrop
   - Entrance
   - Manager
+  - MeleeHitBox
   layers:
   - Default
   - TransparentFX

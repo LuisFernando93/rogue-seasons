@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
     private bool dead = false;
     [SerializeField] private LayerMask solidLayer;
 
+    private float damageFlashDuration = 1f;
+    private float damageFlashTimer = 0f;
+
     List<float> lifeModifier = new List<float>(), speedModifier = new List<float>(), meleeModifier = new List<float>(), rangedModifier = new List<float>();
     List<float> atkSpeedModifier = new List<float>(), rechargeModifier = new List<float>(), bulletSizeModifier = new List<float>();
 
@@ -67,6 +70,22 @@ public class Player : MonoBehaviour
     {
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
+
+        if (damageFlashTimer > 0f)
+        {
+            // Atualize a cor para vermelho
+            spriteRenderer.color = Color.red;
+
+            // Reduza o temporizador
+            damageFlashTimer -= Time.deltaTime;
+
+            // Verifique se o temporizador expirou
+            if (damageFlashTimer <= 0f)
+            {
+                // Retorna à cor original
+                spriteRenderer.color = Color.white;
+            }
+        }
 
         //Atualiza o a posi��o do personagem
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -114,6 +133,7 @@ public class Player : MonoBehaviour
             StartCoroutine(Dash());
         }
 
+        //Interação
         if (Input.GetKeyDown(KeyCode.E))
         {
             CheckInteraction();
@@ -236,8 +256,13 @@ public class Player : MonoBehaviour
         {
             this.life -= power;
             this.canTakeDamage = false;
-            animator.SetTrigger("Damaged");
-            healthManager.GetComponent<HealthManager>().UpdateHealth();
+            //animator.SetTrigger("Damaged");
+
+            damageFlashTimer = damageFlashDuration;
+
+            healthManager.GetComponent<HealthManager>().UpdateHealth();;
+
+            //Debug.Log("Vida Player: " + life);
         }
     }
 

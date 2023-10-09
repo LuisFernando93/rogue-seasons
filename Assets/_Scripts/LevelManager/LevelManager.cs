@@ -113,7 +113,7 @@ public class LevelManager: MonoBehaviour
         roomsCleared++;
         if (roomsCleared >= totalRooms)
         {
-            
+            Debug.Log("Todas as salas concluidas!!");
         }
     }
 
@@ -131,6 +131,9 @@ public class LevelManager: MonoBehaviour
 
     private void SetPlayerPositionToEntrance()
     {
-        player.transform.position = entrance.transform.position;
+        if (entrance != null)
+        {
+            player.transform.position = entrance.transform.position;
+        }
     }
 }

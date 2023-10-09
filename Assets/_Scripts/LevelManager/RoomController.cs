@@ -5,13 +5,15 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class RoomController: MonoBehaviour
+public class RoomController : MonoBehaviour
 {
 
     private GameObject player;
 
-    [SerializeField] private List<GameObject> doors = new List<GameObject>();
-    [SerializeField] private List<GameObject> spawnPoints = new List<GameObject>();
+    [SerializeField] private GameObject spawnContainer, doorsContainer;
+
+    private List<GameObject> doors = new List<GameObject>();
+    private List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] private Collider2D roomActivator;
     [SerializeField] private GameObject meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
 
@@ -24,6 +26,13 @@ public class RoomController: MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        FillDoors();
+        FillSpawns();
+        if (roomActivator == null)
+        {
+            roomActivator = GetComponent<Collider2D>();
+        }
+        roomActivator.isTrigger = true;
         activateDoors(false);
         changeParticleColor = GameObject.FindGameObjectWithTag("MainCamera").GetComponentInChildren<ChangeParticleColor>();
     }
@@ -31,7 +40,7 @@ public class RoomController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!roomCleared)
+        if (!roomCleared)
         {
             if (roomSleep)
             {
@@ -39,7 +48,8 @@ public class RoomController: MonoBehaviour
                 {
                     awakeRoom();
                 }
-            } else
+            }
+            else
             {
                 roomControl();
             }
@@ -103,9 +113,30 @@ public class RoomController: MonoBehaviour
             LevelManager.Instance.RoomCleared();
             SoundManager.Instance.ChangeToDefaultMusic();
             changeParticleColor.SetExplorationParticles();
-        } else
+        }
+        else
         {
             enemies.RemoveAll(GameObject => GameObject == null);
+        }
+    }
+
+    private void FillDoors()
+    {
+        int doorCount = doorsContainer.transform.childCount;
+
+        for (int i = 0; i < doorCount; i++)
+        {
+            doors.Add(doorsContainer.transform.GetChild(i).gameObject);
+        }
+    }
+
+    private void FillSpawns()
+    {
+        int spawnCount = spawnContainer.transform.childCount;
+
+        for (int i = 0; i < spawnCount; i++)
+        {
+            spawnPoints.Add(spawnContainer.transform.GetChild(i).gameObject);
         }
     }
 }

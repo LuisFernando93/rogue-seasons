@@ -23,7 +23,20 @@ public abstract class EnemyController: MonoBehaviour
 
     protected void FloatingDamage(int damage)
     {
-        GameObject point = Instantiate(floatingPoints, transform.position, transform.rotation);
+        GameObject point;
+        if (Mathf.Abs(this.gameObject.transform.rotation.eulerAngles.y) > 0.01f)
+        {
+            // Se a rotação do objeto pai não for zero, defina uma rotação padrão para a instância
+            Quaternion defaultRotation = Quaternion.Euler(0f, 0f, 0f); // Substitua pelos ângulos desejados
+
+            // Crie a instância com a rotação padrão
+            point = Instantiate(floatingPoints, transform.position, defaultRotation);
+        }
+        else
+        {
+            point = Instantiate(floatingPoints, transform.position, transform.rotation);
+
+        }
         point.transform.SetParent(this.transform);
         point.GetComponent<TextMeshPro>().text = damage.ToString();
         if (damage <= 1)

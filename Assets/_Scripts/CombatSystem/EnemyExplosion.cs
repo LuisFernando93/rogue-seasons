@@ -6,7 +6,6 @@ public class EnemyExplosion : MonoBehaviour
 {
     [SerializeField] private GameObject hitBox;
     private GameObject player;
-    private Collider2D collider;
     private int explosionDamage;
 
     public void SetExplosionDamage(int power)
@@ -17,12 +16,11 @@ public class EnemyExplosion : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        collider = hitBox.GetComponent<Collider2D>();
     }
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collider.IsTouching(player.GetComponent<Collider2D>()))
+        if (collision.CompareTag("Player"))
         {
             player.GetComponent<Player>().TakeDamage(explosionDamage);
         }

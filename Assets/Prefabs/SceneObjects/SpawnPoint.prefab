@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92524010c9c202543812477422f9577d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeChance: 0
-  rangedChance: 0
-  turretChance: 0
+  meleeChance: 1
+  rangedChance: 1
+  turretChance: 1

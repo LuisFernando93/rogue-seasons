@@ -114,7 +114,7 @@ public class Drop : MonoBehaviour
     public Transform GetWeapon()
     {
         weaponID = weaponID.Replace("(Clone)", "");
-        weaponList = GameObject.FindGameObjectWithTag("playerDrop").GetComponent<WeaponList>();
+        weaponList = GameObject.FindGameObjectWithTag("Manager").GetComponent<WeaponList>();
         return weaponList.GetWeaponByID(weaponID).transform;
     }
 

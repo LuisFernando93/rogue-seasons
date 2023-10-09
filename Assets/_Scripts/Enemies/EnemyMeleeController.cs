@@ -7,7 +7,7 @@ public class EnemyMeleeController : EnemyController
     
     [SerializeField] private int life = 5;
     [SerializeField] private int speed = 2;
-    [SerializeField] private int power = 1;
+    [SerializeField] public int power = 1;
     [SerializeField] private float attackDistance = 1;
     [SerializeField] private GameObject hitBox;
     [SerializeField] private AudioClip damagedSound;
@@ -67,14 +67,6 @@ public class EnemyMeleeController : EnemyController
             if (!isAttacking)
             {
                 animator.SetTrigger("Attack");
-            }
-        }
-
-        if (isAttacking)
-        {
-            if (hitBox.GetComponent<CircleCollider2D>().IsTouching(player.GetComponent<Collider2D>()))
-            {
-                player.GetComponent<Player>().TakeDamage(power);
             }
         }
     }
@@ -159,5 +151,4 @@ public class EnemyMeleeController : EnemyController
             canTakeDamage = true;
         }
     }
-
 }
