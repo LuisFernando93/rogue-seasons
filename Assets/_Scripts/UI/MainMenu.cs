@@ -6,13 +6,18 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private AudioClip _mainMenuOST;
+    [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
 
     // Start is called before the first frame update
     void Start()
     {
         SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
+    }
+
+    public void MenuClickSFX()
+    {
+        SoundManager.Instance.PlaySFX(_ButtonClick);
     }
 
     public void PlayButton()
