@@ -6,7 +6,6 @@ using UnityEngine.Tilemaps;
 
 public class LevelManager: MonoBehaviour
 {
-
     //LevelManager object must be placed at 0,0, to avoid problems with A*
 
     [SerializeField] private int gridWidth;
@@ -19,7 +18,8 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private LayerMask solidLayer;
     [SerializeField] private GameObject player;
 
-    private int level;
+    [SerializeField] private LevelCounter levelCounter;
+
     private GameObject[] rooms;
     private GameObject[] walls;
     private GameObject entrance;
@@ -32,7 +32,6 @@ public class LevelManager: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        level = 1;
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
         entrance = GameObject.FindGameObjectWithTag("Entrance");
@@ -63,19 +62,6 @@ public class LevelManager: MonoBehaviour
         SetPlayerPositionToEntrance();
     }
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -87,7 +73,7 @@ public class LevelManager: MonoBehaviour
 
         if(player.GetComponent<Player>().IsDead())
         {
-            NewGame();
+            BackToMainMenu();
         }
     }
 
@@ -119,14 +105,12 @@ public class LevelManager: MonoBehaviour
 
     public void nextLevel()
     {
-        level++;
-        NewGame();
+        levelCounter.NextLevel();
     }
 
-    private void NewGame()
+    private void BackToMainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Destroy(this);
+        SceneManager.LoadScene("Main Menu");
     }
 
     private void SetPlayerPositionToEntrance()
