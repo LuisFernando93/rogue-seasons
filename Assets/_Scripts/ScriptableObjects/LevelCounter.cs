@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Level Counter", menuName = "Level Counter")]
 public class LevelCounter : ScriptableObject
 {
     private int _levelCount;

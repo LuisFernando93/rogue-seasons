@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Language", menuName ="LanguageManager")]
+[CreateAssetMenu(fileName = "Language", menuName ="Language Manager")]
 public class Language : ScriptableObject
 {
     [SerializeField] private string selectedLanguage;
