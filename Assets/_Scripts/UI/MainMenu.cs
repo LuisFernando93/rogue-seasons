@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
     [SerializeField] private Language _language;
+    [SerializeField] private LevelCounter _levelCounter;
     
 
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButton()
     {
+        _levelCounter.NewGame();
         SceneManager.LoadScene("Summer");
     }
 
