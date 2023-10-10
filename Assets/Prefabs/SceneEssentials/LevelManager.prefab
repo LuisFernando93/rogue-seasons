@@ -55,6 +55,8 @@ MonoBehaviour:
     m_Bits: 64
   roomsCleared: 0
   totalRooms: 0
+  player: {fileID: 0}
+  levelCounter: {fileID: 11400000, guid: 053a12bc720ef1843a1b278f1ec74259, type: 2}
 --- !u!114 &896836979
 MonoBehaviour:
   m_ObjectHideFlags: 0
