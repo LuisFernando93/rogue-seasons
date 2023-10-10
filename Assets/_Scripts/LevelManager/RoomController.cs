@@ -14,9 +14,10 @@ public class RoomController : MonoBehaviour
 
     private List<GameObject> doors = new List<GameObject>();
     private List<GameObject> spawnPoints = new List<GameObject>();
+    [SerializeField] public Transform chestSpot;
     [SerializeField] private Collider2D roomActivator;
     [SerializeField] private GameObject meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
-
+    [SerializeField] public bool isChestRoom;
     private bool roomSleep = true;
     private bool roomCleared = false;
     private List<GameObject> enemies = new List<GameObject>();
@@ -113,6 +114,7 @@ public class RoomController : MonoBehaviour
             LevelManager.Instance.RoomCleared();
             SoundManager.Instance.ChangeToDefaultMusic();
             changeParticleColor.SetExplorationParticles();
+            GameObject.FindGameObjectWithTag("LevelManager").GetComponent<ChestManager>().InstantiateChest(isChestRoom, chestSpot);
         }
         else
         {

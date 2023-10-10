@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class Gadget : Interactable
 {
     [TextArea] public string gadgetName, history, description;
 
     SpriteRenderer sr;
     [SerializeField] Sprite icon;
-
+    [SerializeField] public int Id;
     [SerializeField] float lifeModifier, meleeModifier, rangedModifier, speedModifier, atkSpeedModifier, rechargeModifier, bulletSizeModifier;
     [SerializeField] bool lifeModified, meleeModified, rangedModified, speedModified, atkSpeedModified, rechargeModified, bulletSizeModified;
 
@@ -22,6 +23,10 @@ public class Gadget : Interactable
         UI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<GadgetUI>();
         sr = GetComponent<SpriteRenderer>();
         sr.sprite = icon;
+        if (Id == null)
+        {
+            Debug.Log("Gadget: " + gadgetName + " sem ID");
+        }
         if (lifeModifier > 1 || meleeModifier > 1 || rangedModifier > 1 || speedModifier > 1) Debug.Log("Modificador do gadget " + gadgetName + " maior que 100%");
     }
     public override void Interact()
@@ -52,7 +57,7 @@ public class Gadget : Interactable
         if (lifeModified)
         {
             gadget.IncreaseLifeModifier(lifeModifier);
-            //Debug.Log("Vida aumentada em: " + lifeModifier * 100 + "%");
+            Debug.Log("Vida aumentada em: " + lifeModifier * 100 + "%");
         }
         if (speedModified)
         {
@@ -62,7 +67,7 @@ public class Gadget : Interactable
         if (meleeModified)
         {
             gadget.IncreaseMeleeModifier(meleeModifier);
-            //Debug.Log("Dano Melee aumentado em: " + meleeModifier * 100 + "%");
+            Debug.Log("Dano Melee aumentado em: " + meleeModifier * 100 + "%");
         }
         if (rangedModified)
         {

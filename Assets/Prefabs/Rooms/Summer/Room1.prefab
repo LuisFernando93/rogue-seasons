@@ -76,6 +76,7 @@ Transform:
   - {fileID: 7284202729368350117}
   - {fileID: 4888386214761857331}
   - {fileID: 8891509837578799525}
+  - {fileID: 8694444428133869328}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -93,10 +94,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnContainer: {fileID: 5109991292815255047}
   doorsContainer: {fileID: 5425306958712633834}
+  chestSpot: {fileID: 8694444428133869328}
   roomActivator: {fileID: 8535620937312902232}
   meleeEnemyPrefab: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
   rangedEnemyPrefab: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
   turretEnemyPrefab: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+  isChestRoom: 0
 --- !u!60 &8535620937312902232
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6459,6 +6462,36 @@ Transform:
   - {fileID: 5535880393667038615}
   m_Father: {fileID: 1319465813838328825}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7475647229911182806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8694444428133869328}
+  m_Layer: 0
+  m_Name: ChestSpot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8694444428133869328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475647229911182806}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 7.83, z: -0.6625808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1319465813838328825}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8868789348729655127
 GameObject:

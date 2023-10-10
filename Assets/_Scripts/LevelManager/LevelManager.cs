@@ -17,14 +17,14 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private AudioClip battleSummerOST;
 
     [SerializeField] private LayerMask solidLayer;
-    [SerializeField] private GameObject player;
+    private GameObject player;
 
     private int level;
     private GameObject[] rooms;
     private GameObject[] walls;
     private GameObject entrance;
-    private int roomsCleared;
-    private int totalRooms;
+    [HideInInspector] public int roomsCleared;
+    [HideInInspector] public int totalRooms;
     private bool showDebugPathfinder = false;
 
     public static LevelManager Instance;
@@ -32,12 +32,13 @@ public class LevelManager: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         level = 1;
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
         entrance = GameObject.FindGameObjectWithTag("Entrance");
         walls = GameObject.FindGameObjectsWithTag("Wall");
-        totalRooms = rooms.Length;
+        totalRooms = rooms.Length - 1;
         SoundManager.Instance.PlayDualMusic(defaultSummerOST, battleSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
@@ -68,7 +69,7 @@ public class LevelManager: MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(this);
+            //DontDestroyOnLoad(this);
         }
         else
         {

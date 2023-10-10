@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("Summer");
+        SceneManager.LoadScene("Hub");
     }
 
     public void ExitButton()
