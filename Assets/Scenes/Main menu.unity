@@ -2864,6 +2864,7 @@ MonoBehaviour:
   _masterVolumeSlider: {fileID: 810612285}
   _musicVolumeSlider: {fileID: 117840840}
   _SFXVolumeSlider: {fileID: 298825098}
+  _language: {fileID: 11400000, guid: 63408602e9c4c1a42a34e8aae90d51db, type: 2}
 --- !u!1 &1883356071
 GameObject:
   m_ObjectHideFlags: 0
