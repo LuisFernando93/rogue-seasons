@@ -88,7 +88,7 @@ public class LevelManager: MonoBehaviour
 
         if(player.GetComponent<Player>().IsDead())
         {
-            BackToMainMenu();
+            BackToHub();
         }
     }
 
@@ -123,9 +123,9 @@ public class LevelManager: MonoBehaviour
         levelCounter.NextLevel();
     }
 
-    private void BackToMainMenu()
+    private void BackToHub()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Hub");
     }
 
     private void SetPlayerPositionToEntrance()
