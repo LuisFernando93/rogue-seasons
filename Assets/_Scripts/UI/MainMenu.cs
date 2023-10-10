@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,11 +6,14 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
+    [SerializeField] private Language _language;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
+        Load();
     }
 
     public void MenuClickSFX()
@@ -47,6 +48,21 @@ public class MainMenu : MonoBehaviour
                 //String incompativel
                 break;
         }
+    }
+
+    public void Save()
+    {
+        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, "PT-BR");
+        SaveSystem.SaveOptions(data);
+    }
+
+    public void Load()
+    {
+        OptionsData data = SaveSystem.LoadOptions();
+        _masterVolumeSlider.value = data.getMasterVolume();
+        _musicVolumeSlider.value = data.getVolumeMusic();
+        _SFXVolumeSlider.value = data.getVolumeSFX();
+        _language.changeLanguage(data.getLanguage());
     }
 
 }
