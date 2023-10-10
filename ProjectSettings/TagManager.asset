@@ -17,6 +17,7 @@ TagManager:
   - Entrance
   - Manager
   - MeleeHitBox
+  - LevelManager
   layers:
   - Default
   - TransparentFX

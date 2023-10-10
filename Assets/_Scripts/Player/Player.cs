@@ -20,15 +20,12 @@ public class Player : MonoBehaviour
     public float MoveSpeed = 0f;
     [SerializeField] private float baseLife = 30f;
     private float life = 1f;
-    [SerializeField] private Sprite dashSprite;
+    //[SerializeField] private Sprite dashSprite;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
     private bool dead = false;
     [SerializeField] private LayerMask solidLayer;
-
-    private float damageFlashDuration = 1f;
-    private float damageFlashTimer = 0f;
 
     List<float> lifeModifier = new List<float>(), speedModifier = new List<float>(), meleeModifier = new List<float>(), rangedModifier = new List<float>();
     List<float> atkSpeedModifier = new List<float>(), rechargeModifier = new List<float>(), bulletSizeModifier = new List<float>();
@@ -70,22 +67,6 @@ public class Player : MonoBehaviour
     {
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
-
-        if (damageFlashTimer > 0f)
-        {
-            // Atualize a cor para vermelho
-            spriteRenderer.color = Color.red;
-
-            // Reduza o temporizador
-            damageFlashTimer -= Time.deltaTime;
-
-            // Verifique se o temporizador expirou
-            if (damageFlashTimer <= 0f)
-            {
-                // Retorna à cor original
-                spriteRenderer.color = Color.white;
-            }
-        }
 
         //Atualiza o a posi��o do personagem
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -190,7 +171,7 @@ public class Player : MonoBehaviour
         canDash = false;
         isDashing = true;
 
-        GetComponent<SpriteRenderer>().sprite = dashSprite;
+        //GetComponent<SpriteRenderer>().sprite = dashSprite;
 
 
         Vector2 dashDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
@@ -258,8 +239,7 @@ public class Player : MonoBehaviour
             this.canTakeDamage = false;
             //animator.SetTrigger("Damaged");
 
-            damageFlashTimer = damageFlashDuration;
-
+            GetComponent<PlayerAnimationManager>().DamageIndicator();
             healthManager.GetComponent<HealthManager>().UpdateHealth();;
 
             //Debug.Log("Vida Player: " + life);

@@ -360,7 +360,7 @@ public class NewCombatManager : MonoBehaviour
     {
         if (leftWeaponActive == true)
         {
-            Debug.Log("Modificador a ser somado: " + Mathf.RoundToInt(LeftWeaponDamage * rangedModifier) + " dano da arma: " + LeftWeaponDamage + " modificador: " + rangedModifier);
+            //Debug.Log("Modificador a ser somado: " + Mathf.RoundToInt(LeftWeaponDamage * rangedModifier) + " dano da arma: " + LeftWeaponDamage + " modificador: " + rangedModifier);
 
             activeWeaponDamage = LeftWeaponDamage + Mathf.RoundToInt(LeftWeaponDamage * rangedModifier);
         }
