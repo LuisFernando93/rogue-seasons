@@ -33,7 +33,6 @@ public class LevelManager: MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        level = 1;
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
         entrance = GameObject.FindGameObjectWithTag("Entrance");

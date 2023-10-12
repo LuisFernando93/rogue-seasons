@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public abstract class EnemyController: MonoBehaviour
@@ -60,7 +61,8 @@ public abstract class EnemyController: MonoBehaviour
     protected void FindPlayerPosition()
     {
         pathIndex = 0;
-        try { pathVectorList = Pathfinding.Instance.FindPathWorld(transform.position, player.transform.position); }
+        try { pathVectorList = Pathfinding.Instance.FindPathWorld(transform.position, player.transform.GetChild(3).position);
+        }
         catch (NullReferenceException e)
         { pathVectorList = null;}
         if(pathVectorList != null && pathVectorList.Count > 1)
