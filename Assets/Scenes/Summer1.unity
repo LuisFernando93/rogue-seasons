@@ -3894,6 +3894,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7323531392464597065, guid: 3999939f01f2bfc429a551a9eecef216, type: 3}
+      propertyPath: m_TagString
+      value: Entrance
+      objectReference: {fileID: 0}
     - target: {fileID: 8602080514448754308, guid: 3999939f01f2bfc429a551a9eecef216, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[4].m_Data
       value: 

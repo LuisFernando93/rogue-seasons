@@ -18,8 +18,6 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private LayerMask solidLayer;
     private GameObject player;
 
-    [SerializeField] private LevelCounter levelCounter;
-
     private GameObject[] rooms;
     private GameObject[] walls;
     private GameObject entrance;
@@ -33,7 +31,6 @@ public class LevelManager: MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        level = 1;
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
         entrance = GameObject.FindGameObjectWithTag("Entrance");
@@ -62,19 +59,6 @@ public class LevelManager: MonoBehaviour
         }
 
         SetPlayerPositionToEntrance();
-    }
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            //DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(this);
-        }
     }
 
     // Update is called once per frame
@@ -120,7 +104,7 @@ public class LevelManager: MonoBehaviour
 
     public void nextLevel()
     {
-        levelCounter.NextLevel();
+        
     }
 
     private void BackToHub()

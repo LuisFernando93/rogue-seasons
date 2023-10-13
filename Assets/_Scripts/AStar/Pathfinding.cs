@@ -54,6 +54,11 @@ public class Pathfinding
         PathNode startNode = grid.GetGridObject(xStart, yStart);
         PathNode endNode = grid.GetGridObject(xFinal, yFinal);
 
+        if (!endNode.isWalkable)
+        {
+            return null;
+        }
+
         openList = new List<PathNode> { startNode };
         closedList = new List<PathNode>();
 
