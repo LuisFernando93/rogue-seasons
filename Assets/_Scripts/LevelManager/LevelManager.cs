@@ -61,19 +61,6 @@ public class LevelManager: MonoBehaviour
         SetPlayerPositionToEntrance();
     }
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            //DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
