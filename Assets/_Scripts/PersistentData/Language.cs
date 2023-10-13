@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Language", menuName ="Language Manager")]
-public class Language : ScriptableObject
+public class Language
 {
     [SerializeField] private string selectedLanguage;
     private string[] supportedLanguages = {"PT-BR","ENG"};

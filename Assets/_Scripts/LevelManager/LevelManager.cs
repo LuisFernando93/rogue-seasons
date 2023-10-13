@@ -18,8 +18,6 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private LayerMask solidLayer;
     private GameObject player;
 
-    [SerializeField] private LevelCounter levelCounter;
-
     private GameObject[] rooms;
     private GameObject[] walls;
     private GameObject entrance;
@@ -119,7 +117,7 @@ public class LevelManager: MonoBehaviour
 
     public void nextLevel()
     {
-        levelCounter.NextLevel();
+        
     }
 
     private void BackToHub()
