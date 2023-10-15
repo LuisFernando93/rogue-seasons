@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static UnityEditor.PlayerSettings.Switch;
 
 public class MainMenu : MonoBehaviour
 {
@@ -24,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("Hub");
+        SceneManager.LoadScene("Summer1");
     }
 
     public void ExitButton()

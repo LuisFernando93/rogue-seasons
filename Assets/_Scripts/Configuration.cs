@@ -16,4 +16,23 @@ public class Configuration : MonoBehaviour
     {
         return language;
     }
+
+    public void SetLanguage(string language)
+    {
+        switch (language)
+        {
+            case "PT-BR":
+                this.language = LanguageOption.PTBR;
+                break;
+            case "ENG":
+                this.language= LanguageOption.ING;
+                break;
+        }
+    }
+
+    public void Start()
+    {
+        Debug.Log(Language.Instance.getSelectedLanguage());
+        SetLanguage(Language.Instance.getSelectedLanguage());
+    }
 }

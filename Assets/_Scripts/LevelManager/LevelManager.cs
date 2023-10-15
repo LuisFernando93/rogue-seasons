@@ -35,6 +35,7 @@ public class LevelManager: MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         CreateLevelLayout();
+        gameObject.AddComponent<LevelGenerator>();
 
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
