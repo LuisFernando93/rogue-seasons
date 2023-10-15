@@ -5,14 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Gadget : Interactable
 {
-    [TextArea] public string gadgetName, history, description;
+    [TextArea] public string gadgetNameBR, gadgetNameING, historyBR, historyING, descriptionBR, descriptionING;
 
     SpriteRenderer sr;
     [SerializeField] Sprite icon;
     [SerializeField] public int Id;
     [SerializeField] float lifeModifier, meleeModifier, rangedModifier, speedModifier, atkSpeedModifier, rechargeModifier, bulletSizeModifier;
     [SerializeField] bool lifeModified, meleeModified, rangedModified, speedModified, atkSpeedModified, rechargeModified, bulletSizeModified;
-
+    string language;
     GadgetsManager gadget;
 
     GadgetUI UI;
@@ -25,27 +25,65 @@ public class Gadget : Interactable
         sr.sprite = icon;
         if (Id == null)
         {
-            Debug.Log("Gadget: " + gadgetName + " sem ID");
+            Debug.Log("Gadget: " + gadgetNameING + " sem ID");
         }
-        if (lifeModifier > 1 || meleeModifier > 1 || rangedModifier > 1 || speedModifier > 1) Debug.Log("Modificador do gadget " + gadgetName + " maior que 100%");
+        if (lifeModifier > 1 || meleeModifier > 1 || rangedModifier > 1 || speedModifier > 1) Debug.Log("Modificador do gadget " + gadgetNameING + " maior que 100%");
+        language = GameObject.FindGameObjectWithTag("Manager").GetComponent<Configuration>().GetLanguage().ToString();
     }
     public override void Interact()
     {
         UI.SetGadget(this.gameObject.GetComponent<Gadget>());
         //SetGadgetModifiers();
+        Destroy(this.gameObject, 0.2f);
     }
 
     public string GetGadgetName()
     {
-        return gadgetName;
+        if(language == "PTBR")
+        {
+            return gadgetNameBR;
+        }
+        else if(language == "ING")
+        {
+            return gadgetNameING;
+        }
+        else
+        {
+            Debug.Log("Sem lingua");
+            return gadgetNameING;
+        }
     }
     public string GetGadgetHistory()
     {
-        return history;
+        if (language == "PTBR")
+        {
+            return historyBR;
+        }
+        else if (language == "ING")
+        {
+            return historyING;
+        }
+        else
+        {
+            Debug.Log("Sem lingua");
+            return historyING;
+        }
     }
     public string GetGadgetDescription()
     {
-        return description;
+        if (language == "PTBR")
+        {
+            return descriptionBR;
+        }
+        else if (language == "ING")
+        {
+            return descriptionING;
+        }
+        else
+        {
+            Debug.Log("Sem lingua");
+            return descriptionING;
+        }
     }
     public Sprite GetGadgetIcon()
     {
