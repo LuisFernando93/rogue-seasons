@@ -24,6 +24,7 @@ public class LevelManager: MonoBehaviour
     [HideInInspector] public int roomsCleared;
     [HideInInspector] public int totalRooms;
     private bool showDebugPathfinder = false;
+    int level;
 
     public static LevelManager Instance;
 

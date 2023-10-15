@@ -406,7 +406,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -386520171
   m_SortingLayer: -1
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -490,25 +490,25 @@ Tilemap:
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
-      e00: 1.7e-44
-      e01: -7.155412e+33
-      e02: -1.7112557e+29
-      e03: 0.0000000026832527
+      e00: 0
+      e01: -2.0390125e-33
+      e02: 2.734752e-39
+      e03: 14.600044
       e10: 0
-      e11: 4.5905e-41
-      e12: 9.54e-43
-      e13: 9.53e-43
-      e20: -1.1740424e-13
-      e21: 2.696485e+24
-      e22: 2.6962315e+24
-      e23: 2.6962315e+24
-      e30: 4.5912e-41
-      e31: 2.94e-43
-      e32: 2.94e-43
-      e33: 2.94e-43
+      e11: 4.5904e-41
+      e12: 6.22e-43
+      e13: 6.2e-43
+      e20: 0
+      e21: -1.9907867e-32
+      e22: -1.9906574e-32
+      e23: -1.9906574e-32
+      e30: 0
+      e31: 1.78e-43
+      e32: 1.78e-43
+      e33: 1.78e-43
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: -1.7112557e+29, g: -1.7112557e+29, b: -1.7112557e+29, a: -1.7112557e+29}
+    m_Data: {r: 2.734752e-39, g: 2.734752e-39, b: 2.734752e-39, a: 2.734752e-39}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -572,7 +572,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -386520171
   m_SortingLayer: -1
-  m_SortingOrder: 2
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -681,24 +681,24 @@ Tilemap:
   - m_RefCount: 0
     m_Data:
       e00: 0
-      e01: 1.9774405e+21
-      e02: 1.6273048e+29
-      e03: -0.0000000018709176
+      e01: -2.0390125e-33
+      e02: 2.73946e-39
+      e03: 8.749092
       e10: 0
-      e11: 4.5905e-41
-      e12: 7.43e-43
-      e13: 7.4e-43
+      e11: 4.5904e-41
+      e12: 6.22e-43
+      e13: 6.2e-43
       e20: 0
-      e21: -1.7023224e-25
-      e22: -1.7022139e-25
-      e23: -1.7022139e-25
+      e21: -1.9907867e-32
+      e22: -1.9906574e-32
+      e23: -1.9906574e-32
       e30: 0
-      e31: 3.31e-43
-      e32: 3.31e-43
-      e33: 3.31e-43
+      e31: 1.78e-43
+      e32: 1.78e-43
+      e33: 1.78e-43
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: 2.8345e-41, g: 2.8345e-41, b: 2.8345e-41, a: 2.8345e-41}
+    m_Data: {r: 3.69001e-40, g: 3.69001e-40, b: 3.69001e-40, a: 3.69001e-40}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}

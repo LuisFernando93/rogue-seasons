@@ -11,7 +11,7 @@ public class GadgetDrop : Interactable
     public override void Interact()
     {
         InstantiateGadget(ID);
-        Destroy(this.gameObject, 0.5f);
+        Destroy(this.gameObject, 0.1f);
     }
 
     private void InstantiateGadget(int id)

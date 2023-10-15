@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8739550068102967320}
   - component: {fileID: 8739550068102967323}
   - component: {fileID: 5715383804243463927}
+  - component: {fileID: 7060358181883987755}
   m_Layer: 0
   m_Name: Bau
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8739550068102967324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.04, y: 2.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,3 +134,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7060358181883987755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8739550068102967324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994fc65c9a040034399af81d38c8edd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeIntensityType: 3
+  perpetualStrength: 0
+  perpetualTime: 0

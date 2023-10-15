@@ -61,11 +61,20 @@ public class RoomController : MonoBehaviour
 
     private void awakeRoom()
     {
-        roomSleep = false;
-        activateDoors(true);
-        spawnEnemies();
-        SoundManager.Instance.ChangeToBattleMusic();
-        changeParticleColor.SetBattleParticles();
+        if (isChestRoom)
+        {
+            GameObject.FindGameObjectWithTag("LevelManager").GetComponent<ChestManager>().InstantiateChest(isChestRoom, chestSpot);
+            roomSleep = false;
+        }
+        else
+        {
+            roomSleep = false;
+            activateDoors(true);
+            spawnEnemies();
+            SoundManager.Instance.ChangeToBattleMusic();
+            changeParticleColor.SetBattleParticles();
+        }
+        
     }
 
     private void activateDoors(bool active)
@@ -111,7 +120,7 @@ public class RoomController : MonoBehaviour
         {
             activateDoors(false);
             roomCleared = true;
-            LevelManager.Instance.RoomCleared();
+            GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>().RoomCleared();
             SoundManager.Instance.ChangeToDefaultMusic();
             changeParticleColor.SetExplorationParticles();
             GameObject.FindGameObjectWithTag("LevelManager").GetComponent<ChestManager>().InstantiateChest(isChestRoom, chestSpot);
