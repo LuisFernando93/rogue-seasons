@@ -18,7 +18,7 @@ public class ChestManager : MonoBehaviour
 
     public void InstantiateChest(bool isChestRoom, Transform chestSpot)
     {
-        if (levelManager.roomsCleared < levelManager.totalRooms && chestCount < maxChest)
+        if (levelManager.roomsCleared < levelManager.totalRooms && chestCount < maxChest && !isChestRoom)
         {
             if (Random.Range(1, dropChance) == 1)
             {
@@ -27,6 +27,12 @@ public class ChestManager : MonoBehaviour
                 Debug.Log("Bau criado, quantidade de baus criados: "+chestCount);
             }
             else Debug.Log("Bau não foi criado");
+        }
+        else if (isChestRoom /*&& chestCount < maxChest*/)
+        {
+            Instantiate(chestsPrefab.GetRandom(), chestSpot.position, chestSpot.rotation);
+            //chestCount++;
+            Debug.Log("Baú de sala especial criado");
         }
         else if (chestCount == 0)
         {
