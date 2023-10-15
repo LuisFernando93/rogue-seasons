@@ -12,8 +12,6 @@ public class Language: MonoBehaviour
     {
         if (Instance == null)
         {
-            PlayerPrefs.DeleteKey(languageKey);
-            Debug.Log("Deletando playerPrefs");
             Instance = this;
             DontDestroyOnLoad(this);
         }
