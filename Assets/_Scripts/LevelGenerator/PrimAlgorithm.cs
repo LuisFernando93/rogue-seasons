@@ -1,5 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using UnityEditorInternal;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class PrimAlgorithm
 { 
@@ -9,6 +13,7 @@ public class PrimAlgorithm
         HashSet<int> visitedVertices = new HashSet<int>();
 
         visitedVertices.Add(0);
+        //Debug.Log("Numero de vertices no grafo: " + graph.getNVertices());
 
         while(visitedVertices.Count < graph.getNVertices())
         {
@@ -27,11 +32,13 @@ public class PrimAlgorithm
 
             if (minEdge != null)
             {
+                //Debug.Log("Adicionando conector " + minEdge.getId() + " ao MST");
                 minimumSpanningTree.Add(minEdge);
                 visitedVertices.Add(minEdge.getTo());
             }
             else
             {
+                Debug.Log("Saindo");
                 break;
             }
         }

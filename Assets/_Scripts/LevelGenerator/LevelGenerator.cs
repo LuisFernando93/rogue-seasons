@@ -19,7 +19,8 @@ public class LevelGenerator : MonoBehaviour
         nRooms = rooms.Length;
         connectors = GameObject.FindGameObjectsWithTag("Connector");
         nConnectors = connectors.Length;
-        //Debug.Log(nConnectors);
+        //Debug.Log("Numero de salas: " + nRooms);
+        //Debug.Log("Numero de conectores: " + nConnectors);
         CalculateLevelLayout();
         GenerateLevelLayout();
     }
@@ -32,7 +33,7 @@ public class LevelGenerator : MonoBehaviour
         for (int i = 0; i < nConnectors; i++)
         {
             levelLayout.AddEdge(connectors[i].GetComponent<Connector>().getFrom(), connectors[i].GetComponent<Connector>().getTo(), connectors[i].GetComponent<Connector>().getWeight(), connectors[i].GetComponent<Connector>().getId()) ;
-            //Debug.Log("Peso da aresta " + paths[i].GetComponent<Path>().getId() + ": " + paths[i].GetComponent<Path>().getWeight());
+            //Debug.Log("Peso da aresta " + connectors[i].GetComponent<Connector>().getId() + ": " + connectors[i].GetComponent<Connector>().getWeight());
         }
 
         MinimumSpanningTree = PrimAlgorithm.FindMST(levelLayout);

@@ -2,15 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Language", menuName ="Language Manager")]
-public class Language
+public class Language: MonoBehaviour
 {
-    [SerializeField] private string selectedLanguage;
+    private string languageKey = "Language";
     private string[] supportedLanguages = {"PT-BR","ENG"};
+
+    public static Language Instance;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 
     public string getSelectedLanguage()
     {
-        return selectedLanguage;
+        return PlayerPrefs.GetString(languageKey, "PT-BR");
     }
 
     public bool hasLanguageSupport(string language)
@@ -30,7 +43,8 @@ public class Language
     {
         if(hasLanguageSupport(language))
         {
-            selectedLanguage = language;
+            PlayerPrefs.SetString(languageKey, language);
+            Debug.Log("Language set to " + language);
         } else
         {
             Debug.LogError("Language not supported");
