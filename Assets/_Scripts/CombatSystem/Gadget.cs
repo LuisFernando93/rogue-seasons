@@ -100,7 +100,7 @@ public class Gadget : Interactable
         if (speedModified)
         {
             gadget.IncreaseSpeedModifier(speedModifier);
-            //Debug.Log("Velocidade aumentada em: " + speedModifier * 100 + "%");
+            Debug.Log("Velocidade aumentada em: " + speedModifier * 100 + "%");
         }
         if (meleeModified)
         {
@@ -110,7 +110,7 @@ public class Gadget : Interactable
         if (rangedModified)
         {
             gadget.IncreaseRangedModifier(rangedModifier);
-            //Debug.Log("Dano Ranged aumentado em: " + rangedModifier * 100 + "%");
+            Debug.Log("Dano Ranged aumentado em: " + rangedModifier * 100 + "%");
         }
         if (atkSpeedModified)
         {
@@ -125,7 +125,7 @@ public class Gadget : Interactable
             gadget.IncreaseBulletSizeModifier(bulletSizeModifier);
         }
 
-        Destroy(this.gameObject, 0.2f);
+        //Destroy(this.gameObject, 0.2f);
     }
 
 

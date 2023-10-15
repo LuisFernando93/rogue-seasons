@@ -134,7 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e6ddc2289cb4442990d6be26f6c223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponInfo: []
   history: 
   icon: {fileID: -1215092017051758182, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
   quantCombo: 3

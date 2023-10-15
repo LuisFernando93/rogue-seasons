@@ -19,12 +19,12 @@ public class GadgetDrop : Interactable
         if (randomGadget)
         {
             GameObject gadget = Instantiate(gadgetList.GetRandomGadget(), transform.position, transform.rotation);
-            Debug.Log("Random Gadget");
+            //Debug.Log("Random Gadget");
         }
         else
         {
             GameObject gadget = Instantiate(gadgetList.GetEspecificGadget(id), transform.position, transform.rotation);
-            Debug.Log("Especific Gadget: " + ID);
+            //Debug.Log("Especific Gadget: " + ID);
         }
 
     }

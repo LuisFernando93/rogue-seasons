@@ -17,6 +17,30 @@ TextureImporter:
   - first:
       213: 4310691464737878517
     second: WindSpearEmission_4
+  - first:
+      213: 6209759294489501627
+    second: WindSpearEmission_5
+  - first:
+      213: -8448379619473899689
+    second: WindSpearEmission_6
+  - first:
+      213: 3381417339456014154
+    second: WindSpearEmission_7
+  - first:
+      213: 2565222185710749398
+    second: WindSpearEmission_8
+  - first:
+      213: 6364356805802051984
+    second: WindSpearEmission_9
+  - first:
+      213: -92350724283908577
+    second: WindSpearEmission_10
+  - first:
+      213: 126260434683976826
+    second: WindSpearEmission_11
+  - first:
+      213: 5416444174771648630
+    second: WindSpearEmission_12
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -110,7 +134,7 @@ TextureImporter:
       name: WindSpearEmission_0
       rect:
         serializedVersion: 2
-        x: 512
+        x: 0
         y: 512
         width: 256
         height: 256
@@ -132,7 +156,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 256
+        y: 512
         width: 256
         height: 256
       alignment: 0
@@ -152,8 +176,8 @@ TextureImporter:
       name: WindSpearEmission_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 512
+        y: 512
         width: 256
         height: 256
       alignment: 0
@@ -173,8 +197,8 @@ TextureImporter:
       name: WindSpearEmission_3
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
+        x: 768
+        y: 512
         width: 256
         height: 256
       alignment: 0
@@ -194,8 +218,8 @@ TextureImporter:
       name: WindSpearEmission_4
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
+        x: 0
+        y: 256
         width: 256
         height: 256
       alignment: 0
@@ -207,6 +231,174 @@ TextureImporter:
       bones: []
       spriteID: 5f172045c07a2db30800000000000000
       internalID: 4310691464737878517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf1ab87d2f7d2650800000000000000
+      internalID: 6209759294489501627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fbb9d5f7351ca80800000000000000
+      internalID: -8448379619473899689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a474f9b97253dee20800000000000000
+      internalID: 3381417339456014154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d68d3d9cff799320800000000000000
+      internalID: 2565222185710749398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099cba98bccb25850800000000000000
+      internalID: 6364356805802051984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_10
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ebe4c6187e7bef0800000000000000
+      internalID: -92350724283908577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c5686423190c100800000000000000
+      internalID: 126260434683976826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindSpearEmission_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6787ff687431b2b40800000000000000
+      internalID: 5416444174771648630
       vertices: []
       indices: 
       edges: []

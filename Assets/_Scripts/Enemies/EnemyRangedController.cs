@@ -16,6 +16,7 @@ public class EnemyRangedController :  EnemyController
     [SerializeField] private LayerMask obstacles;
     [SerializeField] private AudioClip damagedSound;
 
+    private SpriteRenderer spriteRenderer;
     private Animator animator;
     private bool faceRight = true;
     private float distance;
@@ -29,10 +30,14 @@ public class EnemyRangedController :  EnemyController
 
     private Vector2 directionToPlayer;
 
+    private float damageFlashTimer = 0f;
+
+
     // Start is called before the first frame update
     new void Start()
     {
         base.Start();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         
     }
@@ -46,6 +51,22 @@ public class EnemyRangedController :  EnemyController
     void FixedUpdate()
     {
         MoveEnemy();
+
+        if (damageFlashTimer > 0f)
+        {
+            // Atualize a cor para vermelho
+            spriteRenderer.color = Color.red;
+
+            // Reduza o temporizador
+            damageFlashTimer -= Time.deltaTime;
+
+            // Verifique se o temporizador expirou
+            if (damageFlashTimer <= 0f)
+            {
+                // Retorna à cor original
+                spriteRenderer.color = Color.white;
+            }
+        }
     }
 
     private void LateUpdate()
@@ -174,8 +195,8 @@ public class EnemyRangedController :  EnemyController
                 SoundManager.Instance.PlaySFX(damagedSound);
             }
             this.life -= power;
-            this.canTakeDamage = false;
-            animator.SetTrigger("Damaged");
+            //this.canTakeDamage = false;
+            //animator.SetTrigger("Damaged");
             FloatingDamage(power);
             if (life <= 0)
             {

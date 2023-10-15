@@ -45,9 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLayouts:
-    list: []
-  gridWidth: 50
-  gridHeight: 61
+    list:
+    - item: {fileID: 6698391388546104210, guid: 95dc83369aa5f3143881d19f16f867c3, type: 3}
+      weight: 1
+    - item: {fileID: 128973950411408813, guid: c66d822288b6d764abe8cd00f39f5fae, type: 3}
+      weight: 1
+    - item: {fileID: 343758100474603915, guid: d0d468ef9939da84097db2c722792e0a, type: 3}
+      weight: 1
+  gridWidth: 135
+  gridHeight: 115
   gridCellSize: 0.64
   defaultSummerOST: {fileID: 8300000, guid: 22c2927454fbf144f9443c2c9c601f1f, type: 3}
   battleSummerOST: {fileID: 8300000, guid: dd77a99bdb9549740a274295fbaddcbf, type: 3}

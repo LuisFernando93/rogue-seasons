@@ -12,6 +12,7 @@ public class EnemyTurretController : EnemyController
     [SerializeField] private float attackDistance = 2f;
     [SerializeField] private AudioClip damagedSound;
 
+    private SpriteRenderer spriteRenderer;
     private Animator animator;
     private bool faceRight = true;
     private float distance;
@@ -21,6 +22,9 @@ public class EnemyTurretController : EnemyController
     private bool sleep = false;
     private float attackCooldown = 2f;
     private float timeStampAtkCooldown;
+
+    private float damageFlashTimer = 0f;
+
 
     // Start is called before the first frame update
     new void Start()
@@ -33,6 +37,22 @@ public class EnemyTurretController : EnemyController
     void Update()
     {
         UpdateEnemy();
+
+        if (damageFlashTimer > 0f)
+        {
+            // Atualize a cor para vermelho
+            spriteRenderer.color = Color.red;
+
+            // Reduza o temporizador
+            damageFlashTimer -= Time.deltaTime;
+
+            // Verifique se o temporizador expirou
+            if (damageFlashTimer <= 0f)
+            {
+                // Retorna à cor original
+                spriteRenderer.color = Color.white;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -117,8 +137,8 @@ public class EnemyTurretController : EnemyController
                 SoundManager.Instance.PlaySFX(damagedSound);
             }
             this.life -= power;
-            this.canTakeDamage = false;
-            animator.SetTrigger("Damaged");
+            //this.canTakeDamage = false;
+            //animator.SetTrigger("Damaged");
             FloatingDamage(power);
             if (life <= 0)
             {

@@ -61,20 +61,14 @@ public class RoomController : MonoBehaviour
 
     private void awakeRoom()
     {
-        if (isChestRoom)
-        {
-            GameObject.FindGameObjectWithTag("LevelManager").GetComponent<ChestManager>().InstantiateChest(isChestRoom, chestSpot);
-            roomSleep = false;
-        }
-        else
-        {
-            roomSleep = false;
-            activateDoors(true);
-            spawnEnemies();
-            SoundManager.Instance.ChangeToBattleMusic();
-            changeParticleColor.SetBattleParticles();
-        }
-        
+
+        roomSleep = false;
+        activateDoors(true);
+        spawnEnemies();
+        SoundManager.Instance.ChangeToBattleMusic();
+        changeParticleColor.SetBattleParticles();
+
+
     }
 
     private void activateDoors(bool active)

@@ -12,6 +12,7 @@ public class EnemyMeleeController : EnemyController
     [SerializeField] private GameObject hitBox;
     [SerializeField] private AudioClip damagedSound;
 
+    SpriteRenderer spriteRenderer;
     private Animator animator;
     private bool faceRight = true;
     private bool move = false;
@@ -20,10 +21,14 @@ public class EnemyMeleeController : EnemyController
     private float distance;
     private Vector3 direction;
 
+    private float damageFlashTimer = 0f;
+
+
     // Start is called before the first frame update
     new void Start()
     {
         base.Start();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
 
@@ -31,6 +36,26 @@ public class EnemyMeleeController : EnemyController
     void Update()
     {
         UpdateEnemy();
+        if (damageFlashTimer > 0f)
+        {
+            // Atualize a cor para vermelho
+            spriteRenderer.color = Color.red;
+
+            // Reduza o temporizador
+            damageFlashTimer -= Time.deltaTime;
+
+            // Verifique se o temporizador expirou
+            if (damageFlashTimer <= 0f)
+            {
+                // Retorna à cor original
+                spriteRenderer.color = Color.white;
+            }
+        }
+    }
+
+    public void DamageIndicator()
+    {
+        damageFlashTimer = 0.3f;
     }
 
     void FixedUpdate()
@@ -134,8 +159,8 @@ public class EnemyMeleeController : EnemyController
                 SoundManager.Instance.PlaySFX(damagedSound);
             }
             this.life -= power;
-            this.canTakeDamage = false;
-            animator.SetTrigger("Damaged");
+            //this.canTakeDamage = false;
+            //animator.SetTrigger("Damaged");
             FloatingDamage(power);
             if (life <= 0)
             {

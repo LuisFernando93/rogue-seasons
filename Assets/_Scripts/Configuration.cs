@@ -32,7 +32,7 @@ public class Configuration : MonoBehaviour
 
     public void Start()
     {
-        Debug.Log(Language.Instance.getSelectedLanguage());
+        //Debug.Log(Language.Instance.getSelectedLanguage());
         SetLanguage(Language.Instance.getSelectedLanguage());
     }
 }

@@ -27,7 +27,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb4b772797da9440885e8bd939e9560, type: 3}
   m_Name: ColorCurves
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   master:
     m_OverrideState: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.7002584
-          value: 0.8852459
+          time: 0.48615384
+          value: 0.6513158
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -101,9 +101,9 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
   green:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value:
-      <length>k__BackingField: 2
+      <length>k__BackingField: 3
       m_Loop: 0
       m_ZeroValue: 0
       m_Range: 1
@@ -113,6 +113,15 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
+          inSlope: 1
+          outSlope: 1
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 0.6
+          value: 0.70394737
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -132,7 +141,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
   blue:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value:
       <length>k__BackingField: 2
       m_Loop: 0
@@ -144,7 +153,7 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1
+          inSlope: 0
           outSlope: 1
           tangentMode: 0
           weightedMode: 0
@@ -154,7 +163,7 @@ MonoBehaviour:
           time: 1
           value: 1
           inSlope: 1
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
@@ -186,8 +195,8 @@ MonoBehaviour:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.012919896
-          value: 0.6502732
+          time: 0.092307694
+          value: 0.7434211
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -195,26 +204,26 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.31782946
-          value: 0.4808743
-          inSlope: -1.4206353
-          outSlope: -1.4206353
+          time: 0.2646154
+          value: 0.5986842
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.5297158
-          value: 0.22950822
-          inSlope: -0.480211
-          outSlope: -0.480211
+          time: 0.52307695
+          value: 0.2631579
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.65633076
-          value: 0.5027323
+          time: 0.96307695
+          value: 0.7434211
           inSlope: 0
           outSlope: 0
           tangentMode: 0
