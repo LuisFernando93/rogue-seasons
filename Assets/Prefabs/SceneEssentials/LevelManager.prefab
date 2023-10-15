@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 941109284287661633}
   - component: {fileID: 941109284287661634}
-  - component: {fileID: 896836979}
   - component: {fileID: 2216543885384326815}
   m_Layer: 0
   m_Name: LevelManager
@@ -45,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2d44266ffdb314f937a60614dbda87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLayouts:
+    list: []
   gridWidth: 50
   gridHeight: 61
   gridCellSize: 0.64
@@ -55,20 +56,6 @@ MonoBehaviour:
     m_Bits: 64
   roomsCleared: 0
   totalRooms: 0
-  player: {fileID: 0}
-  levelCounter: {fileID: 11400000, guid: 053a12bc720ef1843a1b278f1ec74259, type: 2}
---- !u!114 &896836979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941109284287661639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9e9a46eec34c594c9bde53fe9552156, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2216543885384326815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,5 +74,5 @@ MonoBehaviour:
       weight: 1
     - item: {fileID: 7698722742829263686, guid: a84dfc8c114e1f14b8a527d848e3ecc3, type: 3}
       weight: 1
-  chestCount: 0
   maxChest: 3
+  dropChance: 10
