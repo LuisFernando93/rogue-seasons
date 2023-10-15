@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class LevelLayout : MonoBehaviour
 {
-    [SerializeField] float gridWidth, gridheight;
+    [SerializeField] public int gridWidth, gridheight;
+
 }

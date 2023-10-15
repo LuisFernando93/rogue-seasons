@@ -7,6 +7,7 @@ using UnityEngine.Tilemaps;
 public class LevelManager: MonoBehaviour
 {
     //LevelManager object must be placed at 0,0, to avoid problems with A*
+    [SerializeField] WeightedRandomList<GameObject> levelLayouts;
 
     [SerializeField] private int gridWidth;
     [SerializeField] private int gridHeight;
@@ -32,6 +33,9 @@ public class LevelManager: MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
+        CreateLevelLayout();
+
         roomsCleared = 0;
         rooms = GameObject.FindGameObjectsWithTag("Room");
         entrance = GameObject.FindGameObjectWithTag("Entrance");
@@ -119,5 +123,15 @@ public class LevelManager: MonoBehaviour
         {
             player.transform.position = entrance.transform.position;
         }
+    }
+
+    private void CreateLevelLayout()
+    {
+        GameObject layout = levelLayouts.GetRandom();
+
+        gridHeight = layout.GetComponent<LevelLayout>().gridheight;
+        gridWidth = layout.GetComponent<LevelLayout>().gridWidth;
+
+        Instantiate(layout);
     }
 }
