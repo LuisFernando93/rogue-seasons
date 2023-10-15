@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings.Switch;
 
 public class MainMenu : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
+        Load();
     }
 
     public void MenuClickSFX()
@@ -49,4 +51,26 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    public void changeLanguage(string language)
+    {
+        Language.Instance.changeLanguage(language);
+    }
+
+    public void Save()
+    {
+        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, Language.Instance.getSelectedLanguage());
+        SaveSystem.SaveOptions(data);
+    }
+    public void Load()
+    {
+        OptionsData data = SaveSystem.LoadOptions();
+        if (data != null)
+        {
+            _masterVolumeSlider.value = data.getMasterVolume();
+            _musicVolumeSlider.value = data.getVolumeMusic();
+            _SFXVolumeSlider.value = data.getVolumeSFX();
+            Language.Instance.changeLanguage(data.getLanguage());
+            Debug.Log("Mudando lingua para " + data.getLanguage());
+        }
+    }
 }
