@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1649206285694578235}
   - component: {fileID: 1626814649}
   m_Layer: 8
-  m_Name: Enemy_turret_summer_1
+  m_Name: SunFlower
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

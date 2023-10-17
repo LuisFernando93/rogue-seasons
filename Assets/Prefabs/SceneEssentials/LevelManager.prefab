@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2216543885384326815}
   m_Layer: 0
   m_Name: LevelManager
-  m_TagString: Untagged
+  m_TagString: LevelManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,6 +52,12 @@ MonoBehaviour:
       weight: 1
     - item: {fileID: 343758100474603915, guid: d0d468ef9939da84097db2c722792e0a, type: 3}
       weight: 1
+    - item: {fileID: 7739045766292605986, guid: 72cbb0846e213d34380fd7ce0101c135, type: 3}
+      weight: 1
+    - item: {fileID: 2578515453337869795, guid: d54e60a7deaf669458290456f3098e0d, type: 3}
+      weight: 1
+    - item: {fileID: 2311293971328503756, guid: fdc47db3ee8a7404cab548c29fd4089f, type: 3}
+      weight: 1
   gridWidth: 135
   gridHeight: 115
   gridCellSize: 0.64
@@ -77,8 +83,8 @@ MonoBehaviour:
   chestsPrefab:
     list:
     - item: {fileID: 8739550068102967324, guid: 77cfaa50a51fb0b459f1a95bb0fd9a2c, type: 3}
-      weight: 1
+      weight: 0.8
     - item: {fileID: 7698722742829263686, guid: a84dfc8c114e1f14b8a527d848e3ecc3, type: 3}
-      weight: 1
+      weight: 0.2
   maxChest: 3
   dropChance: 10

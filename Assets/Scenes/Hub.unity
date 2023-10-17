@@ -399,6 +399,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 1321785379}
+    - target: {fileID: 1582212845, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
+      propertyPath: lifeValue
+      value: 
+      objectReference: {fileID: 546479785}
     - target: {fileID: 888511284735803214, guid: 7c1daad02bdfa1740828451fbb0cd5c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -841,6 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1321785379}
+  lifeValue: {fileID: 0}
 --- !u!4 &439077287
 Transform:
   m_ObjectHideFlags: 0
@@ -1031,6 +1036,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &546479785 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1797309838, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+  m_PrefabInstance: {fileID: 1193329707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &868865251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1218,6 +1228,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 620042645830537816, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609011980708825435, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609011980708825435, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9114647590204608901, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

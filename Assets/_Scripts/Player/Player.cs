@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float baseMoveSpeed = 5f;
     public float MoveSpeed = 0f;
     [SerializeField] private float baseLife = 30f;
-    private float life = 1f;
+    private float life = 1f, maxLife = 1f;
     //[SerializeField] private Sprite dashSprite;
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
@@ -60,6 +60,8 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         healthManager = GetComponent<HealthManager>();
 
+        maxLife = baseLife;
+        life = baseLife;
         //UpdateStatus();
     }
 
@@ -289,11 +291,22 @@ public class Player : MonoBehaviour
 
     public void SetLifeValue(float tempLife)
     {
-        life = baseLife + (life * tempLife);
+        life += maxLife * tempLife;
+        maxLife = baseLife + (baseLife * tempLife);
+       
+        if(healthManager != null)
+        {
+            healthManager.UpdateHealth();
+        }
     }
     public void SetMoveSpeedValue(float tempSpeed)
     {
         MoveSpeed = baseMoveSpeed + (MoveSpeed * tempSpeed);
+    }
+
+    public float GetMaxLife()
+    {
+        return maxLife;
     }
 
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3996079623340020487}
   - component: {fileID: 4846605187200346359}
   m_Layer: 8
-  m_Name: Enemy_ranged_summer_1
+  m_Name: Aberration
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

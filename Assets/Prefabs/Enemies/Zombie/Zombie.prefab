@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 937987083656425412}
   - component: {fileID: 863883529}
   m_Layer: 8
-  m_Name: Enemy_melee_summer_1
+  m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

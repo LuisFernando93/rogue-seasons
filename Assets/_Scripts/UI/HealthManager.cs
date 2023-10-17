@@ -2,25 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthManager : MonoBehaviour
 {
     private Player player;
     private float playerLife;
-    public Slider slider;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        playerLife = player.GetLife();
-        UpdateHealth();
-    }
+    [SerializeField] Slider slider;
+    [SerializeField] Transform lifeValue;
 
     // Update is called once per frame
     public void UpdateHealth()
     {
+        player = GetComponent<Player>();
         playerLife = player.GetLife();
-        slider.value = playerLife;       
+        slider.maxValue = player.GetMaxLife();
+        slider.value = playerLife;
+        lifeValue.GetComponent<TextMeshProUGUI>().text = (playerLife+"/"+player.GetMaxLife());
     }
 }
