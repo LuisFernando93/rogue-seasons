@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
 
         maxLife = baseLife;
         life = baseLife;
-        //UpdateStatus();
+        GetComponent<GadgetsManager>().UpdateStatus();
     }
 
     private void Update()

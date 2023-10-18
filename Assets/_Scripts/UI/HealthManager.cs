@@ -18,6 +18,7 @@ public class HealthManager : MonoBehaviour
         playerLife = player.GetLife();
         slider.maxValue = player.GetMaxLife();
         slider.value = playerLife;
+        //Debug.Log(playerLife+" / "+player.GetMaxLife());
         lifeValue.GetComponent<TextMeshProUGUI>().text = (playerLife+"/"+player.GetMaxLife());
     }
 }

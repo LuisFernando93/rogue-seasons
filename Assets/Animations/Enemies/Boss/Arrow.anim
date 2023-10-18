@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BossAttack02Prep
+  m_Name: Arrow
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -4619215134770897664, guid: c91f15fddfa4a6c4bb7f297375b467ad, type: 3}
+      value: {fileID: -873954195894302131, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - time: 0.083333336
+      value: {fileID: -2888236574419834781, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - time: 0.16666667
+      value: {fileID: -5845839051626939452, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - time: 0.25
+      value: {fileID: -8202451220320588690, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - time: 0.33333334
+      value: {fileID: 816675958926109104, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +48,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -4619215134770897664, guid: c91f15fddfa4a6c4bb7f297375b467ad, type: 3}
+    - {fileID: -873954195894302131, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - {fileID: -2888236574419834781, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - {fileID: -5845839051626939452, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - {fileID: -8202451220320588690, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
+    - {fileID: 816675958926109104, guid: 6c8758571b85fa84bb7a69d43d454765, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.041666668
+    m_StopTime: 0.375
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
