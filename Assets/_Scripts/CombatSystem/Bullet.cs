@@ -36,7 +36,8 @@ public class Bullet : MonoBehaviour
         {
             enemy.TakeDamage(bulletDamage);
             GetComponent<BoxCollider2D>().isTrigger = false;
-            animator.Play(HitEffect.name);
+            if(HitEffect != null)
+                animator.Play(HitEffect.name);
         }
     }
 

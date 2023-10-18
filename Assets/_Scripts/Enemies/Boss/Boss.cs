@@ -6,6 +6,7 @@ public class Boss : MonoBehaviour
     [SerializeField] public float recoverTime;
     [SerializeField] public int life;
     [SerializeField] protected GameObject floatingPoints;
+    [HideInInspector] public int power;
 
     [HideInInspector] public WeightedRandomList<string> Attacks;
 
