@@ -206,6 +206,54 @@ TextureImporter:
   - first:
       213: -1365548325397915370
     second: Boss-Sheet_67
+  - first:
+      213: -6237101125859080177
+    second: Boss-Sheet_68
+  - first:
+      213: -8653065247776727508
+    second: Boss-Sheet_69
+  - first:
+      213: 8061982300247094883
+    second: Boss-Sheet_70
+  - first:
+      213: 2871457099574059107
+    second: Boss-Sheet_71
+  - first:
+      213: 8360851932310582204
+    second: Boss-Sheet_72
+  - first:
+      213: 8461942190693478367
+    second: Boss-Sheet_73
+  - first:
+      213: 6186549017643029524
+    second: Boss-Sheet_74
+  - first:
+      213: 5464112189863239200
+    second: Boss-Sheet_75
+  - first:
+      213: -5368867846726118238
+    second: Boss-Sheet_76
+  - first:
+      213: 3716224007513759191
+    second: Boss-Sheet_77
+  - first:
+      213: -4976542977708515040
+    second: Boss-Sheet_78
+  - first:
+      213: 3389000690816125198
+    second: Boss-Sheet_79
+  - first:
+      213: -1899555263400326946
+    second: Boss-Sheet_80
+  - first:
+      213: 5329472152335069715
+    second: Boss-Sheet_81
+  - first:
+      213: 8698305396628873910
+    second: Boss-Sheet_82
+  - first:
+      213: -3138656602496356422
+    second: Boss-Sheet_83
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -312,7 +360,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -333,7 +381,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -354,7 +402,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -375,7 +423,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -396,7 +444,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -417,7 +465,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -438,7 +486,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1152
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -459,7 +507,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1344
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -480,7 +528,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1536
-        y: 1152
+        y: 1536
         width: 192
         height: 192
       alignment: 0
@@ -501,7 +549,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 960
+        y: 1344
         width: 192
         height: 192
       alignment: 0
@@ -522,7 +570,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 960
+        y: 1344
         width: 192
         height: 192
       alignment: 0
@@ -543,7 +591,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 960
+        y: 1344
         width: 192
         height: 192
       alignment: 0
@@ -564,7 +612,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 960
+        y: 1344
         width: 192
         height: 192
       alignment: 0
@@ -585,7 +633,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 960
+        y: 1344
         width: 192
         height: 192
       alignment: 0
@@ -606,7 +654,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -627,7 +675,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -648,7 +696,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -669,7 +717,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -690,7 +738,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -711,7 +759,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -732,7 +780,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1152
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -753,7 +801,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1344
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -774,7 +822,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1536
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -795,7 +843,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1728
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -816,7 +864,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 768
+        y: 1152
         width: 192
         height: 192
       alignment: 0
@@ -837,7 +885,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 576
+        y: 960
         width: 192
         height: 192
       alignment: 0
@@ -858,7 +906,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 576
+        y: 960
         width: 192
         height: 192
       alignment: 0
@@ -879,7 +927,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 576
+        y: 960
         width: 192
         height: 192
       alignment: 0
@@ -900,7 +948,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 576
+        y: 960
         width: 192
         height: 192
       alignment: 0
@@ -921,7 +969,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -942,7 +990,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -963,7 +1011,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -984,7 +1032,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1005,7 +1053,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1026,7 +1074,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1152
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1047,7 +1095,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1344
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1068,7 +1116,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1536
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1089,7 +1137,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1728
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1110,7 +1158,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1131,7 +1179,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2112
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1152,7 +1200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2304
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1173,7 +1221,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2496
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1194,7 +1242,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2688
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1215,7 +1263,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2880
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1236,7 +1284,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3072
-        y: 384
+        y: 768
         width: 192
         height: 192
       alignment: 0
@@ -1257,7 +1305,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1278,7 +1326,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1299,7 +1347,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1320,7 +1368,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1341,7 +1389,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1362,7 +1410,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1383,7 +1431,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1152
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1404,7 +1452,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1344
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1425,7 +1473,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1536
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1446,7 +1494,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1728
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1467,7 +1515,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1488,7 +1536,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2112
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1509,7 +1557,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2304
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1530,7 +1578,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2496
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1551,7 +1599,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2688
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1572,7 +1620,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2880
-        y: 192
+        y: 576
         width: 192
         height: 192
       alignment: 0
@@ -1593,7 +1641,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 384
         width: 192
         height: 192
       alignment: 0
@@ -1614,7 +1662,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 384
         width: 192
         height: 192
       alignment: 0
@@ -1635,7 +1683,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 0
+        y: 384
         width: 192
         height: 192
       alignment: 0
@@ -1656,7 +1704,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 0
+        y: 384
         width: 192
         height: 192
       alignment: 0
@@ -1677,7 +1725,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 0
+        y: 384
         width: 192
         height: 192
       alignment: 0
@@ -1698,7 +1746,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 960
-        y: 0
+        y: 384
         width: 192
         height: 192
       alignment: 0
@@ -1719,7 +1767,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1152
-        y: 0
+        y: 384
         width: 192
         height: 192
       alignment: 0
@@ -1731,6 +1779,342 @@ TextureImporter:
       bones: []
       spriteID: 619170578099c0de0800000000000000
       internalID: -1365548325397915370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f080bf4529d5179a0800000000000000
+      internalID: -6237101125859080177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e9df7c0032ae780800000000000000
+      internalID: -8653065247776727508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366f6b7103ae1ef60800000000000000
+      internalID: 8061982300247094883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360a2e7b40779d720800000000000000
+      internalID: 2871457099574059107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3b205e886b70470800000000000000
+      internalID: 8360851932310582204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfec22d69bde6570800000000000000
+      internalID: 8461942190693478367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4149726cd890bd550800000000000000
+      internalID: 6186549017643029524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e1ea9261d64db40800000000000000
+      internalID: 5464112189863239200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a49fdd8323fd75b0800000000000000
+      internalID: -5368867846726118238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddd2a1ab0ea29330800000000000000
+      internalID: 3716224007513759191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02128345784cfeab0800000000000000
+      internalID: -4976542977708515040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0906af2c26280f20800000000000000
+      internalID: 3389000690816125198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8cccd5d8c63a5e0800000000000000
+      internalID: -1899555263400326946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312b4409fa616f940800000000000000
+      internalID: 5329472152335069715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b26de13ca696b870800000000000000
+      internalID: 8698305396628873910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf254803704174d0800000000000000
+      internalID: -3138656602496356422
       vertices: []
       indices: 
       edges: []

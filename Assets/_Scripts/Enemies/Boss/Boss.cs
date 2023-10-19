@@ -4,7 +4,7 @@ using TMPro;
 public class Boss : MonoBehaviour
 {
     [SerializeField] public float recoverTime;
-    [SerializeField] public int life;
+    [SerializeField] public int baseLife, life;
     [SerializeField] protected GameObject floatingPoints;
     [HideInInspector] public int power;
 
