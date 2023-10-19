@@ -21,10 +21,10 @@ public class Configuration : MonoBehaviour
     {
         switch (language)
         {
-            case "PT-BR":
+            case "PTBR":
                 this.language = LanguageOption.PTBR;
                 break;
-            case "ENG":
+            case "ING":
                 this.language= LanguageOption.ING;
                 break;
         }
