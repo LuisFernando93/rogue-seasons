@@ -7,6 +7,25 @@ public class Teleport : InteractEvent
 
     public void LoadScene()
     {
+        NextScene();
         SceneManager.LoadScene(SceneName);
+    }
+
+    private void NextScene() {
+
+        string sceneName = SceneManager.GetActiveScene().name;
+        
+        switch (sceneName)
+        {
+            case "Hub":
+                SceneName = "Summer1";
+                break;
+            case "Summer1":
+                SceneName = "Summer2";
+                break;
+            case "Summer2":
+                SceneName = "SummerBoss";
+                break;
+        }
     }
 }

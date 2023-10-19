@@ -878,7 +878,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2156507912907074709}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aec9810b8db106045997eb164b816e9f, type: 3}
   m_Name: 
@@ -887,9 +887,12 @@ MonoBehaviour:
   doorsContainer: {fileID: 4775074906144817648}
   chestSpot: {fileID: 7593654745811898939}
   roomActivator: {fileID: 4762833629133067264}
-  meleeEnemyPrefab: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
-  rangedEnemyPrefab: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
-  turretEnemyPrefab: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+  meleeEnemyPrefab:
+    list: []
+  rangedEnemyPrefab:
+    list: []
+  turretEnemyPrefab:
+    list: []
   isChestRoom: 0
 --- !u!61 &4762833629133067264
 BoxCollider2D:

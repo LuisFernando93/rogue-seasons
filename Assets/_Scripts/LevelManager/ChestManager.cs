@@ -18,7 +18,8 @@ public class ChestManager : MonoBehaviour
 
     public void InstantiateChest(bool isChestRoom, Transform chestSpot)
     {
-        if (levelManager.roomsCleared < levelManager.totalRooms && chestCount < maxChest && !isChestRoom)
+        //Tenta criar um bau se pelo menos 1 sala ainda não foi concluida e se não alcançou o maximo de baús
+        if (levelManager.roomsCleared < levelManager.totalRooms - 2 && chestCount < maxChest && !isChestRoom)
         {
             if (Random.Range(1, dropChance) == 1)
             {

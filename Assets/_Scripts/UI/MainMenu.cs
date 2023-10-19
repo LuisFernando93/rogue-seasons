@@ -25,7 +25,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("Summer1");
+        SceneManager.LoadScene("Hub");
     }
 
     public void ExitButton()

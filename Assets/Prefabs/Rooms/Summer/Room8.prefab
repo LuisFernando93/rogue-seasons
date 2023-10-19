@@ -1318,7 +1318,6 @@ Transform:
   - {fileID: 5393623366775978281}
   - {fileID: 4469083683612422021}
   - {fileID: 7882622229324532676}
-  - {fileID: 803280314727518815}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1338,9 +1337,40 @@ MonoBehaviour:
   doorsContainer: {fileID: 4775074906144817648}
   chestSpot: {fileID: 7882622229324532676}
   roomActivator: {fileID: 4762833629133067264}
-  meleeEnemyPrefab: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
-  rangedEnemyPrefab: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
-  turretEnemyPrefab: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+  meleeEnemyPrefab:
+    list:
+    - item: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
+      weight: 1
+    - item: {fileID: 160747982757316228, guid: 08a579eae5b0d1640b75bc11cfa93888, type: 3}
+      weight: 0.05
+    - item: {fileID: 6582115585931314680, guid: 607bbb5e258b1d94f9352efea7f0d8e1, type: 3}
+      weight: 0.1
+    - item: {fileID: 117197799633726558, guid: c26604da51418f646b0f4f72f05de3e9, type: 3}
+      weight: 0.1
+    - item: {fileID: 8552915522460076447, guid: bb9cc5cd4a4ef5f40911215e9d9a84a1, type: 3}
+      weight: 0.1
+  rangedEnemyPrefab:
+    list:
+    - item: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
+      weight: 1
+    - item: {fileID: 7062765386309314843, guid: d0b5b3340c6c38b4f92c23ed134354f0, type: 3}
+      weight: 0.05
+    - item: {fileID: 1816867000071158223, guid: ac88735e84c30a244b6767daadbeb115, type: 3}
+      weight: 0.1
+    - item: {fileID: 4624746140658161202, guid: 7572db5b0862b2340a2dafd993a7c532, type: 3}
+      weight: 0.1
+    - item: {fileID: 363267826122580115, guid: 5e24cc4327f4d8a4cba00e1bb8fa05ac, type: 3}
+      weight: 0.1
+  turretEnemyPrefab:
+    list:
+    - item: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+      weight: 1
+    - item: {fileID: 5886125771462536225, guid: ac88f2000a0447e4b9c37103428247ad, type: 3}
+      weight: 0.05
+    - item: {fileID: 1749155706638808669, guid: 2aea7a5dc7c4add40a89401321f128d4, type: 3}
+      weight: 0.1
+    - item: {fileID: 5298170010137771781, guid: ec33a04554566f94384c3221a04fb10d, type: 3}
+      weight: 0.1
   isChestRoom: 1
 --- !u!61 &4762833629133067264
 BoxCollider2D:
@@ -1672,6 +1702,7 @@ Transform:
   - {fileID: 2666346794823994153}
   - {fileID: 7335147499341420590}
   - {fileID: 3964544816015962802}
+  - {fileID: 803280314727518815}
   m_Father: {fileID: 1963949414971821027}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2505,11 +2536,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1963949414971821027}
+    m_TransformParent: {fileID: 4469083683612422021}
     m_Modifications:
     - target: {fileID: 416479436208200345, guid: b3bc2d8983106c048ae6ccebb7d8ec91, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 416479436208200345, guid: b3bc2d8983106c048ae6ccebb7d8ec91, type: 3}
       propertyPath: m_LocalPosition.x

@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 1334282364859483644}
   - component: {fileID: 4762833629133067264}
   m_Layer: 0
-  m_Name: RoomTemplate - Copia
+  m_Name: RoomTemplate
   m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,9 +171,18 @@ MonoBehaviour:
   doorsContainer: {fileID: 4775074906144817648}
   chestSpot: {fileID: 6985682421815228573}
   roomActivator: {fileID: 4762833629133067264}
-  meleeEnemyPrefab: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
-  rangedEnemyPrefab: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
-  turretEnemyPrefab: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+  meleeEnemyPrefab:
+    list:
+    - item: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
+      weight: 1
+  rangedEnemyPrefab:
+    list:
+    - item: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
+      weight: 1
+  turretEnemyPrefab:
+    list:
+    - item: {fileID: 870077545943212808, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
+      weight: 1
   isChestRoom: 0
 --- !u!61 &4762833629133067264
 BoxCollider2D:

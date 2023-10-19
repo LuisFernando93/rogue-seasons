@@ -10,6 +10,7 @@ public class GadgetList : ScriptableObject
 
     public GameObject GetRandomGadget()
     {
+        randomGadgets = new WeightedRandomList<GameObject>();
         foreach (GameObject gadget in gadgets)
         {
             randomGadgets.Add(gadget, 1);

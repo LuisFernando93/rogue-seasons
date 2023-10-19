@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Summer1.unity
     guid: 181c38f81b01aef449133f879733af62
+  - enabled: 1
+    path: Assets/Scenes/Summer2.unity
+    guid: 608ba8ff6babd3345b6bc3815f60e2ea
   m_configObjects: {}

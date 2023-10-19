@@ -16,7 +16,8 @@ public class RoomController : MonoBehaviour
     private List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] public Transform chestSpot;
     [SerializeField] private Collider2D roomActivator;
-    [SerializeField] private GameObject meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
+    //[SerializeField] private GameObject meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
+    [SerializeField] private WeightedRandomList<GameObject> meleeEnemyPrefab, rangedEnemyPrefab, turretEnemyPrefab;
     [SerializeField] public bool isChestRoom;
     private bool roomSleep = true;
     private bool roomCleared = false;
@@ -61,20 +62,14 @@ public class RoomController : MonoBehaviour
 
     private void awakeRoom()
     {
-        if (isChestRoom)
-        {
-            GameObject.FindGameObjectWithTag("LevelManager").GetComponent<ChestManager>().InstantiateChest(isChestRoom, chestSpot);
-            roomSleep = false;
-        }
-        else
-        {
-            roomSleep = false;
-            activateDoors(true);
-            spawnEnemies();
-            SoundManager.Instance.ChangeToBattleMusic();
-            changeParticleColor.SetBattleParticles();
-        }
-        
+
+        roomSleep = false;
+        activateDoors(true);
+        spawnEnemies();
+        SoundManager.Instance.ChangeToBattleMusic();
+        changeParticleColor.SetBattleParticles();
+
+
     }
 
     private void activateDoors(bool active)
@@ -99,13 +94,13 @@ public class RoomController : MonoBehaviour
                 switch (enemyType)
                 {
                     case EnemyType.Melee:
-                        enemies.Add(Instantiate(meleeEnemyPrefab, spawnPos, Quaternion.identity));
+                        enemies.Add(Instantiate(meleeEnemyPrefab.GetRandom(), spawnPos, Quaternion.identity));
                         break;
                     case EnemyType.Ranged:
-                        enemies.Add(Instantiate(rangedEnemyPrefab, spawnPos, Quaternion.identity));
+                        enemies.Add(Instantiate(rangedEnemyPrefab.GetRandom(), spawnPos, Quaternion.identity));
                         break;
                     case EnemyType.Turret:
-                        enemies.Add(Instantiate(turretEnemyPrefab, spawnPos, Quaternion.identity));
+                        enemies.Add(Instantiate(turretEnemyPrefab.GetRandom(), spawnPos, Quaternion.identity));
                         break;
                     default:
                         break;
