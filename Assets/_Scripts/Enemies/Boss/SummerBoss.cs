@@ -19,9 +19,9 @@ public class SummerBoss : Boss
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        Attacks.Add("CallAttack01", 0);
-        Attacks.Add("CallAttack02", 0);
-        Attacks.Add("CallAttack03", 0);
+        Attacks.Add("CallAttack01", 1);
+        Attacks.Add("CallAttack02", 1);
+        Attacks.Add("CallAttack03", 1);
         Attacks.Add("CallAttack04", 1);
 
         life = baseLife;
