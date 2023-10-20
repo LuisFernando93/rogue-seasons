@@ -161,7 +161,7 @@ public class EnemyMeleeController : EnemyController
             this.life -= power;
             //this.canTakeDamage = false;
             //animator.SetTrigger("Damaged");
-            FloatingDamage(power);
+            CreateFloatingDamage(power);
             if (life <= 0)
             {
                 Destroy(gameObject);

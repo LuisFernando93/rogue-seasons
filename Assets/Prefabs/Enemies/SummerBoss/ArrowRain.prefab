@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6548615291781231531}
   m_Layer: 0
   m_Name: ArrowRain
-  m_TagString: Untagged
+  m_TagString: BossAtk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,12 +116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316853b9107625949b6229bda8e3cb23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBullet: 0
-  isExplosion: 0
   followPlayer: 1
   power: 1
   destroyAfter: 5
-  followSpeed: 3
+  followSpeed: 2
 --- !u!61 &6548615291781231531
 BoxCollider2D:
   m_ObjectHideFlags: 0
