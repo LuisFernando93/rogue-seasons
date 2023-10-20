@@ -5,15 +5,13 @@ using UnityEngine;
 public class Language: MonoBehaviour
 {
     private string languageKey = "Language";
-    private string[] supportedLanguages = {"PT-BR","ENG"};
+    private string[] supportedLanguages = {"PTBR","ING"};
 
     public static Language Instance;
     private void Awake()
     {
         if (Instance == null)
         {
-            PlayerPrefs.DeleteKey(languageKey);
-            Debug.Log("Deletando playerPrefs");
             Instance = this;
             DontDestroyOnLoad(this);
         }
@@ -25,7 +23,7 @@ public class Language: MonoBehaviour
 
     public string getSelectedLanguage()
     {
-        return PlayerPrefs.GetString(languageKey, "PT-BR");
+        return PlayerPrefs.GetString(languageKey, "PTBR");
     }
 
     public bool hasLanguageSupport(string language)

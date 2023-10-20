@@ -112,7 +112,7 @@ public class SummerBoss : Boss
         ChangeAnimation(CUT.name);
     }
 
-    //Explosões
+    //Explosï¿½es
     private void CallAttack05()
     {
         ChangePosition(0, 5, 0);
@@ -174,8 +174,8 @@ public class SummerBoss : Boss
         Vector3 attackPosition;
         attackPosition = new Vector3(x, y, z);
         transform.position = attackPosition;
-        /*Debug.Log("Posição a ser chamada x:" + attackPosition.x +" y: "+ attackPosition.y +
-            " Posição atual: z:" + transform.position.x +" y: "+ transform.position.y);*/
+        /*Debug.Log("Posiï¿½ï¿½o a ser chamada x:" + attackPosition.x +" y: "+ attackPosition.y +
+            " Posiï¿½ï¿½o atual: z:" + transform.position.x +" y: "+ transform.position.y);*/
     }
 
     private void HardMode()
