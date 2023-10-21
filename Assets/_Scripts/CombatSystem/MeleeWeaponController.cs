@@ -10,6 +10,7 @@ public class MeleeWeaponController : Weapon
     Animator animator;
     WeaponRotationController weaponRotation;
     EnemyController  enemy;
+    Boss boss;
 
     DialogueUI dialogueUI;
     NewWeaponChangeSetup weaponChangeSetup;
@@ -152,9 +153,14 @@ public class MeleeWeaponController : Weapon
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
         enemy = hitInfo.GetComponent<EnemyController>();
+        boss = hitInfo.GetComponent<Boss>();
         if (enemy != null)
         {
             enemy.TakeDamage(DealDamage());
+        }
+        if (boss != null)
+        {
+            boss.TakeDamage(DealDamage());
         }
     }
 

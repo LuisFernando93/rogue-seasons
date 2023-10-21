@@ -18,6 +18,7 @@ TagManager:
   - Manager
   - MeleeHitBox
   - LevelManager
+  - BossAtk
   layers:
   - Default
   - TransparentFX

@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     Animator animator;
     [SerializeField]AnimationClip HitEffect;
     EnemyController enemy;
-
+    Boss boss;
 
     //Variaveis
     private int bulletDamage;
@@ -32,11 +32,19 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
         enemy = hitInfo.GetComponent<EnemyController>();
+        boss= hitInfo.GetComponent<Boss>();
         if (enemy != null)
         {
             enemy.TakeDamage(bulletDamage);
             GetComponent<BoxCollider2D>().isTrigger = false;
             if(HitEffect != null)
+                animator.Play(HitEffect.name);
+        }
+        if(boss != null)
+        {
+            boss.TakeDamage(bulletDamage);
+            GetComponent<BoxCollider2D>().isTrigger = false;
+            if (HitEffect != null)
                 animator.Play(HitEffect.name);
         }
     }

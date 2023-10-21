@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class BossProjectile : MonoBehaviour
 {
-    [SerializeField] bool isBullet, isExplosion, followPlayer;
+    [SerializeField] bool followPlayer;
     [SerializeField] int power;
-    [SerializeField] int destroyAfter;
+    [SerializeField] float destroyAfter;
     [SerializeField] float followSpeed;
     Player player;
     Transform playerPosition;
     Vector3 direction, moveDirection;
-
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
         player = hitInfo.GetComponent<Player>();
@@ -19,12 +18,13 @@ public class BossProjectile : MonoBehaviour
         {
             player.TakeDamage(power);
         }
-        Destroy(gameObject, destroyAfter);
     }
 
     private void Start()
     {
         playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+        Destroy(this.gameObject, destroyAfter);
+
     }
 
     private void Update()

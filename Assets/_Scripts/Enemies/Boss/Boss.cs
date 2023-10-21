@@ -1,20 +1,18 @@
 using UnityEngine;
 using TMPro;
 
-public class Boss : MonoBehaviour
+public abstract class Boss : FloatingDamage
 {
-    [SerializeField] public float recoverTime;
-    [SerializeField] public int baseLife, life;
-    [SerializeField] protected GameObject floatingPoints;
+    [SerializeField] public float recoverTime, baseArmor;
+    [SerializeField] public int baseLife;
     [HideInInspector] public int power;
 
     [HideInInspector] public WeightedRandomList<string> Attacks;
 
     private bool canTakeDamage;
-
+    protected int life;
     private string currentAnimation;
     protected Animator animator;
-
 
     public void ChangeAnimation(string newAnimation)
     {
@@ -26,52 +24,6 @@ public class Boss : MonoBehaviour
 
     }
 
-    public void TakeDamage(int power)
-    {
-        if (canTakeDamage)
-        {
-            FloatingDamage(power);
-            this.life -= power;
-            if (life <= 0)
-            {
-                Destroy(gameObject,0.2f);
-            }
-        }
-    }
+    public abstract void TakeDamage(int power);
 
-    protected void FloatingDamage(int damage)
-    {
-        GameObject point;
-        if (Mathf.Abs(this.gameObject.transform.rotation.eulerAngles.y) > 0.01f)
-        {
-            // Se a rotação do objeto pai não for zero, defina uma rotação padrão para a instância
-            Quaternion defaultRotation = Quaternion.Euler(0f, 0f, 0f); // Substitua pelos ângulos desejados
-
-            // Crie a instância com a rotação padrão
-            point = Instantiate(floatingPoints, transform.position, defaultRotation);
-        }
-        else
-        {
-            point = Instantiate(floatingPoints, transform.position, transform.rotation);
-
-        }
-        point.transform.SetParent(this.transform);
-        point.GetComponent<TextMeshPro>().text = damage.ToString();
-        if (damage <= 1)
-        {
-            point.GetComponent<TextMeshPro>().color = new Color(255, 255, 255, 255);
-        }
-        else if (damage > 1 && damage <= 2)
-        {
-            point.GetComponent<TextMeshPro>().color = new Color(255, 103, 0, 255);
-        }
-        else if (damage > 2 && damage <= 5)
-        {
-            point.GetComponent<TextMeshPro>().color = new Color(255, 0, 0, 255);
-        }
-        else
-        {
-            point.GetComponent<TextMeshPro>().color = new Color(255, 255, 255, 255);
-        }
-    }
 }
