@@ -8,6 +8,9 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
+    [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backButton; 
+    [SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
+    [SerializeField] private MainMenuAssets[] assets;
 
     // Start is called before the first frame update
     void Start()
@@ -54,13 +57,43 @@ public class MainMenu : MonoBehaviour
 
     public void changeLanguage(string language)
     {
-        Language.Instance.changeLanguage(language);
+        PlayerPrefs.SetString("language", language);
+        MainMenuAssets selectedAssets = null;
+        foreach (var asset in assets)
+        {
+            if (asset.tag == language)
+            {
+                selectedAssets = asset;
+            }
+        }
+        if (selectedAssets != null)
+        {
+            reloadMenuAssets(selectedAssets);
+        } else
+        {
+            Debug.Log("Assets nao encontrados");
+        }
+
+    }
+
+    private void reloadMenuAssets(MainMenuAssets assets)
+    {
+        playButton.GetComponent<Image>().sprite = assets.play;
+        optionButton.GetComponent<Image>().sprite = assets.options;
+        creditsButton.GetComponent<Image>().sprite = assets.credits;
+        exitButton.GetComponent<Image>().sprite = assets.exit;
+        backButton.GetComponent<Image>().sprite = assets.back;
+        //masterVolumeLabel.GetComponent<Text>().text = assets.volumeMaster;
+        //musicVolumeLabel.GetComponent<Text>().text = assets.volumeMusic;
+        //sfxVolumeLabel.GetComponent<Text>().text = assets.volumeSFX;
+        //languageLabel.GetComponent<Text>().text = assets.language;
     }
 
     public void Save()
     {
-        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, Language.Instance.getSelectedLanguage());
+        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, PlayerPrefs.GetString("language","PTBR"));
         SaveSystem.SaveOptions(data);
+        Debug.Log("Opcoes salvas");
     }
     public void Load()
     {
@@ -70,7 +103,7 @@ public class MainMenu : MonoBehaviour
             _masterVolumeSlider.value = data.getMasterVolume();
             _musicVolumeSlider.value = data.getVolumeMusic();
             _SFXVolumeSlider.value = data.getVolumeSFX();
-            Language.Instance.changeLanguage(data.getLanguage());
+            this.changeLanguage(data.getLanguage());
             Debug.Log("Mudando lingua para " + data.getLanguage());
         }
     }
