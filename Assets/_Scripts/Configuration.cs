@@ -10,13 +10,12 @@ public class Configuration : MonoBehaviour
         ING
     }
 
-    private LanguageOption language;
     private string languageKey = "language";
 
     public LanguageOption GetLanguage()
     {
-        string savedLanguage = PlayerPrefs.GetString(languageKey, "PTBR");
-        switch (savedLanguage)
+        string language = PlayerPrefs.GetString(languageKey, "PTBR");
+        switch (language)
         {
             case "PTBR":
                 return LanguageOption.PTBR;
@@ -33,11 +32,9 @@ public class Configuration : MonoBehaviour
         switch (language)
         {
             case "PTBR":
-                this.language = LanguageOption.PTBR;
                 PlayerPrefs.SetString(languageKey, language);
                 break;
             case "ING":
-                this.language= LanguageOption.ING;
                 PlayerPrefs.SetString(languageKey, language);
                 break;
         }
