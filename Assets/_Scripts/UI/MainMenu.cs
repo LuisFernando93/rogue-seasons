@@ -54,13 +54,14 @@ public class MainMenu : MonoBehaviour
 
     public void changeLanguage(string language)
     {
-        Language.Instance.changeLanguage(language);
+        PlayerPrefs.SetString("language", language);
     }
 
     public void Save()
     {
-        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, Language.Instance.getSelectedLanguage());
+        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, PlayerPrefs.GetString("language","PTBR"));
         SaveSystem.SaveOptions(data);
+        Debug.Log("Opcoes salvas");
     }
     public void Load()
     {
@@ -70,7 +71,7 @@ public class MainMenu : MonoBehaviour
             _masterVolumeSlider.value = data.getMasterVolume();
             _musicVolumeSlider.value = data.getVolumeMusic();
             _SFXVolumeSlider.value = data.getVolumeSFX();
-            Language.Instance.changeLanguage(data.getLanguage());
+            this.changeLanguage(data.getLanguage());
             Debug.Log("Mudando lingua para " + data.getLanguage());
         }
     }

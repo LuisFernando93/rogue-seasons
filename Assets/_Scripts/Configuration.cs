@@ -10,11 +10,22 @@ public class Configuration : MonoBehaviour
         ING
     }
 
-    public LanguageOption language;
+    private LanguageOption language;
+    private string languageKey = "language";
 
     public LanguageOption GetLanguage()
     {
-        return language;
+        string savedLanguage = PlayerPrefs.GetString(languageKey, "PTBR");
+        switch (savedLanguage)
+        {
+            case "PTBR":
+                return LanguageOption.PTBR;
+            case "ING":
+                return LanguageOption.ING;
+            default:
+                Debug.Log("Erro ao carregar a lingua pelo player prefs. Carregando portugues como padrao");
+                return LanguageOption.PTBR;
+        }
     }
 
     public void SetLanguage(string language)
@@ -23,16 +34,13 @@ public class Configuration : MonoBehaviour
         {
             case "PTBR":
                 this.language = LanguageOption.PTBR;
+                PlayerPrefs.SetString(languageKey, language);
                 break;
             case "ING":
                 this.language= LanguageOption.ING;
+                PlayerPrefs.SetString(languageKey, language);
                 break;
         }
     }
 
-    public void Start()
-    {
-        //Debug.Log(Language.Instance.getSelectedLanguage());
-        SetLanguage(Language.Instance.getSelectedLanguage());
-    }
 }
