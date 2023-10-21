@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a077a774350ec8e42bff93b8d0ed6049, type: 3}
+  m_Name: MainMenuPTBR
+  m_EditorClassIdentifier: 
+  tag: PTBR
+  play: {fileID: -4602081560446151836, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  options: {fileID: -4367968981038924003, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  credits: {fileID: 4698289409978993938, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  exit: {fileID: -6465141502153094203, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  back: {fileID: 4864572006081263253, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  volumeSFX: Efeitos Sonoros
+  volumeMusic: "M\xFAsica"
+  volumeMaster: Volume
+  language: Idioma

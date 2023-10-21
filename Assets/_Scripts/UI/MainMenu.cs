@@ -8,6 +8,9 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
+    [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backButton; 
+    [SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
+    [SerializeField] private MainMenuAssets[] assets;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +58,35 @@ public class MainMenu : MonoBehaviour
     public void changeLanguage(string language)
     {
         PlayerPrefs.SetString("language", language);
+        MainMenuAssets selectedAssets = null;
+        foreach (var asset in assets)
+        {
+            if (asset.tag == language)
+            {
+                selectedAssets = asset;
+            }
+        }
+        if (selectedAssets != null)
+        {
+            reloadMenuAssets(selectedAssets);
+        } else
+        {
+            Debug.Log("Assets nao encontrados");
+        }
+
+    }
+
+    private void reloadMenuAssets(MainMenuAssets assets)
+    {
+        playButton.GetComponent<Image>().sprite = assets.play;
+        optionButton.GetComponent<Image>().sprite = assets.options;
+        creditsButton.GetComponent<Image>().sprite = assets.credits;
+        exitButton.GetComponent<Image>().sprite = assets.exit;
+        backButton.GetComponent<Image>().sprite = assets.back;
+        //masterVolumeLabel.GetComponent<Text>().text = assets.volumeMaster;
+        //musicVolumeLabel.GetComponent<Text>().text = assets.volumeMusic;
+        //sfxVolumeLabel.GetComponent<Text>().text = assets.volumeSFX;
+        //languageLabel.GetComponent<Text>().text = assets.language;
     }
 
     public void Save()
