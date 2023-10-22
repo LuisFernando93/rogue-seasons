@@ -10,10 +10,16 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject _pauseMenuContainer;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
     [SerializeField] private AudioClip _buttonClick;
+    [SerializeField] private GameObject optionButton, exitButton, backButton;
+    //[SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
+    [SerializeField] private PauseMenuAssets[] assets;
 
     void Start()
     {
-        //_masterVolumeSlider.value = 
+        _masterVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("master");
+        _musicVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("music");
+        _SFXVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("SFX");
+        changeLanguage(PlayerPrefs.GetString("language"));
     }
 
     // Update is called once per frame
@@ -83,6 +89,38 @@ public class PauseMenu : MonoBehaviour
                 //String incompativel
                 break;
         }
+    }
+
+    public void changeLanguage(string language)
+    {
+        PlayerPrefs.SetString("language", language);
+        PauseMenuAssets selectedAssets = null;
+        foreach (var asset in assets)
+        {
+            if (asset.tag == language)
+            {
+                selectedAssets = asset;
+            }
+        }
+        if (selectedAssets != null)
+        {
+            reloadMenuAssets(selectedAssets);
+        }
+        else
+        {
+            Debug.Log("Assets nao encontrados");
+        }
+    }
+
+    private void reloadMenuAssets(PauseMenuAssets assets)
+    {
+        optionButton.GetComponent<Image>().sprite = assets.options;
+        exitButton.GetComponent<Image>().sprite = assets.exit;
+        backButton.GetComponent<Image>().sprite = assets.back;
+        //masterVolumeLabel.GetComponent<Text>().text = assets.volumeMaster;
+        //musicVolumeLabel.GetComponent<Text>().text = assets.volumeMusic;
+        //sfxVolumeLabel.GetComponent<Text>().text = assets.volumeSFX;
+        //languageLabel.GetComponent<Text>().text = assets.language;
     }
 
     public void Save()

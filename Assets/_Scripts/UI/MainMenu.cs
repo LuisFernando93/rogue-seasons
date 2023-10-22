@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
     [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backButton; 
-    [SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
+    //[SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
     [SerializeField] private MainMenuAssets[] assets;
 
     // Start is called before the first frame update
@@ -73,7 +73,6 @@ public class MainMenu : MonoBehaviour
         {
             Debug.Log("Assets nao encontrados");
         }
-
     }
 
     private void reloadMenuAssets(MainMenuAssets assets)
@@ -105,6 +104,9 @@ public class MainMenu : MonoBehaviour
             _SFXVolumeSlider.value = data.getVolumeSFX();
             this.changeLanguage(data.getLanguage());
             Debug.Log("Mudando lingua para " + data.getLanguage());
+        } else
+        {
+            this.changeLanguage("PTBR"); //caso nao exista dados salvos, carregar PTBR como padrao
         }
     }
 }

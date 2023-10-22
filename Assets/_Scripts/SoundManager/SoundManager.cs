@@ -98,4 +98,25 @@ public class SoundManager : MonoBehaviour
     {
         _mixer.SetFloat("VolumeSFX", Mathf.Log10(value) * 20);
     }
+
+    public float GetVolumeFromMixer(string type)
+    {
+        switch(type)
+        {
+            case "master":
+                _mixer.GetFloat("MasterVolume", out float volumeMaster);
+                volumeMaster = Mathf.Pow(10f, volumeMaster / 20);
+                return volumeMaster;
+            case "music":
+                _mixer.GetFloat("VolumeMusic", out float volumeMusic);
+                volumeMusic = Mathf.Pow(10f, volumeMusic / 20);
+                return volumeMusic;
+            case "SFX":
+                _mixer.GetFloat("VolumeSFX", out float volumeSFX);
+                volumeSFX = Mathf.Pow(10f, volumeSFX / 20);
+                return volumeSFX;
+            default:
+                return 1f;//String incompativel
+        }
+    }
 }

@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 3382647023357641573}
   - component: {fileID: 3382647023357641574}
   m_Layer: 5
-  m_Name: PT-BRButton
+  m_Name: PTBRButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1815,7 +1815,7 @@ GameObject:
   - component: {fileID: 3382647024246076505}
   - component: {fileID: 3382647024246076506}
   m_Layer: 5
-  m_Name: ENGButton
+  m_Name: INGButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
