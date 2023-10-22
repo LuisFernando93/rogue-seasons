@@ -57,6 +57,7 @@ public class RangedWeaponController : Weapon
     {
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
+        if (PauseMenu.gameIsPaused) return;
         //Verifica se o player Apertou o botão Esq ou Dir do mouse
         if (Input.GetButtonDown(combatManager.command[combatManager.commandIndex]))
         {

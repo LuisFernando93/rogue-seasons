@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
 
@@ -75,17 +76,17 @@ public class Player : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         //Corrida
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !PauseMenu.gameIsPaused)
         {
             MoveSpeed = 10f;
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        if (Input.GetKeyUp(KeyCode.LeftControl) && !PauseMenu.gameIsPaused)
         {
             MoveSpeed = 5f;
         }
 
         //Ataque esquerdo
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && !PauseMenu.gameIsPaused)
         {
             if (combatManager.leftWeaponActive != true && combatManager.canSwitchWeapon)
             {
@@ -96,7 +97,7 @@ public class Player : MonoBehaviour
         }
 
         //Ataque Direito
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && !PauseMenu.gameIsPaused)
         {
             if (combatManager.rightWeaponActive != true && combatManager.canSwitchWeapon)
             {
@@ -105,19 +106,19 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M) && !PauseMenu.gameIsPaused)
         {
             TakeDamage(5);
         }
 
         //Dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !PauseMenu.gameIsPaused)
         {
             StartCoroutine(Dash());
         }
 
         //Interação
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !PauseMenu.gameIsPaused)
         {
             CheckInteraction();
         }
@@ -162,9 +163,11 @@ public class Player : MonoBehaviour
 
     void PlayerMovement()
     {
-        rb.MovePosition(rb.position + movement.normalized * (MoveSpeed * Time.fixedDeltaTime)); //faz o player se mexer
-        Flip();
-        
+        if (!PauseMenu.gameIsPaused)
+        {
+            rb.MovePosition(rb.position + movement.normalized * (MoveSpeed * Time.fixedDeltaTime)); //faz o player se mexer
+            Flip();
+        }
     }
 
     private IEnumerator Dash()

@@ -49,6 +49,7 @@ public class MeleeWeaponController : Weapon
     {
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
+        if (PauseMenu.gameIsPaused) return;
         //Verifica se o player Apertou o bot?o Esq ou Dir do mouse
         if (Input.GetButtonDown(combatManager.command[combatManager.commandIndex]))
         {
