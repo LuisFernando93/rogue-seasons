@@ -824,6 +824,7 @@ GameObject:
   - component: {fileID: 439077288}
   - component: {fileID: 439077289}
   - component: {fileID: 439077291}
+  - component: {fileID: 439077286}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Manager
@@ -831,6 +832,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &439077286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439077285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1959129902924488694e47f94778b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicClip1: {fileID: 8300000, guid: 55c2da9d1d6b63142aace98d9c037613, type: 3}
+  _musicClip2: {fileID: 0}
 --- !u!4 &439077287
 Transform:
   m_ObjectHideFlags: 0
@@ -870,7 +885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d1fd2f060dfa848ace9d539663faca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  language: 0
 --- !u!114 &439077291
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -27,32 +27,33 @@ public class PlayerAnimationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (player.movement.x != 0 || player.movement.y != 0)
+        if (!PauseMenu.gameIsPaused)
         {
-            ChangeAnimation(WALK_ANIMATION);
-        }
-        else
-        {
-            ChangeAnimation(IDLE_ANIMATION);
-        }
-
-        if (damageFlashTimer > 0f)
-        {
-            // Atualize a cor para vermelho
-            spriteRenderer.color = Color.red;
-
-            // Reduza o temporizador
-            damageFlashTimer -= Time.deltaTime;
-
-            // Verifique se o temporizador expirou
-            if (damageFlashTimer <= 0f)
+            if (player.movement.x != 0 || player.movement.y != 0)
             {
-                // Retorna à cor original
-                spriteRenderer.color = Color.white;
+                ChangeAnimation(WALK_ANIMATION);
+            }
+            else
+            {
+                ChangeAnimation(IDLE_ANIMATION);
+            }
+
+            if (damageFlashTimer > 0f)
+            {
+                // Atualize a cor para vermelho
+                spriteRenderer.color = Color.red;
+
+                // Reduza o temporizador
+                damageFlashTimer -= Time.deltaTime;
+
+                // Verifique se o temporizador expirou
+                if (damageFlashTimer <= 0f)
+                {
+                    // Retorna à cor original
+                    spriteRenderer.color = Color.white;
+                }
             }
         }
-        
     }
 
     public void TeleportAnimation()

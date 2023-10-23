@@ -4,34 +4,70 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
-    [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
+    public static bool gameIsPaused { get; private set; } = false;
+    [SerializeField] private GameObject _pauseMenuContainer;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
-    [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backButton; 
+    [SerializeField] private AudioClip _buttonClick;
+    [SerializeField] private GameObject optionButton, exitButton, backButton;
     //[SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
-    [SerializeField] private MainMenuAssets[] assets;
+    [SerializeField] private PauseMenuAssets[] assets;
 
-    // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll();
-        Debug.Log("Deletando playerPrefs");
-        SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
-        Load();
+        _masterVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("master");
+        _musicVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("music");
+        _SFXVolumeSlider.value = SoundManager.Instance.GetVolumeFromMixer("SFX");
+        changeLanguage(PlayerPrefs.GetString("language"));
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (gameIsPaused)
+            {
+                Resume();
+            } else
+            {
+                Pause();
+            }
+        }
+    }
+
+    private void Resume()
+    {
+        _pauseMenuContainer.SetActive(false);
+        Time.timeScale = 1f;
+        gameIsPaused = false;
+    }
+
+    private void Pause()
+    {
+        _pauseMenuContainer.SetActive(true);
+        Time.timeScale = 0f;
+        gameIsPaused = true;
     }
 
     public void MenuClickSFX()
     {
-        SoundManager.Instance.PlaySFX(_ButtonClick);
+        SoundManager.Instance.PlaySFX(_buttonClick);
     }
 
-    public void PlayButton()
+    public void ResumeButton()
     {
+        Resume();
+    }
+
+    public void ExitLevelButton()
+    {
+        Resume();
         SceneManager.LoadScene("Hub");
     }
 
-    public void ExitButton()
+    public void ExitGameButton()
     {
         Application.Quit();
     }
@@ -58,7 +94,7 @@ public class MainMenu : MonoBehaviour
     public void changeLanguage(string language)
     {
         PlayerPrefs.SetString("language", language);
-        MainMenuAssets selectedAssets = null;
+        PauseMenuAssets selectedAssets = null;
         foreach (var asset in assets)
         {
             if (asset.tag == language)
@@ -69,17 +105,16 @@ public class MainMenu : MonoBehaviour
         if (selectedAssets != null)
         {
             reloadMenuAssets(selectedAssets);
-        } else
+        }
+        else
         {
             Debug.Log("Assets nao encontrados");
         }
     }
 
-    private void reloadMenuAssets(MainMenuAssets assets)
+    private void reloadMenuAssets(PauseMenuAssets assets)
     {
-        playButton.GetComponent<Image>().sprite = assets.play;
         optionButton.GetComponent<Image>().sprite = assets.options;
-        creditsButton.GetComponent<Image>().sprite = assets.credits;
         exitButton.GetComponent<Image>().sprite = assets.exit;
         backButton.GetComponent<Image>().sprite = assets.back;
         //masterVolumeLabel.GetComponent<Text>().text = assets.volumeMaster;
@@ -90,23 +125,8 @@ public class MainMenu : MonoBehaviour
 
     public void Save()
     {
-        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, PlayerPrefs.GetString("language","PTBR"));
+        OptionsData data = new OptionsData(_masterVolumeSlider.value, _musicVolumeSlider.value, _SFXVolumeSlider.value, PlayerPrefs.GetString("language", "PTBR"));
         SaveSystem.SaveOptions(data);
         Debug.Log("Opcoes salvas");
-    }
-    public void Load()
-    {
-        OptionsData data = SaveSystem.LoadOptions();
-        if (data != null)
-        {
-            _masterVolumeSlider.value = data.getMasterVolume();
-            _musicVolumeSlider.value = data.getVolumeMusic();
-            _SFXVolumeSlider.value = data.getVolumeSFX();
-            this.changeLanguage(data.getLanguage());
-            Debug.Log("Mudando lingua para " + data.getLanguage());
-        } else
-        {
-            this.changeLanguage("PTBR"); //caso nao exista dados salvos, carregar PTBR como padrao
-        }
     }
 }
