@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e78771271840e4da2839587cf36520, type: 3}
   m_Name: Pause ING
   m_EditorClassIdentifier: 
-  tag: 
-  options: {fileID: 0}
-  exit: {fileID: 0}
-  back: {fileID: 0}
-  volumeSFX: 
-  volumeMusic: 
-  volumeMaster: 
-  language: 
+  tag: ING
+  options: {fileID: 7636024366706904154, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  exit: {fileID: 7838638899470068267, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  back: {fileID: 3935723279797774359, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  volumeSFX: SFX
+  volumeMusic: Music
+  volumeMaster: Volume
+  language: Language

@@ -12,9 +12,6 @@ public class LevelManager: MonoBehaviour
     [SerializeField] private int gridWidth;
     [SerializeField] private int gridHeight;
     [SerializeField] private float gridCellSize = 0.64f;
-    
-    [SerializeField] private AudioClip defaultSummerOST;
-    [SerializeField] private AudioClip battleSummerOST;
 
     [SerializeField] private LayerMask solidLayer;
     private GameObject player;
@@ -42,7 +39,6 @@ public class LevelManager: MonoBehaviour
         entrance = GameObject.FindGameObjectWithTag("Entrance");
         walls = GameObject.FindGameObjectsWithTag("Wall");
         totalRooms = rooms.Length;
-        SoundManager.Instance.PlayDualMusic(defaultSummerOST, battleSummerOST);
         Pathfinding.Instance = new Pathfinding(gridWidth, gridHeight, gridCellSize, transform.position);
 
         for (int i = 0; i < gridWidth; i++)

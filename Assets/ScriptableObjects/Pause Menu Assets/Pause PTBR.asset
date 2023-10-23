@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e78771271840e4da2839587cf36520, type: 3}
   m_Name: Pause PTBR
   m_EditorClassIdentifier: 
-  tag: 
-  options: {fileID: 0}
-  exit: {fileID: 0}
-  back: {fileID: 0}
-  volumeSFX: 
-  volumeMusic: 
-  volumeMaster: 
-  language: 
+  tag: PTBR
+  options: {fileID: -4367968981038924003, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  exit: {fileID: -6465141502153094203, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  back: {fileID: 4864572006081263253, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  volumeSFX: Efeitos Sonoros
+  volumeMusic: "M\xFAsica"
+  volumeMaster: Volume
+  language: Idioma
