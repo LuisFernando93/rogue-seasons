@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
-    [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backButton; 
+    [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backOptionsButton, backAboutButton, backCreditsButton; 
     //[SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
     [SerializeField] private MainMenuAssets[] assets;
 
@@ -81,7 +81,9 @@ public class MainMenu : MonoBehaviour
         optionButton.GetComponent<Image>().sprite = assets.options;
         creditsButton.GetComponent<Image>().sprite = assets.credits;
         exitButton.GetComponent<Image>().sprite = assets.exit;
-        backButton.GetComponent<Image>().sprite = assets.back;
+        backOptionsButton.GetComponent<Image>().sprite = assets.back;
+        backAboutButton.GetComponent<Image>().sprite = assets.back;
+        backCreditsButton.GetComponent<Image>().sprite = assets.back;
         //masterVolumeLabel.GetComponent<Text>().text = assets.volumeMaster;
         //musicVolumeLabel.GetComponent<Text>().text = assets.volumeMusic;
         //sfxVolumeLabel.GetComponent<Text>().text = assets.volumeSFX;

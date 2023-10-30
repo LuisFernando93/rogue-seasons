@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Pause ING
   m_EditorClassIdentifier: 
   tag: ING
-  options: {fileID: 7636024366706904154, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
-  exit: {fileID: 7838638899470068267, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
-  back: {fileID: 3935723279797774359, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  options: {fileID: -5089742261511013449, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
+  exit: {fileID: 4714865667917709749, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
+  back: {fileID: 3625053296327819341, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
   volumeSFX: SFX
   volumeMusic: Music
   volumeMaster: Volume

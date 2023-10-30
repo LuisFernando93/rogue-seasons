@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Summer2.unity
     guid: 608ba8ff6babd3345b6bc3815f60e2ea
+  - enabled: 1
+    path: Assets/Scenes/BossArena.unity
+    guid: a5cd539ddf284aa469f8c465adde5397
   m_configObjects: {}

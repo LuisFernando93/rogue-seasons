@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Pause PTBR
   m_EditorClassIdentifier: 
   tag: PTBR
-  options: {fileID: -4367968981038924003, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
-  exit: {fileID: -6465141502153094203, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
-  back: {fileID: 4864572006081263253, guid: 5dc07dc05a6f6894896b4543cb036797, type: 3}
+  options: {fileID: -7990453112320791876, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
+  exit: {fileID: 3082260580606470857, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
+  back: {fileID: -6700584616377550727, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
   volumeSFX: Efeitos Sonoros
   volumeMusic: "M\xFAsica"
   volumeMaster: Volume
