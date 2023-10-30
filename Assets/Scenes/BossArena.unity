@@ -156,9 +156,9 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.88
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 952bf6e8000000000521627d
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -846,6 +846,10 @@ PrefabInstance:
     - target: {fileID: 7232635708172712725, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
       propertyPath: m_Name
       value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232635708172712725, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a877e10306cd3fa488c17f0f80f61bcb, type: 3}
@@ -1714,9 +1718,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 435694269142767838, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 1334282364859483644, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371362353365338073, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1963949414971821027, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
       propertyPath: m_RootOrder
@@ -1765,6 +1777,14 @@ PrefabInstance:
     - target: {fileID: 2156507912907074709, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
       propertyPath: m_Name
       value: BossArena
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385358301652980579, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739538244857447517, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8682847710730829024, guid: 087b779a3a83a494ba42b7651a4329b0, type: 3}
       propertyPath: m_Size.x
