@@ -1,94 +1,115 @@
 fileFormatVersion: 2
-guid: 5dc07dc05a6f6894896b4543cb036797
+guid: 46ba1c7d0c2343b4b8952ec2714f0d43
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8661498061360061342
-    second: botoesmenu 1_0
+      213: -8028277461693689454
+    second: botoesmenu_0
   - first:
-      213: -4539833010068505808
-    second: botoesmenu 1_1
+      213: -7263894407701110245
+    second: botoesmenu_1
   - first:
-      213: 237437737875164527
-    second: botoesmenu 1_2
+      213: -5105085371813269868
+    second: botoesmenu_2
   - first:
-      213: 2274386508300272355
-    second: botoesmenu 1_4
+      213: -4602946447937733743
+    second: botoesmenu_3
   - first:
-      213: 5933118083148747560
-    second: botoesmenu 1_5
+      213: 1329715513224396140
+    second: botoesmenu_4
   - first:
-      213: 3692815588682988530
-    second: botoesmenu 1_6
+      213: 5532119484262216795
+    second: botoesmenu_5
   - first:
-      213: -4602081560446151836
-    second: botoesmenu 1_7
+      213: 6370129741679400878
+    second: botoesmenu_6
   - first:
-      213: 7785039496468300682
-    second: botoesmenu 1_8
+      213: 6193477582929431053
+    second: botoesmenu_8
   - first:
-      213: -4367968981038924003
-    second: botoesmenu 1_9
+      213: -4972002741149076721
+    second: botoesmenu_9
   - first:
-      213: 7636024366706904154
-    second: botoesmenu 1_10
+      213: -5227607388815798180
+    second: botoesmenu_10
   - first:
-      213: -6465141502153094203
-    second: botoesmenu 1_11
+      213: 8523438170762257674
+    second: botoesmenu_11
   - first:
-      213: 7838638899470068267
-    second: botoesmenu 1_12
+      213: -7990453112320791876
+    second: botoesmenu_12
   - first:
-      213: 4698289409978993938
-    second: botoesmenu 1_13
+      213: -5089742261511013449
+    second: botoesmenu_13
   - first:
-      213: 3240735040875359658
-    second: botoesmenu 1_14
+      213: 3082260580606470857
+    second: botoesmenu_14
   - first:
-      213: 4864572006081263253
-    second: botoesmenu 1_15
+      213: 4714865667917709749
+    second: botoesmenu_15
   - first:
-      213: 3935723279797774359
-    second: botoesmenu 1_16
+      213: -8507005045079895633
+    second: botoesmenu_16
   - first:
-      213: 6287379708355995161
-    second: botoesmenu 1_17
+      213: 4728941234674139127
+    second: botoesmenu_17
   - first:
-      213: -1239988929844332167
-    second: botoesmenu 1_18
+      213: 1313688619601396526
+    second: botoesmenu_18
   - first:
-      213: -3278968568133052104
-    second: botoesmenu 1_19
+      213: -750035717081471726
+    second: botoesmenu_19
   - first:
-      213: -9148973838292695605
-    second: botoesmenu 1_20
+      213: -6700584616377550727
+    second: botoesmenu_20
   - first:
-      213: 6488062953744755456
-    second: botoesmenu 1_21
+      213: 3625053296327819341
+    second: botoesmenu_21
   - first:
-      213: 3974115684427307645
-    second: botoesmenu 1_22
+      213: -2725820835125567687
+    second: botoesmenu_22
   - first:
-      213: -4993003965084956151
-    second: botoesmenu 1_23
+      213: -2319947905376994652
+    second: botoesmenu_23
   - first:
-      213: 1872891711220602477
-    second: botoesmenu 1_24
+      213: 6041786757372322318
+    second: botoesmenu_24
   - first:
-      213: -8644389071085990395
-    second: botoesmenu 1_25
+      213: 5698612043367339326
+    second: botoesmenu_25
   - first:
-      213: 3759819605514668088
-    second: botoesmenu 1_26
+      213: 1396196771831745630
+    second: botoesmenu_26
   - first:
-      213: -1001187038190395244
-    second: botoesmenu 1_27
+      213: 6382238866771912748
+    second: botoesmenu_27
   - first:
-      213: 3258822082572078115
-    second: botoesmenu 1_28
+      213: -6393058531881584267
+    second: botoesmenu_28
   - first:
-      213: 3853319608789686799
-    second: botoesmenu 1_29
+      213: 4192252928881016962
+    second: botoesmenu_29
+  - first:
+      213: 7314200689201485712
+    second: botoesmenu_30
+  - first:
+      213: 5034758133788032290
+    second: botoesmenu_31
+  - first:
+      213: -2703624445469179399
+    second: botoesmenu_32
+  - first:
+      213: -1841364737941968534
+    second: botoesmenu_33
+  - first:
+      213: -840935531306116472
+    second: botoesmenu_34
+  - first:
+      213: -5203662283053359536
+    second: botoesmenu_35
+  - first:
+      213: 8766397835827735800
+    second: botoesmenu_36
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -179,11 +200,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: botoesmenu 1_0
+      name: botoesmenu_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 226
+        y: 258
         width: 28
         height: 28
       alignment: 0
@@ -193,81 +214,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9bd912a892d33870800000000000000
-      internalID: 8661498061360061342
+      spriteID: 29119792f24d59090800000000000000
+      internalID: -8028277461693689454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_1
+      name: botoesmenu_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 226
-        width: 7
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03b364f2ee54ff0c0800000000000000
-      internalID: -4539833010068505808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botoesmenu 1_2
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 224
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6d42565d5c8b4300800000000000000
-      internalID: 237437737875164527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botoesmenu 1_4
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 226
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e2cd25aa7e309f10800000000000000
-      internalID: 2274386508300272355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botoesmenu 1_5
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 229
+        x: 35
+        y: 277
         width: 90
         height: 6
       alignment: 0
@@ -277,18 +235,144 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 823178c267ba65250800000000000000
-      internalID: 5933118083148747560
+      spriteID: b12670f9586713b90800000000000000
+      internalID: -7263894407701110245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_6
+      name: botoesmenu_2
       rect:
         serializedVersion: 2
-        x: 197
-        y: 226
+        x: 130
+        y: 258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ee609f6e71729b0800000000000000
+      internalID: -5105085371813269868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b7682d79c0f10c0800000000000000
+      internalID: -4602946447937733743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6df012d639147210800000000000000
+      internalID: 1329715513224396140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 258
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54777a4c5906cc40800000000000000
+      internalID: 5532119484262216795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 256
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea793f9ef3f376850800000000000000
+      internalID: 6370129741679400878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 258
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a8ad61c07a3f550800000000000000
+      internalID: 6193477582929431053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 258
         width: 6
         height: 12
       alignment: 0
@@ -298,14 +382,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fb797866348f3330800000000000000
-      internalID: 3692815588682988530
+      spriteID: f037a8789d5effab0800000000000000
+      internalID: -4972002741149076721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_7
+      name: botoesmenu_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 226
+        width: 126
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c505d64e6cec377b0800000000000000
+      internalID: -5227607388815798180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 226
+        width: 126
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a052a417bd5594670800000000000000
+      internalID: 8523438170762257674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_12
       rect:
         serializedVersion: 2
         x: 1
@@ -319,14 +445,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4635b32243f1220c0800000000000000
-      internalID: -4602081560446151836
+      spriteID: cba64b5ca353c1190800000000000000
+      internalID: -7990453112320791876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_8
+      name: botoesmenu_13
       rect:
         serializedVersion: 2
         x: 129
@@ -340,14 +466,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a830165dc240a0c60800000000000000
-      internalID: 7785039496468300682
+      spriteID: 7bbb758316a9d59b0800000000000000
+      internalID: -5089742261511013449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_9
+      name: botoesmenu_14
       rect:
         serializedVersion: 2
         x: 1
@@ -361,14 +487,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1fff3faa5bd163c0800000000000000
-      internalID: -4367968981038924003
+      spriteID: 9caec34eaa366ca20800000000000000
+      internalID: 3082260580606470857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_10
+      name: botoesmenu_15
       rect:
         serializedVersion: 2
         x: 129
@@ -382,14 +508,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5ccac144bb98f960800000000000000
-      internalID: 7636024366706904154
+      spriteID: 5b18be338519e6140800000000000000
+      internalID: 4714865667917709749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_11
+      name: botoesmenu_16
       rect:
         serializedVersion: 2
         x: 1
@@ -403,14 +529,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cb878dbe043746a0800000000000000
-      internalID: -6465141502153094203
+      spriteID: fa19e89cbfb01f980800000000000000
+      internalID: -8507005045079895633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_12
+      name: botoesmenu_17
       rect:
         serializedVersion: 2
         x: 129
@@ -424,14 +550,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2ae8755c8078cc60800000000000000
-      internalID: 7838638899470068267
+      spriteID: 7fff2787ff290a140800000000000000
+      internalID: 4728941234674139127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_13
+      name: botoesmenu_18
       rect:
         serializedVersion: 2
         x: 1
@@ -445,14 +571,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21d07c5635da33140800000000000000
-      internalID: 4698289409978993938
+      spriteID: e2380dcd6d82b3210800000000000000
+      internalID: 1313688619601396526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_14
+      name: botoesmenu_19
       rect:
         serializedVersion: 2
         x: 129
@@ -466,14 +592,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad698a795769fc20800000000000000
-      internalID: 3240735040875359658
+      spriteID: 215e08a3d765795f0800000000000000
+      internalID: -750035717081471726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_15
+      name: botoesmenu_20
       rect:
         serializedVersion: 2
         x: 1
@@ -487,14 +613,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59678c6477e628340800000000000000
-      internalID: 4864572006081263253
+      spriteID: 9787e59eacdb203a0800000000000000
+      internalID: -6700584616377550727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_16
+      name: botoesmenu_21
       rect:
         serializedVersion: 2
         x: 129
@@ -508,14 +634,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 718e49a787f7e9630800000000000000
-      internalID: 3935723279797774359
+      spriteID: d408a7344c6ce4230800000000000000
+      internalID: 3625053296327819341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_17
+      name: botoesmenu_22
       rect:
         serializedVersion: 2
         x: 2
@@ -529,14 +655,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 916ee846882414750800000000000000
-      internalID: 6287379708355995161
+      spriteID: 93f5bf87460fb2ad0800000000000000
+      internalID: -2725820835125567687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_18
+      name: botoesmenu_23
       rect:
         serializedVersion: 2
         x: 34
@@ -550,14 +676,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 979363753acaacee0800000000000000
-      internalID: -1239988929844332167
+      spriteID: 4aab792fba3edcfd0800000000000000
+      internalID: -2319947905376994652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_19
+      name: botoesmenu_24
       rect:
         serializedVersion: 2
         x: 82
@@ -571,14 +697,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83912c2c573ce72d0800000000000000
-      internalID: -3278968568133052104
+      spriteID: e0226d98b0db8d350800000000000000
+      internalID: 6041786757372322318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_20
+      name: botoesmenu_25
       rect:
         serializedVersion: 2
         x: 130
@@ -592,14 +718,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5c83574c0580180800000000000000
-      internalID: -9148973838292695605
+      spriteID: e355cadf579851f40800000000000000
+      internalID: 5698612043367339326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_21
+      name: botoesmenu_26
       rect:
         serializedVersion: 2
         x: 162
@@ -613,14 +739,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00be35691ea3a0a50800000000000000
-      internalID: 6488062953744755456
+      spriteID: e5c049d0199406310800000000000000
+      internalID: 1396196771831745630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_22
+      name: botoesmenu_27
       rect:
         serializedVersion: 2
         x: 194
@@ -634,14 +760,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7a1992c825e62730800000000000000
-      internalID: 3974115684427307645
+      spriteID: c28a1ad4f64429850800000000000000
+      internalID: 6382238866771912748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_23
+      name: botoesmenu_28
       rect:
         serializedVersion: 2
         x: 226
@@ -655,14 +781,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a8efa095945bab0800000000000000
-      internalID: -4993003965084956151
+      spriteID: 579faea132b4747a0800000000000000
+      internalID: -6393058531881584267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_24
+      name: botoesmenu_29
       rect:
         serializedVersion: 2
         x: 2
@@ -676,14 +802,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66d31e9619ddf910800000000000000
-      internalID: 1872891711220602477
+      spriteID: 2804b8ac3dfdd2a30800000000000000
+      internalID: 4192252928881016962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_25
+      name: botoesmenu_30
       rect:
         serializedVersion: 2
         x: 34
@@ -697,14 +823,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50e86a590f5f80880800000000000000
-      internalID: -8644389071085990395
+      spriteID: 09795c746c2418560800000000000000
+      internalID: 7314200689201485712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_26
+      name: botoesmenu_31
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22db17ee8dd0fd540800000000000000
+      internalID: 5034758133788032290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_32
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f14fb924ebca7ad0800000000000000
+      internalID: -2703624445469179399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_33
       rect:
         serializedVersion: 2
         x: 130
@@ -718,14 +886,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8384046c2009d2430800000000000000
-      internalID: 3759819605514668088
+      spriteID: a69e90dd6882276e0800000000000000
+      internalID: -1841364737941968534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_27
+      name: botoesmenu_34
       rect:
         serializedVersion: 2
         x: 162
@@ -739,14 +907,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 490afea71b11b12f0800000000000000
-      internalID: -1001187038190395244
+      spriteID: 88a9e79f6956454f0800000000000000
+      internalID: -840935531306116472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_28
+      name: botoesmenu_35
       rect:
         serializedVersion: 2
         x: 194
@@ -760,14 +928,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c48e90b69a93d20800000000000000
-      internalID: 3258822082572078115
+      spriteID: 05e918749b0e8c7b0800000000000000
+      internalID: -5203662283053359536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: botoesmenu 1_29
+      name: botoesmenu_36
       rect:
         serializedVersion: 2
         x: 226
@@ -781,8 +949,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0ad4f7b4cdb97530800000000000000
-      internalID: 3853319608789686799
+      spriteID: 8fce344a26088a970800000000000000
+      internalID: 8766397835827735800
       vertices: []
       indices: 
       edges: []
