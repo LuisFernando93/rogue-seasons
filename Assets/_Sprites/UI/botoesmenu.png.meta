@@ -1,130 +1,118 @@
 fileFormatVersion: 2
-guid: 74b800b3ec0746148bbc2a0ca2932a7a
+guid: e542e0f764cb632438568b9daccb794c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2999859634857935413
-    second: BossAttacks-Emission_0
+      213: -8028277461693689454
+    second: botoesmenu_0
   - first:
-      213: 532119147339620545
-    second: BossAttacks-Emission_1
+      213: -7263894407701110245
+    second: botoesmenu_1
   - first:
-      213: -1852498953927100505
-    second: BossAttacks-Emission_2
+      213: -5105085371813269868
+    second: botoesmenu_2
   - first:
-      213: -5382332402790991914
-    second: BossAttacks-Emission_3
+      213: -4602946447937733743
+    second: botoesmenu_3
   - first:
-      213: -2374287322308341869
-    second: BossAttacks-Emission_4
+      213: 1329715513224396140
+    second: botoesmenu_4
   - first:
-      213: -5892553613047240740
-    second: BossAttacks-Emission_5
+      213: 5532119484262216795
+    second: botoesmenu_5
   - first:
-      213: -328879269932449896
-    second: BossAttacks-Emission_6
+      213: 6370129741679400878
+    second: botoesmenu_6
   - first:
-      213: -7698875519553576898
-    second: BossAttacks-Emission_7
+      213: -1324702788623049802
+    second: botoesmenu_7
   - first:
-      213: 1117651764022840805
-    second: BossAttacks-Emission_8
+      213: 6193477582929431053
+    second: botoesmenu_8
   - first:
-      213: 4993307291336005164
-    second: BossAttacks-Emission_9
+      213: -4972002741149076721
+    second: botoesmenu_9
   - first:
-      213: -7470280868004802176
-    second: BossAttacks-Emission_10
+      213: -5227607388815798180
+    second: botoesmenu_10
   - first:
-      213: -7448168438245319435
-    second: BossAttacks-Emission_11
+      213: 8523438170762257674
+    second: botoesmenu_11
   - first:
-      213: -9214958529165089012
-    second: BossAttacks-Emission_12
+      213: -7990453112320791876
+    second: botoesmenu_12
   - first:
-      213: 5731954309033302392
-    second: BossAttacks-Emission_13
+      213: -5089742261511013449
+    second: botoesmenu_13
   - first:
-      213: 5840329842638310027
-    second: BossAttacks-Emission_14
+      213: 3082260580606470857
+    second: botoesmenu_14
   - first:
-      213: 8219370441554390467
-    second: BossAttacks-Emission_15
+      213: 4714865667917709749
+    second: botoesmenu_15
   - first:
-      213: -4294836398394804020
-    second: BossAttacks-Emission_16
+      213: -8507005045079895633
+    second: botoesmenu_16
   - first:
-      213: 3711919469932742703
-    second: BossAttacks-Emission_17
+      213: 4728941234674139127
+    second: botoesmenu_17
   - first:
-      213: -8981112279653191099
-    second: BossAttacks-Emission_18
+      213: 1313688619601396526
+    second: botoesmenu_18
   - first:
-      213: -184977217948039958
-    second: BossAttacks-Emission_19
+      213: -750035717081471726
+    second: botoesmenu_19
   - first:
-      213: -6225062967155685915
-    second: BossAttacks-Emission_20
+      213: -6700584616377550727
+    second: botoesmenu_20
   - first:
-      213: -5983250287468354381
-    second: BossAttacks-Emission_21
+      213: 3625053296327819341
+    second: botoesmenu_21
   - first:
-      213: -3371954338717481437
-    second: BossAttacks-Emission_22
+      213: -2725820835125567687
+    second: botoesmenu_22
   - first:
-      213: -2907022504992625887
-    second: BossAttacks-Emission_23
+      213: -2319947905376994652
+    second: botoesmenu_23
   - first:
-      213: 1752966628367864503
-    second: BossAttacks-Emission_24
+      213: 6041786757372322318
+    second: botoesmenu_24
   - first:
-      213: 9221954720068870363
-    second: BossAttacks-Emission_25
+      213: 5698612043367339326
+    second: botoesmenu_25
   - first:
-      213: 8172070137685384458
-    second: BossAttacks-Emission_26
+      213: 1396196771831745630
+    second: botoesmenu_26
   - first:
-      213: 6987639282174372790
-    second: BossAttacks-Emission_27
+      213: 6382238866771912748
+    second: botoesmenu_27
   - first:
-      213: -4708468724973810485
-    second: BossAttacks-Emission_28
+      213: -6393058531881584267
+    second: botoesmenu_28
   - first:
-      213: 8773887829522467636
-    second: BossAttacks-Emission_29
+      213: 4192252928881016962
+    second: botoesmenu_29
   - first:
-      213: -2740669132078201626
-    second: BossAttacks-Emission_30
+      213: 7314200689201485712
+    second: botoesmenu_30
   - first:
-      213: 6886432667339405552
-    second: BossAttacks-Emission_31
+      213: 5034758133788032290
+    second: botoesmenu_31
   - first:
-      213: 3789551199006845257
-    second: BossAttacks-Emission_32
+      213: -2703624445469179399
+    second: botoesmenu_32
   - first:
-      213: -5440627990129446402
-    second: BossAttacks-Emission_33
+      213: -1841364737941968534
+    second: botoesmenu_33
   - first:
-      213: 1467083345004933343
-    second: BossAttacks-Emission_34
+      213: -840935531306116472
+    second: botoesmenu_34
   - first:
-      213: 5806926452191688762
-    second: BossAttacks-Emission_35
+      213: -5203662283053359536
+    second: botoesmenu_35
   - first:
-      213: 3599719120505584821
-    second: BossAttacks-Emission_36
-  - first:
-      213: -4369556597721813657
-    second: BossAttacks-Emission_37
-  - first:
-      213: 3663210479321086039
-    second: BossAttacks-Emission_38
-  - first:
-      213: 6805246810170116061
-    second: BossAttacks-Emission_39
-  - first:
-      213: -6628778388597274722
-    second: BossAttacks-Emission_40
+      213: 8766397835827735800
+    second: botoesmenu_36
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -227,862 +215,778 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BossAttacks-Emission_0
+      name: botoesmenu_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
+        y: 258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29119792f24d59090800000000000000
+      internalID: -8028277461693689454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 277
+        width: 90
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12670f9586713b90800000000000000
+      internalID: -7263894407701110245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ee609f6e71729b0800000000000000
+      internalID: -5105085371813269868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b7682d79c0f10c0800000000000000
+      internalID: -4602946447937733743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 258
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6df012d639147210800000000000000
+      internalID: 1329715513224396140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 258
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54777a4c5906cc40800000000000000
+      internalID: 5532119484262216795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_6
+      rect:
+        serializedVersion: 2
+        x: 51
         y: 256
-        width: 64
-        height: 64
+        width: 4
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcd72485e8b5e56d0800000000000000
-      internalID: -2999859634857935413
+      spriteID: ea793f9ef3f376850800000000000000
+      internalID: 6370129741679400878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_1
+      name: botoesmenu_7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 57
         y: 256
-        width: 64
-        height: 64
+        width: 4
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c0ac539b87726700800000000000000
-      internalID: 532119147339620545
+      spriteID: 6bb572315d5bd9de0800000000000000
+      internalID: -1324702788623049802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_2
+      name: botoesmenu_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
-        width: 64
-        height: 64
+        x: 65
+        y: 258
+        width: 14
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a77460340a9a46e0800000000000000
-      internalID: -1852498953927100505
+      spriteID: d0a8ad61c07a3f550800000000000000
+      internalID: 6193477582929431053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_3
+      name: botoesmenu_9
       rect:
         serializedVersion: 2
-        x: 192
-        y: 256
-        width: 64
-        height: 64
+        x: 85
+        y: 258
+        width: 6
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d7719c423d1e45b0800000000000000
-      internalID: -5382332402790991914
+      spriteID: f037a8789d5effab0800000000000000
+      internalID: -4972002741149076721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_4
+      name: botoesmenu_10
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 64
-        height: 64
+        x: 1
+        y: 226
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39f09178246dc0fd0800000000000000
-      internalID: -2374287322308341869
+      spriteID: c505d64e6cec377b0800000000000000
+      internalID: -5227607388815798180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_5
+      name: botoesmenu_11
       rect:
         serializedVersion: 2
-        x: 320
-        y: 256
-        width: 64
-        height: 64
+        x: 129
+        y: 226
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd7ef5285b1793ea0800000000000000
-      internalID: -5892553613047240740
+      spriteID: a052a417bd5594670800000000000000
+      internalID: 8523438170762257674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_6
+      name: botoesmenu_12
       rect:
         serializedVersion: 2
-        x: 384
-        y: 256
-        width: 64
-        height: 64
+        x: 1
+        y: 194
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89fbfa5eb069f6bf0800000000000000
-      internalID: -328879269932449896
+      spriteID: cba64b5ca353c1190800000000000000
+      internalID: -7990453112320791876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_7
+      name: botoesmenu_13
       rect:
         serializedVersion: 2
-        x: 448
-        y: 256
-        width: 64
-        height: 64
+        x: 129
+        y: 194
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e30ee0f5189182590800000000000000
-      internalID: -7698875519553576898
+      spriteID: 7bbb758316a9d59b0800000000000000
+      internalID: -5089742261511013449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_8
+      name: botoesmenu_14
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 64
-        height: 64
+        x: 1
+        y: 162
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ed8b299b52b28f00800000000000000
-      internalID: 1117651764022840805
+      spriteID: 9caec34eaa366ca20800000000000000
+      internalID: 3082260580606470857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_9
+      name: botoesmenu_15
       rect:
         serializedVersion: 2
-        x: 576
-        y: 256
-        width: 64
-        height: 64
+        x: 129
+        y: 162
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c26537a968acb4540800000000000000
-      internalID: 4993307291336005164
+      spriteID: 5b18be338519e6140800000000000000
+      internalID: 4714865667917709749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_10
+      name: botoesmenu_16
       rect:
         serializedVersion: 2
-        x: 640
-        y: 256
-        width: 64
-        height: 64
+        x: 1
+        y: 130
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0815d2a312b345890800000000000000
-      internalID: -7470280868004802176
+      spriteID: fa19e89cbfb01f980800000000000000
+      internalID: -8507005045079895633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_11
+      name: botoesmenu_17
       rect:
         serializedVersion: 2
-        x: 704
-        y: 256
-        width: 64
-        height: 64
+        x: 129
+        y: 130
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc9c1b744ac2a890800000000000000
-      internalID: -7448168438245319435
+      spriteID: 7fff2787ff290a140800000000000000
+      internalID: 4728941234674139127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_12
+      name: botoesmenu_18
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
-        width: 64
-        height: 64
+        x: 1
+        y: 98
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c07a8296a04ed1080800000000000000
-      internalID: -9214958529165089012
+      spriteID: e2380dcd6d82b3210800000000000000
+      internalID: 1313688619601396526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_13
+      name: botoesmenu_19
       rect:
         serializedVersion: 2
-        x: 832
-        y: 256
-        width: 64
-        height: 64
+        x: 129
+        y: 98
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87913ba231efb8f40800000000000000
-      internalID: 5731954309033302392
+      spriteID: 215e08a3d765795f0800000000000000
+      internalID: -750035717081471726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_14
+      name: botoesmenu_20
       rect:
         serializedVersion: 2
-        x: 896
-        y: 256
-        width: 64
-        height: 64
+        x: 1
+        y: 66
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8ac1996c050d0150800000000000000
-      internalID: 5840329842638310027
+      spriteID: 9787e59eacdb203a0800000000000000
+      internalID: -6700584616377550727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_15
+      name: botoesmenu_21
       rect:
         serializedVersion: 2
-        x: 960
-        y: 256
-        width: 64
-        height: 64
+        x: 129
+        y: 66
+        width: 126
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cde1365ed1111270800000000000000
-      internalID: 8219370441554390467
+      spriteID: d408a7344c6ce4230800000000000000
+      internalID: 3625053296327819341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_16
+      name: botoesmenu_22
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 256
-        width: 64
-        height: 64
+        x: 2
+        y: 34
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc87249fc0da564c0800000000000000
-      internalID: -4294836398394804020
+      spriteID: 93f5bf87460fb2ad0800000000000000
+      internalID: -2725820835125567687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_17
+      name: botoesmenu_23
       rect:
         serializedVersion: 2
-        x: 1088
-        y: 256
-        width: 64
-        height: 64
+        x: 34
+        y: 34
+        width: 44
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2882306713638330800000000000000
-      internalID: 3711919469932742703
+      spriteID: 4aab792fba3edcfd0800000000000000
+      internalID: -2319947905376994652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_18
+      name: botoesmenu_24
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 256
-        width: 64
-        height: 64
+        x: 82
+        y: 34
+        width: 44
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5427f5337fdac5380800000000000000
-      internalID: -8981112279653191099
+      spriteID: e0226d98b0db8d350800000000000000
+      internalID: 6041786757372322318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_19
+      name: botoesmenu_25
       rect:
         serializedVersion: 2
-        x: 1216
-        y: 256
-        width: 64
-        height: 64
+        x: 130
+        y: 34
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae4caa84334de6df0800000000000000
-      internalID: -184977217948039958
+      spriteID: e355cadf579851f40800000000000000
+      internalID: 5698612043367339326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_20
+      name: botoesmenu_26
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 256
-        width: 64
-        height: 64
+        x: 162
+        y: 34
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e50f3296322c99a0800000000000000
-      internalID: -6225062967155685915
+      spriteID: e5c049d0199406310800000000000000
+      internalID: 1396196771831745630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_21
+      name: botoesmenu_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 64
-        height: 64
+        x: 194
+        y: 34
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4e13d609937fca0800000000000000
-      internalID: -5983250287468354381
+      spriteID: c28a1ad4f64429850800000000000000
+      internalID: 6382238866771912748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_22
+      name: botoesmenu_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
-        width: 64
-        height: 64
+        x: 226
+        y: 34
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32648e1f4696431d0800000000000000
-      internalID: -3371954338717481437
+      spriteID: 579faea132b4747a0800000000000000
+      internalID: -6393058531881584267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_23
+      name: botoesmenu_29
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 64
-        height: 64
+        x: 2
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12b29db0f6e28a7d0800000000000000
-      internalID: -2907022504992625887
+      spriteID: 2804b8ac3dfdd2a30800000000000000
+      internalID: 4192252928881016962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_24
+      name: botoesmenu_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 64
-        height: 64
+        x: 34
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b21bf26cd9c35810800000000000000
-      internalID: 1752966628367864503
+      spriteID: 09795c746c2418560800000000000000
+      internalID: 7314200689201485712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_25
+      name: botoesmenu_31
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 64
-        height: 64
+        x: 66
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd0217835f6faff70800000000000000
-      internalID: 9221954720068870363
+      spriteID: 22db17ee8dd0fd540800000000000000
+      internalID: 5034758133788032290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_26
+      name: botoesmenu_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
+        x: 98
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0d90542e76096170800000000000000
-      internalID: 8172070137685384458
+      spriteID: 9f14fb924ebca7ad0800000000000000
+      internalID: -2703624445469179399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_27
+      name: botoesmenu_33
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
+        x: 130
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bba190b7e419f060800000000000000
-      internalID: 6987639282174372790
+      spriteID: a69e90dd6882276e0800000000000000
+      internalID: -1841364737941968534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_28
+      name: botoesmenu_34
       rect:
         serializedVersion: 2
-        x: 320
-        y: 64
-        width: 64
-        height: 64
+        x: 162
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcc46e324a828aeb0800000000000000
-      internalID: -4708468724973810485
+      spriteID: 88a9e79f6956454f0800000000000000
+      internalID: -840935531306116472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_29
+      name: botoesmenu_35
       rect:
         serializedVersion: 2
-        x: 384
-        y: 64
-        width: 64
-        height: 64
+        x: 194
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43b4fc1be7c13c970800000000000000
-      internalID: 8773887829522467636
+      spriteID: 05e918749b0e8c7b0800000000000000
+      internalID: -5203662283053359536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossAttacks-Emission_30
+      name: botoesmenu_36
       rect:
         serializedVersion: 2
-        x: 448
-        y: 64
-        width: 64
-        height: 64
+        x: 226
+        y: 2
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e4c99fe1ff27f9d0800000000000000
-      internalID: -2740669132078201626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_31
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f8396a6606819f50800000000000000
-      internalID: 6886432667339405552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_32
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94965f2dcb0379430800000000000000
-      internalID: 3789551199006845257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_33
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef1794d2ba10f74b0800000000000000
-      internalID: -5440627990129446402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_34
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd039e287802c5410800000000000000
-      internalID: 1467083345004933343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_35
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3874b387d8569050800000000000000
-      internalID: 5806926452191688762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_36
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bcbaecc775c4f130800000000000000
-      internalID: 3599719120505584821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_37
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76da3dedc673c53c0800000000000000
-      internalID: -4369556597721813657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_38
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 758fb6db58656d230800000000000000
-      internalID: 3663210479321086039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_39
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd7cc090be7117e50800000000000000
-      internalID: 6805246810170116061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BossAttacks-Emission_40
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e978fd42d29d104a0800000000000000
-      internalID: -6628778388597274722
+      spriteID: 8fce344a26088a970800000000000000
+      internalID: 8766397835827735800
       vertices: []
       indices: 
       edges: []

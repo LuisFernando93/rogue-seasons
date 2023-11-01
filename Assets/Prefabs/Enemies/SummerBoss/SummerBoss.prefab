@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8300492092728803759}
   - component: {fileID: 8300492092728803755}
   - component: {fileID: 8300492092728803754}
+  - component: {fileID: 8300492094421102263}
   m_Layer: 0
   m_Name: SummerBoss
   m_TagString: Enemy
@@ -147,7 +148,7 @@ MonoBehaviour:
   floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
   recoverTime: 2
   baseArmor: 0.5
-  baseLife: 30
+  baseLife: 10
   power: 0
   Attacks:
     list: []
@@ -171,6 +172,7 @@ MonoBehaviour:
   cutPrefab: {fileID: 1431321877842026555, guid: bdf2f323dff6b9d45966af1e56166c52, type: 3}
   groundExpPrefab: {fileID: 7730496180810429080, guid: ad1399c2a57ba2d48b0bc03e2e9728bd, type: 3}
   lifeBarPrefab: {fileID: 6186479305577232555, guid: edd9e53704025f243883848e111b2c3d, type: 3}
+  blackHoleEffect: {fileID: 4001995987700467566, guid: 02582014265a7a548910108ab6a0796e, type: 3}
   arrowForce: 50
 --- !u!114 &8300492092728803754
 MonoBehaviour:
@@ -184,9 +186,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994fc65c9a040034399af81d38c8edd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeIntensityType: 4
-  perpetualStrength: 0
-  perpetualTime: 0
+  shakeIntensityType: 5
+  perpetualStrength: 2
+  perpetualTime: 3.5
+--- !u!114 &8300492094421102263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300492092728803756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefe91bb95726f549bb8a6b64b9e533b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 0}
+  newProfile: {fileID: 11400000, guid: 267af05626fabcd4aac54489df5a9eab, type: 2}
 --- !u!1 &8300492094361055639
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +213,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8300492094361055638}
   - component: {fileID: 8300492094361055633}
+  - component: {fileID: 1688173698697252034}
   - component: {fileID: 8300492094361055632}
+  - component: {fileID: 7361042368195471631}
   m_Layer: 0
   m_Name: BossAttacks
   m_TagString: Untagged
@@ -245,6 +263,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!250 &1688173698697252034
+PointEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300492094361055639}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceMagnitude: -150
+  m_ForceVariation: 0
+  m_DistanceScale: 1
+  m_ForceSource: 1
+  m_ForceTarget: 0
+  m_ForceMode: 0
+  m_Drag: 0
+  m_AngularDrag: 0
 --- !u!114 &8300492094361055632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,5 +293,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a7dc94d11614414b8ac3f860589e878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7361042368195471631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300492094361055639}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9965d8a572abc8c45896a7eeb50ae1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

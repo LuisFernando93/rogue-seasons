@@ -10,11 +10,10 @@ public class SummerBoss : Boss
     [SerializeField]
     AnimationClip IDLE, ATTACK01, ATTACK02_ENTRY, ATTACK02_PREP, ATTACK02_DAMAGE, EVOKE_RAIN, CUT, EXAUSTION, RECOVER,
         TELEPORT, ULT, ULT_LOOP, DEATH, GROUND_EXP;
-    [SerializeField] GameObject attackPoint, arrowPrefab, arrowRainPrefab, cutPrefab, groundExpPrefab, lifeBarPrefab;
+    [SerializeField] GameObject attackPoint, arrowPrefab, arrowRainPrefab, cutPrefab, groundExpPrefab, lifeBarPrefab, blackHoleEffect;
     [SerializeField] int arrowForce;
     bool halfLife = false, ultimateUsed = false, attacking = false;
     Slider slider; 
-
 
     private void Start()
     {
@@ -115,7 +114,7 @@ public class SummerBoss : Boss
     //Explos�es
     private void CallAttack05()
     {
-        ChangePosition(0, 5, 0);
+        ChangePosition(0, 0, 0);
         ChangeAnimation(GROUND_EXP.name);
     }
 
@@ -131,6 +130,7 @@ public class SummerBoss : Boss
         ChangePosition(0, 0, 0);
         power = 1;
         ChangeAnimation(ULT.name);
+        Instantiate(blackHoleEffect,this.transform);
         ultimateUsed = true;
     }
 
@@ -182,7 +182,7 @@ public class SummerBoss : Boss
     {
         halfLife = true;
         recoverTime = 1f;
-        Attacks.Add("Ultimate", 1.5f);
+        Attacks.Add("Ultimate", 2f);
         //Debug.Log("Metade da vida");
     }
 
@@ -202,6 +202,7 @@ public class SummerBoss : Boss
         slider.value = life;
         if (life <= 0)
         {
+            GetComponent<ShakeEffect>().perpetualTime = 0.5f ;
             ChangeAnimation(DEATH.name);
             Destroy(gameObject, 5f);
             Destroy(slider.gameObject);
@@ -225,6 +226,7 @@ public class SummerBoss : Boss
     {
         baseArmor = 0.5f;
         attacking = false;
+        if(transform.childCount > 1)
+            Destroy(transform.GetChild(1).gameObject);
     }
-
 }

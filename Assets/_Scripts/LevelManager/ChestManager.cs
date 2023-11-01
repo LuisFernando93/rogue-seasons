@@ -8,6 +8,7 @@ public class ChestManager : MonoBehaviour
     LevelManager levelManager;
     [SerializeField] int maxChest = 3, dropChance = 10;
     int chestCount = 0;
+    [SerializeField] GameObject chestNotify;
 
     public static ChestManager Instance;
 
@@ -23,7 +24,7 @@ public class ChestManager : MonoBehaviour
         {
             if (Random.Range(1, dropChance) == 1)
             {
-                if (!isChestRoom) Instantiate(chestsPrefab.GetRandom(), chestSpot.position, chestSpot.rotation);
+                if (!isChestRoom) CreateChest(chestSpot);
                 chestCount++;
                 Debug.Log("Bau criado, quantidade de baus criados: "+chestCount);
             }
@@ -31,20 +32,26 @@ public class ChestManager : MonoBehaviour
         }
         else if (isChestRoom /*&& chestCount < maxChest*/)
         {
-            Instantiate(chestsPrefab.GetRandom(), chestSpot.position, chestSpot.rotation);
+            CreateChest(chestSpot);
             //chestCount++;
             Debug.Log("Baú de sala especial criado");
         }
         else if (chestCount == 0)
         {
             Debug.Log("Nenhum bau criado durante a fase, bau obrigatorio criado.");
-            if (!isChestRoom) Instantiate(chestsPrefab.GetRandom(), chestSpot.position, chestSpot.rotation);
+            if (!isChestRoom) CreateChest(chestSpot);
             chestCount++;
         }
         else
         {
             Debug.Log("quantidade maxima de baus criados");
         }
+    }
+
+    private void CreateChest(Transform chestSpot)
+    {
+        Instantiate(chestsPrefab.GetRandom(), chestSpot.position, chestSpot.rotation);
+        Destroy(Instantiate(chestNotify, GameObject.FindGameObjectWithTag("Canvas").transform),5);
     }
 
 }

@@ -61,8 +61,6 @@ MonoBehaviour:
   gridWidth: 135
   gridHeight: 115
   gridCellSize: 0.64
-  defaultSummerOST: {fileID: 8300000, guid: 22c2927454fbf144f9443c2c9c601f1f, type: 3}
-  battleSummerOST: {fileID: 8300000, guid: dd77a99bdb9549740a274295fbaddcbf, type: 3}
   solidLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -88,3 +86,4 @@ MonoBehaviour:
       weight: 0.2
   maxChest: 3
   dropChance: 10
+  chestNotify: {fileID: 7879101978096151196, guid: 9d97ef00674b4db40ab3b8c33ffd4e41, type: 3}

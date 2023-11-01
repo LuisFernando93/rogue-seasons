@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ManTex:
-        m_Texture: {fileID: 2800000, guid: 16b4914353bb90e4ea14ca4356ace688, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_b8a6a3438fb749b4b25ddbfb29a90e9e_Texture_1:
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Distance: 10
+    - _Distance: -8.5
     - _Rad: 0.01
     m_Colors:
     - _Position: {r: 0.5, g: 0.5, b: 0, a: 0}
