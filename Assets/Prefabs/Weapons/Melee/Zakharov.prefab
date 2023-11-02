@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 698210433297218770}
   - component: {fileID: 4395846813923947684}
   m_Layer: 0
-  m_Name: Faca
+  m_Name: Zakharov
   m_TagString: meleeWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

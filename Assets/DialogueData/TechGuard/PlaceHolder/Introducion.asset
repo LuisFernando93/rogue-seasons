@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Introducion
   m_EditorClassIdentifier: 
   dialogueBR:
-  - "speaker:Guarda#Parada ai! Ninguem tem permiss\xE3o para acessar o QG no momento!"
-  - speaker:Rouge#Credo, que ignorancia.
-  dialogueING: []
+  - "speaker:Guarda#<color=\"red\">PARADA AI!</color> Ninguem tem permiss\xE3o para
+    acessar o <color=\"blue\">QG</color> no momento!"
+  - speaker:Rouge#Credo, que ignorancia...
+  dialogueING:
+  - speaker:Guard#<color="red">STOP"</color> No one is allowed to access <color="blue">HQ</color>
+    at the moment!
+  - speaker:Rouge#Geez, how rude...
   responses: []

@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Teleport : InteractEvent
 {
-    [SerializeField] public string SceneName;
+    string SceneName;
 
     public void LoadScene()
     {
@@ -28,4 +28,11 @@ public class Teleport : InteractEvent
                 break;
         }
     }
+
+    public void CallTransicion()
+    {
+        GetComponent<Animator>().Play("Start");
+    }
+
+
 }

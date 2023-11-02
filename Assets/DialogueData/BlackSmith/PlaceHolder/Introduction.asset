@@ -15,10 +15,20 @@ MonoBehaviour:
   dialogueBR:
   - speaker:Rouge#Oie!
   - "speaker:Ferreira#Oi garota! Como est\xE3o as coisas?"
-  - speaker:Rouge#O de sempre! Zombies pegando fogo e flores explodindo...
+  - speaker:Rouge#O de sempre! <color="red">Zombies</color> pegando fogo e <color="yellow">Flores</color>
+    explodindo...
   - speaker:Rouge#Tem algo para mim hoje?
   - "speaker:Ferreira#Infelizmente n\xE3o meu anjo, estamos preparando para abrir
     ainda..."
   - speaker:Rouge#Oh, ok, fica na paz!
-  dialogueING: []
+  - "speaker:Ferreira#Voc\xEA tambem garota!"
+  dialogueING:
+  - speaker:Rouge#Hello!
+  - speaker:Blacksmith#Hi girl! How are you?
+  - speaker:Rouge#You know, <color="red">Zombies</color> in fire, <color="yellow">Flowers</color>
+    blowing...
+  - speaker:Rouge#You ave something for me today?
+  - speaker:Blacksmith#Unfortunately not girl, we are preparing to open yet...
+  - speaker:Rouge#Oh, ok, stay safe!
+  - speaker:Blacksmith#You to girl.
   responses: []

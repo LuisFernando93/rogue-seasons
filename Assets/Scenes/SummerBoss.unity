@@ -1391,6 +1391,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7625045125960011410, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757110768962657611, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.8604012
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897802555462096665, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.1000023
+      objectReference: {fileID: 0}
     - target: {fileID: 8203741513119528025, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_Name
       value: OpenHistoryButton

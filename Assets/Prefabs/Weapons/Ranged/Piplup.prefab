@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962895083103271514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.923, y: 0.047, z: 0}
+  m_LocalPosition: {x: 0.9, y: -0.008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1962895084405653994}
@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 1962895084405653995}
   - component: {fileID: 1962895084405654006}
   - component: {fileID: 1962895084405653993}
-  - component: {fileID: 5501713004936592036}
+  - component: {fileID: 7178792136261126636}
   m_Layer: 0
-  m_Name: Shotgun
+  m_Name: Piplup
   m_TagString: rangedWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962895084405653997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: -0.016, z: 0}
+  m_LocalPosition: {x: -0.031, y: 0.127, z: -1.438784}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1962895083103271515}
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2408530018317867212, guid: df5d62092dd79844cbe312f3c8865924, type: 3}
+  m_Sprite: {fileID: -2025789997403619860, guid: e7dea98fca6ebfb49b6e38a8ce80cee1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +127,7 @@ Animator:
   m_GameObject: {fileID: 1962895084405653997}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 60ade284fc2b93742a6d6934ddd26966, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7baa47f4fb713b14a8a8897e79758a7a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -150,15 +150,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   history: 
   firePoint: {fileID: 1962895083103271515}
-  bulletPrefab: {fileID: 7124704964449087799, guid: ad236753c4a86004f9c2ef243bb0f787, type: 3}
-  icon: {fileID: -2408530018317867212, guid: df5d62092dd79844cbe312f3c8865924, type: 3}
-  maxAmmo: 2
-  damage: 2
-  bulletForce: 20
-  attackSound: {fileID: 8300000, guid: b9a26f65f8293894a8c4a1e3cdd2207d, type: 3}
-  WEAPON_SHOT: {fileID: 7400000, guid: f500cdee870a331408cf5ae6e7d34200, type: 2}
-  WEAPON_RECHARGE: {fileID: 7400000, guid: 1694bebf56212cb4b91a1fc9486e8b30, type: 2}
-  WEAPON_IDLE: {fileID: 7400000, guid: b6fd75ef52ab4b64a9ba10ac716e849f, type: 2}
+  bulletPrefab: {fileID: 7124704964449087799, guid: 3f7dd12afb87bd9468b6e657dcc63208, type: 3}
+  icon: {fileID: -2025789997403619860, guid: e7dea98fca6ebfb49b6e38a8ce80cee1, type: 3}
+  maxAmmo: 5
+  damage: 1
+  bulletForce: 7.5
+  attackSound: {fileID: 8300000, guid: 34993aa4c249f6d40bb3c2b8c2491f5f, type: 3}
+  WEAPON_SHOT: {fileID: 7400000, guid: 7173a45833a540b4fb09210bfb73067f, type: 2}
+  WEAPON_RECHARGE: {fileID: 7400000, guid: 7b239380aac47f24f8c9193e92ece503, type: 2}
+  WEAPON_IDLE: {fileID: 7400000, guid: 99754d3c4f8ef3642b2599af64849bbd, type: 2}
 --- !u!114 &1962895084405653993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e8d0bddc7e9244fbcaa79faecac972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5501713004936592036
+--- !u!114 &7178792136261126636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

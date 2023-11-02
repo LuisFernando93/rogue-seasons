@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6526714071369338644}
   - component: {fileID: 6526714071369338645}
   m_Layer: 0
-  m_Name: WindSpear
+  m_Name: Ji
   m_TagString: meleeWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

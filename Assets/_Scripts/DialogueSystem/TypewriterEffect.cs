@@ -31,40 +31,54 @@ public class TypewriterEffect : MonoBehaviour
         IsRunning = false;
     }
 
-    private IEnumerator TypeText(string textToType, TMP_Text textLabel) //corotina
+    private IEnumerator TypeText(string textToType, TMP_Text textLabel)
     {
         IsRunning = true;
-        textLabel.text = string.Empty; //limpa o texto de sample
+        textLabel.text = string.Empty;
 
         float t = 0;
         int charIndex = 0;
+        bool insideTag = false; // Variável para rastrear se estamos dentro de uma tag
 
-        while(charIndex < textToType.Length)//quantidade de caracteres do texto
+        while (charIndex < textToType.Length)
         {
             int lastCharIndex = charIndex;
 
-
-            t += Time.deltaTime * typewriterSpeed; //velocidade que o texto é digitado
+            t += Time.deltaTime * typewriterSpeed;
             charIndex = Mathf.FloorToInt(t);
-            charIndex = Mathf.Clamp(charIndex, 0, textToType.Length); //controla a variavel
+            charIndex = Mathf.Clamp(charIndex, 0, textToType.Length);
 
-            for(int i = lastCharIndex; i< charIndex; i++)
+            for (int i = lastCharIndex; i < charIndex; i++)
             {
-                bool isLast = i >= textToType.Length - 1;
+                char currentChar = textToType[i];
 
-                textLabel.text = textToType.Substring(0, i+1); //vai escrevendo
-
-                if(IsPunctuation(textToType[i], out float waitTime) && !isLast && !IsPunctuation(textToType[i+1], out _)) //implementa o tempo de espera maior em caso de carecter especial
+                if (currentChar == '<') // Início de uma tag
                 {
-                    yield return new WaitForSeconds(waitTime);
+                    insideTag = true;
+                }
+                else if (currentChar == '>') // Fim de uma tag
+                {
+                    insideTag = false;
+                }
+
+                if (!insideTag) // Não estamos dentro de uma tag, então podemos adicionar o caractere
+                {
+                    bool isLast = i >= textToType.Length - 1;
+                    textLabel.text = textToType.Substring(0, i + 1);
+
+                    if (IsPunctuation(textToType[i], out float waitTime) && !isLast && !IsPunctuation(textToType[i + 1], out _))
+                    {
+                        yield return new WaitForSeconds(waitTime);
+                    }
                 }
             }
 
-            yield return null; //yield para o script e continua no proximo frame
+            yield return null;
         }
 
         IsRunning = false;
     }
+
 
     private bool IsPunctuation(char character, out float waitTime) //checa se o caracter é um caracter especial
     {
