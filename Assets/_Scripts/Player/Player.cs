@@ -43,13 +43,26 @@ public class Player : MonoBehaviour
 
     private bool canTakeDamage = true;
 
-    public float GetLife()
+    public static Player Instance;
+
+
+
+    private void Awake()
     {
-        return life;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
     {
+        DontDestroyOnLoad(this);
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         combatManager = GetComponent<NewCombatManager>();
@@ -299,6 +312,11 @@ public class Player : MonoBehaviour
     public void SetMoveSpeedValue(float tempSpeed)
     {
         MoveSpeed = baseMoveSpeed + (MoveSpeed * tempSpeed);
+    }
+
+    public float GetLife()
+    {
+        return life;
     }
 
     public float GetMaxLife()

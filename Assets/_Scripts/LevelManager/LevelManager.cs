@@ -24,8 +24,6 @@ public class LevelManager: MonoBehaviour
     private bool showDebugPathfinder = false;
     int level;
 
-    public static LevelManager Instance;
-
     // Start is called before the first frame update
     void Start()
     {
