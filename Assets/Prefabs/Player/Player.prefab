@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 3668197477448664466}
   - component: {fileID: 3668197477448664468}
   - component: {fileID: 1938889922088702324}
-  - component: {fileID: 1582212845}
   - component: {fileID: 4481993025911792464}
   - component: {fileID: 6879642940104621467}
   m_Layer: 7
@@ -239,20 +238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 3668197477448664466}
   drop: {fileID: 909530305515164561, guid: defafbf4ad9060341b6610622c0e7b23, type: 3}
---- !u!114 &1582212845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3668197477448664470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b136877b614c412428299b73ba063376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 0}
-  lifeValue: {fileID: 0}
 --- !u!114 &4481993025911792464
 MonoBehaviour:
   m_ObjectHideFlags: 0

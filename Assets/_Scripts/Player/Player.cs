@@ -245,7 +245,6 @@ public class Player : MonoBehaviour
             //animator.SetTrigger("Damaged");
 
             GetComponent<PlayerAnimationManager>().DamageIndicator();
-            healthManager.GetComponent<HealthManager>().UpdateHealth();;
 
             //Debug.Log("Vida Player: " + life);
         }
@@ -296,11 +295,6 @@ public class Player : MonoBehaviour
     {
         life += maxLife * tempLife;
         maxLife = baseLife + (baseLife * tempLife);
-       
-        if(healthManager != null)
-        {
-            healthManager.UpdateHealth();
-        }
     }
     public void SetMoveSpeedValue(float tempSpeed)
     {
