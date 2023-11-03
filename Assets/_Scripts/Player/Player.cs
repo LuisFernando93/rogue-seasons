@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
-    private bool dead = false;
+    public bool isDead { get; private set; } = false;
     [SerializeField] private LayerMask solidLayer;
 
     List<float> lifeModifier = new List<float>(), speedModifier = new List<float>(), meleeModifier = new List<float>(), rangedModifier = new List<float>();
@@ -43,13 +44,26 @@ public class Player : MonoBehaviour
 
     private bool canTakeDamage = true;
 
-    public float GetLife()
+    public static Player Instance;
+
+
+
+    private void Awake()
     {
-        return life;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
     {
+        DontDestroyOnLoad(this);
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         combatManager = GetComponent<NewCombatManager>();
@@ -245,7 +259,6 @@ public class Player : MonoBehaviour
             //animator.SetTrigger("Damaged");
 
             GetComponent<PlayerAnimationManager>().DamageIndicator();
-            healthManager.GetComponent<HealthManager>().UpdateHealth();;
 
             //Debug.Log("Vida Player: " + life);
         }
@@ -255,7 +268,7 @@ public class Player : MonoBehaviour
     {
         if (life <= 0)
         {
-            this.dead = true;
+            this.isDead = true;
         }
     }
 
@@ -286,30 +299,29 @@ public class Player : MonoBehaviour
         }
 
     }
-
-    public bool IsDead()
-    {
-        return this.dead;
-    }
-
     public void SetLifeValue(float tempLife)
     {
         life += maxLife * tempLife;
         maxLife = baseLife + (baseLife * tempLife);
-       
-        if(healthManager != null)
-        {
-            healthManager.UpdateHealth();
-        }
     }
     public void SetMoveSpeedValue(float tempSpeed)
     {
         MoveSpeed = baseMoveSpeed + (MoveSpeed * tempSpeed);
     }
 
+    public float GetLife()
+    {
+        return life;
+    }
+
     public float GetMaxLife()
     {
         return maxLife;
+    }
+
+    public void fullHeal()
+    {
+        life = maxLife;
     }
 
 }

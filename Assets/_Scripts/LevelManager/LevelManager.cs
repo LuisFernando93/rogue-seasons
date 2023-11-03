@@ -24,8 +24,6 @@ public class LevelManager: MonoBehaviour
     private bool showDebugPathfinder = false;
     int level;
 
-    public static LevelManager Instance;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -69,12 +67,6 @@ public class LevelManager: MonoBehaviour
         if (showDebugPathfinder)
         {
             DebugPathfinderInitToPlayer();
-
-        }
-
-        if(player.GetComponent<Player>().IsDead())
-        {
-            BackToHub();
         }
     }
 
@@ -102,16 +94,6 @@ public class LevelManager: MonoBehaviour
         {
             Debug.Log("Todas as salas concluidas!!");
         }
-    }
-
-    public void nextLevel()
-    {
-        
-    }
-
-    private void BackToHub()
-    {
-        SceneManager.LoadScene("Hub");
     }
 
     private void SetPlayerPositionToEntrance()
