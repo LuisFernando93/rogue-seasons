@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public bool facingRight = true;
     [HideInInspector] public Vector2 movement;
     private Vector2 boxSize = new Vector2(0.1f, 1f);
-    private bool dead = false;
+    public bool isDead { get; private set; } = false;
     [SerializeField] private LayerMask solidLayer;
 
     List<float> lifeModifier = new List<float>(), speedModifier = new List<float>(), meleeModifier = new List<float>(), rangedModifier = new List<float>();
@@ -267,7 +268,7 @@ public class Player : MonoBehaviour
     {
         if (life <= 0)
         {
-            this.dead = true;
+            this.isDead = true;
         }
     }
 
@@ -298,12 +299,6 @@ public class Player : MonoBehaviour
         }
 
     }
-
-    public bool IsDead()
-    {
-        return this.dead;
-    }
-
     public void SetLifeValue(float tempLife)
     {
         life += maxLife * tempLife;
@@ -322,6 +317,11 @@ public class Player : MonoBehaviour
     public float GetMaxLife()
     {
         return maxLife;
+    }
+
+    public void fullHeal()
+    {
+        life = maxLife;
     }
 
 }

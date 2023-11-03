@@ -67,12 +67,6 @@ public class LevelManager: MonoBehaviour
         if (showDebugPathfinder)
         {
             DebugPathfinderInitToPlayer();
-
-        }
-
-        if(player.GetComponent<Player>().IsDead())
-        {
-            BackToHub();
         }
     }
 
@@ -100,16 +94,6 @@ public class LevelManager: MonoBehaviour
         {
             Debug.Log("Todas as salas concluidas!!");
         }
-    }
-
-    public void nextLevel()
-    {
-        
-    }
-
-    private void BackToHub()
-    {
-        SceneManager.LoadScene("Hub");
     }
 
     private void SetPlayerPositionToEntrance()
