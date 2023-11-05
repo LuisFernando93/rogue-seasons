@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: MainMenuPTBR
   m_EditorClassIdentifier: 
   tag: PTBR
-  play: {fileID: -5227607388815798180, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
-  options: {fileID: -7990453112320791876, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
-  credits: {fileID: -8507005045079895633, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
-  exit: {fileID: 3082260580606470857, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
-  back: {fileID: -6700584616377550727, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
+  play: {fileID: -5227607388815798180, guid: 32e558140235286459553c01b3800144, type: 3}
+  options: {fileID: -7990453112320791876, guid: 32e558140235286459553c01b3800144, type: 3}
+  credits: {fileID: -8507005045079895633, guid: 32e558140235286459553c01b3800144, type: 3}
+  exit: {fileID: 3082260580606470857, guid: 32e558140235286459553c01b3800144, type: 3}
+  back: {fileID: 1396196771831745630, guid: 32e558140235286459553c01b3800144, type: 3}
   volumeSFX: Efeitos Sonoros
   volumeMusic: "M\xFAsica"
   volumeMaster: Volume

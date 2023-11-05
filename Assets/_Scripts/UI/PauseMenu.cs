@@ -10,8 +10,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject _pauseMenuContainer;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
     [SerializeField] private AudioClip _buttonClick;
-    [SerializeField] private GameObject optionButton, exitButton, backButton;
-    //[SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
+    [SerializeField] private GameObject optionButton, exitButton, backButton, resumeButton, resetButton, gameOverResetButton, gameOverExitButton;
     [SerializeField] private PauseMenuAssets[] assets;
 
     void Start()
@@ -118,10 +117,10 @@ public class PauseMenu : MonoBehaviour
         optionButton.GetComponent<Image>().sprite = assets.options;
         exitButton.GetComponent<Image>().sprite = assets.exit;
         backButton.GetComponent<Image>().sprite = assets.back;
-        //masterVolumeLabel.GetComponent<Text>().text = assets.volumeMaster;
-        //musicVolumeLabel.GetComponent<Text>().text = assets.volumeMusic;
-        //sfxVolumeLabel.GetComponent<Text>().text = assets.volumeSFX;
-        //languageLabel.GetComponent<Text>().text = assets.language;
+        resumeButton.GetComponent<Image>().sprite = assets.resume;
+        resetButton.GetComponent<Image>().sprite = assets.reset;
+        gameOverExitButton.GetComponent<Image>().sprite = assets.exit;
+        gameOverResetButton.GetComponent<Image>().sprite = assets.reset;
     }
 
     public void Save()

@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        Time.timeScale = 1f;
     }
 
     private void Start()
@@ -270,6 +271,7 @@ public class Player : MonoBehaviour
         {
             this.isDead = true;
         }
+        else this.isDead = false;
     }
 
     public void OpenInteractableIcon()
