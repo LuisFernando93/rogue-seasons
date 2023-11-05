@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         PlayerPrefs.DeleteAll();
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         Debug.Log("Deletando playerPrefs");
         SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
         Load();

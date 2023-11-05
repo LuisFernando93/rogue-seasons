@@ -64,7 +64,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        DontDestroyOnLoad(this);
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
         combatManager = GetComponent<NewCombatManager>();
