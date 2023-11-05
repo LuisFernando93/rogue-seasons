@@ -12,7 +12,7 @@ public class SceneTransition : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         NextScene();
-        Destroy(this.gameObject, 2.5f);
+        Destroy(this.gameObject, 3f);
     }
 
     private void NextScene()
@@ -21,9 +21,9 @@ public class SceneTransition : MonoBehaviour
 
         switch (sceneName)
         {
-            /*case "Hub":
-                ChangeAnimation(toSummer1.name);
-                break;*/
+            case "Hub":
+                ChangeAnimation(toHub.name);
+                break;
             case "Summer1":
                 ChangeAnimation(toSummer1.name);
                 break;

@@ -10,7 +10,7 @@ public class SummerBoss : Boss
     [SerializeField]
     AnimationClip IDLE, ATTACK01, ATTACK02_ENTRY, ATTACK02_PREP, ATTACK02_DAMAGE, EVOKE_RAIN, CUT, EXAUSTION, RECOVER,
         TELEPORT, ULT, ULT_LOOP, DEATH, GROUND_EXP;
-    [SerializeField] GameObject attackPoint, arrowPrefab, arrowRainPrefab, cutPrefab, groundExpPrefab, lifeBarPrefab, blackHoleEffect;
+    [SerializeField] GameObject attackPoint, arrowPrefab, arrowRainPrefab, cutPrefab, groundExpPrefab, lifeBarPrefab, blackHoleEffect, teleport;
     [SerializeField] int arrowForce;
     bool halfLife = false, ultimateUsed = false, attacking = false;
     Slider slider; 
@@ -185,7 +185,6 @@ public class SummerBoss : Boss
     {
         halfLife = true;
         recoverTime = 1f;
-        //Attacks.Add("Ultimate", 2f);
         //Debug.Log("Metade da vida");
     }
 
@@ -236,5 +235,6 @@ public class SummerBoss : Boss
         Destroy(gameObject, 5f);
         Destroy(slider.gameObject);
         DestroyAfterDeath();
+        teleport.SetActive(true);
     }
 }
