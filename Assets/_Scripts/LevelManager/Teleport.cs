@@ -27,6 +27,9 @@ public class Teleport : InteractEvent
             case "Summer2":
                 SceneName = "SummerBoss";
                 break;
+            case "SummerBoss":
+                SceneName = "Hub";
+                break;
         }
     }
 

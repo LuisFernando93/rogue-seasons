@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         healthManager = GetComponent<HealthManager>();
-
+        CloseInteractableIcon();
         maxLife = baseLife;
         life = baseLife;
         GetComponent<GadgetsManager>().UpdateStatus();
