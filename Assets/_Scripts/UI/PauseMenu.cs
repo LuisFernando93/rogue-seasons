@@ -63,6 +63,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ExitLevelButton()
     {
+        Destroy(GameObject.FindGameObjectWithTag("Player"));
         Resume();
         SceneManager.LoadScene("Hub");
     }

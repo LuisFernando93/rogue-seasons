@@ -14,6 +14,7 @@ public class Teleport : InteractEvent
     private void NextScene() {
 
         string sceneName = SceneManager.GetActiveScene().name;
+        Player.Instance.fullHeal();
         
         switch (sceneName)
         {
