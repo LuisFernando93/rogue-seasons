@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     //[SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
     [SerializeField] private MainMenuAssets[] assets;
 
+
     // Start is called before the first frame update
     void Start()
     {

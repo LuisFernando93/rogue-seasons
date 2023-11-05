@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 46ba1c7d0c2343b4b8952ec2714f0d43
+guid: 32e558140235286459553c01b3800144
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -110,6 +110,33 @@ TextureImporter:
   - first:
       213: 8766397835827735800
     second: botoesmenu_36
+  - first:
+      213: 1707454115379708417
+    second: botoesmenu_37
+  - first:
+      213: 7787846724688649272
+    second: botoesmenu_38
+  - first:
+      213: -5884939137263146573
+    second: botoesmenu_39
+  - first:
+      213: -7850538282328306655
+    second: botoesmenu_40
+  - first:
+      213: 2382981536880993735
+    second: botoesmenu_41
+  - first:
+      213: 3816048730056182931
+    second: botoesmenu_42
+  - first:
+      213: -8004727787819695681
+    second: botoesmenu_43
+  - first:
+      213: 6560741487914281429
+    second: botoesmenu_44
+  - first:
+      213: -8312349046743373210
+    second: botoesmenu_45
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -151,7 +178,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -204,7 +231,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 258
+        y: 386
         width: 28
         height: 28
       alignment: 0
@@ -225,7 +252,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 35
-        y: 277
+        y: 405
         width: 90
         height: 6
       alignment: 0
@@ -246,7 +273,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 130
-        y: 258
+        y: 386
         width: 28
         height: 28
       alignment: 0
@@ -267,7 +294,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 162
-        y: 258
+        y: 386
         width: 28
         height: 28
       alignment: 0
@@ -288,7 +315,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 194
-        y: 258
+        y: 386
         width: 28
         height: 28
       alignment: 0
@@ -309,7 +336,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 258
+        y: 386
         width: 7
         height: 12
       alignment: 0
@@ -330,7 +357,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 51
-        y: 256
+        y: 384
         width: 10
         height: 16
       alignment: 0
@@ -351,7 +378,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 65
-        y: 258
+        y: 386
         width: 14
         height: 12
       alignment: 0
@@ -372,7 +399,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 85
-        y: 258
+        y: 386
         width: 6
         height: 12
       alignment: 0
@@ -393,7 +420,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 226
+        y: 354
         width: 126
         height: 28
       alignment: 0
@@ -414,7 +441,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 226
+        y: 354
         width: 126
         height: 28
       alignment: 0
@@ -435,7 +462,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 194
+        y: 322
         width: 126
         height: 28
       alignment: 0
@@ -456,7 +483,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 194
+        y: 322
         width: 126
         height: 28
       alignment: 0
@@ -477,7 +504,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 162
+        y: 290
         width: 126
         height: 28
       alignment: 0
@@ -498,7 +525,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 162
+        y: 290
         width: 126
         height: 28
       alignment: 0
@@ -519,7 +546,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 130
+        y: 258
         width: 126
         height: 28
       alignment: 0
@@ -540,7 +567,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 130
+        y: 258
         width: 126
         height: 28
       alignment: 0
@@ -561,7 +588,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 98
+        y: 226
         width: 126
         height: 28
       alignment: 0
@@ -582,7 +609,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 98
+        y: 226
         width: 126
         height: 28
       alignment: 0
@@ -603,7 +630,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 66
+        y: 194
         width: 126
         height: 28
       alignment: 0
@@ -624,7 +651,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 66
+        y: 194
         width: 126
         height: 28
       alignment: 0
@@ -644,9 +671,9 @@ TextureImporter:
       name: botoesmenu_22
       rect:
         serializedVersion: 2
-        x: 2
-        y: 34
-        width: 28
+        x: 1
+        y: 162
+        width: 126
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -665,9 +692,9 @@ TextureImporter:
       name: botoesmenu_23
       rect:
         serializedVersion: 2
-        x: 34
-        y: 34
-        width: 44
+        x: 129
+        y: 162
+        width: 126
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -686,9 +713,9 @@ TextureImporter:
       name: botoesmenu_24
       rect:
         serializedVersion: 2
-        x: 82
-        y: 34
-        width: 44
+        x: 1
+        y: 130
+        width: 126
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -707,9 +734,9 @@ TextureImporter:
       name: botoesmenu_25
       rect:
         serializedVersion: 2
-        x: 130
-        y: 34
-        width: 28
+        x: 129
+        y: 130
+        width: 126
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -728,9 +755,9 @@ TextureImporter:
       name: botoesmenu_26
       rect:
         serializedVersion: 2
-        x: 162
-        y: 34
-        width: 28
+        x: 1
+        y: 98
+        width: 126
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -749,9 +776,9 @@ TextureImporter:
       name: botoesmenu_27
       rect:
         serializedVersion: 2
-        x: 194
-        y: 34
-        width: 28
+        x: 129
+        y: 98
+        width: 126
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -770,8 +797,8 @@ TextureImporter:
       name: botoesmenu_28
       rect:
         serializedVersion: 2
-        x: 226
-        y: 34
+        x: 2
+        y: 66
         width: 28
         height: 28
       alignment: 0
@@ -791,9 +818,9 @@ TextureImporter:
       name: botoesmenu_29
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 28
+        x: 34
+        y: 66
+        width: 44
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -812,9 +839,9 @@ TextureImporter:
       name: botoesmenu_30
       rect:
         serializedVersion: 2
-        x: 34
-        y: 2
-        width: 28
+        x: 82
+        y: 66
+        width: 44
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -833,8 +860,8 @@ TextureImporter:
       name: botoesmenu_31
       rect:
         serializedVersion: 2
-        x: 66
-        y: 2
+        x: 130
+        y: 66
         width: 28
         height: 28
       alignment: 0
@@ -854,8 +881,8 @@ TextureImporter:
       name: botoesmenu_32
       rect:
         serializedVersion: 2
-        x: 98
-        y: 2
+        x: 162
+        y: 66
         width: 28
         height: 28
       alignment: 0
@@ -875,8 +902,8 @@ TextureImporter:
       name: botoesmenu_33
       rect:
         serializedVersion: 2
-        x: 130
-        y: 2
+        x: 194
+        y: 66
         width: 28
         height: 28
       alignment: 0
@@ -896,8 +923,8 @@ TextureImporter:
       name: botoesmenu_34
       rect:
         serializedVersion: 2
-        x: 162
-        y: 2
+        x: 226
+        y: 66
         width: 28
         height: 28
       alignment: 0
@@ -917,8 +944,8 @@ TextureImporter:
       name: botoesmenu_35
       rect:
         serializedVersion: 2
-        x: 194
-        y: 2
+        x: 2
+        y: 34
         width: 28
         height: 28
       alignment: 0
@@ -938,8 +965,8 @@ TextureImporter:
       name: botoesmenu_36
       rect:
         serializedVersion: 2
-        x: 226
-        y: 2
+        x: 34
+        y: 34
         width: 28
         height: 28
       alignment: 0
@@ -951,6 +978,195 @@ TextureImporter:
       bones: []
       spriteID: 8fce344a26088a970800000000000000
       internalID: 8766397835827735800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_37
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 34
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1028c71b87812b710800000000000000
+      internalID: 1707454115379708417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_38
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 34
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c9146955df31c60800000000000000
+      internalID: 7787846724688649272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_39
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 34
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9e2aec80f745ea0800000000000000
+      internalID: -5884939137263146573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_40
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 34
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c4732b6094d0390800000000000000
+      internalID: -7850538282328306655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_41
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 34
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c52b1c051d021120800000000000000
+      internalID: 2382981536880993735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_42
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 34
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c44980a1455f430800000000000000
+      internalID: 3816048730056182931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_43
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb10f43ec7e79e090800000000000000
+      internalID: -8004727787819695681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_44
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d96c4a7f9f6c0b50800000000000000
+      internalID: 6560741487914281429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botoesmenu_45
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aedcb259a94ac80800000000000000
+      internalID: -8312349046743373210
       vertices: []
       indices: 
       edges: []
