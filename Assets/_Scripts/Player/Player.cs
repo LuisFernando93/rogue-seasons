@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
     }
 
     private void Start()
