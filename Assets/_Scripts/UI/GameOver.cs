@@ -22,13 +22,13 @@ public class GameOver : MonoBehaviour
     void Update()
     {
         if (Player.Instance.isDead) {
-            Destroy(GameObject.FindGameObjectWithTag("Player"));
             gameIsOver = true;
         }
 
         if(gameIsOver)
         {
             _gameOverMenuContainer.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
@@ -40,6 +40,8 @@ public class GameOver : MonoBehaviour
     public void ResetButton()
     {
         gameIsOver = false;
+        Time.timeScale = 1f;
+        Destroy(GameObject.FindGameObjectWithTag("Player"));
         SceneManager.LoadScene("Main menu");
     }
 

@@ -7,6 +7,6 @@ public class PauseMenuAssets : ScriptableObject
 {
     public string tag;
 
-    public Sprite options, exit, back;
+    public Sprite options, exit, back, resume, reset;
     public string volumeSFX, volumeMusic, volumeMaster, language;
 }
