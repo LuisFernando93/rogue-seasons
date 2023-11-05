@@ -114,10 +114,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gadgetNameBR: "Bebida Energ\xE9tica Verde"
   gadgetNameING: Green Energy Drik
-  historyBR: "Uma bebida energ\xE9tica que te d\xE1 velocidade.\n\"Gosto de guaran\xE1.\""
+  historyBR: "Uma bebida energ\xE9tica que te d\xE1 velocidade.\n\"Gosto de guaran\xE1.\"-Leticia"
   historyING: 'An energy drink that gives you speed.
 
-    "It tastes like guarana."'
+    "It tastes like guarana."-Leticia'
   descriptionBR: Aumenta a velocidade de movimento de Rouge em 15%.
   descriptionING: Increases Rouge's movement speed by 15%.
   icon: {fileID: -2613855437288000441, guid: 7b22c947f210ffc4390245d85a892541, type: 3}

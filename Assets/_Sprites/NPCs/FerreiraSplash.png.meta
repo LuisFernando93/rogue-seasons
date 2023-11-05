@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16b4914353bb90e4ea14ca4356ace688
+guid: 725e3772abf49994b9bc48c6d5107154
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -66,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -78,7 +78,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 16384
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -104,85 +104,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idleprot-Sheet_0
+      name: ferreira_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.53, y: 0.17}
-      border: {x: 21, y: 0, z: 17, w: 58}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 680941ce831bdd500800000000000000
-      internalID: 422688798079750278
+      spriteID: cd0d5473378113cd0800000000000000
+      internalID: -2580254228378955556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleprot-Sheet_1
+      name: ferreira_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.53, y: 0.17}
-      border: {x: 21, y: 0, z: 17, w: 58}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44efb29e17101ee50800000000000000
-      internalID: 6836747298080030276
+      spriteID: 6497abad56991ec70800000000000000
+      internalID: 8998642193203362118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleprot-Sheet_2
+      name: ferreira_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.53, y: 0.17}
-      border: {x: 21, y: 0, z: 17, w: 58}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6f52592e2665e7b0800000000000000
-      internalID: -5195634246654206100
+      spriteID: 0984a6ad38952c4b0800000000000000
+      internalID: -5421672578560669552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleprot-Sheet_3
+      name: ferreira_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 9
-      pivot: {x: 0.53, y: 0.17}
-      border: {x: 21, y: 0, z: 17, w: 58}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcd431962ea4d84d0800000000000000
-      internalID: -3130763829666689589
+      spriteID: 708b07a1cf46b0620800000000000000
+      internalID: 2741395832123209735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ferreira_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dfa8f4952fedc50800000000000000
+      internalID: 6692052561719655832
       vertices: []
       indices: 
       edges: []

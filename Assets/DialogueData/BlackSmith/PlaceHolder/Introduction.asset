@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Introduction
   m_EditorClassIdentifier: 
   dialogueBR:
+  - "narrator:#Voc\xEA se aproxima de sua boa amiga, Alice, A Ferreira."
   - speaker:Rouge#Oie!
   - "speaker:Ferreira#Oi garota! Como est\xE3o as coisas?"
   - speaker:Rouge#O de sempre! <color="red">Zombies</color> pegando fogo e <color="yellow">Flores</color>
@@ -23,6 +24,7 @@ MonoBehaviour:
   - speaker:Rouge#Oh, ok, fica na paz!
   - "speaker:Ferreira#Voc\xEA tambem garota!"
   dialogueING:
+  - narrator:#You get closer to your good friend, Alice the Blacksmith.
   - speaker:Rouge#Hello!
   - speaker:Blacksmith#Hi girl! How are you?
   - speaker:Rouge#You know, <color="red">Zombies</color> in fire, <color="yellow">Flowers</color>

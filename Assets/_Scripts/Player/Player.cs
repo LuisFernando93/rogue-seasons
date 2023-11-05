@@ -82,9 +82,13 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        
-        if (dialogueUI.IsOpen) return;
-        if (weaponChangeSetup.IsOpen) return;
+        //retorna para a idle caso estes menus estejam abertos
+        if (dialogueUI.IsOpen || weaponChangeSetup.IsOpen)
+        {
+            movement.x = 0;
+            movement.y = 0;
+            return;
+        }
 
         //Atualiza o a posi��o do personagem
         movement.x = Input.GetAxisRaw("Horizontal");
