@@ -7,6 +7,7 @@ public class PlayerAnimationManager : MonoBehaviour
     [SerializeField] Player player;
     SpriteRenderer spriteRenderer;
     Animator animator;
+    DialogueUI dialogueUI;
 
     [SerializeField] AnimationClip playerTeleport;
 
@@ -22,6 +23,7 @@ public class PlayerAnimationManager : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         ChangeAnimation(IDLE_ANIMATION);
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
     }
 
     // Update is called once per frame

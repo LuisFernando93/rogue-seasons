@@ -39,8 +39,9 @@ public class PickableWeapon : Interactable
                     otherRigidbody.AddForce(-repulsionDirection * repulsionForce, ForceMode2D.Impulse);
                 }
             }
-            
 
         }
+        if (collision.gameObject.CompareTag("Player")) GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().OpenInteractableIcon();
+
     }
 }

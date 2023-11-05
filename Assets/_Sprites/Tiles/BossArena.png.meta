@@ -116,6 +116,15 @@ TextureImporter:
   - first:
       213: -4504475890437746271
     second: BossArena_37
+  - first:
+      213: 1915204057734776747
+    second: BossArena_38
+  - first:
+      213: 8583296464024828522
+    second: BossArena_39
+  - first:
+      213: -6536490365348173865
+    second: BossArena_40
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -965,7 +974,7 @@ TextureImporter:
       name: BossArena_36
       rect:
         serializedVersion: 2
-        x: 640
+        x: 320
         y: 0
         width: 64
         height: 64
@@ -986,7 +995,7 @@ TextureImporter:
       name: BossArena_37
       rect:
         serializedVersion: 2
-        x: 704
+        x: 384
         y: 0
         width: 64
         height: 64
@@ -999,6 +1008,69 @@ TextureImporter:
       bones: []
       spriteID: 1a1952b1b03ec71c0800000000000000
       internalID: -4504475890437746271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossArena_38
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba70bad71fb249a10800000000000000
+      internalID: 1915204057734776747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossArena_39
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6af01468aefd1770800000000000000
+      internalID: 8583296464024828522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossArena_40
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7a8aff4a8b945a0800000000000000
+      internalID: -6536490365348173865
       vertices: []
       indices: 
       edges: []

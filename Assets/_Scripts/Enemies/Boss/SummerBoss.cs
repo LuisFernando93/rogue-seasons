@@ -35,6 +35,7 @@ public class SummerBoss : Boss
         if(life <= 0)
         {
             ChangeAnimation(DEATH.name);
+            return;
         }
     }
 
@@ -62,6 +63,8 @@ public class SummerBoss : Boss
         if (life <= (baseLife * 0.5f) && !halfLife)
         {
             HardMode();
+            Invoke("Ultimate", recoverTime);
+            return;
         }
         string nextAttack = Attacks.GetRandom();
         Invoke("SetArmor", recoverTime);
@@ -182,7 +185,7 @@ public class SummerBoss : Boss
     {
         halfLife = true;
         recoverTime = 1f;
-        Attacks.Add("Ultimate", 2f);
+        //Attacks.Add("Ultimate", 2f);
         //Debug.Log("Metade da vida");
     }
 
@@ -202,11 +205,7 @@ public class SummerBoss : Boss
         slider.value = life;
         if (life <= 0)
         {
-            GetComponent<ShakeEffect>().perpetualTime = 0.5f ;
-            ChangeAnimation(DEATH.name);
-            Destroy(gameObject, 5f);
-            Destroy(slider.gameObject);
-            DestroyAfterDeath();
+            Death();
         }
     }
 
@@ -228,5 +227,14 @@ public class SummerBoss : Boss
         attacking = false;
         if(transform.childCount > 1)
             Destroy(transform.GetChild(1).gameObject);
+    }
+
+    private void Death()
+    {
+        GetComponent<ShakeEffect>().perpetualTime = 0.5f;
+        ChangeAnimation(DEATH.name);
+        Destroy(gameObject, 5f);
+        Destroy(slider.gameObject);
+        DestroyAfterDeath();
     }
 }

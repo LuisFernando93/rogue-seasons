@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 using TMPro;
 
 public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
+
+    public event System.Action OnCloseDialogueBox;
+    [SerializeField] private UnityEvent onCloseDialogueBox;
+
+
     public bool IsOpen { get; private set; }
 
     private Speaker speaker;
@@ -116,7 +123,9 @@ public class DialogueUI : MonoBehaviour
     {
         IsOpen = false;
         dialogueBox.SetActive(false);
-        textLabel.text = string.Empty;      
+        textLabel.text = string.Empty;
+
+        onCloseDialogueBox?.Invoke();
     }
 }
 
