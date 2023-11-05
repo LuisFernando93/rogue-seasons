@@ -27,4 +27,9 @@ public class ChangeParticleColor : MonoBehaviour
         colorOverLifetimeModule.color = battleGradient;
         mainCamera.backgroundColor = battle;
     }
+
+    public void SetNewBackgroundColor(Color32 newColor)
+    {
+        mainCamera.backgroundColor = newColor;
+    }
 }

@@ -7,69 +7,60 @@ using TMPro;
 public class Speaker : MonoBehaviour
 {
     [SerializeField] TMP_Text speakerNameBox;
-    [SerializeField] Transform _playerImage, _otherImage;
-    Image playerImage, otherImage;
+    [SerializeField] Image playerImage, otherImage;
+    [SerializeField]Sprite rougeSprite, blacksmithSprite, guardSprite, summerBossSprite, errorSprite;
     Vector3 centralized = new Vector3(178, -0, 0f);
     Vector3 left = new Vector3(50, -0, 0f);
     Vector3 right = new Vector3(-50, -0, 0f);
-    string OTHER = "Circulo", PLAYER = "Rouge";
+    const string OTHER = "Circulo", PLAYER = "<color=red>Rouge</color>", BLACKSMITH = "Blacksmith", GUARD = "Guard", SUMMER = "Summer";
 
     private void Start()
     {
-        playerImage = _playerImage.GetComponent<Image>();
-        otherImage = _otherImage.GetComponent<Image>();
+        playerImage.sprite = rougeSprite;
     }
 
     public void ChangeSpeaker(string actualSpeaker)
     {
-        if (actualSpeaker == "other" || actualSpeaker == "Other")
+        if (actualSpeaker == "Other")
         {
             actualSpeaker = OTHER;
         }
-        else if (actualSpeaker == "rouge" || actualSpeaker == "Rouge")
+        else if(actualSpeaker == "Blacksmith" || actualSpeaker == "Ferreira")
+        {
+            actualSpeaker = BLACKSMITH;
+        }
+        else if (actualSpeaker == "Guard" || actualSpeaker == "Guarda")
+        {
+            actualSpeaker = GUARD;
+        }
+        else if (actualSpeaker == "Player" || actualSpeaker == "Rouge")
         {
             actualSpeaker = PLAYER;
         }
+        else if(actualSpeaker == "Summer" || actualSpeaker == "summer")
+        {
+            actualSpeaker = SUMMER;
+        }
         speakerNameBox.text = actualSpeaker;
         ShowSpeaker(actualSpeaker);
+        SetOtherImage(actualSpeaker);
     }
 
     private void ShowSpeaker(string actualSpeaker)
     {
-        if (actualSpeaker == OTHER)
+        if (actualSpeaker != PLAYER)
         {
+            //habilita a imagem quando ele falar
             otherImage.gameObject.SetActive(true);
-
-            /*if (playerImage.gameObject.activeSelf == false)
-            {
-                otherImage.transform.position = centralized;
-            }
-            else
-            {
-                otherImage.transform.position = right;
-            }*/
-
-            otherImage.color = new Color32(255, 255, 255, 255);
-            playerImage.color = new Color32(255, 165, 0, 125);
         }
         else if (actualSpeaker == PLAYER)
         {
+            //habilita a imagem quando o player falar
             playerImage.gameObject.SetActive(true);
-
-            /*if(otherImage.gameObject.activeSelf == false)
-            {
-                playerImage.transform.position = centralized;
-            }
-            else{
-                playerImage.transform.position = left;
-            }*/
-
-            playerImage.color = new Color32(255, 165, 0, 255);
-            otherImage.color = new Color32(255, 255, 255, 125);
-
         }
         else
         {
+            //desabilita todas as imagens para narração
             playerImage.gameObject.SetActive(false);
             otherImage.gameObject.SetActive(false);
         }
@@ -85,4 +76,33 @@ public class Speaker : MonoBehaviour
         }
     }
 
+    private void SetOtherImage(string actualSpeaker)
+    {
+        switch (actualSpeaker)
+        {
+            case GUARD:
+                otherImage.sprite = guardSprite;
+                otherImage.color = Color.white;
+                playerImage.color = Color.gray;
+                break;
+            case BLACKSMITH:
+                otherImage.sprite = blacksmithSprite;
+                otherImage.color = Color.white;
+                playerImage.color = Color.gray;
+                break;
+            case SUMMER:
+                otherImage.sprite = summerBossSprite;
+                otherImage.color = Color.white;
+                playerImage.color = Color.gray;
+                break;
+            case PLAYER:
+                playerImage.color = Color.white;
+                otherImage.color = Color.gray;
+                break;
+            default:
+                otherImage.sprite = null;
+                Debug.Log("Sprite não encontrado");
+                break;
+        }
+    }
 }

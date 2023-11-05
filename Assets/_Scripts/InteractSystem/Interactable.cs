@@ -22,4 +22,10 @@ public abstract class Interactable : MonoBehaviour
             collision.GetComponent<Player>().CloseInteractableIcon();
     }
 
+    public void DesactiveInteracIcon()
+    {
+        GetComponent<Collider2D>().enabled = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().CloseInteractableIcon();
+    }
+
 }

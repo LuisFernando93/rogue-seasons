@@ -22,7 +22,7 @@ public class Configuration : MonoBehaviour
             case "ING":
                 return LanguageOption.ING;
             default:
-                Debug.Log("Erro ao carregar a lingua pelo player prefs. Carregando portugues como padrao");
+                //Debug.Log("Erro ao carregar a lingua pelo player prefs. Carregando portugues como padrao");
                 return LanguageOption.PTBR;
         }
     }

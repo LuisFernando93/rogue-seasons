@@ -115,11 +115,11 @@ MonoBehaviour:
   gadgetNameBR: "Bebida Energ\xE9tica Branca"
   gadgetNameING: White Energy Drink
   historyBR: "Uma bebida energ\xE9tica que te d\xE1 velocidade.\n\"O gosto lembra
-    H2O de Limoneto\""
+    H2O de Limoneto\"-Leticia"
   historyING: 'An energy drink that gives you speed.
 
     "It tastes like Lemonade
-    H2O."'
+    H2O."-Leticia'
   descriptionBR: Aumenta a velocidade de de ataque para armas corpo-a-corpo em 15%.
   descriptionING: Increases Melee attack speed by 15%.
   icon: {fileID: 6871990644504901685, guid: 7b22c947f210ffc4390245d85a892541, type: 3}

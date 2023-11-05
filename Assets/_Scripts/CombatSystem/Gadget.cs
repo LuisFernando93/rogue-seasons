@@ -34,6 +34,7 @@ public class Gadget : Interactable
     {
         UI.SetGadget(this.gameObject.GetComponent<Gadget>());
         //SetGadgetModifiers();
+        DesactiveInteracIcon();
         Destroy(this.gameObject, 0.2f);
     }
 
