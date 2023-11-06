@@ -123,7 +123,7 @@ MonoBehaviour:
   descriptionBR: Aumenta o dano de armas de fogo em 25%.
   descriptionING: Increases ranged weapon's damage by 25%.
   icon: {fileID: 4095349909492182895, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
-  Id: 1
+  Id: 4
   lifeModifier: 0
   meleeModifier: 0
   rangedModifier: 0.25

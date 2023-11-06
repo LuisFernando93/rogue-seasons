@@ -4,7 +4,12 @@ using UnityEngine.SceneManagement;
 public class Teleport : InteractEvent
 {
     string SceneName;
+    [SerializeField] GameObject sceneTransition;
 
+    private void Start()
+    {
+        Instantiate(sceneTransition,GameObject.FindGameObjectWithTag("Canvas").transform);
+    }
     public void LoadScene()
     {
         NextScene();
@@ -36,7 +41,10 @@ public class Teleport : InteractEvent
     public void CallTransicion()
     {
         GetComponent<Animator>().Play("Start");
+        GetComponent<Collider2D>().enabled = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().CloseInteractableIcon();
     }
+
 
 
 }

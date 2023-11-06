@@ -6,13 +6,15 @@ public class BossActivator : MonoBehaviour
 {
     [SerializeField] GameObject bossPrefab, entrance;
     [SerializeField] DialogueActivator dialogue;
-    [SerializeField] DialogueUI dialogueUI;
+    DialogueUI dialogueUI;
     [SerializeField] Collider2D boxCollider;
     [SerializeField] ChangeParticleColor changeParticleColor;
     [SerializeField] Color32 bossBackgroundColor;
 
     private void Start()
     {
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
+        GameObject.FindGameObjectWithTag("Player").transform.position = GameObject.FindGameObjectWithTag("Entrance").transform.position;
         changeParticleColor.SetNewBackgroundColor(bossBackgroundColor);
     }
 

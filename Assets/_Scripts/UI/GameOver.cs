@@ -34,7 +34,7 @@ public class GameOver : MonoBehaviour
     {
         Time.timeScale = 1f;
         Destroy(GameObject.FindGameObjectWithTag("Player"));
-        SceneManager.LoadScene("Main menu");
+        SceneManager.LoadScene("Hub");
     }
 
     public void ExitGameButton()

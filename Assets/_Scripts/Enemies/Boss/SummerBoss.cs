@@ -17,6 +17,7 @@ public class SummerBoss : Boss
 
     private void Start()
     {
+        teleport.SetActive(false);
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 

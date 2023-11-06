@@ -15,7 +15,7 @@ public class SceneTransition : MonoBehaviour
         Destroy(this.gameObject, 3f);
     }
 
-    private void NextScene()
+    public void NextScene()
     {
         string sceneName = SceneManager.GetActiveScene().name;
 
@@ -45,6 +45,5 @@ public class SceneTransition : MonoBehaviour
         currentAnimation = newAnimation;
 
     }
-
 
 }

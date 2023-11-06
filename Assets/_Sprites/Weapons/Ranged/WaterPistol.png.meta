@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: -4882826875984293680
     second: WaterPistol_10
+  - first:
+      213: -5899533226759852515
+    second: WaterPistol_11
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -363,6 +366,27 @@ TextureImporter:
       bones: []
       spriteID: 0d0d93d93d6bc3cb0800000000000000
       internalID: -4882826875984293680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterPistol_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e6d5e89c5a02ea0800000000000000
+      internalID: -5899533226759852515
       vertices: []
       indices: 
       edges: []

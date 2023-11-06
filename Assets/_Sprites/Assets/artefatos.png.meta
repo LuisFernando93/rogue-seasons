@@ -17,6 +17,15 @@ TextureImporter:
   - first:
       213: 7905139760315168755
     second: artefatos_4
+  - first:
+      213: 6501934329806878298
+    second: artefatos_5
+  - first:
+      213: -159867745582823605
+    second: artefatos_6
+  - first:
+      213: 8611720639791242516
+    second: artefatos_7
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -123,7 +132,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -143,8 +152,8 @@ TextureImporter:
       name: artefatos_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 0
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -164,8 +173,8 @@ TextureImporter:
       name: artefatos_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 0
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -185,8 +194,8 @@ TextureImporter:
       name: artefatos_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -206,8 +215,8 @@ TextureImporter:
       name: artefatos_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -219,6 +228,69 @@ TextureImporter:
       bones: []
       spriteID: 3f7f6619ab2b4bd60800000000000000
       internalID: 7905139760315168755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artefatos_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a567e0103d28b3a50800000000000000
+      internalID: 6501934329806878298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artefatos_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b474e75e12908cdf0800000000000000
+      internalID: -159867745582823605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artefatos_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d18a78b4af28770800000000000000
+      internalID: 8611720639791242516
       vertices: []
       indices: 
       edges: []

@@ -151,7 +151,7 @@ MonoBehaviour:
   history: 
   firePoint: {fileID: 1962895083103271515}
   bulletPrefab: {fileID: 7124704964449087799, guid: 3f7dd12afb87bd9468b6e657dcc63208, type: 3}
-  icon: {fileID: -2025789997403619860, guid: e7dea98fca6ebfb49b6e38a8ce80cee1, type: 3}
+  icon: {fileID: -5899533226759852515, guid: e7dea98fca6ebfb49b6e38a8ce80cee1, type: 3}
   maxAmmo: 5
   damage: 1
   bulletForce: 7.5

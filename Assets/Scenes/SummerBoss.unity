@@ -899,7 +899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1985412268248046673, guid: 97926bf6c847b544ca122a9ca91efef7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.18
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 1985412268248046673, guid: 97926bf6c847b544ca122a9ca91efef7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -939,7 +939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1985412268248046677, guid: 97926bf6c847b544ca122a9ca91efef7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97926bf6c847b544ca122a9ca91efef7, type: 3}
@@ -1056,7 +1056,6 @@ MonoBehaviour:
   bossPrefab: {fileID: 8300492094421102262}
   entrance: {fileID: 680498599}
   dialogue: {fileID: 1023683643}
-  dialogueUI: {fileID: 0}
   boxCollider: {fileID: 1023683639}
   changeParticleColor: {fileID: 1003991350}
   bossBackgroundColor:
@@ -1205,7 +1204,7 @@ PrefabInstance:
     - target: {fileID: 3476960014047214733, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: summerBossSprite
       value: 
-      objectReference: {fileID: -5501205538644377151, guid: f3dd1bfc41c59a04cb858bb16b6fe57b, type: 3}
+      objectReference: {fileID: 21300000, guid: 291794a6bac608e4ca913b567ad9f41d, type: 3}
     - target: {fileID: 4423126306937971676, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_IsActive
       value: 0

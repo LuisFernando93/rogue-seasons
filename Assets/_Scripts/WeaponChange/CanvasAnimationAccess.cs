@@ -24,4 +24,5 @@ public class CanvasAnimationAccess : MonoBehaviour
     {
         animator.Play(closeWeaponChange.name);
     }
+
 }

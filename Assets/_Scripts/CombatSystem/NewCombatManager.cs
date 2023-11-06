@@ -43,7 +43,6 @@ public class NewCombatManager : MonoBehaviour
 
         dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
         weaponChangeSetup = GameObject.FindGameObjectWithTag("Canvas").GetComponent<NewWeaponChangeSetup>();
-
     }
 
     private void Update()

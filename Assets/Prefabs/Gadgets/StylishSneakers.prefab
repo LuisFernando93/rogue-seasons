@@ -123,7 +123,7 @@ MonoBehaviour:
   descriptionBR: "Aumenta a dist\xE2ncia do Dash em 20%."
   descriptionING: Increases Dash distance by 20%.
   icon: {fileID: 7905139760315168755, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
-  Id: 1
+  Id: 6
   lifeModifier: 0
   meleeModifier: 0
   rangedModifier: 0
