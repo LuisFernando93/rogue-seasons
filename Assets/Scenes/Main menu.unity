@@ -697,7 +697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6700584616377550727, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
+  m_Sprite: {fileID: 1396196771831745630, guid: 32e558140235286459553c01b3800144, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1659,6 +1659,7 @@ MonoBehaviour:
   backOptionsButton: {fileID: 1236381757}
   backAboutButton: {fileID: 2116299708}
   backCreditsButton: {fileID: 414363022}
+  aboutLabel: {fileID: 1931284406}
   assets:
   - {fileID: 11400000, guid: 78a5d0c0e72975b4383fa25f1ae6318e, type: 2}
   - {fileID: 11400000, guid: c48787b1d2eadbd4f9255e807770fe2e, type: 2}
@@ -1719,7 +1720,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "As esta\xE7\xF5es est\xE3o fora de controle devido a polui\xE7\xE3o e
+    aquecimento global! Para salvar a humanidade, Rouge, uma agente secreta que consegue
+    voltar no tempo, deve enfrentar as 4 divindades de cada esta\xE7\xE3o do ano
+    e restaurar a ordem."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1746,14 +1750,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1958,7 +1962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6700584616377550727, guid: 46ba1c7d0c2343b4b8952ec2714f0d43, type: 3}
+  m_Sprite: {fileID: 1396196771831745630, guid: 32e558140235286459553c01b3800144, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
     [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backOptionsButton, backAboutButton, backCreditsButton; 
-    //[SerializeField] private GameObject masterVolumeLabel, musicVolumeLabel, sfxVolumeLabel, languageLabel;
+    [SerializeField] private GameObject aboutLabel;
     [SerializeField] private MainMenuAssets[] assets;
 
 
@@ -17,7 +18,6 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         PlayerPrefs.DeleteAll();
-        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         Debug.Log("Deletando playerPrefs");
         SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
         Load();
@@ -86,10 +86,7 @@ public class MainMenu : MonoBehaviour
         backOptionsButton.GetComponent<Image>().sprite = assets.back;
         backAboutButton.GetComponent<Image>().sprite = assets.back;
         backCreditsButton.GetComponent<Image>().sprite = assets.back;
-        //masterVolumeLabel.GetComponent<Text>().text = assets.volumeMaster;
-        //musicVolumeLabel.GetComponent<Text>().text = assets.volumeMusic;
-        //sfxVolumeLabel.GetComponent<Text>().text = assets.volumeSFX;
-        //languageLabel.GetComponent<Text>().text = assets.language;
+        aboutLabel.GetComponent<TextMeshProUGUI>().text = assets.about;
     }
 
     public void Save()

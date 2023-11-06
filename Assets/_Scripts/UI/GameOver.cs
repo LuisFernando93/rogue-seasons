@@ -22,6 +22,10 @@ public class GameOver : MonoBehaviour
         {
             _gameOverMenuContainer.SetActive(true);
             Time.timeScale = 0f;
+        } else
+        {
+            _gameOverMenuContainer.SetActive(false);
+            Time.timeScale = 1f;
         }
     }
 
@@ -34,7 +38,9 @@ public class GameOver : MonoBehaviour
     {
         Time.timeScale = 1f;
         Destroy(GameObject.FindGameObjectWithTag("Player"));
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         SceneManager.LoadScene("Hub");
+        
     }
 
     public void ExitGameButton()

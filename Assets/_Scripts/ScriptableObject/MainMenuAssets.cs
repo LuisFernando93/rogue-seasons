@@ -8,4 +8,5 @@ public class MainMenuAssets : ScriptableObject
     public string tag;
 
     public Sprite play, options, credits, exit, back;
+    public string about;
 }
