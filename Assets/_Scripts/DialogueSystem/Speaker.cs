@@ -8,11 +8,13 @@ public class Speaker : MonoBehaviour
 {
     [SerializeField] TMP_Text speakerNameBox;
     [SerializeField] Image playerImage, otherImage;
-    [SerializeField]Sprite rougeSprite, blacksmithSprite, guardSprite, summerBossSprite, errorSprite;
+    [SerializeField]Sprite rougeSprite, blacksmithSprite, guardSprite, summer1BossSprite, summer2BossSprite, errorSprite;
+    Sprite summerBossSprite;
     Vector3 centralized = new Vector3(178, -0, 0f);
     Vector3 left = new Vector3(50, -0, 0f);
     Vector3 right = new Vector3(-50, -0, 0f);
-    const string OTHER = "Circulo", PLAYER = "<color=red>Rouge</color>", BLACKSMITH = "Blacksmith", GUARD = "Guard", SUMMER = "Summer";
+    const string OTHER = "Circulo", PLAYER = "Rouge", BLACKSMITH = "Alice", GUARD = "Survilence", 
+        SUMMER = "Summer", SUMMER2 = "Summer2", SummerBossName = "Caelus";
 
     private void Start()
     {
@@ -25,7 +27,7 @@ public class Speaker : MonoBehaviour
         {
             actualSpeaker = OTHER;
         }
-        else if(actualSpeaker == "Blacksmith" || actualSpeaker == "Ferreira")
+        else if(actualSpeaker == "Blacksmith" || actualSpeaker == "Ferreira" || actualSpeaker == "Alice")
         {
             actualSpeaker = BLACKSMITH;
         }
@@ -39,7 +41,13 @@ public class Speaker : MonoBehaviour
         }
         else if(actualSpeaker == "Summer" || actualSpeaker == "summer")
         {
-            actualSpeaker = SUMMER;
+            summerBossSprite = summer1BossSprite;
+            actualSpeaker = SummerBossName;
+        }
+        else if (actualSpeaker == "Summer2" || actualSpeaker == "summer2")
+        {
+            summerBossSprite = summer2BossSprite;
+            actualSpeaker = SummerBossName;
         }
         speakerNameBox.text = actualSpeaker;
         ShowSpeaker(actualSpeaker);
@@ -90,11 +98,11 @@ public class Speaker : MonoBehaviour
                 otherImage.color = Color.white;
                 playerImage.color = Color.gray;
                 break;
-            case SUMMER:
+            case SummerBossName:
                 otherImage.sprite = summerBossSprite;
                 otherImage.color = Color.white;
                 playerImage.color = Color.gray;
-                break;
+                break;           
             case PLAYER:
                 playerImage.color = Color.white;
                 otherImage.color = Color.gray;

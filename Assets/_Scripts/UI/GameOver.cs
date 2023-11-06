@@ -45,7 +45,9 @@ public class GameOver : MonoBehaviour
 
     public void ExitGameButton()
     {
-        Application.Quit();
+        Destroy(GameObject.FindGameObjectWithTag("Player"));
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
+        SceneManager.LoadScene("Main menu");
     }
     
 }

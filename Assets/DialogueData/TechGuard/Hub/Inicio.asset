@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
+  m_Name: Inicio
+  m_EditorClassIdentifier: 
+  dialogueBR:
+  - "narrator:#Voc\xEA se aproxima do imponente QG da organiza\xE7\xE3o."
+  - "speaker:Guard#<color=red>Parada Ai!</color> Pessoas sem autoriza\xE7\xE3o n\xE3o
+    podem entrar no QG no momento!"
+  - "speaker:Rouge#Mas, eu acabei de conseguir minha licensa para realizar as miss\xF5es,
+    eu queria entrar para conseguir algumas informa\xE7\xF5es..."
+  - "speaker:Guard#Negativo! Sem Autoriza\xE7\xE3o, voc\xEA n\xE3o pode entrar."
+  - speaker:Guard#Qualquer pergunta pode ser direcionada a mim no momento.
+  - speaker:Rouge#Certo...
+  dialogueING: []
+  responses:
+  - responseTextBR: Mundo exterior
+    responseTextING: 
+    dialogueObject: {fileID: 11400000, guid: e3460e6c3d4af9746be67c2a76673a60, type: 2}
+  - responseTextBR: Quem somos
+    responseTextING: 
+    dialogueObject: {fileID: 11400000, guid: 85e7592b32c490948b588287cb2869db, type: 2}
+  - responseTextBR: O que devo fazer?
+    responseTextING: 
+    dialogueObject: {fileID: 11400000, guid: b72d343507893c44da85698f6c9590e3, type: 2}
+  - responseTextBR: Loop
+    responseTextING: 
+    dialogueObject: {fileID: 11400000, guid: 7f47cc47fd81e814ca633bd18b3041e4, type: 2}

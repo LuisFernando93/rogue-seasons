@@ -30,7 +30,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -39,7 +39,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.375
+        time: 0.25
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -67,7 +67,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 0.7480534
         inSlope: 0
         outSlope: 0
@@ -95,7 +95,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 1.011702
         inSlope: 0
         outSlope: 0
@@ -123,7 +123,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: -0.07894033
         inSlope: 0
         outSlope: 0
@@ -151,7 +151,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 0.9262217
         inSlope: 0
         outSlope: 0
@@ -170,15 +170,15 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -8319040428696616765, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
-    - time: 0.083333336
+    - time: 0.041666668
       value: {fileID: 8525131685574788333, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
-    - time: 0.16666667
+    - time: 0.083333336
       value: {fileID: 4954725122236519710, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
-    - time: 0.25
+    - time: 0.125
       value: {fileID: -658938262309885599, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
-    - time: 0.33333334
+    - time: 0.20833333
       value: {fileID: 3264113022013607945, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
-    - time: 0.41666666
+    - time: 0.29166666
       value: {fileID: -8195786091194408075, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
     attribute: m_Sprite
     path: 
@@ -245,7 +245,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666667
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -274,7 +274,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -283,7 +283,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.375
+        time: 0.25
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -311,7 +311,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 0.7480534
         inSlope: 0
         outSlope: 0
@@ -339,7 +339,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 1.011702
         inSlope: 0
         outSlope: 0
@@ -367,7 +367,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: -0.07894033
         inSlope: 0
         outSlope: 0
@@ -395,7 +395,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.33333334
+        time: 0.20833333
         value: 0.9262217
         inSlope: 0
         outSlope: 0
@@ -414,14 +414,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.41666666
+  - time: 0.29166666
     functionName: ChangeIsAttackValue
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.6666667
+  - time: 0.5
     functionName: ComboFinish
     data: 
     objectReferenceParameter: {fileID: 0}

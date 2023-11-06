@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 291794a6bac608e4ca913b567ad9f41d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1837334804067599914
+    second: ' summerBossSplash_0'
+  - first:
+      213: -1932442189537956143
+    second: ' summerBossSplash_1'
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -41,7 +47,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -104,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ferreira_0
+      name: ' summerBossSplash_0'
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 288
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd0d5473378113cd0800000000000000
-      internalID: -2580254228378955556
+      spriteID: 6d9b616fab97086e0800000000000000
+      internalID: -1837334804067599914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ferreira_1
+      name: ' summerBossSplash_1'
       rect:
         serializedVersion: 2
-        x: 64
+        x: 288
         y: 0
-        width: 64
-        height: 64
+        width: 288
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,71 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6497abad56991ec70800000000000000
-      internalID: 8998642193203362118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ferreira_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0984a6ad38952c4b0800000000000000
-      internalID: -5421672578560669552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ferreira_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 708b07a1cf46b0620800000000000000
-      internalID: 2741395832123209735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ferreira_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89dfa8f4952fedc50800000000000000
-      internalID: 6692052561719655832
+      spriteID: 1deac9f21169e25e0800000000000000
+      internalID: -1932442189537956143
       vertices: []
       indices: 
       edges: []

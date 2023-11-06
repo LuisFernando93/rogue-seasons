@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
+  m_Name: Mundo Exterior
+  m_EditorClassIdentifier: 
+  dialogueBR:
+  - "speaker:Rouge#Ent\xE3o, eu nunca entendi direito, o que aconteceu l\xE1 fora
+    exatamente?"
+  - speaker:Guard#A humanidade aconteceu.
+  - "speaker:Guard#O avan\xE7o tecnologico e a polui\xE7\xE3o desenfreada chegou
+    a um limite e o planeta n\xE3o aguentou."
+  - "speaker:Guard#Sabe aquela te\xF3ria que n\xF3s somos apenas parasitas para o
+    planeta?"
+  - "speaker:Guard#Pois \xE9, o planeta criou novos anti-corpos."
+  - "speaker:Guard#O clima saiu do controle e as proprias esta\xE7\xF5es do ano foram
+    \"personificadas\"."
+  - "speaker:Guard#Agora temos de lidar com isso gra\xE7as ao erro das gera\xE7\xF5es
+    passadas..."
+  - "speaker:Rouge#\xC9 uma merda termos de lidar com algo que nem foi nossa culpa..."
+  dialogueING: []
+  responses: []

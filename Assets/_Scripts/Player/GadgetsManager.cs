@@ -9,7 +9,7 @@ public class GadgetsManager : MonoBehaviour
 
     List<float> lifeModifier = new List<float>(), speedModifier = new List<float>(), meleeModifier = new List<float>(), rangedModifier = new List<float>();
     List<float> atkSpeedModifier = new List<float>(), rechargeModifier = new List<float>(), bulletSizeModifier = new List<float>();
-    private void Start()
+    public void Start()
     {
         player = GetComponent<Player>();
         combatManager = GetComponent<NewCombatManager>();

@@ -76,6 +76,8 @@ public class Player : MonoBehaviour
         CloseInteractableIcon();
         maxLife = baseLife;
         life = baseLife;
+        GetComponent<GadgetsManager>().Start();
+
         GetComponent<GadgetsManager>().UpdateStatus();
     }
 
@@ -94,14 +96,14 @@ public class Player : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         //Corrida
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !PauseMenu.gameIsPaused)
+        /*if (Input.GetKeyDown(KeyCode.LeftControl) && !PauseMenu.gameIsPaused)
         {
             MoveSpeed = 10f;
         }
         if (Input.GetKeyUp(KeyCode.LeftControl) && !PauseMenu.gameIsPaused)
         {
             MoveSpeed = 5f;
-        }
+        }*/
 
         //Ataque esquerdo
         if (Input.GetButtonDown("Fire1") && !PauseMenu.gameIsPaused)
@@ -306,8 +308,9 @@ public class Player : MonoBehaviour
     }
     public void SetLifeValue(float tempLife)
     {
-        life += maxLife * tempLife;
-        maxLife = baseLife + (baseLife * tempLife);
+        life += Mathf.RoundToInt(baseLife * tempLife);
+        maxLife = baseLife + Mathf.RoundToInt(baseLife * tempLife);
+        if (life > maxLife) life = maxLife;
     }
     public void SetMoveSpeedValue(float tempSpeed)
     {

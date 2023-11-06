@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBR:
   - speaker:Summer#Ora ora, o que temos aqui...
-  - speaker:Summer#Com meus olhinhos eu vejo... UMA FORMIGUINHA PRESTES A SER ESMAGADA!!!
+  - speaker:Summer#Com meus olhinhos eu vejo...
+  - speaker:Summer2#<color=red>UMA FORMIGUINHA PRESTES A SER ESMAGADA!!!</color>
   - "speaker:Rouge#Irm\xE3o, vai se fuder namoral."
   dialogueING: []
-  responses: []
+  responses:
+  - responseTextBR: Vamos nessa!
+    responseTextING: Let's go!
+    dialogueObject: {fileID: 0}

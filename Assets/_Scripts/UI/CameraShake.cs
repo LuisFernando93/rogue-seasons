@@ -11,6 +11,8 @@ public class CameraShake : MonoBehaviour
 
     private float shakeTimer;
 
+    public bool perpetualActive;
+
     private void Start()
     {
         Instance = this;
@@ -19,6 +21,7 @@ public class CameraShake : MonoBehaviour
 
     public void ShakeCamera(float intensity, float time)
     {
+        if (perpetualActive) return;
         //Debug.Log("Entrou no shake camera");
         CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin = 
             cinemachineVirtual.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
@@ -39,7 +42,9 @@ public class CameraShake : MonoBehaviour
                 cinemachineVirtual.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
 
                 cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0f;
+                if (perpetualActive) perpetualActive = false;
             }
+
         }   
     }
 }

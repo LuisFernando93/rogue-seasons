@@ -118,14 +118,14 @@ MonoBehaviour:
   historyING: 'An energy drink that gives you speed.
 
     "It tastes like guarana."-Leticia'
-  descriptionBR: Aumenta a velocidade de movimento de Rouge em 15%.
-  descriptionING: Increases Rouge's movement speed by 15%.
+  descriptionBR: Aumenta a velocidade de movimento de Rouge em 30%.
+  descriptionING: Increases Rouge's movement speed by 30%.
   icon: {fileID: -2613855437288000441, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 3
   lifeModifier: 0
   meleeModifier: 0
   rangedModifier: 0
-  speedModifier: 0.15
+  speedModifier: 0.3
   atkSpeedModifier: 0
   rechargeModifier: 0
   bulletSizeModifier: 0

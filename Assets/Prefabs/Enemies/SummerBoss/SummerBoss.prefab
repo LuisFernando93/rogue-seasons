@@ -148,7 +148,7 @@ MonoBehaviour:
   floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
   recoverTime: 2
   baseArmor: 0.5
-  baseLife: 10
+  baseLife: 50
   power: 0
   Attacks:
     list: []
@@ -173,6 +173,7 @@ MonoBehaviour:
   groundExpPrefab: {fileID: 7730496180810429080, guid: ad1399c2a57ba2d48b0bc03e2e9728bd, type: 3}
   lifeBarPrefab: {fileID: 6186479305577232555, guid: edd9e53704025f243883848e111b2c3d, type: 3}
   blackHoleEffect: {fileID: 4001995987700467566, guid: 02582014265a7a548910108ab6a0796e, type: 3}
+  teleport: {fileID: 0}
   arrowForce: 50
 --- !u!114 &8300492092728803754
 MonoBehaviour:
@@ -188,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeIntensityType: 5
   perpetualStrength: 2
-  perpetualTime: 3.5
+  perpetualTime: 5.5
 --- !u!114 &8300492094421102263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +204,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volume: {fileID: 0}
   newProfile: {fileID: 11400000, guid: 267af05626fabcd4aac54489df5a9eab, type: 2}
+  bgColor:
+    serializedVersion: 2
+    rgba: 0
 --- !u!1 &8300492094361055639
 GameObject:
   m_ObjectHideFlags: 0

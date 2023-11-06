@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
+  m_Name: Quem Somos
+  m_EditorClassIdentifier: 
+  dialogueBR:
+  - "speaker:Rouge#Ent\xE3o, quem exatamente que comanda este lugar?"
+  - "speaker:Guard#A organiza\xE7\xE3o."
+  - speaker:Guard#Antes do mundo colapsar de vez, um grupo de cientistas, com ajuda
+    de uma IA, criou uma maquina do tempo.
+  - "speaker:Guard#O objetivo era ir ao passado e evitar que as coisas chegassem
+    neste ponto, mas n\xE3o deu certo."
+  - speaker:Guard#Antes que o projeto fosse finalizado, o planeta colapsou e boa
+    parte da humanidade morreu.
+  - "speaker:Guard#Por sorte, Noa, a IA que ajudava os cientistas, conseguiu isolar
+    uma pequena \xE1rea em volta ao laboratorio."
+  - "speaker:Guard#Gra\xE7as a isso os cientistas e os refugiados que estavam no
+    local, sobreviveram, e por isso, estamos aqui agora."
+  - "speaker:Guard#N\xE3o conseguimos voltar no tempo, mas, conseguimos voltar at\xE9
+    o ponto exato que a maquina foi criada."
+  - "speaker:Guard#Por isso, sempre que voc\xEA morre, voc\xEA volta para c\xE1."
+  - speaker:Rouge#Entendi...
+  - "speaker:Rouge#Mas, se o mundo la fora j\xE1 est\xE1 condenado, qual o sentido
+    de lutar?"
+  - "speaker:Guard#Bem, acreditamos que Noa tem um plano, mas isso \xE9 assunto para
+    o alto escal\xE3o."
+  - "speaker:Guard#O que nos resta agora, \xE9 acreditar."
+  - "speaker:Rouge#N\xE3o sei se s\xF3 isso \xE9 o suficiente..."
+  dialogueING: []
+  responses: []

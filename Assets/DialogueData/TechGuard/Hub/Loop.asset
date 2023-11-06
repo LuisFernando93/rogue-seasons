@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
+  m_Name: Loop
+  m_EditorClassIdentifier: 
+  dialogueBR:
+  - "speaker:Rouge#Ent\xE3o, o que exatamente seria o \"Loop\"?"
+  - "speaker:Guard#A cada certo periodo de tempo, nossa realidade \xE9 \"resetada\"
+    com a maquina de viagem no tempo."
+  - "speaker:Guard#Isto serve para evitar que o mundo seja completamente destruido
+    pelas aberra\xE7\xF5es l\xE1 fora."
+  - "speaker:Guard#\xC9 isto que te tr\xE1s de volta quando voc\xEA morre tambem."
+  - "speaker:Guard#A Noa guarda a informa\xE7\xE3o de todos n\xF3s, assim, caso algu\xE9m
+    morra l\xE1 fora, podemos trazer a pessoa de volta."
+  - speaker:Rouge#Obrigado por isso, Noa.
+  dialogueING: []
+  responses: []

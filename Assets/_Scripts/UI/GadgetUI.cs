@@ -33,7 +33,6 @@ public class GadgetUI : MonoBehaviour
         gadgetName.text = gadget.GetGadgetName();
         gadgetDescription.text = gadget.GetGadgetDescription();
         gadgetHistory.text = gadget.GetGadgetHistory();
-        Debug.Log(gadgetHistory.text);
     }
 
     public void SetGadget(Gadget gadget)

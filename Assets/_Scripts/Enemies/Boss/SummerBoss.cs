@@ -33,7 +33,7 @@ public class SummerBoss : Boss
 
     private void Update()
     {
-        if(life <= 0)
+        if (life <= 0) 
         {
             ChangeAnimation(DEATH.name);
             return;
@@ -76,6 +76,7 @@ public class SummerBoss : Boss
     //Corte de fogo
     private void CallAttack01()
     {
+        if (life <= 0) return;
         ChangePosition(player.position.x, player.position.y + 1f, 0f);
         power = 5;
         ChangeAnimation(ATTACK01.name);
@@ -84,6 +85,7 @@ public class SummerBoss : Boss
     //Flecha
     private void CallAttack02()
     {
+        if (life <= 0) return;
         if (Random.Range(0, 2) == 1)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
@@ -100,6 +102,7 @@ public class SummerBoss : Boss
     //Chuva de flechas
     private void CallAttack03()
     {
+        if (life <= 0) return;
         ChangeAnimation(EVOKE_RAIN.name);
         Instantiate(arrowRainPrefab, player.transform.position, player.transform.rotation);
     }
@@ -107,6 +110,7 @@ public class SummerBoss : Boss
     //Corte
     private void CallAttack04()
     {
+        if (life <= 0) return;
         ChangePosition(0, 0, 0);
         if (player.transform.position.x < 0f)
         {
@@ -118,6 +122,7 @@ public class SummerBoss : Boss
     //Explos�es
     private void CallAttack05()
     {
+        if (life <= 0) return;
         ChangePosition(0, 0, 0);
         ChangeAnimation(GROUND_EXP.name);
     }
@@ -125,6 +130,7 @@ public class SummerBoss : Boss
     //Ultimate
     private void Ultimate()
     {
+        if (life <= 0) return;
         if (ultimateUsed)
         {
             SelectNextAttack();

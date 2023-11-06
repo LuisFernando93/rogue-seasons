@@ -22,6 +22,8 @@ public class SceneTransition : MonoBehaviour
         switch (sceneName)
         {
             case "Hub":
+                /*Destroy(GameObject.FindGameObjectWithTag("Player"));
+                Destroy(GameObject.FindGameObjectWithTag("Canvas"));*/
                 ChangeAnimation(toHub.name);
                 break;
             case "Summer1":

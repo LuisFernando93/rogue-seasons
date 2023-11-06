@@ -10,7 +10,7 @@ public class Teleport : InteractEvent
     {
         Instantiate(sceneTransition,GameObject.FindGameObjectWithTag("Canvas").transform);
     }
-    public void LoadScene()
+    private void LoadScene()
     {
         NextScene();
         SceneManager.LoadScene(SceneName);
@@ -45,6 +45,9 @@ public class Teleport : InteractEvent
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().CloseInteractableIcon();
     }
 
-
+    public void ToBoss()
+    {
+        SceneManager.LoadScene("SummerBoss");
+    }
 
 }

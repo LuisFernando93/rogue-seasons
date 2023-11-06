@@ -8,12 +8,15 @@ public class RandomDialogueGenerator : MonoBehaviour
     [SerializeField] bool OneTimeDialogue;
     [SerializeField] DialogueObject dialogue;
     [SerializeField] DialogueActivator dialogueActivator;
+    [SerializeField] DialogueResponseEvents dialogueResponse;
     
     private bool EspeciftAlreadyPlayed = false;
 
     private void Start()
     {
-        dialogueActivator.dialogueObject = GetDialogue();
+        dialogue = GetDialogue();
+        dialogueActivator.dialogueObject = dialogue;
+        dialogueResponse.dialogueObject = dialogue;
     }
 
     private DialogueObject GetRandomDialogue()

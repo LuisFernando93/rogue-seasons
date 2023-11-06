@@ -38,6 +38,7 @@ public class ShakeEffect : MonoBehaviour
                 break;
             case ShakeIntensityType.Perpetual:
                 CameraShake.Instance.ShakeCamera(perpetualStrength, perpetualTime);
+                CameraShake.Instance.perpetualActive = true;
                 break;
             default:
                 Debug.Log("Erro na intensidade");

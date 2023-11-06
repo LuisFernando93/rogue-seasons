@@ -178,11 +178,11 @@ AnimationClip:
       value: {fileID: 3275380924635522554, guid: d2d6feddbb9b1524595c538ecda8f910, type: 3}
     - time: 0.33333334
       value: {fileID: 4453110194957519819, guid: d2d6feddbb9b1524595c538ecda8f910, type: 3}
-    - time: 0.41666666
+    - time: 0.375
       value: {fileID: -3407730627242091398, guid: d2d6feddbb9b1524595c538ecda8f910, type: 3}
-    - time: 0.5
+    - time: 0.41666666
       value: {fileID: -775676424540008824, guid: d2d6feddbb9b1524595c538ecda8f910, type: 3}
-    - time: 0.5833333
+    - time: 0.45833334
       value: {fileID: 9053850089090239912, guid: d2d6feddbb9b1524595c538ecda8f910, type: 3}
     attribute: m_Sprite
     path: 
@@ -251,7 +251,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.625
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -420,7 +420,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.625
+  - time: 0.5
     functionName: ComboFinish
     data: 
     objectReferenceParameter: {fileID: 0}

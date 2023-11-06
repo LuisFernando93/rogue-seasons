@@ -69,7 +69,8 @@ public class PauseMenu : MonoBehaviour
 
     public void ExitGameButton()
     {
-        Application.Quit();
+        _pauseMenuContainer.SetActive(false);
+        SceneManager.LoadScene("Main menu");
     }
 
     public void AdjustVolume(string type)

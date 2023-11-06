@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100ab596e8a06c3478834f1a2bb03e38, type: 3}
+  m_Name: Inicio
+  m_EditorClassIdentifier: 
+  dialogueBR:
+  - "narrator:#Voc\xEA se aproxima da velha estalagem da ferreira e avista sua boa
+    amiga, Alice."
+  - speaker:Rouge#Oi Alice!
+  - "speaker:Blacksmith#Oi garota! Como est\xE3o indo as coisas l\xE1 fora?"
+  - speaker:Rouge#O de sempre! Zombies pegando fogo e Flores explodindo...
+  - speaker:Rouge#Enfim, tem algo para mim hoje?
+  - "speaker:Blacksmith#Ainda estamos fazendo a manuten\xE7\xE3o, foi mal garota."
+  - "speaker:Rouge#Puts, ok, ja vou indo ent\xE3o! Falou Alice!"
+  - "speaker:Blacksmith#Se cuida l\xE1 fora garota!"
+  - "narrator:#Os servi\xE7os de Alice ser\xE3o disponibilizados futuramente."
+  dialogueING: []
+  responses: []
