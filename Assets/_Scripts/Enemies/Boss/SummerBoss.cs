@@ -78,7 +78,7 @@ public class SummerBoss : Boss
     {
         if (life <= 0) return;
         ChangePosition(player.position.x, player.position.y + 1f, 0f);
-        power = 5;
+        power = 100;
         ChangeAnimation(ATTACK01.name);
     }
 
@@ -95,7 +95,7 @@ public class SummerBoss : Boss
         {
             ChangePosition(player.position.x - 3, player.position.y, 0f);
         }
-        power = 10;
+        power = 150;
         ChangeAnimation(ATTACK02_ENTRY.name);
     }
 
@@ -138,7 +138,7 @@ public class SummerBoss : Boss
         }
         baseArmor = 0.25f;
         ChangePosition(0, 0, 0);
-        power = 1;
+        power = 25;
         ChangeAnimation(ULT.name);
         Instantiate(blackHoleEffect,this.transform);
         ultimateUsed = true;

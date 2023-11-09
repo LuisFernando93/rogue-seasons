@@ -9,11 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Name
-      value: ZombieTank
+      value: ZombieTank Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748961, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: life
-      value: 10
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748962, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Color.b
@@ -21,11 +21,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748962, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Color.g
-      value: 0.5707547
+      value: 0.16509432
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748962, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Color.r
-      value: 0.8380501
+      value: 0.6859529
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748963, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_RootOrder

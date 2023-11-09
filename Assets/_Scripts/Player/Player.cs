@@ -317,6 +317,10 @@ public class Player : MonoBehaviour
         MoveSpeed = baseMoveSpeed + (MoveSpeed * tempSpeed);
     }
 
+    public void SetDashValue(float tempDash)
+    {
+        dashPower += dashPower * tempDash; 
+    }
     public float GetLife()
     {
         return life;

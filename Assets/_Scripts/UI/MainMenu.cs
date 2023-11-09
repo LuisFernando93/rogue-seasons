@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backOptionsButton, backAboutButton, backCreditsButton; 
     [SerializeField] private GameObject aboutLabel;
     [SerializeField] private MainMenuAssets[] assets;
+    string creditsBR, creditsING;
 
 
     // Start is called before the first frame update
@@ -110,4 +111,5 @@ public class MainMenu : MonoBehaviour
             this.changeLanguage("PTBR"); //caso nao exista dados salvos, carregar PTBR como padrao
         }
     }
+
 }

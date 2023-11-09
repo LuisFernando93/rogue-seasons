@@ -21,7 +21,8 @@ MonoBehaviour:
   - "speaker:Guard#Negativo! Sem Autoriza\xE7\xE3o, voc\xEA n\xE3o pode entrar."
   - speaker:Guard#Qualquer pergunta pode ser direcionada a mim no momento.
   - speaker:Rouge#Certo...
-  dialogueING: []
+  dialogueING:
+  - yamete
   responses:
   - responseTextBR: Mundo exterior
     responseTextING: 

@@ -14,7 +14,7 @@ public class Speaker : MonoBehaviour
     Vector3 left = new Vector3(50, -0, 0f);
     Vector3 right = new Vector3(-50, -0, 0f);
     const string OTHER = "Circulo", PLAYER = "Rouge", BLACKSMITH = "Alice", GUARD = "Survilence", 
-        SUMMER = "Summer", SUMMER2 = "Summer2", SummerBossName = "Caelus";
+        SUMMER = "Summer", SUMMER2 = "Summer2", SummerBossName = "Aestas";
 
     private void Start()
     {

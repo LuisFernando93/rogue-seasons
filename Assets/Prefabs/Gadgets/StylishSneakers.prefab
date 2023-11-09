@@ -120,8 +120,8 @@ MonoBehaviour:
 
     "I don''t like the standard
     boots on our uniform, I can run better with this beauty here."'
-  descriptionBR: "Aumenta a dist\xE2ncia do Dash em 20%."
-  descriptionING: Increases Dash distance by 20%.
+  descriptionBR: "Aumenta a dist\xE2ncia do Dash em 40%."
+  descriptionING: Increases Dash distance by 40%.
   icon: {fileID: 7905139760315168755, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 6
   lifeModifier: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   atkSpeedModifier: 0
   rechargeModifier: 0
   bulletSizeModifier: 0
+  dashModifier: 0.4
   lifeModified: 0
   meleeModified: 0
   rangedModified: 0
@@ -138,3 +139,4 @@ MonoBehaviour:
   atkSpeedModified: 0
   rechargeModified: 0
   bulletSizeModified: 0
+  dashModified: 1

@@ -6,7 +6,7 @@ using TMPro;
 public class FloatingDamage : MonoBehaviour
 {
     [SerializeField] protected GameObject floatingPoints;
-    int mediumDamage = 10, HighDamage = 20;
+    int mediumDamage = 500, HighDamage = 1000;
 
     protected void CreateFloatingDamage(int damage)
     {

@@ -9,11 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.b
-      value: 0.6462264
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.g
-      value: 0.6462264
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.r
@@ -77,11 +77,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: life
-      value: 20
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: power
-      value: 5
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: speed
@@ -89,11 +89,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: bulletForce
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: attackDistanceMax
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
+      propertyPath: attackDistanceMin
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}

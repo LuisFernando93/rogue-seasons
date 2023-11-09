@@ -10,8 +10,8 @@ public class Gadget : Interactable
     SpriteRenderer sr;
     [SerializeField] Sprite icon;
     [SerializeField] public int Id;
-    [SerializeField] float lifeModifier, meleeModifier, rangedModifier, speedModifier, atkSpeedModifier, rechargeModifier, bulletSizeModifier;
-    [SerializeField] bool lifeModified, meleeModified, rangedModified, speedModified, atkSpeedModified, rechargeModified, bulletSizeModified;
+    [SerializeField] float lifeModifier, meleeModifier, rangedModifier, speedModifier, atkSpeedModifier, rechargeModifier, bulletSizeModifier, dashModifier;
+    [SerializeField] bool lifeModified, meleeModified, rangedModified, speedModified, atkSpeedModified, rechargeModified, bulletSizeModified, dashModified;
     string language;
     GadgetsManager gadget;
 
@@ -34,8 +34,8 @@ public class Gadget : Interactable
     {
         UI.SetGadget(this.gameObject.GetComponent<Gadget>());
         //SetGadgetModifiers();
-        DesactiveInteracIcon();
-        Destroy(this.gameObject, 0.2f);
+        //DesactiveInteracIcon();
+        //Destroy(this.gameObject, 0.2f);
     }
 
     public string GetGadgetName()
@@ -124,6 +124,10 @@ public class Gadget : Interactable
         if (bulletSizeModified)
         {
             gadget.IncreaseBulletSizeModifier(bulletSizeModifier);
+        }
+        if (dashModified)
+        {
+            gadget.IncreaseDashModifier(dashModifier);
         }
 
         //Destroy(this.gameObject, 0.2f);

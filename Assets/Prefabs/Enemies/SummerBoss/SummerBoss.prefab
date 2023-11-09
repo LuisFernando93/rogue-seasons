@@ -148,7 +148,7 @@ MonoBehaviour:
   floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
   recoverTime: 2
   baseArmor: 0.5
-  baseLife: 50
+  baseLife: 5000
   power: 0
   Attacks:
     list: []

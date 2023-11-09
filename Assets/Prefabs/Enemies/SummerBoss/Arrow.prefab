@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followPlayer: 0
-  power: 5
+  power: 150
   destroyAfter: 5
   followSpeed: 0
 --- !u!61 &379151313536590123

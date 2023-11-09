@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.b
-      value: 0.96127594
+      value: 0.93803173
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.g
@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.r
-      value: 0.4009434
+      value: 0.051886797
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609325, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_RootOrder
@@ -65,7 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Name
-      value: AberrationRange
+      value: AberrationRange Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
+      propertyPath: power
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: speed
@@ -73,11 +77,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: bulletForce
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: attackDistanceMax
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
+      propertyPath: attackDistanceMin
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}

@@ -171,9 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatingPoints: {fileID: 6341487257332410745, guid: 4e552e1714b48f24e80af38942514071, type: 3}
-  life: 5
+  life: 1000
   speed: 3
-  power: 1
+  power: 10
   attackDistance: 1
   hitBox: {fileID: 1377565013207370005}
   damagedSound: {fileID: 0}

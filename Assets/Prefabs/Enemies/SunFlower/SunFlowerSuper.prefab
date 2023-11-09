@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2712349220196889057, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
       propertyPath: m_Color.b
-      value: 0.6839622
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2712349220196889057, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
       propertyPath: m_Color.g
-      value: 0.6839622
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2712349220196889057, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
       propertyPath: m_Color.r
@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4929661247688908930, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
       propertyPath: life
-      value: 20
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4929661247688908930, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
       propertyPath: power
-      value: 8
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4929661247688908930, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
       propertyPath: attackDistance
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7311489310320315321, guid: bd8ce5143079a044093157f50c2af19d, type: 3}
       propertyPath: m_RootOrder

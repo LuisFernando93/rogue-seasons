@@ -9,19 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7314481508445748960, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Name
-      value: ZombieDamage
+      value: ZombieDamage Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748961, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: power
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748962, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Color.b
-      value: 0.3160377
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748962, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Color.g
-      value: 0.97209096
+      value: 0.85882354
       objectReference: {fileID: 0}
     - target: {fileID: 7314481508445748962, guid: 21892db803bd0d24a9645b632b94396e, type: 3}
       propertyPath: m_Color.r

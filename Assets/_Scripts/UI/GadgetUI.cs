@@ -45,6 +45,8 @@ public class GadgetUI : MonoBehaviour
     public void AcceptGadget()
     {
         gadget.SetGadgetModifiers();
+        gadget.DesactiveInteracIcon();
+        Destroy(gadget.gameObject,0.2f);
     }
 
 }

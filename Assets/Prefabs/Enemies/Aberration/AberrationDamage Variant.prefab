@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.g
-      value: 0.9419505
+      value: 0.8534628
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609324, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Color.r
@@ -65,11 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609326, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: m_Name
-      value: AberrationDamage
+      value: AberrationDamage Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: power
-      value: 5
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3811523910147609874, guid: 1ed3b3855bc163a45a371ba2ab6326f3, type: 3}
       propertyPath: bulletForce

@@ -8,7 +8,7 @@ public class GadgetsManager : MonoBehaviour
     Player player;
 
     List<float> lifeModifier = new List<float>(), speedModifier = new List<float>(), meleeModifier = new List<float>(), rangedModifier = new List<float>();
-    List<float> atkSpeedModifier = new List<float>(), rechargeModifier = new List<float>(), bulletSizeModifier = new List<float>();
+    List<float> atkSpeedModifier = new List<float>(), rechargeModifier = new List<float>(), bulletSizeModifier = new List<float>(), dashModifier = new List<float>();
     public void Start()
     {
         player = GetComponent<Player>();
@@ -54,12 +54,17 @@ public class GadgetsManager : MonoBehaviour
         bulletSizeModifier.Add(modifier);
         UpdateStatus();
     }
+    public void IncreaseDashModifier(float modifier)
+    {
+        dashModifier.Add(modifier);
+        UpdateStatus();
+    }
 
     //Implementa o modificador
 
     public void UpdateStatus()
     {
-        float tempLife = 0, tempSpeed = 0, tempMeleeDamage = 0, tempRangedDamage = 0, tempAtkSpeed = 0, tempRechargeSpeed = 0, tempBulletSize = 0;
+        float tempLife = 0, tempSpeed = 0, tempMeleeDamage = 0, tempRangedDamage = 0, tempAtkSpeed = 0, tempRechargeSpeed = 0, tempBulletSize = 0, tempDash = 0;
 
         if (lifeModifier.Count != 0)
         {
@@ -138,7 +143,12 @@ public class GadgetsManager : MonoBehaviour
                 transform.GetChild(0).GetComponent<RangedWeaponController>().ModifyBulletSize(tempBulletSize);
             }
         }
+        if(dashModifier.Count != 0)
+        {
+            foreach (float modifier in dashModifier) tempDash += modifier;
+        }
         player.SetLifeValue(tempLife);
         player.SetMoveSpeedValue(tempSpeed);
+        player.SetDashValue(tempDash);
     }
 }

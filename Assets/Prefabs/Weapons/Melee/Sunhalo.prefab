@@ -137,7 +137,7 @@ MonoBehaviour:
   history: 
   icon: {fileID: -1215092017051758182, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
   quantCombo: 3
-  CDamage: 010000000200000003000000
+  CDamage: 6400000064000000c8000000
   Ataques:
   - {fileID: 7400000, guid: a956c8c9f019c594fa4d88c1aeb3ab7a, type: 2}
   - {fileID: 7400000, guid: 244e8461692c98440b9013eacfebce83, type: 2}

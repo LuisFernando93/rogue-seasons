@@ -34,13 +34,15 @@ public class EnemyBullet : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
         animator.Play(HitEffect.name);
-        if (collision.collider == player.GetComponent<Collider2D>())
+        if (collision.CompareTag("Player"))
         {
             player.GetComponent<Player>().TakeDamage(bulletDamage);
+            GetComponent<BoxCollider2D>().isTrigger = false;
+            if (HitEffect != null)
+                animator.Play(HitEffect.name);
         }
     }
 

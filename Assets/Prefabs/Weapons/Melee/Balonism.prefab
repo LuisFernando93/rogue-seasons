@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1516077037613393376}
   - component: {fileID: 1516077037613393377}
   m_Layer: 0
-  m_Name: Balloon
+  m_Name: Balonism
   m_TagString: meleeWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   history: 
   icon: {fileID: -5787280410958437946, guid: 3b062ad8716f3e141b495e732d03cc51, type: 3}
   quantCombo: 3
-  CDamage: 010000000200000003000000
+  CDamage: 4b0000004b00000064000000
   Ataques:
   - {fileID: 7400000, guid: 693edc55a28dfaa4ba7b873ad94465cb, type: 2}
   - {fileID: 7400000, guid: bd3c4e2b4929d1646a148b17c4a99d20, type: 2}
