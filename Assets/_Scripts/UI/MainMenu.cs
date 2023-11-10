@@ -19,7 +19,8 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         PlayerPrefs.DeleteAll();
-        Debug.Log("Deletando playerPrefs");
+        Destroy(GameObject.FindGameObjectWithTag("Player"));
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
         Load();
     }
@@ -106,7 +107,7 @@ public class MainMenu : MonoBehaviour
             _musicVolumeSlider.value = data.getVolumeMusic();
             _SFXVolumeSlider.value = data.getVolumeSFX();
             this.changeLanguage(data.getLanguage());
-            Debug.Log("Mudando lingua para " + data.getLanguage());
+            //Debug.Log("Mudando lingua para " + data.getLanguage());
         } else
         {
             this.changeLanguage("PTBR"); //caso nao exista dados salvos, carregar PTBR como padrao

@@ -64,12 +64,13 @@ public class PauseMenu : MonoBehaviour
     {
         Destroy(GameObject.FindGameObjectWithTag("Player"));
         Resume();
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         SceneManager.LoadScene("Hub");
     }
 
     public void ExitGameButton()
     {
-        _pauseMenuContainer.SetActive(false);
+        Resume();
         SceneManager.LoadScene("Main menu");
     }
 
