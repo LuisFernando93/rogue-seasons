@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   history: 
-  icon: {fileID: -1215092017051758182, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
+  icon: {fileID: -5739340361035666066, guid: e03dbb2d34c29d5439bcae04a06c48be, type: 3}
   quantCombo: 3
   CDamage: 6400000064000000c8000000
   Ataques:

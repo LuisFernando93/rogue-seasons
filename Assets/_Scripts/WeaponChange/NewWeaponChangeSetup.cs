@@ -16,7 +16,6 @@ public class NewWeaponChangeSetup : MonoBehaviour
     private void Start()
     {
         combatManager = GameObject.FindGameObjectWithTag("Player").GetComponent<NewCombatManager>();
-        language = GameObject.FindGameObjectWithTag("Manager").GetComponent<Configuration>().GetLanguage();
     }
     //Recebe as informa��es do prefab 
     public void SetNewWeapon(GameObject dropSystem)
@@ -27,6 +26,7 @@ public class NewWeaponChangeSetup : MonoBehaviour
     public void FillUI()
     {
         IsOpen = true;
+        language = GameObject.FindGameObjectWithTag("Manager").GetComponent<Configuration>().GetLanguage();
         UpdateIcons();
         FillNewWeaponInfo();
         FillLeftWeaponInfo();

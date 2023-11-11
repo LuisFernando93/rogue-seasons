@@ -20,6 +20,7 @@ public class SummerBoss : Boss
         teleport.SetActive(false);
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        player.GetComponent<Player>().CloseInteractableIcon();
 
         Attacks.Add("CallAttack01", 1);
         Attacks.Add("CallAttack02", 1);

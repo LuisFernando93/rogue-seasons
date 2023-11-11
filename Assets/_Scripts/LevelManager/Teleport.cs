@@ -5,10 +5,14 @@ public class Teleport : InteractEvent
 {
     string SceneName;
     [SerializeField] GameObject sceneTransition;
+    [SerializeField] Sprite interactIconSprite;
 
     private void Start()
     {
         Instantiate(sceneTransition,GameObject.FindGameObjectWithTag("Canvas").transform);
+        //medida para evitar o bug do interact icon não desaparecer na sala do boss
+        /*if (SceneManager.GetActiveScene().name != "SummerBoss") 
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(2).GetComponent<SpriteRenderer>().sprite = interactIconSprite;*/
     }
     private void LoadScene()
     {
@@ -31,6 +35,10 @@ public class Teleport : InteractEvent
                 break;
             case "Summer2":
                 SceneName = "SummerBoss";
+
+                //medida para evitar o bug do interact icon não desaparecer na sala do boss
+                /*GameObject.FindGameObjectWithTag("Player").transform.GetChild(2).GetComponent<SpriteRenderer>().sprite = null;
+                Debug.Log("Sprite retirado");*/
                 break;
             case "SummerBoss":
                 SceneName = "Hub";
@@ -47,6 +55,7 @@ public class Teleport : InteractEvent
 
     public void ToBoss()
     {
+        CallTransicion();
         SceneManager.LoadScene("SummerBoss");
     }
 

@@ -130,6 +130,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   sceneTransition: {fileID: 6112896125102362688, guid: 3e6604a80d046654ebf7ff9721eaa909, type: 3}
+  interactIconSprite: {fileID: -7659719219588376922, guid: 20c868dd8fea13848ae98fa125e248e2, type: 3}
 --- !u!95 &4226360059551245386
 Animator:
   serializedVersion: 3
