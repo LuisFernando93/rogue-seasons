@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 1148962560}
   - component: {fileID: 1148962559}
   m_Layer: 5
-  m_Name: Text
+  m_Name: CreditsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2425,6 +2425,7 @@ MonoBehaviour:
   backAboutButton: {fileID: 2116299708}
   backCreditsButton: {fileID: 414363022}
   aboutLabel: {fileID: 1931284406}
+  creditsLabel: {fileID: 530801367}
   assets:
   - {fileID: 11400000, guid: 78a5d0c0e72975b4383fa25f1ae6318e, type: 2}
   - {fileID: 11400000, guid: c48787b1d2eadbd4f9255e807770fe2e, type: 2}
@@ -3150,6 +3151,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3382647023677634598, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1826305324}
+    - target: {fileID: 3382647023677634598, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdjustVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 3382647023730963088, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -3178,6 +3187,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3382647024222026641, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1826305324}
+    - target: {fileID: 3382647024222026641, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdjustVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 3382647024246076506, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3193,6 +3210,14 @@ PrefabInstance:
     - target: {fileID: 3382647024246076506, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: MenuClickSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3382647024393426387, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1826305324}
+    - target: {fileID: 3382647024393426387, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdjustVolume
       objectReference: {fileID: 0}
     - target: {fileID: 3382647024629990697, guid: 9445b17b29e85614c935a67a08b0dc94, type: 3}
       propertyPath: m_AnchorMax.x

@@ -24,7 +24,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) & !gameObject.GetComponent<DialogueUI>().IsOpen)
         {
             if (gameIsPaused)
             {
@@ -64,12 +64,13 @@ public class PauseMenu : MonoBehaviour
     {
         Destroy(GameObject.FindGameObjectWithTag("Player"));
         Resume();
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         SceneManager.LoadScene("Hub");
     }
 
     public void ExitGameButton()
     {
-        _pauseMenuContainer.SetActive(false);
+        Resume();
         SceneManager.LoadScene("Main menu");
     }
 

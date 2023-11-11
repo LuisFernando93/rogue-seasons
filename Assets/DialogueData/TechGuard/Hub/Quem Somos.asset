@@ -22,10 +22,10 @@ MonoBehaviour:
   - speaker:Guard#Antes que o projeto fosse finalizado, o planeta colapsou e boa
     parte da humanidade morreu.
   - "speaker:Guard#Por sorte, Noa, a IA que ajudava os cientistas, conseguiu isolar
-    uma pequena \xE1rea em volta ao laboratorio."
-  - "speaker:Guard#Gra\xE7as a isso os cientistas e os refugiados que estavam no
-    local, sobreviveram, e por isso, estamos aqui agora."
-  - "speaker:Guard#N\xE3o conseguimos voltar no tempo, mas, conseguimos voltar at\xE9
+    uma pequena \xE1rea em volta ao laborat\xF3rio."
+  - "speaker:Guard#Gra\xE7as a isso, os cientistas e os refugiados que estavam no
+    local, sobreviveram, e por isso estamos aqui agora."
+  - "speaker:Guard#N\xE3o conseguimos voltar no tempo, mas conseguimos voltar at\xE9
     o ponto exato que a maquina foi criada."
   - "speaker:Guard#Por isso, sempre que voc\xEA morre, voc\xEA volta para c\xE1."
   - speaker:Rouge#Entendi...
@@ -33,7 +33,28 @@ MonoBehaviour:
     de lutar?"
   - "speaker:Guard#Bem, acreditamos que Noa tem um plano, mas isso \xE9 assunto para
     o alto escal\xE3o."
-  - "speaker:Guard#O que nos resta agora, \xE9 acreditar."
+  - "speaker:Guard#O que nos resta agora \xE9 acreditar."
   - "speaker:Rouge#N\xE3o sei se s\xF3 isso \xE9 o suficiente..."
-  dialogueING: []
+  dialogueING:
+  - speaker:Rouge#So, who exactly runs this place?
+  - speaker:Guard#The organization.
+  - speaker:Guard#Before the world colapsed for good, a group of scientists manage
+    to create a time machine, with the help of an AI.
+  - speaker:Guard#The goal was to go back to the past and avoid that we reached this
+    point, but it didn't work out.
+  - speaker:Guard#Before the project was concluded, the world collapsed and most
+    of humanity died out.
+  - speaker:Guard#Luckly, the AI that helped the scientists, named Noa, managed to
+    isolate a small area around the laboratory.
+  - speaker:Guard#Due to that, the scientists and the refugees around the lab managed
+    to survive, and that's how we're here today.
+  - speaker:Guard#We didn't manage to go back in time, but we managed to go back
+    to the exact point the time machine was created.
+  - speaker:Guard#That's why you always return here when you die.
+  - speaker:Rouge#Got it...
+  - speaker:Rouge#But, if the world is already doomed, what's the point in fighting?
+  - speaker:Guard#Well, we believe that Noa has a plan, but that's for the higher-ups
+    to know.
+  - speaker:Guard#We can only hope.
+  - speaker:Rouge#I don't know if just that is enough...
   responses: []

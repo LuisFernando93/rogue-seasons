@@ -13,12 +13,17 @@ MonoBehaviour:
   m_Name: Boss02
   m_EditorClassIdentifier: 
   dialogueBR:
-  - "speaker:Summer#Ol\xE1 girassol, como vai seu dia?"
+  - "speaker:Summer#Ol\xE1 girassol. Como vai seu dia?"
   - "speaker:Rouge#Estava bem legal at\xE9 eu encontrar uma certa crian\xE7a encapetada."
   - speaker:Summer#HAHAHAHA!
   - "speaker:Summer2#Esse capetinha vai te apresentar o inferno ent\xE3o."
-  - speaker:Rouge#vem tranquilo!
-  dialogueING: []
+  - speaker:Rouge#Vem tranquilo!
+  dialogueING:
+  - speaker:Summer#Hey sunflower! How is your day?
+  - speaker:Rouge#It was pretty cool until I've met a certain child imp.
+  - speaker:Summer#HAHAHAHA!
+  - speaker:Summer2#This imp will show you hell then!
+  - speaker:Rouge#Bring it on!
   responses:
   - responseTextBR: Vamos nessa!
     responseTextING: Let's go!

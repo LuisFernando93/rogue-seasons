@@ -10,16 +10,17 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
     [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backOptionsButton, backAboutButton, backCreditsButton; 
-    [SerializeField] private GameObject aboutLabel;
+    [SerializeField] private GameObject aboutLabel, creditsLabel;
     [SerializeField] private MainMenuAssets[] assets;
-    string creditsBR, creditsING;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
         PlayerPrefs.DeleteAll();
-        Debug.Log("Deletando playerPrefs");
+        Destroy(GameObject.FindGameObjectWithTag("Player"));
+        Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         SoundManager.Instance.PlaySingleMusic(_mainMenuOST);
         Load();
     }
@@ -87,7 +88,8 @@ public class MainMenu : MonoBehaviour
         backOptionsButton.GetComponent<Image>().sprite = assets.back;
         backAboutButton.GetComponent<Image>().sprite = assets.back;
         backCreditsButton.GetComponent<Image>().sprite = assets.back;
-        aboutLabel.GetComponent<TextMeshProUGUI>().text = assets.about;
+        aboutLabel.GetComponent<TextMeshProUGUI>().text = assets.aboutText;
+        creditsLabel.GetComponent<TextMeshProUGUI>().text = assets.creditsText;
     }
 
     public void Save()
@@ -105,7 +107,7 @@ public class MainMenu : MonoBehaviour
             _musicVolumeSlider.value = data.getVolumeMusic();
             _SFXVolumeSlider.value = data.getVolumeSFX();
             this.changeLanguage(data.getLanguage());
-            Debug.Log("Mudando lingua para " + data.getLanguage());
+            //Debug.Log("Mudando lingua para " + data.getLanguage());
         } else
         {
             this.changeLanguage("PTBR"); //caso nao exista dados salvos, carregar PTBR como padrao

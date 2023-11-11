@@ -54,6 +54,8 @@ public class SoundManager : MonoBehaviour
     public void PlaySingleMusic(AudioClip clip)
     {
         _musicSourceDefault.clip = clip;
+        _musicSourceBattle.clip = null;
+        _battleMusicOn = false;
         _volumeA = 0f;
         _volumeB = -80f;
         _mixer.SetFloat("VolumeA", _volumeA);

@@ -18,7 +18,13 @@ MonoBehaviour:
   credits: {fileID: -8507005045079895633, guid: 32e558140235286459553c01b3800144, type: 3}
   exit: {fileID: 3082260580606470857, guid: 32e558140235286459553c01b3800144, type: 3}
   back: {fileID: 1396196771831745630, guid: 32e558140235286459553c01b3800144, type: 3}
-  about: "As esta\xE7\xF5es est\xE3o fora de controle devido a polui\xE7\xE3o e aquecimento
-    global! Para salvar a humanidade, Rouge, uma agente secreta que consegue voltar
-    no tempo, deve enfrentar as 4 divindades de cada esta\xE7\xE3o do ano e restaurar
-    a ordem."
+  aboutText: "As esta\xE7\xF5es est\xE3o fora de controle devido a polui\xE7\xE3o
+    e aquecimento global! Para salvar a humanidade, Rouge, uma agente secreta que
+    consegue voltar no tempo, deve enfrentar as 4 divindades de cada esta\xE7\xE3o
+    do ano e restaurar a ordem."
+  creditsText: "Programa\xE7\xE3o:<br>\tGustavo Mello Herrera<br>\tLuis Fernando
+    Pasquinelli Amaral de Abreu<br>Arte:<br>\tGustavo Mello Herrera<br>\tManuela
+    Gon\xE7alves de Oliveira<br>Som:<br>\tEduardo Rocha dos Santos<br>Professores
+    orientadores:<br>\tAlexandre Santaella Braga<br>\tClaudemir Martins da Silva<br>\tRaquel
+    Silva<br>\tWillians Monteiro da Silva<br>Agradecimentos especiais:<br>\tFatec
+    S\xE3o Caetano do Sul"

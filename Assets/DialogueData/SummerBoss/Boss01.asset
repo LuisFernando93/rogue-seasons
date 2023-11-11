@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: Boss01
   m_EditorClassIdentifier: 
   dialogueBR:
-  - speaker:Summer#Ora ora, o que temos aqui...
+  - speaker:Summer#Ora ora. O que temos aqui...
   - speaker:Summer#Com meus olhinhos eu vejo...
   - speaker:Summer2#<color=red>UMA FORMIGUINHA PRESTES A SER ESMAGADA!!!</color>
   - "speaker:Rouge#Irm\xE3o, vai se fuder namoral."
-  dialogueING: []
+  dialogueING:
+  - speaker:Summer#My my. What do we have here...
+  - speaker:Summer#I spy with my little eye...
+  - speaker:Summer2#<color=red>A LITTLE ANT IS ABOUT TO BE CRUSHED!!!</color>
+  - speaker:Rouge#Bro, chill the fuck out.
   responses:
   - responseTextBR: Vamos nessa!
     responseTextING: Let's go!
