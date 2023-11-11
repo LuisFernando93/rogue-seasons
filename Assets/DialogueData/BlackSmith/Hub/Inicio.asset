@@ -17,11 +17,21 @@ MonoBehaviour:
     amiga, Alice."
   - speaker:Rouge#Oi Alice!
   - "speaker:Blacksmith#Oi garota! Como est\xE3o indo as coisas l\xE1 fora?"
-  - speaker:Rouge#O de sempre! Zombies pegando fogo e Flores explodindo...
+  - speaker:Rouge#O de sempre! Zumbis pegando fogo e flores explodindo...
   - speaker:Rouge#Enfim, tem algo para mim hoje?
   - "speaker:Blacksmith#Ainda estamos fazendo a manuten\xE7\xE3o, foi mal garota."
   - "speaker:Rouge#Puts, ok, ja vou indo ent\xE3o! Falou Alice!"
   - "speaker:Blacksmith#Se cuida l\xE1 fora garota!"
-  - "narrator:#Os servi\xE7os de Alice ser\xE3o disponibilizados futuramente."
-  dialogueING: []
+  - "narrator:#Os servi\xE7os de Alice n\xE3o est\xE3o disponiveis nessa vers\xE3o
+    de Rogue Season."
+  dialogueING:
+  - narrator:#You approach the old smithy and sees your good friend, Alice.
+  - speaker:Rouge#Hi Alice!
+  - speaker:Blacksmith#Hey girl! How are things out there?
+  - speaker:Rouge#The usual! Zombies on fire and flowers blowing up...
+  - speaker:Rouge#Anyways, you've got something for me today?
+  - speaker:Blacksmith#We're still working on maintenance. Sorry, sweetie.
+  - speaker:Rouge#Damn, okay... I'll be going then! See ya Alice!
+  - speaker:Blacksmith#Take care out there, girl!
+  - narrator:#Alice's services are not available in this version of Rogue Season.
   responses: []

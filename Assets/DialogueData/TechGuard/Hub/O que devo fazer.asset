@@ -14,19 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBR:
   - "speaker:Rouge#Ent\xE3o, qual exatamente \xE9 meu objetivo l\xE1 fora?"
-  - speaker:Guard#Achar a origem das anormalidades e destrui-la.
+  - "speaker:Guard#Achar a origem das anormalidades e destru\xED-la."
   - speaker:Rouge#Pode ser um pouco mais especifico?
-  - "speaker:Guard#As esta\xE7\xF5es foram \"manifestadas\" em alguns individuos,
-    foi isso que come\xE7ou o caos generalizado."
-  - "speaker:Guard#At\xE9 o momento, ja foi identificado a personifica\xE7\xE3o do
-    Ver\xE3o, Inverno, Primavera e Outono."
-  - speaker:Guard#Os cientistas do QG acham que pode ter mais um que controla os
-    restantes e foi a origem de tudo.
+  - "speaker:Guard#As esta\xE7\xF5es foram \"manifestadas\" em alguns indiv\xEDduos,
+    e foi isso que come\xE7ou o caos generalizado."
+  - "speaker:Guard#At\xE9 o momento, j\xE1 foi identificados as personifica\xE7\xF5es
+    do Ver\xE3o, Inverno, Primavera e Outono."
+  - "speaker:Guard#Os cientistas do QG acreditam que pode ter mais um, que controla
+    os todos e \xE9 a origem de tudo isso."
   - "speaker:Rouge#Basicamente voc\xEAs est\xE3o dizendo: \"pegue est\xE1 faca e
     vai l\xE1 matar Deus...\""
   - speaker:Guard#Sim.
   - "speaker:Guard#Mas pelo menos voc\xEA tem tentativas infinitas."
   - speaker:Rouge#...
   - speaker:Rouge#Mesmo que eu volte depois, ainda doi morrer, sabia?
-  dialogueING: []
+  dialogueING:
+  - speaker:Rouge#So, what's exactly my objective out there?
+  - speaker:Guard#To find the origin of the abnormalities and destroy it.
+  - speaker:Rouge#Could you be a little more specific?
+  - speaker:Guard#The seasons are "manifested" in certain individuals, and that's
+    what started the all this chaos.
+  - speaker:Guard#Up until this moment, the personification of Summer, Winter, Spring
+    and Fall.
+  - speaker:Guard#The scientists in HQ believe there may be another one who controls
+    them and is the origin of all this.
+  - 'speaker:Rouge#Basically you''re all saying: "Take this knife and go kill God..."'
+  - speaker:Guard#Yes.
+  - speaker:Guard#But at least you have infinite lives.
+  - speaker:Rouge#...
+  - speaker:Rouge#Even if I come back, dying still hurts a lot, you know?
   responses: []

@@ -13,15 +13,23 @@ MonoBehaviour:
   m_Name: Boss4
   m_EditorClassIdentifier: 
   dialogueBR:
-  - "speaker:Summer#Voc\xEA sabe qual a estrela mais quente do universo?"
+  - "speaker:Summer#Voc\xEA sabe qual a maior estrela do universo?"
   - "speaker:Rouge#Sei l\xE1... O sol?"
-  - speaker:Summer2#<color=red>Sou e-</color>
+  - speaker:Summer2#<color=red>SOU E--</color>
   - "speaker:Summer#Espera, voc\xEA realmente achou que seria o sol?"
   - "speaker:Rouge#Ah, sei l\xE1 n\xE9, n\xE3o sou muito de astrologia e tals."
   - speaker:Summer#...
   - speaker:Summer#Enfim
   - speaker:Summer2#<color=red>SOU EU!</color>
-  dialogueING: []
+  dialogueING:
+  - speaker:Summer#Do you know which is the biggest star in the universe?
+  - speaker:Rouge#No idea... The sun?
+  - speaker:Summer2#<color=red>IT'S-</color>
+  - speaker:Summer#Wait, you really thought it is the sun?
+  - speaker:Rouge#Well, I don't know! I'm not really into astrology.
+  - speaker:Summer#...
+  - speaker:Summer#Anyways...
+  - speaker:Summer2#<color=red>IT'S ME!</color>
   responses:
   - responseTextBR: Vamos nessa!
     responseTextING: Let's go!

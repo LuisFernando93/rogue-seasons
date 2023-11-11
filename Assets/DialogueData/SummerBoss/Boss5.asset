@@ -18,7 +18,13 @@ MonoBehaviour:
   - "speaker:Rouge#Que?! Seri\xE3o?"
   - "speaker:Summer#N\xE3o."
   - speaker:Summer2#Morra.
-  dialogueING: []
+  dialogueING:
+  - speaker:Rouge#Hey, small guy! What's the forecast for today?
+  - speaker:Summer#It'll be around 21 degrees celsius during the afternoon. In the
+    evening it'll cool down and rain.
+  - speaker:Rouge#What?! For real?
+  - speaker:Summer#No.
+  - speaker:Summer2#Die.
   responses:
   - responseTextBR: Vamos nessa!
     responseTextING: Let's go!
