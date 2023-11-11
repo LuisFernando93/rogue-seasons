@@ -22,17 +22,24 @@ MonoBehaviour:
   - speaker:Guard#Qualquer pergunta pode ser direcionada a mim no momento.
   - speaker:Rouge#Certo...
   dialogueING:
-  - yamete
+  - narrator:#You approach the organization's imposing HQ.
+  - speaker:Guard#<color=red>Halt!</color>No one without authorization may enter
+    the HQ at the moment!
+  - speaker:Rouge#But I just got my license to go on missions, and I wanted to learn
+    some informations...
+  - speaker:Guard#Negative! You cannot enter without authorization.
+  - speaker:Guard#Any questions you have may be redirected to me for now.
+  - speaker:Rouge#Alright...
   responses:
   - responseTextBR: Mundo exterior
-    responseTextING: 
+    responseTextING: Outside world
     dialogueObject: {fileID: 11400000, guid: e3460e6c3d4af9746be67c2a76673a60, type: 2}
   - responseTextBR: Quem somos
-    responseTextING: 
+    responseTextING: Who are we?
     dialogueObject: {fileID: 11400000, guid: 85e7592b32c490948b588287cb2869db, type: 2}
   - responseTextBR: O que devo fazer?
-    responseTextING: 
+    responseTextING: What should I do?
     dialogueObject: {fileID: 11400000, guid: b72d343507893c44da85698f6c9590e3, type: 2}
   - responseTextBR: Loop
-    responseTextING: 
+    responseTextING: Loop
     dialogueObject: {fileID: 11400000, guid: 7f47cc47fd81e814ca633bd18b3041e4, type: 2}

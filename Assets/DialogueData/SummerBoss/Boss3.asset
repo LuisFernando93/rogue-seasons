@@ -18,7 +18,12 @@ MonoBehaviour:
   - speaker:Summer#O que vai ser incinerada pelo sol?
   - "speaker:Summer2#<color=red>VOC\xCA!</color>"
   - speaker:Rouge#Isso nem fez sentido!
-  dialogueING: []
+  dialogueING:
+  - speaker:Summer#Who? Oh, who is...
+  - speaker:Rouge#Here it comes...
+  - speaker:Summer#Who is about to be burned by the sun?
+  - speaker:Summer2#<color=red>YOU!</color>
+  - speaker:Rouge#That doesn't even make sense!
   responses:
   - responseTextBR: Vamos nessa!
     responseTextING: Let's go!

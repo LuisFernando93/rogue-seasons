@@ -19,8 +19,17 @@ MonoBehaviour:
   - "speaker:Guard#Isto serve para evitar que o mundo seja completamente destruido
     pelas aberra\xE7\xF5es l\xE1 fora."
   - "speaker:Guard#\xC9 isto que te tr\xE1s de volta quando voc\xEA morre tambem."
-  - "speaker:Guard#A Noa guarda a informa\xE7\xE3o de todos n\xF3s, assim, caso algu\xE9m
+  - "speaker:Guard#A Noa guarda a informa\xE7\xE3o de todos n\xF3s. Assim, caso algu\xE9m
     morra l\xE1 fora, podemos trazer a pessoa de volta."
-  - speaker:Rouge#Obrigado por isso, Noa.
-  dialogueING: []
+  - speaker:Rouge#Obrigada por isso, Noa.
+  dialogueING:
+  - speaker:Rouge#So, what exactly is the "Loop"?
+  - speaker:Guard#After a certain period of time, our reality is "reset" by the time
+    machine.
+  - speaker:Guard#That is to avoid letting the world be completely destroy by the
+    creatures out there.
+  - speaker:Guard#That's also to bring you back when you die, too.
+  - 'speaker:Guard#The Noa stores the information of us all. That''s done so we can
+    bring them back whenever someone dies out there. '
+  - speaker:Rouge#Thanks for that, Noa.
   responses: []

@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca2fd5c07207ba459c1be860910b6a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueObject: {fileID: 11400000, guid: 039e486a1eef5724da1090f58ada4b46, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 83dbd9dfaed84d34eba778f0e2669c93, type: 2}
   events: []
 --- !u!114 &543674559
 MonoBehaviour:
@@ -1106,7 +1106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6db53d4bffb5684893d0d44e9c57b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueObject: {fileID: 11400000, guid: 039e486a1eef5724da1090f58ada4b46, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 83dbd9dfaed84d34eba778f0e2669c93, type: 2}
 --- !u!212 &543674560
 SpriteRenderer:
   m_ObjectHideFlags: 0

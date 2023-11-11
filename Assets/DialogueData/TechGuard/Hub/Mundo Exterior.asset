@@ -13,18 +13,28 @@ MonoBehaviour:
   m_Name: Mundo Exterior
   m_EditorClassIdentifier: 
   dialogueBR:
-  - "speaker:Rouge#Ent\xE3o, eu nunca entendi direito, o que aconteceu l\xE1 fora
+  - "speaker:Rouge#Ent\xE3o, eu nunca entendi direito. O que aconteceu l\xE1 fora
     exatamente?"
   - speaker:Guard#A humanidade aconteceu.
-  - "speaker:Guard#O avan\xE7o tecnologico e a polui\xE7\xE3o desenfreada chegou
-    a um limite e o planeta n\xE3o aguentou."
+  - "speaker:Guard#A polui\xE7\xE3o e o comsumismo desenfreado levou o planeta a
+    um ponto de ruptura."
   - "speaker:Guard#Sabe aquela te\xF3ria que n\xF3s somos apenas parasitas para o
     planeta?"
-  - "speaker:Guard#Pois \xE9, o planeta criou novos anti-corpos."
+  - "speaker:Guard#Pois \xE9, o planeta criou novos anticorpos."
   - "speaker:Guard#O clima saiu do controle e as proprias esta\xE7\xF5es do ano foram
     \"personificadas\"."
   - "speaker:Guard#Agora temos de lidar com isso gra\xE7as ao erro das gera\xE7\xF5es
     passadas..."
   - "speaker:Rouge#\xC9 uma merda termos de lidar com algo que nem foi nossa culpa..."
-  dialogueING: []
+  dialogueING:
+  - speaker:Rouge#So, I've never fully understood... What exactly happened out there?
+  - speaker:Guard#Humanity happened.
+  - speaker:Guard#The pollution and unrestrained consumerism made the planet reach
+    a breaking point.
+  - speaker:Guard#Do you know that theory in which we are just parasites to the planet?
+  - speaker:Guard#Well, the planet created new antibodies.
+  - speaker:Guard#The climate is out of control, the very own seasons are now "personafied".
+  - speaker:Guard#Now we have to deal with it due to the mistakes of past generations...
+  - speaker:Rouge#It sucks that we now have to deal with something that is not even
+    our fault...
   responses: []
