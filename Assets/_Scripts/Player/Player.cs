@@ -59,7 +59,6 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        //Time.timeScale = 1f;
     }
 
     private void Start()
@@ -106,7 +105,7 @@ public class Player : MonoBehaviour
         }*/
 
         //Ataque esquerdo
-        if (Input.GetButtonDown("Fire1") && !PauseMenu.gameIsPaused)
+        if (Input.GetButtonDown("Fire1"))
         {
             if (combatManager.leftWeaponActive != true && combatManager.canSwitchWeapon)
             {
@@ -117,7 +116,7 @@ public class Player : MonoBehaviour
         }
 
         //Ataque Direito
-        if (Input.GetButtonDown("Fire2") && !PauseMenu.gameIsPaused)
+        if (Input.GetButtonDown("Fire2"))
         {
             if (combatManager.rightWeaponActive != true && combatManager.canSwitchWeapon)
             {
@@ -126,19 +125,14 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.M) && !PauseMenu.gameIsPaused)
-        {
-            TakeDamage(5);
-        }
-
         //Dash
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !PauseMenu.gameIsPaused)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && !PauseMenu.gameIsPaused && !GameOver.isOver)
         {
             StartCoroutine(Dash());
         }
 
         //Interação
-        if (Input.GetKeyDown(KeyCode.E) && !PauseMenu.gameIsPaused)
+        if (Input.GetKeyDown(KeyCode.E) && !PauseMenu.gameIsPaused && !GameOver.isOver)
         {
             CheckInteraction();
         }
@@ -183,11 +177,8 @@ public class Player : MonoBehaviour
 
     void PlayerMovement()
     {
-        if (!PauseMenu.gameIsPaused)
-        {
-            rb.MovePosition(rb.position + movement.normalized * (MoveSpeed * Time.fixedDeltaTime)); //faz o player se mexer
-            Flip();
-        }
+        rb.MovePosition(rb.position + movement.normalized * (MoveSpeed * Time.fixedDeltaTime)); //faz o player se mexer
+        Flip();
     }
 
     private IEnumerator Dash()

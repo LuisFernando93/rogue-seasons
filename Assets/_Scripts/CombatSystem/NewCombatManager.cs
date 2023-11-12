@@ -108,6 +108,7 @@ public class NewCombatManager : MonoBehaviour
     {
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
+        if (GameOver.isOver || PauseMenu.gameIsPaused) return;
 
         leftWeaponController.gameObject.SetActive(false);
         leftWeaponActive = false;
@@ -120,6 +121,7 @@ public class NewCombatManager : MonoBehaviour
     {
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
+        if (GameOver.isOver || PauseMenu.gameIsPaused) return;
 
         rightWeaponController.gameObject.SetActive(false);
         rightWeaponActive = false;
