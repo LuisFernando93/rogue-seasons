@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyMeleeController : EnemyController
@@ -137,6 +138,10 @@ public class EnemyMeleeController : EnemyController
                         pathVectorList = null;
                     }
                 }
+            } else
+            {
+                direction = (player.GetComponent<Transform>().position - transform.position).normalized;
+                transform.position += speed * Time.deltaTime * direction;
             }
         }
         

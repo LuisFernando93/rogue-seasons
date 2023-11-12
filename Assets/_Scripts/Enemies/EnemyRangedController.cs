@@ -160,6 +160,10 @@ public class EnemyRangedController :  EnemyController
                             pathVectorList = null;
                         }
                     }
+                } else
+                {
+                    Vector3 direction = (player.GetComponent<Transform>().position - transform.position).normalized;
+                    transform.position += speed * Time.deltaTime * direction;
                 }
             } else if (moveReverse) {
                 pathfindTimer = 0;
