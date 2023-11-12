@@ -44,6 +44,7 @@ public class PropTransparency : MonoBehaviour
     //0 para setar opacidade, 1 para resetar
     private void ChangeOpacityInChild(Transform parent, int i)
     {
+        Debug.Log("a");
         foreach(Transform child in parent)
         {
             if (i == 0)
