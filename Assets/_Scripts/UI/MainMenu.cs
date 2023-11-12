@@ -9,8 +9,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private AudioClip _mainMenuOST, _ButtonClick;
     [SerializeField] private Slider _masterVolumeSlider, _musicVolumeSlider, _SFXVolumeSlider;
-    [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backOptionsButton, backAboutButton, backCreditsButton; 
-    [SerializeField] private GameObject aboutLabel, creditsLabel;
+    [SerializeField] private GameObject playButton, optionButton, creditsButton, exitButton, backOptionsButton, backAboutButton, backCreditsButton, backTutorialButton; 
+    [SerializeField] private GameObject aboutLabel, creditsLabel, tutorialDashLabel, tutorialMovimentLabel, tutorialInteractLabel, tutorialMouseLabel, tutorialPauseLabel;
     [SerializeField] private MainMenuAssets[] assets;
     
 
@@ -88,8 +88,14 @@ public class MainMenu : MonoBehaviour
         backOptionsButton.GetComponent<Image>().sprite = assets.back;
         backAboutButton.GetComponent<Image>().sprite = assets.back;
         backCreditsButton.GetComponent<Image>().sprite = assets.back;
+        backTutorialButton.GetComponent<Image>().sprite = assets.back;
         aboutLabel.GetComponent<TextMeshProUGUI>().text = assets.aboutText;
         creditsLabel.GetComponent<TextMeshProUGUI>().text = assets.creditsText;
+        tutorialDashLabel.GetComponent<TextMeshProUGUI>().text = assets.tutorialDashText;
+        tutorialMovimentLabel.GetComponent<TextMeshProUGUI>().text = assets.tutorialMovimentText;
+        tutorialInteractLabel.GetComponent<TextMeshProUGUI>().text = assets.tutorialInteractText;
+        tutorialMouseLabel.GetComponent<TextMeshProUGUI>().text = assets.tutorialMouseText;
+        tutorialPauseLabel.GetComponent<TextMeshProUGUI>().text = assets.tutorialPauseText;
     }
 
     public void Save()
