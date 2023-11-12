@@ -7,14 +7,14 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
 
-    public bool isOver { get; private set; } = false;
+    public static bool isOver { get; private set; } = false;
     [SerializeField] private GameObject _gameOverMenuContainer;
     [SerializeField] private AudioClip _buttonClick;
 
     // Update is called once per frame
     void Update()
     {
-        if (Player.Instance.isDead) {
+        if (Player.Instance.isDead && Player.Instance != null) {
             isOver = true;
         } else isOver = false;
 
@@ -25,7 +25,7 @@ public class GameOver : MonoBehaviour
         } else
         {
             _gameOverMenuContainer.SetActive(false);
-            Time.timeScale = 1f;
+            //Time.timeScale = 1f;
         }
     }
 
@@ -45,6 +45,7 @@ public class GameOver : MonoBehaviour
 
     public void ExitGameButton()
     {
+        Time.timeScale = 1f;
         Destroy(GameObject.FindGameObjectWithTag("Player"));
         Destroy(GameObject.FindGameObjectWithTag("Canvas"));
         SceneManager.LoadScene("Main menu");

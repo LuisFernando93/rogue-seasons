@@ -29,7 +29,7 @@ public class PlayerAnimationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PauseMenu.gameIsPaused)
+        if (!PauseMenu.gameIsPaused && !GameOver.isOver)
         {
             if (player.movement.x != 0 || player.movement.y != 0)
             {
