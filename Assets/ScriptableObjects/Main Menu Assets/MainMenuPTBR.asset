@@ -28,3 +28,8 @@ MonoBehaviour:
     orientadores:<br>\tAlexandre Santaella Braga<br>\tClaudemir Martins da Silva<br>\tRaquel
     Silva<br>\tWillians Monteiro da Silva<br>Agradecimentos especiais:<br>\tFatec
     S\xE3o Caetano do Sul"
+  tutorialDashText: Impulso
+  tutorialMovimentText: "Movimenta\xE7\xE3o"
+  tutorialInteractText: Interagir
+  tutorialMouseText: Arma Esquerda/Direita
+  tutorialPauseText: Pausa

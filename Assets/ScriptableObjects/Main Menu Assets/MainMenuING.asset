@@ -26,3 +26,8 @@ MonoBehaviour:
     de Oliveira<br>Audio:<br>\tEduardo Rocha dos Santos<br>Academic advisors:<br>\tAlexandre
     Santaella Braga<br>\tClaudemir Martins da Silva<br>\tRaquel Silva<br>\tWillians
     Monteiro da Silva<br>Special thanks:<br>\tFatec S\xE3o Caetano do Sul"
+  tutorialDashText: Dash
+  tutorialMovimentText: Moviment
+  tutorialInteractText: Interact
+  tutorialMouseText: Weapon Left/Right
+  tutorialPauseText: Pause
