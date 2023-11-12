@@ -53,10 +53,10 @@ public class LevelManager: MonoBehaviour
             }
         }
 
-        foreach (GameObject wall in walls)
-        { //ativa a colisao composta das salas apos instanciar o pathfinding
-            wall.GetComponent<TilemapCollider2D>().usedByComposite = true;
-        }
+        //foreach (GameObject wall in walls)
+        //{ //ativa a colisao composta das salas apos instanciar o pathfinding
+        //    wall.GetComponent<TilemapCollider2D>().usedByComposite = true;
+        //}
 
         SetPlayerPositionToEntrance();
     }
