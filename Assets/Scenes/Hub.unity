@@ -1076,6 +1076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bau
       objectReference: {fileID: 0}
+    - target: {fileID: 8739550068102967324, guid: 77cfaa50a51fb0b459f1a95bb0fd9a2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77cfaa50a51fb0b459f1a95bb0fd9a2c, type: 3}
 --- !u!1001 &868865251
@@ -1377,6 +1381,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9114647590003671107, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9114647590204608901, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1480,6 +1488,14 @@ PrefabInstance:
     - target: {fileID: 9114647591154612716, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: sceneTransition
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114647591519879730, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8.600006
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114647591519879730, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -9.599998
       objectReference: {fileID: 0}
     - target: {fileID: 9114647591519879732, guid: 341e69f5b004a634e93aae1ad5ff24a5, type: 3}
       propertyPath: m_Type
