@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4346866380524860611}
   - component: {fileID: 3039316365385134886}
   - component: {fileID: 4316224900943124414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Summer_prop_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
