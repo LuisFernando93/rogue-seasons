@@ -867,6 +867,10 @@ PrefabInstance:
       value: LevelManager
       objectReference: {fileID: 0}
     - target: {fileID: 2216543885384326815, guid: 457b0142be52bb549815f748bf4ba72f, type: 3}
+      propertyPath: dropChance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2216543885384326815, guid: 457b0142be52bb549815f748bf4ba72f, type: 3}
       propertyPath: chestsPrefab.list.Array.data[0].weight
       value: 0.7
       objectReference: {fileID: 0}

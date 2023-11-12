@@ -120,17 +120,18 @@ MonoBehaviour:
 
     "I don''t like loud noises, I can focus
     better when I use it."'
-  descriptionBR: Aumenta o dano de armas de fogo em 25%.
-  descriptionING: Increases ranged weapon's damage by 25%.
+  descriptionBR: Aumenta o dano de armas de fogo em 30%.
+  descriptionING: Increases ranged weapon's damage by 30%.
   icon: {fileID: 4095349909492182895, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 4
   lifeModifier: 0
   meleeModifier: 0
-  rangedModifier: 0.25
+  rangedModifier: 0.3
   speedModifier: 0
   atkSpeedModifier: 0
   rechargeModifier: 0
   bulletSizeModifier: 0
+  dashModifier: 0
   lifeModified: 0
   meleeModified: 0
   rangedModified: 1
@@ -138,3 +139,4 @@ MonoBehaviour:
   atkSpeedModified: 0
   rechargeModified: 0
   bulletSizeModified: 0
+  dashModified: 0
