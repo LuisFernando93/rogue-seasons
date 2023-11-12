@@ -8,5 +8,5 @@ public class MainMenuAssets : ScriptableObject
     public string tag;
 
     public Sprite play, options, credits, exit, back;
-    public string aboutText, creditsText;
+    public string aboutText, creditsText, tutorialDashText, tutorialMovimentText, tutorialInteractText, tutorialMouseText, tutorialPauseText;
 }
