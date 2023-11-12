@@ -11,7 +11,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioMixer _mixer;
     private bool _battleMusicOn;
     private float _volumeA, _volumeB;
-    [SerializeField] private float _transitionRate = 1f;
+    private float _transitionRate = 8f;
     private void Awake()
     {
         if(Instance == null)
