@@ -120,17 +120,18 @@ MonoBehaviour:
 
     "It tastes like Lemonade
     H2O."-Leticia'
-  descriptionBR: Aumenta a velocidade de de ataque para armas corpo-a-corpo em 15%.
-  descriptionING: Increases Melee attack speed by 15%.
+  descriptionBR: Aumenta a velocidade de de ataque para armas corpo-a-corpo em 35%.
+  descriptionING: Increases Melee attack speed by 35%.
   icon: {fileID: 6871990644504901685, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 8
   lifeModifier: 0
   meleeModifier: 0
   rangedModifier: 0
   speedModifier: 0
-  atkSpeedModifier: 0.15
+  atkSpeedModifier: 0.35
   rechargeModifier: 0
   bulletSizeModifier: 0
+  dashModifier: 0
   lifeModified: 0
   meleeModified: 0
   rangedModified: 0
@@ -138,3 +139,4 @@ MonoBehaviour:
   atkSpeedModified: 1
   rechargeModified: 0
   bulletSizeModified: 0
+  dashModified: 0

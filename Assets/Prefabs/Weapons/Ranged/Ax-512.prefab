@@ -153,7 +153,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7124704964449087799, guid: ad236753c4a86004f9c2ef243bb0f787, type: 3}
   icon: {fileID: 1303629034831364995, guid: 41a7b7691883a4a4a89b957a95128514, type: 3}
   maxAmmo: 20
-  damage: 25
+  damage: 40
   bulletForce: 30
   attackSound: {fileID: 8300000, guid: b9a26f65f8293894a8c4a1e3cdd2207d, type: 3}
   WEAPON_SHOT: {fileID: 7400000, guid: 5d0467dd83771d44092f5aade506b4f3, type: 2}

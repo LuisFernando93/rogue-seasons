@@ -15,7 +15,7 @@ public class WeaponRotationController : MonoBehaviour
     }
     public void WeaponRotation()
     {
-
+        if (PauseMenu.gameIsPaused) return;
         if (dialogueUI.IsOpen) return;
         if (weaponChangeSetup.IsOpen) return;
         //calcula a posição do mouse de acordo com a camera 

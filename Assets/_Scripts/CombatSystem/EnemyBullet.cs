@@ -6,7 +6,6 @@ public class EnemyBullet : MonoBehaviour
 {
     //Objetos
     [SerializeField] private float destroyAfter = 5f;
-    private NewCombatManager combatManager;
     private Animator animator;
     [SerializeField] private AnimationClip HitEffect;
     private GameObject player;
@@ -24,7 +23,6 @@ public class EnemyBullet : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         Destroy(gameObject, destroyAfter);
-        combatManager = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<NewCombatManager>();
         player = GameObject.FindGameObjectWithTag("Player");
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (var enemy in enemies)
@@ -36,9 +34,9 @@ public class EnemyBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        animator.Play(HitEffect.name);
         if (collision.CompareTag("Player"))
         {
+            animator.Play(HitEffect.name);
             player.GetComponent<Player>().TakeDamage(bulletDamage);
             GetComponent<BoxCollider2D>().isTrigger = false;
             if (HitEffect != null)
