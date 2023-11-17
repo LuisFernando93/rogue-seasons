@@ -123,10 +123,21 @@ MonoBehaviour:
     teve um resultado muito bom e Rouge precisou de terapia por um tempo...\n\n\"Eu
     tenho algumas lembran\xE7as ruins usando isso, mas ele pelo menos protege minha
     cabe\xE7a.\" -Rouge\n\n"
-  historyING: 'An improvement on the traditional Rouge cap, now covered with metal
+  historyING: 'An improvement on the original Rouge''s cap, now reinforced with metal
     plates.
 
-    "It''s a little heavy, but it protects my head."'
+    It was designed by <color=green>Alice</color> as an "experiment".
+    She wasn''t really trying to improve Rouge''s protection, but instead to learn
+    if the heat could melt the metal.
+
+    Well, the first version did not really
+    worked out and Rouge needed to go the therapy for a while thanks to that...
+
+
+    "I
+    have some bad memories wearing that, but at least it protects my head"
+
+    -Rouge'
   icon: {fileID: -2688804227831967872, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 1
   lifeModifier: 0.3
