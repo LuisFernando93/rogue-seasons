@@ -114,14 +114,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gadgetNameBR: Carregador
   gadgetNameING: Loader
-  historyBR: "Uma melhoria do bon\xE9 tradicional de Rouge, agora, revestido com
-    placas de metal.\n\"\xC9 meio pesado, mas protege a cabe\xE7a.\""
+  descriptionBR: "Aumenta o tamanho das mun\xE7\xF5es em 50%."
+  descriptionING: Increases ammunition size by 50%.
+  historyBR: "\tBoa parte das armas usadas inicialmente pelos <color=blue>Agentes</color>
+    s\xE3o fabricadas pelos <color=cyan>Cientistas</color>, por\xE9m, \xE9 uma pratica
+    comum trocar de equipamentos durante as miss\xF5es devido ao seu alto desgaste
+    ocasionado pelo clima extremo.\n\n\"Nem tem como eu colocar isso na maioria das
+    armas que eu uso, por que ainda me d\xE3o isso?\"-Rouge"
   historyING: 'An improvement on the traditional Rouge cap, now covered with metal
     plates.
 
     "It''s a little heavy, but it protects my head."'
-  descriptionBR: "Aumenta o tamanho das mun\xE7\xF5es em 50%."
-  descriptionING: Increases ammunition size by 50%.
   icon: {fileID: 8611720639791242516, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 5
   lifeModifier: 0
@@ -131,6 +134,7 @@ MonoBehaviour:
   atkSpeedModifier: 0
   rechargeModifier: 0
   bulletSizeModifier: 0.5
+  dashModifier: 0
   lifeModified: 0
   meleeModified: 0
   rangedModified: 0
@@ -138,3 +142,4 @@ MonoBehaviour:
   atkSpeedModified: 0
   rechargeModified: 0
   bulletSizeModified: 1
+  dashModified: 0

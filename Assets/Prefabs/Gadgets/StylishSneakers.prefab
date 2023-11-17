@@ -114,14 +114,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gadgetNameBR: "T\xEAnis Estiloso"
   gadgetNameING: Stylish Sneakers
-  historyBR: "Um t\xEAnis estiloso escolhido pela Rouge.\n\"N\xE3o gosto da bota
-    padr\xE3o do nosso uniforme, consigo correr melhor com essa belezinha aqui.\""
+  descriptionBR: "Aumenta a dist\xE2ncia do Dash em 40%."
+  descriptionING: Increases Dash distance by 40%.
+  historyBR: "\tRouge sempre foi uma garota que gostou muito de t\xEAnis, ela adorava
+    colecion\xE1-los e exibi-los para suas amigas.\n\tEste t\xEAnis \xE9 a ultima
+    mem\xF3ria que ela tem sobre sua vida antes do apocalipse...\n\n\"N\xE3o gosto
+    da bota padr\xE3o do nosso uniforme, consigo correr melhor com essa belezinha
+    aqui.\"-Rouge\n\n\"\xC9 O TENIZ\xC3O DO S*BWAY S*RFERS TAPOHAAAAA\"-Lucidio"
   historyING: 'A stylish sneaker chosen by Rouge.
 
     "I don''t like the standard
     boots on our uniform, I can run better with this beauty here."'
-  descriptionBR: "Aumenta a dist\xE2ncia do Dash em 40%."
-  descriptionING: Increases Dash distance by 40%.
   icon: {fileID: 7905139760315168755, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 6
   lifeModifier: 0
