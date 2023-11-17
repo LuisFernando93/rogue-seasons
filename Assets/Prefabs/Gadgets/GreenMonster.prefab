@@ -116,11 +116,11 @@ MonoBehaviour:
   gadgetNameING: Green Energy Drik
   descriptionBR: Aumenta a velocidade de movimento de Rouge em 40%.
   descriptionING: Increases Rouge's movement speed by 40%.
-  historyBR: "\tUma bebida energ\xE9tica que te d\xE1 velocidade.\n\tPara evitar
-    a depress\xE3o generalizada entre os sobreviventes, os <color=cyan>Cientistas</color>
+  historyBR: " Uma bebida energ\xE9tica que te d\xE1 velocidade.\n Para evitar a
+    depress\xE3o generalizada entre os sobreviventes, os <color=#00ffff>Cientistas</color>
     fizeram um esfor\xE7o para produzirem alguns itens de consumo comum, isso ajudou
     a manter a moral e afastar os pensamentos das pessoas sobre o mundo que conheciam
-    n\xE3o existir mais.\n\"Gosto de guaran\xE1.\"-Leticia"
+    n\xE3o existir mais.\n\n\"Gosto de guaran\xE1.\"-Leticia\n\n"
   historyING: 'An energy drink that gives you speed.
 
     "It tastes like guarana."-Leticia'

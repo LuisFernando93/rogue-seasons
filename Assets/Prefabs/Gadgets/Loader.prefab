@@ -116,11 +116,11 @@ MonoBehaviour:
   gadgetNameING: Loader
   descriptionBR: "Aumenta o tamanho das mun\xE7\xF5es em 50%."
   descriptionING: Increases ammunition size by 50%.
-  historyBR: "\tBoa parte das armas usadas inicialmente pelos <color=blue>Agentes</color>
-    s\xE3o fabricadas pelos <color=cyan>Cientistas</color>, por\xE9m, \xE9 uma pratica
-    comum trocar de equipamentos durante as miss\xF5es devido ao seu alto desgaste
-    ocasionado pelo clima extremo.\n\n\"Nem tem como eu colocar isso na maioria das
-    armas que eu uso, por que ainda me d\xE3o isso?\"-Rouge"
+  historyBR: " Boa parte das armas usadas inicialmente pelos <color=#00ffff>Agentes</color>
+    s\xE3o fabricadas pelos <color=#00ffff>Cientistas</color>, por\xE9m, \xE9 uma
+    pratica comum trocar de equipamentos durante as miss\xF5es devido ao seu alto
+    desgaste ocasionado pelo clima extremo.\n\n\"Nem tem como eu colocar isso na
+    maioria das armas que eu uso, por que ainda me d\xE3o isso?\"-Rouge\n\n"
   historyING: 'An improvement on the traditional Rouge cap, now covered with metal
     plates.
 

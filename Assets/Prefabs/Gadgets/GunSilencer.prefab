@@ -116,9 +116,9 @@ MonoBehaviour:
   gadgetNameING: Gun silencer
   descriptionBR: Aumenta o dano de armas de fogo em 30%.
   descriptionING: Increases ranged weapon's damage by 30%.
-  historyBR: "\tNa maior parte das miss\xF5es, descri\xE7\xE3o n\xE3o \xE9 necessario,
+  historyBR: " Na maior parte das miss\xF5es, descri\xE7\xE3o n\xE3o \xE9 necessario,
     mas n\xE3o s\xE3o apenas abera\xE7\xF5es que est\xE3o  l\xE1 fora...\n\n\"N\xE3o
-    gosto de barulhos altos, eu consigo focar melhor quando uso ele.\"-Rouge"
+    gosto de barulhos altos, eu consigo focar melhor quando uso ele.\"-Rouge\n\n"
   historyING: 'A silencer for guns.
 
     "I don''t like loud noises, I can focus

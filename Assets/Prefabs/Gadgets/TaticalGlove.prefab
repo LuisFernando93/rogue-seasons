@@ -116,11 +116,11 @@ MonoBehaviour:
   gadgetNameING: Tatical Glove
   descriptionBR: Aumenta a velocidade de recarga das armas de fogo em 40%.
   descriptionING: Increases ranged weapons reload speed by 40%.
-  historyBR: "\tA maior parte dos equipamentos usados pelos <color=blue>Agentes</color>
+  historyBR: " A maior parte dos equipamentos usados pelos <color=#00ffff>Agentes</color>
     possuem prote\xE7\xE3o termica, o que ajuda a se aventurar pelo sol escaldante
     ou pelo permafrost sem grandes consequ\xEAncias.\n\n\"Eu curto essa luva, ela
     deixa meus dedos de fora ent\xE3o fica facil de usar as armas, mas n\xE3o \xE9
-    muito recomendada para usar contra aquele esqueleto...\"-Rouge"
+    muito recomendada para usar contra aquele esqueleto...\"-Rouge\n\n"
   historyING: 'An improvement on the traditional Rouge cap, now covered with metal
     plates.
 

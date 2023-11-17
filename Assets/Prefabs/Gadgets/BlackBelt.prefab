@@ -116,12 +116,12 @@ MonoBehaviour:
   gadgetNameING: Black Belt
   descriptionBR: Aumenta o dano de armas corpo-a-corpo em 40%
   descriptionING: Increases melee weapon damage by 40%
-  historyBR: "\tTodos os agentes da organiza\xE7\xE3o passam por aulas de artes marciais.
-    \n\tA faixa preta \xE9 entregue apenas para os mais qualificados que s\xE3o testados
-    pelo proprio <color=red>Ezekiel</color>, o lider da Guarda Temporal.\n\n\"Eu
-    lembre de quando lutei contra o senhor <color=red>Ezekiel</color>, foram varias
-    tentativas at\xE9 eu conseguir a faixa preta e tenho certeza que ele n\xE3o estava
-    indo com tudo...\"-Rouge"
+  historyBR: " Todos os <color=#00ffff>Agentes</color> da <color=#00ffff>Organiza\xE7\xE3o</color>
+    passam por aulas de artes marciais. \n A faixa preta \xE9 entregue apenas para
+    os mais qualificados que s\xE3o testados pelo proprio <color=red>Ezekiel</color>,
+    o lider da Guarda Temporal.\n\n\"Eu lembro de quando lutei contra o senhor <color=red>Ezekiel</color>,
+    foram varias tentativas at\xE9 eu conseguir a faixa preta e tenho certeza que
+    ele n\xE3o estava indo com tudo...\"-Rouge\n\n"
   historyING: 'An improvement on the traditional Rouge cap, now covered with metal
     plates.
 
