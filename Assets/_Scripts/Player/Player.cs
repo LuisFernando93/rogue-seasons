@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
 
     private bool canTakeDamage = true;
 
+    [SerializeField] private AudioClip hitSFX; 
+
     public static Player Instance;
 
 
@@ -251,6 +253,7 @@ public class Player : MonoBehaviour
     {
         if (canTakeDamage)
         {
+            SoundManager.Instance.PlaySFX(hitSFX);
             this.life -= power;
             this.canTakeDamage = false;
             //animator.SetTrigger("Damaged");

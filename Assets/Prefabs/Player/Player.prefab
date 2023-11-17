@@ -211,6 +211,7 @@ MonoBehaviour:
   dashPower: 15
   dashingCooldown: 0.8
   distanceBetweenImages: 0.1
+  hitSFX: {fileID: 8300000, guid: 25d5a8e3b70e5ca498278ca19b7a44b6, type: 3}
 --- !u!114 &3668197477448664468
 MonoBehaviour:
   m_ObjectHideFlags: 0

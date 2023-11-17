@@ -117,14 +117,18 @@ MonoBehaviour:
   descriptionBR: "Aumenta o tamanho das mun\xE7\xF5es em 50%."
   descriptionING: Increases ammunition size by 50%.
   historyBR: " Boa parte das armas usadas inicialmente pelos <color=#00ffff>Agentes</color>
-    s\xE3o fabricadas pelos <color=#00ffff>Cientistas</color>, por\xE9m, \xE9 uma
-    pratica comum trocar de equipamentos durante as miss\xF5es devido ao seu alto
-    desgaste ocasionado pelo clima extremo.\n\n\"Nem tem como eu colocar isso na
-    maioria das armas que eu uso, por que ainda me d\xE3o isso?\"-Rouge\n\n"
-  historyING: 'An improvement on the traditional Rouge cap, now covered with metal
-    plates.
+    s\xE3o fabricadas pelos <color=#00ffff>Cientistas</color>, por\xE9m uma pr\xE1tica
+    mais comum trocar de equipamentos durante as miss\xF5es devido ao seu alto desgaste
+    ocasionado pelo clima extremo.\n\n\"Nem tem como eu colocar isso na maioria das
+    armas que eu uso. Por que ainda me d\xE3o isso?\"-Rouge\n\n"
+  historyING: 'Most weapons initially used by the <color=#00ffff>Agents</color> where
+    fabricated by the <color=#00ffff>Scientists</color>, but a more common pratice
+    is to adquire new equipments during missions  due to the damage caused by the
+    extreme weather conditions.
 
-    "It''s a little heavy, but it protects my head."'
+
+    "I can''t even use this on most of the weapons
+    I carry. Why do they still give me this?"-Rouge'
   icon: {fileID: 8611720639791242516, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 5
   lifeModifier: 0
