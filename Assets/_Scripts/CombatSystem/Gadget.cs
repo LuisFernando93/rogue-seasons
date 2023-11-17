@@ -5,7 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Gadget : Interactable
 {
-    [TextArea] public string gadgetNameBR, gadgetNameING, historyBR, historyING, descriptionBR, descriptionING;
+    [TextArea] public string gadgetNameBR, gadgetNameING,  descriptionBR, descriptionING;
+    [TextArea(15,20)] public string historyBR, historyING;
 
     SpriteRenderer sr;
     [SerializeField] Sprite icon;

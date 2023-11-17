@@ -141,6 +141,7 @@ public class NewCombatManager : MonoBehaviour
         player.transform.GetChild(0).gameObject.SetActive(true);
         player.transform.GetChild(1).gameObject.SetActive(false);
         activeWeapon = leftWeaponController;
+        ChangeCommand(0);
         canvas.GetComponent<GetWeaponIcon>().UpdateIcons();
         WeaponType();
     }

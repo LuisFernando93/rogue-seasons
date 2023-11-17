@@ -63,6 +63,10 @@ public class RangedWeaponController : Weapon
         {
             Shot();
         }
+        if (Input.GetKeyDown(KeyCode.R) && currentAmmo < maxAmmo)
+        {
+            Recharge();
+        }
 
     }
     private void FixedUpdate()

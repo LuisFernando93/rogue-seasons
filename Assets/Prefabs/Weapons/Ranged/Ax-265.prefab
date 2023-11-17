@@ -155,7 +155,7 @@ MonoBehaviour:
   maxAmmo: 10
   damage: 50
   bulletForce: 30
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: b9a26f65f8293894a8c4a1e3cdd2207d, type: 3}
   WEAPON_SHOT: {fileID: 7400000, guid: 22872fa600a5f3d4bb2a11fd431edf2c, type: 2}
   WEAPON_RECHARGE: {fileID: 7400000, guid: 38165605679084d4ea0a0249ea63acab, type: 2}
   WEAPON_IDLE: {fileID: 7400000, guid: bda4d28627b323b46820eba6c37e273e, type: 2}

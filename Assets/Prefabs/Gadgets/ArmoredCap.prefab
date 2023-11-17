@@ -114,14 +114,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gadgetNameBR: "Bon\xE9 Blindado"
   gadgetNameING: Armored Cap
-  historyBR: "Uma melhoria do bon\xE9 tradicional de Rouge, agora, revestido com
-    placas de metal.\n\"\xC9 meio pesado, mas protege a cabe\xE7a.\""
+  descriptionBR: Aumenta a vida de Rouge em 30%.
+  descriptionING: Increases Rouge's health by 30%.
+  historyBR: " Uma melhoria do bon\xE9 tradicional de Rouge, agora, revestido com
+    placas de metal.\n Foi feito por <color=green>Alice</color> como um \"teste\",
+    ela n\xE3o exatamente buscava aumentar a prote\xE7\xE3o de Rouge, mas sim saber
+    se o calor iria derreter o metal ou n\xE3o.\nBem, a primeira vers\xE3o n\xE3o
+    teve um resultado muito bom e Rouge precisou de terapia por um tempo...\n\n\"Eu
+    tenho algumas lembran\xE7as ruins usando isso, mas ele pelo menos protege minha
+    cabe\xE7a.\" -Rouge\n\n"
   historyING: 'An improvement on the traditional Rouge cap, now covered with metal
     plates.
 
     "It''s a little heavy, but it protects my head."'
-  descriptionBR: Aumenta a vida de Rouge em 30%.
-  descriptionING: Increases Rouge's health by 30%.
   icon: {fileID: -2688804227831967872, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 1
   lifeModifier: 0.3
@@ -131,6 +136,7 @@ MonoBehaviour:
   atkSpeedModifier: 0
   rechargeModifier: 0
   bulletSizeModifier: 0
+  dashModifier: 0
   lifeModified: 1
   meleeModified: 0
   rangedModified: 0
@@ -138,3 +144,4 @@ MonoBehaviour:
   atkSpeedModified: 0
   rechargeModified: 0
   bulletSizeModified: 0
+  dashModified: 0

@@ -8414,6 +8414,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 128973949472255643}
     m_Modifications:
+    - target: {fileID: 1259770725480482290, guid: 02856a2f5c077b448a2c9b7a30576611, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1963949414971821027, guid: 02856a2f5c077b448a2c9b7a30576611, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8461,6 +8465,18 @@ PrefabInstance:
     - target: {fileID: 2156507912907074709, guid: 02856a2f5c077b448a2c9b7a30576611, type: 3}
       propertyPath: m_Name
       value: Room6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588931206961176469, guid: 02856a2f5c077b448a2c9b7a30576611, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096845894956483443, guid: 02856a2f5c077b448a2c9b7a30576611, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843618884368471629, guid: 02856a2f5c077b448a2c9b7a30576611, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02856a2f5c077b448a2c9b7a30576611, type: 3}
