@@ -118,13 +118,17 @@ MonoBehaviour:
   descriptionING: Increases ranged weapons reload speed by 40%.
   historyBR: " A maior parte dos equipamentos usados pelos <color=#00ffff>Agentes</color>
     possuem prote\xE7\xE3o termica, o que ajuda a se aventurar pelo sol escaldante
-    ou pelo permafrost sem grandes consequ\xEAncias.\n\n\"Eu curto essa luva, ela
+    ou pelo Permafrost sem grandes consequ\xEAncias.\n\n\"Eu curto essa luva. Ela
     deixa meus dedos de fora ent\xE3o fica facil de usar as armas, mas n\xE3o \xE9
     muito recomendada para usar contra aquele esqueleto...\"-Rouge\n\n"
-  historyING: 'An improvement on the traditional Rouge cap, now covered with metal
-    plates.
+  historyING: 'Most of the equipament wore by the <color=#00ffff>Agents</color> have
+    thermal protection, which helps them to venture under the hot sun or into the
+    Permafrost without serious consequences.
 
-    "It''s a little heavy, but it protects my head."'
+
+    "I like this glove. It gives room
+    for my fingers to breath, and makes it easier to use weapons, but it''s not really
+    recommended to fight off that skeleton..."-Rouge'
   icon: {fileID: 6501934329806878298, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 7
   lifeModifier: 0

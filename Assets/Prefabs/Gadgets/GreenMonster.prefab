@@ -118,12 +118,19 @@ MonoBehaviour:
   descriptionING: Increases Rouge's movement speed by 40%.
   historyBR: " Uma bebida energ\xE9tica que te d\xE1 velocidade.\n Para evitar a
     depress\xE3o generalizada entre os sobreviventes, os <color=#00ffff>Cientistas</color>
-    fizeram um esfor\xE7o para produzirem alguns itens de consumo comum, isso ajudou
+    fizeram um esfor\xE7o para produzirem alguns itens de consumo comum. Isso ajudou
     a manter a moral e afastar os pensamentos das pessoas sobre o mundo que conheciam
     n\xE3o existir mais.\n\n\"Gosto de guaran\xE1.\"-Leticia\n\n"
   historyING: 'An energy drink that gives you speed.
 
-    "It tastes like guarana."-Leticia'
+    To avoid general depression
+    amoung the survivors, the <color=#00ffff>Scientists</color> made an efford to
+    produce some items from the old world. That helped to keep moral high and keep
+    their thoughts away from a world that no longer exists.
+
+
+    "It tastes like
+    guarana."-Leticia'
   icon: {fileID: -2613855437288000441, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 3
   lifeModifier: 0

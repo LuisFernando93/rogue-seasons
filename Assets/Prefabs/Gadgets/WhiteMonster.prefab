@@ -117,16 +117,25 @@ MonoBehaviour:
   descriptionBR: Aumenta a velocidade de de ataque para armas corpo-a-corpo em 35%.
   descriptionING: Increases Melee attack speed by 35%.
   historyBR: " Uma bebida energ\xE9tica que te d\xE1 velocidade.\n Algumas pessoas
-    ainda sentem falta de suas vidas, sua familia, seus empregos, por conta disso,
+    ainda sentem falta de suas vidas, sua familia, seus empregos... Por conta disso,
     a <color=#00ffff>Organiza\xE7\xE3o</color> promove consultas com psicologos para
     garantir que todos os sobreviventes est\xE3o bem.\n Tamb\xE9m \xE9 relativamente
     normal que os <color=#00ffff>Agentes</color> voltem com sequelas psicologicas
-    ap\xF3s as miss\xF5es, at\xE9 porque, n\xE3o \xE9 facil morrer.\n\t\n\"O gosto
+    ap\xF3s as miss\xF5es. At\xE9 porque, n\xE3o \xE9 facil morrer...\n\t\n\"O gosto
     lembra H2O de Limoneto\"-Leticia\n"
   historyING: 'An energy drink that gives you speed.
 
-    "It tastes like Lemonade
-    H2O."-Leticia'
+    Some people still miss
+    their old lifes, their families, their jobs... Due to that, the <color=#00ffff>Organization</color>
+    promotes sessions with their psychologists to ensure that all the survivors are
+    well.
+
+    It''s also pretty common for the <color=#00ffff>Agents</color> to
+    come back with mental scars after missions. Since, well, dying is not easy...
+
+
+    "It
+    tastes like Lemonade H2O."-Leticia'
   icon: {fileID: 6871990644504901685, guid: 7b22c947f210ffc4390245d85a892541, type: 3}
   Id: 8
   lifeModifier: 0
